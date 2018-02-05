@@ -3,11 +3,12 @@ import struct
 import csv
 from pprint import pprint
 from sys import stderr
+from pathlib import Path
 
 BANK_NAMES = """strings/dummy strings/items strings/strings strings/goods strings/animals
 dialogue/maomao dialogue/girl_intro dialogue/story dialogue/record dialogue/comedians
 dialogue/boy_intro dialogue/endings strings/character_choice strings/save
-"""
+""".split()
 
 BREAK_CHARS = ("\\n", "<fd>",)
 END_CHARS = ("@", "<end>",  None)
@@ -16,7 +17,8 @@ POINTER_TABLE_ADDRESS = 0x1e44a0
 NUMTABLE = 0x16
 NUMSENSE = 14
 
-EXTRA_TABLES = [(0x10c089, 16, "strings/characters"]
+EXTRA_TABLES = [(0x10c089, 132, "text"), # 43:4089 XXX may be earlier
+ (0x128089, 41, "names")] # 4a:4089
 #BANK_TABLE_ADDRESS = 0x1c*0x4000 + 0x0741
 
 def readbyte():  return struct.unpack("B",  rom.read(1))[0]
@@ -64,40 +66,48 @@ for i in range(NUMTABLE):
     metapointers.append(pointer)
     #print(i, hex(offset))
 
-pprint(metapointers)
+#pprint(metapointers)
 
-stringtables = []
-extratables = {}
+#stringtables = []
+tables = {}
+tablenames = {}
 
 for i, (metapointer, metapointer2) in enumerate(zip(metapointers, metapointers[1:]+[None])):
     if i >= NUMSENSE: break
-    print(hex(i), hex(metapointer), hex(metapointer2) if metapointer2 else None)
+    #print(hex(i), hex(metapointer), hex(metapointer2) if metapointer2 else None)
     seekba(BANK, metapointer)
-    pointers = []
+    addresses = []
     while True:
         pointer = readshort()
         if not metapointer2:
             break
         elif rom.tell() % 0x4000 + 0x4000 > metapointer2:
             break
-        pointers.append(pointer)
-    stringtables.append(pointers)
+        addresses.append(BANK*0x4000 + pointer%0x4000)
+    tables[metapointer] = addresses
+    tablenames[metapointer] = BANK_NAMES[i]
 
 for table, count, name in EXTRA_TABLES:
     rom.seek(table)
-    pointers = []
+    a = []
+    addresses = []
     for i in range(count):
         pointer = readshort()
-        pointers.append(pointer)
-    extratables[table] = pointers
+        if pointer > 0x8000:
+            addresses.append(-pointer)
+        else:
+            addresses.append(table//0x4000*0x4000 + pointer%0x4000)
+    tables[table] = addresses
+    tablenames[table] = name
 #pprint(stringtables)
 
 strings = {}
 stringindexes = {}
 stringends = {}
-for sti, stringtable in enumerate(stringtables):
-    for pti, pointer in enumerate(stringtable):
-        seekba(BANK, pointer)
+for sti, (tpointer, stringtable) in enumerate(tables.items()):
+    for pti, address in enumerate(stringtable):
+        if address < 0: continue
+        rom.seek(address)
         string = []
         line = ""
         while True:
@@ -110,36 +120,43 @@ for sti, stringtable in enumerate(stringtables):
             if char in END_CHARS:
                 string.append(line)
                 break
-        strings[pointer] = string
-        stringends[pointer] = rom.tell()
-        if pointer not in stringindexes:
-            stringindexes[pointer] = []
-        stringindexes[pointer].append((sti, pti))
+        strings[address] = string
+        stringends[address] = rom.tell()
+        if address not in stringindexes:
+            stringindexes[address] = []
+        stringindexes[address].append((sti, pti))
 
-for sti, stringtable in enumerate(stringtables):
-    print(f"Table {sti} has {len(stringtable)} strings")
-    with open(f"text/{sti}.csv", "w") as f:
-        for i, pointer in enumerate(stringtable):
-            string = "\n".join(strings[pointer]).rstrip("@")
+for sti, (sp, stringtable) in enumerate(tables.items()):
+    name = tablenames[sp]
+    print(f"Table {name} has {len(stringtable)} strings")
+    path = "/".join(name.split("/")[0:-1])
+    Path.mkdir(Path(f"text/{path}"), parents=True, exist_ok=True)
+    with open(f"text/{name}.csv", "w") as f:
+        for i, address in enumerate(stringtable):
+            if address < 0:
+                string = ""
+            else:
+                string = "\n".join(strings[address]).rstrip("@")
             fcsv = csv.writer(f)
-            fcsv.writerow([i, hex(pointer), string])
+            fcsv.writerow([i, hex(address), string])
 
 def print_strings():
-    last_pointer = None
+    last_address = None
     
-    for pointer in sorted(strings):
-        indexes = stringindexes[pointer]
-        string = strings[pointer]
+    for address in sorted(strings):
+        if address < -1: continue
+        indexes = stringindexes[address]
+        string = strings[address]
         #print(address, index)
-        if last_pointer != pointer:
-            print("SECTION \"Text at {0:04x}\", ROMX[${0:04x}], BANK[${1:02x}]".format(pointer, BANK))
+        if last_address != address:
+            print("SECTION \"Text at {1:02x}:{0:04x}\", ROMX[${0:04x}], BANK[${1:02x}]".format(address%0x4000 + 0x4000, address//0x4000))
         for ih, il in indexes:
             label = "String{}_{}".format(ih, il)
             print("{}::".format(label))
         for line in string:
             print("\tdb \"{}\"".format(line))
-        last_pointer = stringends[pointer] % 0x4000 + 0x4000
-        print("; {:02x}:{:x}".format(BANK, last_pointer))
+        last_address = stringends[address]
+        print("; {:02x}:{:x}".format(BANK, last_address))
         print()
 
 def print_pointer_table():

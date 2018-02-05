@@ -30,3 +30,4 @@
 ; binaries
 tools/scan_includes
 charmap.asm
+shim.asm
