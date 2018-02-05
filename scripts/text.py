@@ -4,6 +4,7 @@ import csv
 from pprint import pprint
 from sys import stderr
 from pathlib import Path
+from gbaddr import gbaddr
 
 BANK_NAMES = """strings/dummy strings/items strings/strings strings/goods strings/animals
 dialogue/maomao dialogue/girl_intro dialogue/story dialogue/record dialogue/comedians
@@ -17,8 +18,16 @@ POINTER_TABLE_ADDRESS = 0x1e44a0
 NUMTABLE = 0x16
 NUMSENSE = 14
 
-EXTRA_TABLES = [(0x10c089, 132, "text"), # 43:4089 XXX may be earlier
- (0x128089, 41, "names")] # 4a:4089
+EXTRA_TABLES = [
+ (gbaddr("2e:400f"), 4, 130, "dialogue0"),
+ (gbaddr("43:401f"), 8, 185, "dialogue1"),
+ (gbaddr("7c:55f7"), 10, 65, "dialogue1alt"),
+ (gbaddr("18:400f"), 5, 74, "dialogue2"),
+ (gbaddr("50:57f6"), 8, 71, "dialogue3"),
+ (gbaddr("42:401f"), 6, 136, "dialogue4"),
+ (gbaddr("50:6878"), 7, 49, "dialogue4alt"),
+ (gbaddr("4b:400f"), 8, 198, "dialogue5"),
+ (gbaddr("4a:4089"), 0, 41, "names")]
 #BANK_TABLE_ADDRESS = 0x1c*0x4000 + 0x0741
 
 def readbyte():  return struct.unpack("B",  rom.read(1))[0]
@@ -87,13 +96,13 @@ for i, (metapointer, metapointer2) in enumerate(zip(metapointers, metapointers[1
     tables[metapointer] = addresses
     tablenames[metapointer] = BANK_NAMES[i]
 
-for table, count, name in EXTRA_TABLES:
+for table, skip, count, name in EXTRA_TABLES:
     rom.seek(table)
     a = []
     addresses = []
     for i in range(count):
         pointer = readshort()
-        if pointer > 0x8000:
+        if pointer > 0x8000 or i < skip:
             addresses.append(-pointer)
         else:
             addresses.append(table//0x4000*0x4000 + pointer%0x4000)

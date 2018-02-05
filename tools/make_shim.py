@@ -3,7 +3,7 @@ from sys import argv, stderr
 for line in open(argv[1]):
     line = line.split(";")[0]
     line = line.strip()
-    if line:
+    if line and " " in line:
         address, symbol = line.split()
         bank, pointer = address.split(":")
         bank = int(bank, 16)

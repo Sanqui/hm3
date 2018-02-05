@@ -375,7 +375,7 @@ ControlCodeFC::
     jp ControlCodeEnd
 
 ControlCodeFD: ; <clear> - reset dialogue state
-    call ClearDialogueBox
+    call PrepareDialogueBox
     xor a
     ld [$c53c], a
     ld [$c53d], a
@@ -445,12 +445,20 @@ ControlCodeFF::
 ; fallthru
 
 ControlCodeEnd:
-    ld a, [$c537]
+    ld a, [wDialogueState]
     or b
-    ld [$c537], a
+    ld [wDialogueState], a
     ld a, [$c546]
     ld [$2000], a
     xor a
     ld [$3000], a
     ret 
 
+SECTION "Pointers to PrintDialogue functions in different banks", ROMX[$44be], BANK[$2f]
+PrintDialoguePointers:
+    pwb PrintDialogue0 ; $4001, $2e
+    pwb PrintDialogue1 ; $4001, $43
+    pwb PrintDialogue2 ; $4001, $18
+    pwb PrintDialogue3 ; $57f6, $50
+    pwb PrintDialogue4 ; $4001, $42
+    pwb PrintDialogue5 ; $4001, $4b
