@@ -30,6 +30,10 @@ SECTION "Shim for Start", ROM0[$100]
 Start::
 
 
+SECTION "Shim for ClearTile", ROM0[$19fa]
+ClearTile::
+
+
 SECTION "Shim for PrintStringID", ROMX[$41ba], BANK[$79]
 PrintStringID::
 
@@ -58,7 +62,27 @@ SECTION "Shim for TileNumToPointer", ROMX[$40a4], BANK[$79]
 TileNumToPointer::
 
 
-SECTION "Shim for StringID", WRAM0[$c526]
-StringID::
+SECTION "Shim for wStringID", WRAM0[$c526]
+wStringID::
+
+
+SECTION "Shim for wDialogueBank", WRAM0[$c528]
+wDialogueBank::
+
+
+SECTION "Shim for wDialogueOffset", WRAM0[$c52d]
+wDialogueOffset::
+
+
+SECTION "Shim for wDialogueTextByte", WRAM0[$c53e]
+wDialogueTextByte::
+
+
+SECTION "Shim for wDialogueOffset2", WRAM0[$c52d]
+wDialogueOffset2::
+
+
+SECTION "Shim for wCurName", WRAM0[$c53f]
+wCurName::
 
 

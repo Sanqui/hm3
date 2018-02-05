@@ -1,20 +1,39 @@
 #!/usr/bin/python3
 import struct
+import csv
 from pprint import pprint
+from sys import stderr
 
-NUMSTRINGS = 688
-END_CHARS = ("@", "<ask>")
-POINTER_TABLE_ADDRESS = 0x1c*0x4000 + 0x0001
-BANK_TABLE_ADDRESS = 0x1c*0x4000 + 0x0741
+BANK_NAMES = """strings/dummy strings/items strings/strings strings/goods strings/animals
+dialogue/maomao dialogue/girl_intro dialogue/story dialogue/record dialogue/comedians
+dialogue/boy_intro dialogue/endings strings/character_choice strings/save
+"""
+
+BREAK_CHARS = ("\\n", "<fd>",)
+END_CHARS = ("@", "<end>",  None)
+BANK = 0x79
+POINTER_TABLE_ADDRESS = 0x1e44a0
+NUMTABLE = 0x16
+NUMSENSE = 14
+
+EXTRA_TABLES = [(0x10c089, 16, "strings/characters"]
+#BANK_TABLE_ADDRESS = 0x1c*0x4000 + 0x0741
 
 def readbyte():  return struct.unpack("B",  rom.read(1))[0]
 def readshort(): return struct.unpack("<H", rom.read(2))[0]
 def readchar():
     char = rom.read(1)
-    if ord(char) in charmap:
+    nextchar = rom.read(1)
+    rom.seek(-1, 1)
+    if (ord(char)<<8) + ord(nextchar) in charmap:
+        char = charmap[(ord(char)<<8) + ord(nextchar)]
+        rom.read(1)
+    elif ord(char) in charmap:
         char = charmap[ord(char)]
     else:
-        char = char.decode('ascii')
+        stderr.write("Unknown character: {:02x}\n".format(ord(char)))
+        return None
+        #char = "<:02x>".format(ord(char))
     return char
 
 def peekchar():
@@ -22,84 +41,105 @@ def peekchar():
     rom.seek(-1, 1)
     return char
 
+def seekba(bank, address):
+    rom.seek(bank*0x4000 + address % 0x4000)
+
 charmap = {}
-for line in open("src/constants/charmap.asm"):
+for line in open("charmap.asm"):
     if line.startswith("charmap"):
         line = line.split(" ", 1)[1]
-        string, num = line.split(",", 2)
+        string, num = line.split(", $", 1)
         string = string.strip()[1:-1]
         num = int(num.strip().lstrip("$"), 16)
         charmap[num] = string
     
 
-rom = open("Zelda.gbc", "br")
+rom = open("baserom.gbc", "br")
 
 rom.seek(POINTER_TABLE_ADDRESS)
-pointers = []
+metapointers = []
 
-for i in range(NUMSTRINGS):
+for i in range(NUMTABLE):
     pointer = readshort()
-    pointers.append(pointer)
+    metapointers.append(pointer)
     #print(i, hex(offset))
-    
-rom.seek(BANK_TABLE_ADDRESS)
-banks = []
 
-for i in range(NUMSTRINGS):
-    bank = readbyte()
-    banks.append(bank)
-    #print(i, hex(bank))
+pprint(metapointers)
 
-strings = []
-addresses = {}
-end_addresses = []
+stringtables = []
+extratables = {}
 
-for i in range(NUMSTRINGS):
-    bank = banks[i]
-    pointer = pointers[i]
-    address = (bank&0x3f)*0x4000 + pointer-0x4000
-    if address in addresses:
-        addresses[address].append(i)
-    else:
-        addresses[address] = [i]
-    rom.seek(address)
-    string = []
-    line = ""
-    chars = 0
+for i, (metapointer, metapointer2) in enumerate(zip(metapointers, metapointers[1:]+[None])):
+    if i >= NUMSENSE: break
+    print(hex(i), hex(metapointer), hex(metapointer2) if metapointer2 else None)
+    seekba(BANK, metapointer)
+    pointers = []
     while True:
-        char = readchar()
-        line += char
-        chars += 1
-        if chars >= 16 or char in END_CHARS:
-            string.append(line)
-            line = ""
-            chars = 0
+        pointer = readshort()
+        if not metapointer2:
+            break
+        elif rom.tell() % 0x4000 + 0x4000 > metapointer2:
+            break
+        pointers.append(pointer)
+    stringtables.append(pointers)
+
+for table, count, name in EXTRA_TABLES:
+    rom.seek(table)
+    pointers = []
+    for i in range(count):
+        pointer = readshort()
+        pointers.append(pointer)
+    extratables[table] = pointers
+#pprint(stringtables)
+
+strings = {}
+stringindexes = {}
+stringends = {}
+for sti, stringtable in enumerate(stringtables):
+    for pti, pointer in enumerate(stringtable):
+        seekba(BANK, pointer)
+        string = []
+        line = ""
+        while True:
+            char = readchar()
+            if char != None:
+                line += char
+            if char in BREAK_CHARS:
+                string.append(line)
+                line = ""
             if char in END_CHARS:
-                if string[-1] == "@":
-                    string[-2] += "@"
-                    string.pop(-1)
-                next_char = peekchar()
-                if next_char not in END_CHARS:
-                    break
-    strings.append(string)
-    end_addresses.append(rom.tell())
+                string.append(line)
+                break
+        strings[pointer] = string
+        stringends[pointer] = rom.tell()
+        if pointer not in stringindexes:
+            stringindexes[pointer] = []
+        stringindexes[pointer].append((sti, pti))
+
+for sti, stringtable in enumerate(stringtables):
+    print(f"Table {sti} has {len(stringtable)} strings")
+    with open(f"text/{sti}.csv", "w") as f:
+        for i, pointer in enumerate(stringtable):
+            string = "\n".join(strings[pointer]).rstrip("@")
+            fcsv = csv.writer(f)
+            fcsv.writerow([i, hex(pointer), string])
 
 def print_strings():
-    last_address = None
+    last_pointer = None
     
-    for address in sorted(addresses):
-        indexes = addresses[address]
-        string = strings[indexes[0]]
+    for pointer in sorted(strings):
+        indexes = stringindexes[pointer]
+        string = strings[pointer]
         #print(address, index)
-        if last_address != address:
-            print("SECTION \"Text at {1:02x}:{0:04x}\", ROMX[${0:04x}], BANK[${1:02x}]".format(address%0x4000 + 0x4000, address//0x4000))
-        for index in indexes:
-            label = "Dialogue{}".format(index)
+        if last_pointer != pointer:
+            print("SECTION \"Text at {0:04x}\", ROMX[${0:04x}], BANK[${1:02x}]".format(pointer, BANK))
+        for ih, il in indexes:
+            label = "String{}_{}".format(ih, il)
             print("{}::".format(label))
         for line in string:
             print("\tdb \"{}\"".format(line))
-        #print("; {:x}".format(end_addresses[index]))
-        last_address = end_addresses[indexes[0]]
+        last_pointer = stringends[pointer] % 0x4000 + 0x4000
+        print("; {:02x}:{:x}".format(BANK, last_pointer))
         print()
 
 def print_pointer_table():
@@ -124,6 +164,6 @@ def print_pointer_table():
 if __name__ == "__main__":
     # comment/uncomment whichever you want
 
-    pprint(dict(enumerate(strings)))
-    #print_strings()
+    #pprint(dict(enumerate(strings)))
+    print_strings()
     #print_pointer_table()

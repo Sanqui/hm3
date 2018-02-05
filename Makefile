@@ -16,7 +16,7 @@ tools:
 
 define DEP
 $1: $2 $$(shell tools/scan_includes $2)
-	rgbasm -o $$@ $$<
+	rgbasm -E -o $$@ $$<
 endef
 
 ifeq (,$(filter clean tools,$(MAKECMDGOALS)))
