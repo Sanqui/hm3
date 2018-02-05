@@ -6,7 +6,7 @@
 
 ROMS := hm3.gbc
 BASEROM := baserom.gbc
-OBJS := main.o wram.o
+OBJS := main.o wram.o shim.o
 
 # Link objects together to build a rom.
 all: $(ROMS) compare
@@ -25,6 +25,9 @@ $(info $(shell $(MAKE) -C tools))
 $(foreach obj, $(OBJS), $(eval $(call DEP,$(obj),$(obj:.o=.asm))))
 
 endif
+
+shim.asm: shim.sym
+	python3 tools/make_shim.py shim.sym > shim.asm
 
 $(ROMS): $(OBJS)
 	rgblink -n $(ROMS:.gbc=.sym) -m $(ROMS:.gbc=.map) -O $(BASEROM) -o $@ $^
