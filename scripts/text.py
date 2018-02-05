@@ -27,7 +27,9 @@ EXTRA_TABLES = [
  (gbaddr("42:401f"), 6, 136, "dialogue4"),
  (gbaddr("50:6878"), 7, 49, "dialogue4alt"),
  (gbaddr("4b:400f"), 8, 198, "dialogue5"),
- (gbaddr("4a:4089"), 0, 41, "names")]
+ (gbaddr("4a:4089"), 0, 41, "strings/names"),
+ (gbaddr("17:400f"), 2, 50, "strings/locations")
+]
 #BANK_TABLE_ADDRESS = 0x1c*0x4000 + 0x0741
 
 def readbyte():  return struct.unpack("B",  rom.read(1))[0]
