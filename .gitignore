@@ -26,6 +26,7 @@
 ;Prevent committing filesystem floatsam
 .DS_Store
 *~
+.~*
 
 ; binaries
 tools/scan_includes

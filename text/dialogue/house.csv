@@ -1,0 +1,31 @@
+i,address,name_i,newline_types,name,string
+0,0x10c191,10,"['\\n', '10GT000@']",,"Go to bed?
+ Yes          No<ask>"
+1,0x10c1b5,10,"['\\n', '10GT000@']",,"Go to bed?
+ Yes          No<ask>"
+2,0x10c1d9,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Yeah <player>!
+A baby animal
+was born!
+"
+3,0x10c1fe,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Yeah <player>!
+A baby animal
+was born!
+"
+4,0x10c223,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Yeah <player>!
+A baby animal
+was born!
+"
+5,0x10c248,10,"['\\n', '<waita>@']",,"Give the baby
+a name!"
+6,0x10c25f,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"We need to work
+harder now…
+But I'm happy!
+"
+7,0x10c290,10,"['\\n', '<waita>@']",,"Oh no <player>!
+Our animal died!"
+8,0x10c2ab,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Sorry… It's
+awful. We'll
+never make
+the same
+mistake…
+"

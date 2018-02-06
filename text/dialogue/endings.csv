@@ -1,0 +1,162 @@
+i,address,name_i,newline_types,name,string
+0,0x1e73a1,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"It's been a few
+months since we
+got married.
+<arrow>0"
+1,0x1e73d8,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Hey <player>…
+Happiness must
+be what we have
+now. Kind of
+nice and warm…
+Sweet feelings.
+It's very light
+and heavenly.
+I feel so good.
+<arrow>0"
+2,0x1e746b,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"We don't know
+what my Dad
+really dreamed
+of, but it's OK.
+We have our own
+dreams. Our own
+Harvest Moon has
+just begun…
+<noname>Harvest Moon 3
+The End"
+3,0x1e750c,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",<partner>,"Yes! <player>!
+We have made my
+Dad's dream come
+true!! I didn't
+think I could
+accomplish it
+so fast… It's
+all thanks to
+you, <player>.
+I couldn't have
+done it alone.
+Thanks <player> ♥
+… … … …
+<player>? I want you
+to stay here
+with me forever.
+Please?
+ Yes          No<ask>"
+4,0x1e7623,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",<partner>,"Cool! <player>!!
+You did it!! I
+thougt it was
+too tough for
+you… But, you
+did it and very
+quickly too!
+It's all because
+you believed in
+yourself.
+You are amazing.
+Congratulations.
+…<player>?
+Can I stay here
+with you…
+forever…?
+I want to keep
+working on your
+farm!
+ Yes          No<ask>"
+5,0x1e7755,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"… … … …
+It was close…
+…Uh, I had a
+lot of fun
+working with
+you. It's all
+because of me…
+I'm sorry. It's
+too bad
+that we have to
+sell this farm.
+<arrow>0"
+6,0x1e77fe,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Soon after that,
+<player> left the
+island. <player>
+went to the farm
+in Flower
+Bud Village and
+lived there
+quietly…
+Harvest Moon 3
+The End"
+7,0x1e7889,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"… … … …
+It was close…
+…Uh, I had a
+good time
+working with
+you <player>.
+It was my fault.
+It's too bad
+you have to sell
+this farm,
+right…?
+<arrow>0"
+8,0x1e7924,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Soon after that,
+<player> left the
+island. <player>
+went back to his
+farm and
+returned to
+his life there.
+
+Harvest Moon 3
+The End"
+9,0x1e79a6,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",<partner>,"Yeah! I'm so
+happy…
+Thank you <player>.
+I love you,
+Darling♥"
+10,0x1e79e7,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Yes! I'm very
+happy…
+Thanks <player>.
+I love you!"
+11,0x1e7a19,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Cool! This is
+what I'm talking
+about! Thank
+you♥"
+12,0x1e7a51,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Hey, that's what
+I'm talking
+about! Good
+work!"
+13,0x1e7a89,1,"['\\n', '<waita>@']",,"A few years
+later…<arrow>0"
+14,0x1e7a9f,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"<player>? What can
+I do today?
+… … … …
+… … … …
+What? Really?
+I am going to
+work hard!!
+<arrow>0"
+15,0x1e7afe,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"… … Wow,
+the baby moved.
+Hee hee. We have
+to work hard for
+the baby…Daddy♥
+<arrow>0"
+16,0x1e7b56,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"<player> lived with
+<var>0 happily
+ever after.
+
+Harvest Moon 3
+The End"
+17,0x1e7b99,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"That was great
+<player>. OK, it's
+time to work…
+<arrow>0"
+18,0x1e7bcd,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"What's wrong?
+… … … …
+The baby moved?
+Wow! Now I have
+to work harder
+for the baby!<arrow>0"
+19,0x1e7c2c,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"<player> lived with
+<var>0 happily
+ever after.
+
+Harvest Moon 3
+The End"

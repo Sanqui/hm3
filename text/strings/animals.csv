@@ -1,0 +1,22 @@
+i,address,name_i,newline_types,name,string
+0,0x1e4d4d,1,['@'],,Adult Cow
+1,0x1e4d57,1,['@'],,Young Cow
+2,0x1e4d61,1,['@'],,Calf
+3,0x1e4d66,1,['@'],,Pregnant
+4,0x1e4d6f,1,['@'],,Chick
+5,0x1e4d75,1,['@'],,Golden Chick
+6,0x1e4d82,1,['@'],,Chicken
+7,0x1e4d8a,1,['@'],,G. Chicken
+8,0x1e4d95,1,['@'],,Sheep
+9,0x1e4d9b,1,['@'],,Lamb
+10,0x1e4da0,1,['@'],,Sheep
+11,0x1e4da6,1,['@'],,Pregnant
+12,0x1e4daf,1,['@'],,Horse
+13,0x1e4db5,1,['@'],,Foal
+14,0x1e4dba,1,['@'],,
+15,0x1e4dbb,1,['@'],,Pregnant
+16,0x1e4dc4,1,['@'],,Healthy
+17,0x1e4dcc,1,['@'],,Unhappy
+18,0x1e4dd4,1,['@'],,Sick
+19,0x1e4dd9,1,['@'],,Male
+20,0x1e4dde,1,['@'],,Female

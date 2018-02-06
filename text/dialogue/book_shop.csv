@@ -1,0 +1,294 @@
+i,address,name_i,newline_types,name,string
+0,0x606ff,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+called the Farm
+Story. It tells
+you how to till
+the soil in Uー
+shapes.You can't
+fit it in your
+bookshelf.
+<var>0G.
+ Yes          No<ask>"
+1,0x607a3,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+called the Farm
+Story 2. It
+tells you how to
+till the soil in
+twoーline shapes.
+You can't fit it
+in your bookー
+shelf.
+<var>0G.
+
+ Yes          No<ask>"
+2,0x60856,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+about butter.
+You can make
+butter without a
+Butter Maker.
+You can't fit it
+in your bookー
+shelf.
+<var>0G.
+ Yes          No<ask>"
+3,0x608f0,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+about cheese.
+You can make
+cheese without a
+Cheese Maker.
+You can't fit it
+in your bookー
+shelf.
+<var>0G.
+ Yes          No<ask>"
+4,0x6098a,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+about
+mayonnaise.
+You can make
+mayonnaise
+without a Mayoー
+Maker. You can't
+fit it in your
+bookshelf.
+<var>0G.
+
+ Yes          No<ask>"
+5,0x60a2d,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+called Yarn for
+Beginners. You
+can make yarn
+without a Yarn
+Maker. You can't
+fit it in your
+bookshelf.
+<var>0G.
+ Yes          No<ask>"
+6,0x60ace,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+called Easy
+Knitting. You
+can knit
+without a
+Sweater Maker.
+You can't fit it
+in your bookー
+shelf.
+<var>0G.
+
+ Yes          No<ask>"
+7,0x60b6e,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+about rice
+cakes. Anyone
+can make rice
+cakes after
+reading this.
+You can't fit it
+in your bookー
+shelf.
+
+<var>0G.
+ Yes          No<ask>"
+8,0x60c14,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+about baking
+bread. Anyone
+can bake bread
+after reading
+this book.
+You can't fit it
+in your bookー
+shelf.
+<var>0G.
+
+ Yes          No<ask>"
+9,0x60cbb,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+the Cherry Cup
+Report. You can
+get information
+about horse
+racing.
+You can fit it
+in your bookー
+shelf.
+<var>0G.
+
+ Yes          No<ask>"
+10,0x60d5f,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+Gallop Stakes
+Report. You can
+get information
+about horse
+racing.
+You can fit it
+in your bookー
+shelf.
+<var>0G.
+
+ Yes          No<ask>"
+11,0x60e02,14,"['\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', ' <arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+called Catch
+the King! It
+tells you every
+thing about
+fishing!
+You can fit it
+in your bookー
+shelf.
+<var>0G.
+
+ Yes          No<ask>"
+12,0x60ea4,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"That book is
+called Mysteries
+of the Island.
+They finally
+solved the
+mysteries of the
+island!
+You can fit it
+in your bookー
+shelf.
+<var>0G.
+ Yes          No<ask>"
+13,0x60f55,14,"['\\n', '<waita>@']",Lyla,"You don't want
+it?"
+14,0x60f6c,14,"['\\n', '<waita>@']",Lyla,"Not enough
+money."
+15,0x60f81,14,"['\\n', '<waita>@']",Lyla,"Thank you.
+Enjoy."
+16,0x60f96,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"You can watch
+popular programs
+at home…, but
+you can only
+receive Lisa's
+Weather Report
+on the island.
+It's <var>0G.
+
+ Yes          No<ask>"
+17,0x61032,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"Kid's bed. Get
+it before you
+have a baby.
+It's <var>0G.
+
+ Yes          No<ask>"
+18,0x6108a,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"A small rug to
+decorate your
+room.
+It's <var>0G.
+
+ Yes          No<ask>"
+19,0x610da,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"A mediumーsized
+rug to make your
+room cozy.
+It's <var>0G.
+
+ Yes          No<ask>"
+20,0x61132,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"A large rug to
+keep your room
+warm.
+It's <var>0G.
+
+ Yes          No<ask>"
+21,0x61183,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"Kitchen cabinet
+to hold dishes.
+It's <var>0G.
+ Yes          No<ask>"
+22,0x611cc,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"You can go snowー
+boarding.
+It's <var>0G.
+ Yes          No<ask>"
+23,0x61210,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"Put milk in it
+to make butter.
+It's <var>0G.
+ Yes          No<ask>"
+24,0x61258,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"Put milk in it
+to make cheese.
+It's <var>0G.
+ Yes          No<ask>"
+25,0x612a0,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"Put eggs in it
+to make
+mayonnaise.
+It's <var>0G.
+
+ Yes          No<ask>"
+26,0x612f0,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"Put wool in it
+to make yarn.
+It's <var>0G.
+ Yes          No<ask>"
+27,0x61336,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"Put wool in it
+to knit a
+sweater.
+It's <var>0G.
+
+ Yes          No<ask>"
+28,0x61385,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"You can ride any
+kind of horse
+with this.
+It's <var>0G.
+
+ Yes          No<ask>"
+29,0x613dc,15,"['\\n', '<waita>@']",Lucus,"You don't want
+it?"
+30,0x613f3,15,"['\\n', '<waita>@']",Lucus,"Not enough
+money!"
+31,0x61408,15,"['\\n', '<waita>@']",Lucus,"Thank you.
+Take care."
+32,0x61421,15,['<waita>@'],,Closed
+33,0x61421,15,['<waita>@'],,Closed
+34,0x61421,15,['<waita>@'],,Closed
+35,0x61429,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Welcome. The
+theater shows a
+new movie or
+a new show every
+season. The
+admission is
+1500G. The show
+time is 11AM to
+9PM. We are open
+everyday. Please
+enjoy.
+"
+36,0x614d7,15,"['\\n', '<waita>@']",,"We will be open
+at 11AM."
+37,0x614f1,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"We are showing
+'The Laziest in
+Town'.
+The ticket is
+1500G.
+ Yes          No<ask>"
+38,0x614f1,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"We are showing
+'The Laziest in
+Town'.
+The ticket is
+1500G.
+ Yes          No<ask>"
+39,0x6154d,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"We are showing
+'Someday…'
+The ticket is
+1500G.
+
+ Yes          No<ask>"
+40,0x6159e,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"We are showing
+'Comedy Night'.
+The ticket is
+1500G.
+
+ Yes          No<ask>"
+41,0x615f4,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"We are showing
+'The Bus Stop'.
+The ticket is
+1500G.
+
+ Yes          No<ask>"
+42,0x6164a,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"We are showing
+'Good Maomaos'.
+The ticket is
+1500G.
+
+ Yes          No<ask>"
+43,0x616a0,15,"['\\n', '<waita>@']",,"Please enjoy
+the show."
+44,0x616b8,15,"['\\n', '<waita>@']",,"Not enough
+money."
+45,0x616cb,15,"['\\n', '<waita>@']",,"Please come
+again."
+46,0x616df,15,"['\\n', '<waita>@']",,"We are closed
+today."

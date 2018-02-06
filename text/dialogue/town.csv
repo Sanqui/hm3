@@ -1,0 +1,289 @@
+i,address,name_i,newline_types,name,string
+0,0xb8113,4,"['\\n', '<waita>@']",Elder,"Ha ha ha…
+Nice day, huh?"
+1,0xb8130,5,"['\\n', '<waita>@']",Billy,"Hey, <player>!
+Working hard?"
+2,0xb814a,8,"['\\n', '<waita>@']",Elza,"Oh, <player>.
+Busy day?"
+3,0xb815f,9,"['\\n', '<waita>@']",Bigbee,"Hello, <player>.
+Nice day."
+4,0xb8177,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Kirk,"Hello, <player>.
+The ferry can
+take you to the
+mainland.
+Take the ferry?
+ Yes          No<ask>"
+5,0xb81db,11,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Kate,"Hello, <player>.
+It's nice and
+warm outside."
+6,0xb8209,4,"['\\n', '<waita>@']",Elder,"It's getting
+colder…"
+7,0xb8222,5,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Billy,"It's time to
+get ready to
+go fishing
+tomorrow."
+8,0xb8258,8,"['\\n', '<waita>@']",Elza,"It was a nice
+day!!"
+9,0xb826f,9,"['\\n', '<waita>@']",Bigbee,"We can see the
+sunset soon."
+10,0xb828e,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Kirk,"Do you want to
+take the ferry?
+The last
+departure is at
+6PM.
+
+Take the ferry?
+ Yes          No<ask>"
+11,0xb8300,11,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Kate,"Can we see a
+pretty sunset
+like this in a
+big city?"
+12,0xb833a,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"<player>… Isn't it
+time to go back
+to your farm?"
+13,0xb836b,5,"['\\n', '<waita>@']",Billy,"It's late.
+Go home."
+14,0xb8383,8,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Elza,"I heard you have
+to get up early
+every morning.
+Are you OK?"
+15,0xb83c5,9,"['\\n', '<waita>@']",Bigbee,"<player>? It's
+really late."
+16,0xb83de,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Kirk,"<player>. The ferry
+hours are over.
+It's dangerous
+to sail at
+night, so I
+can't take you
+across the sea."
+17,0xb844f,11,"['\\n', '<waita>@']",Kate,"Oh, <player>?
+It's so late."
+18,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+19,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+20,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+21,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+22,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+23,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+24,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+25,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+26,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+27,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+28,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+29,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+30,0xb8469,4,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Is this from
+your farm? Thank
+you, <player>."
+31,0xb8496,5,"['\\n', '<waita>@']",Billy,"Thanks, <player>!!
+It'll be useful!"
+32,0xb84b8,8,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elza,"Is this from
+your farm? Thank
+you! I love it!"
+33,0xb84ec,9,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Bigbee,"Wow, this is
+great! Thank you
+very much."
+34,0xb851c,10,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Kirk,"Oh, thank you.
+Kate will be
+very happy."
+35,0xb854b,11,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Kate,"Yeah! A present
+for me? Thank
+you, <player>!"
+36,0xb8578,4,"['\\n', '<waita>@']",Elder,"What? For me?
+Thanks, <player>."
+37,0xb8595,5,"['\\n', '<waita>@']",Billy,"A gift for me?
+Thanks, <player>."
+38,0xb85b3,8,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elza,"Wow, it's for
+me? Thank you,
+<player>."
+39,0xb85dc,9,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Bigbee,"What? Are you
+sure? Thank you
+very much."
+40,0xb860b,10,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Kirk,"Is this for
+me? Thank you,
+<player>."
+41,0xb8630,11,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Kate,"You are giving
+it to me?
+Thanks, <player>!"
+42,0xb865b,4,"['\\n', '<waita>@']",Elder,"…Thank you,
+<player>…, Mmm…"
+43,0xb8675,5,"['\\n', '<waita>@']",Billy,"What the…
+Thanks, I guess."
+44,0xb8694,8,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Elza,"What? Ah, I
+guess I should
+accept it…"
+45,0xb86c1,9,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Bigbee,"Mmm…I don't
+really… Well,
+thanks anyway."
+46,0xb86f2,10,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Kirk,"What is it?
+Mmm…Thank you,
+anyway."
+47,0xb871c,11,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Kate,"No! I'm not
+happy with that
+kind of stuff."
+48,0xb874e,4,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Elder,"Zzzz… Oh,
+Harry… What?
+<player>? Huh.
+<var>0's father
+passed away. I'm
+Elder. You're
+the young man
+who is helping
+on <var>0's farm.
+<player>, take good
+care of the
+farm…
+Zzzz…"
+49,0xb8803,5,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Billy,"Hey! You are
+the guy who came
+from Flower Bud
+Village. I
+heard you're
+helping on
+<var>0's farm.
+I'm Billy the
+fisherman.
+Nice to meet
+you! This town
+is nice and
+peaceful."
+50,0xb88c2,8,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Elza,"Hello. Nice to
+meet you. You
+are helping on
+<var>0's farm,
+right? I'm Elza.
+I'm a fisherman.
+Take care of
+<var>0 and the
+farm."
+51,0xb894c,9,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Bigbee,"You are <player>,
+right? I'm
+Bigbee. I run
+the Inn. The
+hot spring on
+this island is
+fantastic.
+Everyone here
+has a tub at
+home. I think
+you can build
+one on <var>0's
+farm, too."
+52,0xb8a0c,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Kirk,"Hello… You
+must be the guy
+who came here
+with <var>0. My
+name is Kirk.
+I'm the captian
+of this ferry.
+The ferry goes
+to the mainland
+on Mondays and
+Thursdays
+between 6AM to
+6PM. Let me know
+when you want to
+take the ferry."
+53,0xb8b00,11,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Kate,"Who are you?
+I've never seen
+you before.
+Your name is
+<player>? OK. I'm
+Kate. My daddy
+is a captain of
+a ship. You're
+helping <var>0?
+I love milk!"
+54,0xb8b9a,4,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Elder,"Zzzz… <player>.
+Long time no
+see. I'm Elder.
+You're working
+on the farm?
+Someone is
+helping you,
+too? The farm
+is full of
+Harry's dream.
+Please take
+good care of it."
+55,0xb8c4f,5,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Billy,"Hey? You are…
+<player>, right? You
+used to play at
+Elder's place a
+lot. I'm Billy.
+You wouldn't
+remember me…
+Good luck with
+your farm!"
+56,0xb8ce2,8,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Elza,"<player>! How are
+you? It's Elza.
+Remember me?
+We used to play
+together at the
+beach with
+Billy. Are you
+working on
+Harry's farm?
+Wow. Good luck,
+<player>!"
+57,0xb8d85,9,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Bigbee,"You must be
+<player>. Harry's
+daughter, right?
+I'm Bigbee. I
+own the Inn. The
+hot spring on
+this island is
+fantastic.
+Everyone here
+has a tub at
+home… You
+should be able
+to build one
+on your farm,
+too."
+58,0xb8e64,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Kirk,"Hi. You must be
+the daughter of
+Harry. Now you
+are working on
+the farm… My
+name is Kirk.
+You can take my
+ferry to go to
+the mainland on
+Mondays and
+Thursdays
+between 6AM and
+6PM. Let me know
+when you want to
+take the ferry."
+59,0xb8f5c,11,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Kate,"Hello. You're
+the new owner
+of Harry's farm,
+right? I'm Kate.
+Your name is
+<player>? I love
+milk, so good
+luck on your
+farm!"

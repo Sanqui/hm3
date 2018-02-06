@@ -1,0 +1,113 @@
+i,address,name_i,newline_types,name,string
+0,0x1e6d40,36,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"<noname>This is <player>'s
+farm in
+Flower Bud
+Village…
+<player> has
+successfully
+revived the farm
+and has lived
+there trying
+to find another
+goal in life.
+But, one day…"
+1,0x1e6de6,25,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Heinz,"Hello <player>.
+Are you busy as
+usual? I have
+something to ask
+you today. My
+friend owned a
+farm on an
+island, but he
+recently passed
+away. Now his
+daughter decided
+to work on the
+farm, but she
+does not know
+anything about
+farming… So,
+I would like you
+to help her! Can
+you do it?
+ Yes          No<ask>"
+2,0x1e6f31,25,"['\\n', '<arrow>0<waita><clear>', '\\n', ' <arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '\\n', '<waita>@']",Heinz,"Good! Thank you
+<player>! Then
+please head to
+the island
+tomorrow
+morning.
+Don't worry
+about your farm.
+Everyone in the
+village will
+take good care
+of it.
+"
+3,0x1e6fda,25,"['\\n', '<arrow>0<waita><clear>', '\\n', '@']",,"<noname>This is how
+<player>'s new
+Harvest Moon
+Adventure began…<fa>y"
+4,0x1e7013,25,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Heinz,"You are the only
+one who knows
+how to revive a
+farm… Can you
+please do it?
+ Yes          No<ask>"
+5,0x1e707f,25,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Heinz,"Please! I'm
+begging you!
+You're the only
+one!
+
+ Yes          No<ask>"
+6,0x1e70d1,25,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Heinz,"OK… That's too
+bad… When did
+you become so
+mean…?"
+7,0x1e710a,25,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"<noname>Soon after that,
+the farm on the
+island closed
+down…
+Harvest Moon 3
+The End"
+8,0x1e715f,26,"['\\n', '@']",Harry,"Hey <player>.
+Be careful…"
+9,0x1e7174,26,"['\\n', '<waita>@']",Harry,"…I told you.
+Are you OK?"
+10,0x1e7190,26,['<waita>@'],Harry,Let's go home.
+11,0x1e71a3,26,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"<noname><name:27>…Are you
+saying we should
+sell the farm?
+<arrow>0"
+12,0x1e71d6,27,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Hans,"What's wrong
+<player>? What? You
+want to work on
+the farm? It's
+not as easy as
+you think… You
+still want to do
+it for your
+father…? I can
+understand how
+you feel, but…
+<arrow>0"
+13,0x1e728f,27,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Hans,"Hi Mr. Heinz.
+What? He will
+help <player>…?
+They might be
+able to do it
+together… OK!<arrow>0"
+14,0x1e72e9,27,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Hans,"<player>, <var>0
+owns a farm
+in Mr. Heinz's
+village and
+he will be
+coming to help
+you. <var>0 is
+a guy, will
+that be OK?
+<arrow>0"
+15,0x1e7368,27,"['\\n', '<arrow>0<waita><clear>', '\\n', '@']",,"<noname>This is how
+<player>'s new
+Harvest Moon
+Adventure began.<fa>y"

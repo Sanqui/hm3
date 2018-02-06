@@ -1,0 +1,33 @@
+i,address,name_i,newline_types,name,string
+0,0x12d921,13,"['\\n', '<waita>@']",Lukia,"Thanks, <player>!
+You are nice."
+1,0x12d93e,13,"['\\n', '<waita>@']",,"Thanks <player> !
+Thank you."
+2,0x12d955,13,"['\\n', '<waita>@']",Lukia,"Present? Thanks!
+Is it really OK?"
+3,0x12d97a,13,"['\\n', '<waita>@']",Lukia,"I don't need
+it…"
+4,0x12d98f,7,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Chloe,"Thank you very
+much. I'll make
+good use of it.
+"
+5,0x12d9c6,7,"['\\n', '<waita>@']",Chloe,"What? Is it for
+me? Thank you!"
+6,0x12d9c6,7,"['\\n', '<waita>@']",Chloe,"What? Is it for
+me? Thank you!"
+7,0x12d9e8,7,"['\\n', '<waita>@']",Chloe,"Ah… I am not
+happy with this."
+8,0x12da09,6,"['\\n', '<waita>@']",Joe,"Oh, for me?
+Thanks!"
+9,0x12da21,6,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Joe,"Are you sure
+it's alright?
+Don't tell me to
+return it later!"
+10,0x12da21,6,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Joe,"Are you sure
+it's alright?
+Don't tell me to
+return it later!"
+11,0x12da66,6,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Joe,"You've got some
+nerve to do
+stuff like this
+to me!"

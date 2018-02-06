@@ -1,0 +1,284 @@
+i,address,name_i,newline_types,name,string
+0,0x141884,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"A cow is
+5000G.
+Do you want it?
+ Yes          No<ask>"
+1,0x1418c0,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"A chicken is
+1000G.
+Do you want it?
+ Yes          No<ask>"
+2,0x141900,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"A sheep is
+3000G.
+Do you want it?
+ Yes          No<ask>"
+3,0x14193e,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"A horse is
+4000G.
+Do you want it?
+ Yes          No<ask>"
+4,0x14197c,15,"['\\n', '<waita>@']",,"Sell a cow?
+Choose one."
+5,0x141995,15,"['\\n', '<waita>@']",,"Sell a chicken?
+Choose one."
+6,0x1419b2,15,"['\\n', '<waita>@']",,"Sell a sheep?
+Choose one."
+7,0x1419cd,15,"['\\n', '<waita>@']",,"Sell a horse?
+Choose one."
+8,0x1419e8,15,['<waita>@'],,Give it a name.
+9,0x1419f9,15,"['\\n', '<waita>@']",,"Nice name.
+Take care."
+10,0x141a10,15,"['\\n', '10GT000@']",,"Is <var>0G OK?
+ Yes          No<ask>"
+11,0x141a34,15,"['\\n', '<waita>@']",,"You can't sell
+this animal."
+12,0x141a52,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"A fodder set. It
+contains 32
+fodder pieces
+and it's <var>0G.
+Do you want it?
+ Yes          No<ask>"
+13,0x141abb,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Medicine for
+cows.
+It's <var>0G.
+ Yes          No<ask>"
+14,0x141af5,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Medicine for
+chickens.
+It's <var>0G.
+ Yes          No<ask>"
+15,0x141b33,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Medicine for
+sheep.
+It's <var>0G.
+ Yes          No<ask>"
+16,0x141b6e,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Medicine for
+horses.
+It's <var>0G.
+ Yes          No<ask>"
+17,0x141baa,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"A gentle shampoo
+to wash sheep.
+It's <var>0G.
+ Yes          No<ask>"
+18,0x141bf1,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Those are wool
+clippers.
+It's <var>0G.
+ Yes          No<ask>"
+19,0x141c31,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Grass seeds.
+Sow on the
+pastures and
+cut the grass
+when it's fully
+grown to make
+fodder.
+"
+20,0x141c96,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Rice seeds.
+Sow on the soil
+prepared with a
+shovel in Spring
+and harvest in
+Fall."
+21,0x141cef,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Wheat seeds.
+Sow on the field
+in Spring and
+harvest in Fall."
+22,0x141d30,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Scarecrow.
+Protects crops
+from wild
+animals.
+It's <var>0G.
+ Yes          No<ask>"
+23,0x141d87,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '@']",,"Deposit money.
+10000G a share.
+How much?
+         <var>0G"
+24,0x141dc0,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '@']",,"Withdraw money.
+10000G a share.
+How much?
+         <var>0G"
+25,0x141dfa,15,['<waita>@'],,OK…
+26,0x141dff,15,"['\\n', '<waita>@']",,"Not enough
+money."
+27,0x141e12,15,['<waita>@'],,Thank you.
+28,0x141e1e,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"We will take the
+animal from your
+farm.
+"
+29,0x141e4b,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"We can't sell
+you this animal
+now. You need
+more fodder and
+grass on the
+pasture."
+30,0x141ea5,15,"['\\n', '10GP000@']",,"Male or female?
+ Male     Female<ask>"
+31,0x141ece,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",,"At the Farmers'
+Union you can do
+many things such
+as buying and
+selling animals,
+entering animal
+festivals and
+buying rice and
+wheat seeds. We
+are open 9AM to
+6PM, Monday
+through
+Saturday."
+32,0x141fa1,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Sprinkler that
+waters 9x9 at
+6AM if you set
+it up at the
+shore.
+It's <var>0G.
+
+ Yes          No<ask>"
+33,0x14200f,15,"['\\n', '@']",,"How many?
+<var>0   <var>8G"
+34,0x142022,15,"['\\n', '<waita>@']",,"You can't carry
+them all."
+35,0x14203e,15,"['\\n', '10GT000@']",,"Want a job?
+ Yes          No<ask>"
+36,0x142063,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"These are all
+the jobs you
+can do.
+"
+37,0x14208b,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Ship <var>W
+<var>0
+within <var>G days.
+The job pays
+<var>OG.
+Take the job?
+
+ Yes          No<ask>"
+38,0x1420e9,15,"['\\n', '<waita>@']",,"Please make the
+due date."
+39,0x142104,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Listen to the
+job description?
+
+ Yes          No<ask>"
+40,0x142140,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"There are
+different partー
+time jobs
+offered everyday
+here. You can
+take one job at
+a time, and
+every time you
+complete a job
+perfectly, you
+will build a
+reputation as a
+farmer. Call to
+cancel the job."
+41,0x14221e,15,['<waita>@'],,We're closed.
+42,0x14222e,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Register your
+cows to get
+rankings. The
+higher the
+affection rate
+is, the higher
+the ranking will
+be, and you will
+be famous as a
+good farm owner.
+….Maybe…
+Enter a cow?
+
+ Yes          No<ask>"
+43,0x142305,15,"['\\n', '<waita>@']",,"Choose a cow to
+enter."
+44,0x14231d,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Enter your
+horse in the
+horse racing
+circuit. You
+will not get
+the horse back,
+but the higher
+the affection
+rate is, the
+better chance
+of winning.
+
+Enter a horse?
+ Yes          No<ask>"
+45,0x1423ed,15,"['\\n', '<waita>@']",,"Choose a horse
+to enter."
+46,0x142407,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"The result was
+not good. Your
+cow was ranked
+the lowest…
+Ah…it's none
+of my business,
+but do your
+animals like
+you?
+"
+47,0x14248b,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",,"Your cow wasn't
+the lowest…,
+but the result
+wasn't very
+good. You must
+treat your cows
+well."
+48,0x1424f5,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Best 30…Um, no.
+Your cow was in
+the Worst 30.
+Take good care
+of your cows.
+"
+49,0x142549,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"It's 900th in
+the nation…which
+is lower than
+the average…What
+can you expect
+from this
+affection rate?
+"
+50,0x1425bc,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"It ranked 750th
+in the nation.
+It's an average
+cow…just
+ordinary.
+"
+51,0x142607,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",,"It ranked 500th
+in the nation. A
+little better
+than the average
+cow."
+52,0x142653,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Pretty good.
+450th in the
+nation…
+Fine job."
+53,0x142683,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Very good. your
+cow is in the
+Top 100.
+You may be able
+to get a better
+result next
+time.
+"
+54,0x1426e7,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Wow! Your cow is
+in the Top 30!
+You are one of
+the ten best
+farm owners in
+the nation!"
+55,0x142745,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Congratulations!
+Your cow is in
+the Top 10!!
+Every farmer
+will recognize
+this ideal cow!!"
+56,0x1427a6,15,"['\\n', '<waita>@']",,"No cows
+can be sold."
+57,0x1427bc,15,"['\\n', '<waita>@']",,"No chickens
+can be sold."
+58,0x1427d6,15,"['\\n', '<waita>@']",,"No sheep
+can be sold."
+59,0x1427ed,15,"['\\n', '<waita>@']",,"No horses
+can be sold."
+60,0x142805,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Cancel
+selection?
+
+ Yes          No<ask>"
+61,0x142834,15,"['\\n', '<waita>@']",,"The cow has not
+matured."
+62,0x14284e,15,"['\\n', '<waita>@']",,"The horse has
+not matured."

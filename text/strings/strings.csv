@@ -1,0 +1,24 @@
+i,address,name_i,newline_types,name,string
+0,0x1e4a57,1,['@'],,Spr
+1,0x1e4a5b,1,['@'],,Sum
+2,0x1e4a5f,1,['@'],,Fall
+3,0x1e4a64,1,['@'],,Win
+4,0x1e4a68,1,['@'],,Mon
+5,0x1e4a6c,1,['@'],,Tue
+6,0x1e4a70,1,['@'],,Wed
+7,0x1e4a74,1,['@'],,Thu
+8,0x1e4a78,1,['@'],,Fri
+9,0x1e4a7c,1,['@'],,Sat
+10,0x1e4a80,1,['@'],,Sun
+11,0x1e4a84,1,['@'],,AM
+12,0x1e4a87,1,['@'],,PM
+13,0x1e4a8a,1,['@'],,A
+14,0x1e4a8c,1,['@'],,B
+15,0x1e4a8e,1,['@'],,O
+16,0x1e4a90,1,['@'],,AB
+17,0x1e4a93,1,['@'],,
+18,0x1e4a94,1,['@'],,<noname>
+19,0x1e4a96,1,['@'],,Quit watching?   Yes          No
+20,0x1e4ab7,1,"['\\n', '<waita>@']",,"You can't use
+that name."
+21,0x1e4ad2,1,['@'],,EXIT

@@ -1,0 +1,92 @@
+i,address,name_i,newline_types,name,string
+0,0x601eb,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"Those are
+<var>0.
+Selling price
+is not much, but
+they grow fast.
+Seeds are cheap,
+so you can grow
+a lot of them."
+1,0x60266,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"Those are
+<var>0.
+If you water
+them everyday,
+you can harvest
+them in 7 days.
+Selling price is
+not much, so
+you should grow
+a lot of them."
+2,0x602fe,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Lukia,"Those are
+<var>0.
+If you water
+them everyday,
+you can harvest
+them in 9 days.
+They take a
+while to grow,
+but the selling
+price is quite
+high."
+3,0x6039c,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"Those are Tomato
+Seeds. They take
+a while to grow,
+but you can
+harvest them
+multiple times
+from one crop.
+Don't forget to
+water them
+everyday."
+4,0x6043c,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"Those are Corn
+Seeds. They take
+a while to grow,
+but you can
+harvest them
+multiple times
+from one crop.
+The selling
+price is high.
+"
+5,0x604d0,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"Those are
+W.Melon seeds.
+They take a long
+time to grow,
+but you can
+harvest them
+multiple times
+from one
+crop.
+"
+6,0x60550,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', ' <arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"Those are
+Stardust Flower
+Seeds. The
+flower is said
+to be made of
+stardust. Isn't
+it romantic?
+"
+7,0x605be,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"Those are
+Moonlight Flwer
+Seeds. The
+yellow flowers
+are very pretty.
+This plant has a
+long history.
+"
+8,0x6062f,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lukia,"Enjoy the flower
+you've grown.
+<var>0G.
+ Yes          No<ask>"
+9,0x60672,13,"['\\n', '@']",Lukia,"How many?
+<var>0   <var>8G"
+10,0x60687,13,"['\\n', '<waita>@']",Lukia,"Changed your
+mind?"
+11,0x6069d,13,"[' \\n', '<waita>@']",Lukia,"Not enough
+money."
+12,0x606b3,13,"['\\n', '<waita>@']",Lukia,"Thanks!!
+Take care."
+13,0x606ca,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"You can't carry
+that much.
+Reduce the
+amount."

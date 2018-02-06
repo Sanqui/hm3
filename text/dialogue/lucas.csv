@@ -1,0 +1,49 @@
+i,address,name_i,newline_types,name,string
+0,0x12d64e,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"Hey <player>…
+Isn't that a
+glacier? Cool!
+It's my first
+time to see one!
+Oh! you can use
+it to convert
+the shipping
+storage into a
+refrigerator!
+You can keep the
+vegetables for a
+long time now.
+Do you have a
+garbage disposal
+at home? That
+could be a
+problem. If the
+vegetables stay
+fresh, you won't
+have rotten
+vegetables to
+make fertilizer.
+Do you want to
+convert the
+storage into a
+refrigerator?
+ Yes          No<ask>"
+1,0x12d81b,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Alright! I'll
+work on it right
+away. I'll show
+you how talented
+I am!
+"
+2,0x12d86d,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"OK… Ask me
+if you change
+your mind.
+"
+3,0x12d898,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"Do you want to
+convert the
+storage into a
+refrigerator?
+
+ Yes          No<ask>"
+4,0x12d8f2,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Fine job. You
+must work for
+your child.
+"

@@ -1,0 +1,316 @@
+i,address,name_i,newline_types,name,string
+0,0x1428d8,15,"['\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"Hey, <player>.
+Can you do me
+a favor?
+
+<name:15>I want to make
+a big chest, but
+I'm short of
+materials. Can I
+buy a log from
+you?
+
+ Yes          No<ask>"
+1,0x142902,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lucus,"I want to make
+a big chest, but
+I'm short of
+materials. Can I
+buy a log from
+you?
+
+ Yes          No<ask>"
+2,0x14297b,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Thanks. I'd
+appreciate it if
+you could bring
+it today."
+3,0x1429b9,15,"['\\n', '<waita>@']",Lucus,"It's alright.
+You're busy…"
+4,0x1429d9,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Oh, Thanks. Here
+is 300G. Now I
+can finish the
+chest."
+5,0x142a16,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Did you bring
+the log? Please
+bring it as soon
+as you can."
+6,0x142a57,16,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Cozy,"Hi <player>. Good
+timing. Can I
+ask you a favor?
+My business is
+not doing well.
+So, I need an
+attractive fish
+that catches
+everyone's heart
+and never let's
+it go. Elder
+told me that
+there is a fish
+called the
+'King of Lake'.
+Can you go catch
+it and bring it
+here by 6PM the
+day after
+tomorrow?
+I've prepared a
+tank especially
+for that fish."
+7,0x142bcf,16,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Cozy,"No King of Lake
+yet? By 6PM the
+day after
+tomorrow, OK?
+I won't put any
+other fish in my
+special tank.
+"
+8,0x142c45,16,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Cozy,"No King of Lake
+yet? By 6PM
+tomorrow, OK?
+I won't put any
+other fish in my
+special tank."
+9,0x142ca9,16,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Cozy,"No King of Lake
+yet? Today by
+6PM, OK? I won't
+put any other
+fish in my
+special tank."
+10,0x142d0a,16,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Cozy,"Wow! This is the
+King of Lake!!
+How mysterious!
+Thank you!"
+11,0x142d4b,16,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Cozy,"…Never mind.
+It was stupid of
+me to expect the
+fish from you."
+12,0x142d8f,16,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Cozy,"Thank you.
+I will take
+good care of it."
+13,0x142dbd,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"Hi <player>. Can I
+ask you a
+question? My mom
+is sick, and a
+doctor called
+Isha told me
+that the Full
+Moon Flower
+extract is good
+for her. Do you
+know where I can
+find the flower?"
+14,0x142e7d,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"Do you know
+where I can
+find the Full
+Moon Flower?"
+15,0x142eb6,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"Is that really
+the Full Moon
+Flower!? You've
+brought it for
+me? Thank you
+<player>! You're so
+nice!
+"
+16,0x142f22,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"I can imagine
+how happy my mom
+is going to be.
+"
+17,0x142f58,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"Hi <player>.
+Welcome. Ah…
+can you please
+do me a favor?
+
+ Yes          No<ask>"
+18,0x142fab,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Lyla,"I went to the
+island with my
+friend the other
+day. I loved
+playing with the
+animals and
+walking in
+nature. It was
+so much fun that
+we lost track of
+time and missed
+the ferry. But,
+a fisherman
+named Billy
+helped us out.
+Since then, I
+can't stop
+thinking about
+his sweet smile.
+…It was love
+at first sight.
+The ocean is so
+cold in the
+winter, I want
+to knit a
+scarf for him…
+Can you spare me
+some yarn?
+
+ Yes          No<ask>"
+19,0x143186,14,"['\\n', '<waita>@']",Lyla,"…OK. You're not
+very friendly…"
+20,0x1431a9,14,"['\\n', ' <arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"I'm not in a
+hurry or
+anything, but
+I'd like to have
+it by the end of
+the month."
+21,0x143207,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"No yarn yet?
+It's going to be
+too late.
+"
+22,0x143237,14,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Lyla,"Thank you <player>.
+I'll knit a nice
+one."
+23,0x143261,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"Knitting a scarf
+is very hard for
+me, but I'll try
+my best for
+Billy.
+"
+24,0x1432b3,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"It's getting
+cold. I have to
+finish up the
+scarf…"
+25,0x1432ec,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"I'm finally done
+with the scarf.
+I used a lot of
+yarn so it's
+really warm. I'm
+very nervous
+about giving it
+to Billy, but I
+don't want to
+waste your nice
+yarn. I'll give
+it to him on
+25th after
+work.
+Wish me luck.
+"
+26,0x1433e3,14,"['\\n', '<waita>@']",Lyla,"Thank you, <player>.
+Wish me luck."
+27,0x143403,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"Ah <player>. Thank
+you very much
+for everything
+the other day.
+I went to see
+Billy on the
+25th. He
+remembered me,
+and he loved
+the scarf too.
+…I told him
+how I feel about
+him…but, he is
+in love with
+someone else…
+But I feel much
+better now that
+I told him. I
+appreciate what
+you've done for
+me <player>. Thank
+you very much."
+28,0x14355e,14,"[' \\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"My wish didn't
+come true, but
+I appreciate
+what you've done
+for me <player>.
+"
+29,0x1435b2,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"I don't need the
+yarn any more.
+It's too late to
+start knitting."
+30,0x1435fb,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"I don't want to
+see you for a
+while. Can you
+please leave?"
+31,0x14363d,16,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Cozy,"Is it possible
+that I have all
+the fish…?
+Yes! I do! I do
+have all the
+fish in my tank!
+Good job <player>!
+I will make the
+aquarium better
+than ever! It's
+all thanks to
+you <player>! Oh,
+this is for you.
+It's a strange
+fruit called a
+Power Berry.
+Some salesman
+talked me into
+buying it.
+I don't have
+anything else I
+can give you,
+but I really
+appreciate what
+you've done for
+me! Come to see
+me and the fish
+any time!"
+32,0x143800,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"<var>0 might
+have a baby
+today… I will
+be a father…
+<name:40>Hello? Is this
+<var>0's farm?"
+33,0x143856,40,"['\\n', '<waita>@']",Nancy,"Ah, hello <player>.
+Where is <var>0?"
+34,0x143874,40,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Nancy,"Oh, <var>0!
+Oh, no… …
+… … … …
+…ah… and…
+… … … …
+… fine… OK!"
+35,0x1438b7,40,"['\\n', '<waita>@']",Nancy,"<player>, where is
+the kitchen?"
+36,0x1438d4,40,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Nancy,"One more little
+push… Hang in
+there <var>0.
+… … … …
+A little more…
+… … … …
+There you go!
+"
+37,0x143936,40,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Nancy,"Congratulations
+<player>. Your son
+is healthy and
+beautiful. Go
+see <var>0. She
+did wonderfully.
+Anyway, what
+happened to the
+doctor…? Did
+he get lost…?"
+38,0x1439d4,40,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Nancy,"Congratulations
+<player>. Your
+daughter is so
+beautiful. Go
+see <var>0. She
+did wonderfully.
+Anyway, what
+happened to the
+doctor…? Did
+he get lost…?"
+39,0x143a6e,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"<player>… This is
+our baby. Oh,
+please give him
+a nice name."
+40,0x143aab,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"One more member
+in our family.
+…I'm so happy.
+We are going to
+have a wonderful
+future together,
+Daddy!
+"

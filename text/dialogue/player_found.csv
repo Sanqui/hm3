@@ -1,0 +1,47 @@
+i,address,name_i,newline_types,name,string
+0,0x10812f,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",<player>,"What… is this?
+It seems like an
+egg. If I leave
+it here, the
+wild dogs might
+eat it. Should I
+take it home?
+ Yes          No<ask>"
+1,0x1081ca,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"Cool, I found a
+shovel! Could I
+dig a hot spring
+with this?"
+2,0x10820d,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"Wha…what is
+going on!? It
+has gotten dark
+all of a sudden!"
+3,0x10824e,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"No, you found
+me… I thought
+no one would
+find me here…
+I'll give you
+this, so promise
+me not to tell
+anyone where I
+am! Please!
+"
+4,0x1082df,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Please do not
+tell anyone
+about me. I
+trust you, so
+please don't!
+"
+5,0x10832b,0,"[' \\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"No, no! Don't
+put it down!
+I'll get
+smashed!"
+6,0x108360,0,"['\\n', '<waita>@']",,"All stores
+closed today."
+7,0x10837a,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"The field is
+damaged too.
+Today's been a
+bad day…"
+8,0x1083b3,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"Oh, no! All of
+my animals are
+unhappy!
+"

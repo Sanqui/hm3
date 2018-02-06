@@ -1,0 +1,637 @@
+i,address,name_i,newline_types,name,string
+0,0x108917,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Aahhh!…<player>.
+You scared me.
+What? I look
+depressed? I'm
+fine… Maybe
+not… <player>?
+Is running a
+farm your dream?
+<noname><name:0> Yes
+ No<ask>"
+1,0x1089b1,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Of course. You
+will make
+Harry's dream
+come true. I
+used to have a
+dream too…
+<noname><name:0> What was it?
+ Oh, you did.<ask>"
+2,0x108a33,1,"['\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"…No? I thought
+you wanted to
+make Harry's
+dream come true.
+Well, you are a
+girl. You must
+have something
+better to do…
+What is it that
+I want? Well, I
+have time to
+think about it.
+Ha ha ha…
+Let's go home."
+3,0x108b1a,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', ' <arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"My grandpa ran
+a huge farm too.
+I always wanted
+to be like him.
+But, now that I
+have made my
+dream come true
+I don't know
+what I really
+want… What is
+my dream? I've
+got time to
+think about it,
+right? Well…
+let's go home.
+"
+4,0x108c16,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Yes, I used to
+ have a dream
+too. I forgot
+all about it,
+though… I
+guess I have
+time to think
+about it…
+Let's go home.
+"
+5,0x108ca0,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"…<player>? Let
+me ask you a
+question…
+Can I stay here
+and help you
+with the farm
+forever?
+
+<noname><name:0> Of course!
+ Why?<ask>"
+6,0x108d1f,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Oh, good… I
+think you and I
+make a great
+team. Are you
+sure you want to
+live with a guy
+like me forever?
+
+<noname><name:0> Yes, I'm sure!
+ ……<ask>"
+7,0x108db9,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"I've never felt
+this way before.
+<player>, I love you
+so much that my
+heart aches for
+you… I want to
+be with you…
+forever…
+<noname><name:0> Me too!
+ ……<ask>"
+8,0x108e55,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"…Does that
+mean you will
+marry me?
+
+<noname><name:0> Yes, it does.
+ Not really…<ask>"
+9,0x108ea9,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"…Of course.
+Harry's dream is
+more important
+to you now…
+Sorry to ask you
+such a silly
+question.
+Let's go home."
+10,0x108f26,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"You made me the
+happiest man in
+the whole world!
+I promise to
+make you happy
+too!"
+11,0x108f81,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"…Of course…
+Ha ha ha… I
+got kind of
+carried away…
+It's cold here,
+isn't it?
+Let's go home.
+"
+12,0x108fed,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Ever since you
+came to my farm,
+time's gone by
+so quickly or
+slowly… Ha ha.
+I don't know
+what I'm talking
+about…"
+13,0x10906e,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"The truth is…
+Do you mind if
+I like you…?
+
+<noname><name:0> No, I don't.
+ …Yes, I do…<ask>"
+14,0x1090ca,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"…Good… I
+feel much better
+now. Thank you,
+<player>. We make a
+pretty good
+team, don't we?"
+15,0x109129,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"…Ha ha ha. Of
+course you do.
+Forget what I
+just said. Well,
+let's keep on
+working hard!"
+16,0x10918c,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"<player>, can I ask
+you something?
+Will you stay
+here and help me
+with the farm
+forever?
+<noname><name:0> Of course!
+ I don't know.<ask>"
+17,0x109211,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"<name:1>Good…I know we
+make a great
+team. Are you
+sure? How about
+your farm?
+
+<noname><name:0> Yes, I'm sure.
+ ……<ask>"
+18,0x109285,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"I've never loved
+someone like
+this before…
+My heart aches
+for you… I
+love you more
+than anyone in
+the world!
+Please stay with
+me forever…
+<noname><name:0> Yes, I will.
+ ……<ask>"
+19,0x10933f,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"…Are you
+saying that you
+will marry me?
+
+<noname><name:0> Yes, I am.
+ Not really.<ask>"
+20,0x109395,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"…Of course.
+You have to go
+back to your own
+farm, and maybe
+someone else is
+waiting for you.
+Let's go home,
+<player>."
+21,0x109413,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"I'm so happy…
+I will make you
+happy too! I
+promise <player>…"
+22,0x109450,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",<partner>,"Ha ha…
+Of course.
+What was
+I thinking…?
+Achoo! Let's
+go home now
+<player>."
+23,0x1094a1,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",<partner>,"Aahhh! <player>…
+Did you find a
+cub? Really…
+Well, If you
+think about it,
+it was a good
+thing <player>.
+If there was a
+cub, there would
+also be a
+mother. What if
+someone got
+attacked by the
+mother bear?
+The hunters
+might hunt her
+down too. So, it
+was good that we
+didn't find the
+cub. Let's go
+home <player>."
+24,0x1095e8,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"Time to get up.
+… I don't feel
+too well…
+"
+25,0x109619,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"What happened
+<player>? You look
+pale…
+
+<name:0>I think I got
+sick…Can I stay
+in bed today?
+
+<name:1>No way!…I'm
+kidding. Have a
+good rest♥
+"
+26,0x1096a6,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"It's time to get
+up… I have a
+fever…?
+"
+27,0x1096d4,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"What's wrong?
+You look pale,
+<player>…
+
+<name:0>I think I'm
+sick. Can I
+stay in bed
+today…?
+<name:1>OK. Have a
+good rest."
+28,0x10974d,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Good morning
+<player>! Today is
+your birthday,
+isn't it? I have
+a present for
+you. Happy
+birthday!
+"
+29,0x1097b8,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"Her present was
+a very warm and
+kind gesture…
+"
+30,0x1097ed,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Good morning
+<player>. Today is
+your birthday,
+right? I have
+a gift for you.
+Happy birthday!"
+31,0x10984d,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"His gift was a
+very warm and
+kind gesture…
+"
+32,0x10987f,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"The present is
+a big rucksack!!
+Now you can
+carry twice as
+many items!
+"
+33,0x1098d0,6,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Joe,"Hey, you must be
+a newcomer. I'm
+Joe. Nice to
+meet you. The
+morning fair is
+held here on
+Tuesdays and
+Saturdays from
+6AM till 9AM.
+You can sell
+your products
+there. Let me
+know if you want
+to join us."
+34,0x1099b0,6,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Joe,"Hey <player>!!
+What are you
+doing here so
+early? Do you
+want to join the
+morning fair?
+
+ Yes          No<ask>"
+35,0x109a25,6,"['\\n', '<waita>@']",Joe,"The morning fair
+is over today."
+36,0x109a48,6,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Joe,"There is no
+morning fair
+today, <player>.
+"
+37,0x109a73,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Kirk,"Hello <player>.
+The ferry is
+going to the
+island. Do you
+want to go?
+ Yes          No<ask>"
+38,0x109ad2,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",Kirk,"Going somewhere?
+The last ferry
+is at 6 PM…
+Get on?
+
+ Yes          No<ask>"
+39,0x109b28,10,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Kirk,"<player> it's too
+late to leave
+the port…,
+but I'll make
+an exception
+for you this
+time!
+"
+40,0x109b8a,10,"['\\n', '<waita>@']",,"Carp
+            <var>0"
+41,0x109b9f,10,"['\\n', '<waita>@']",,"King Carp
+            <var>0"
+42,0x109bb9,10,"['\\n', '<waita>@']",,"Snakehead
+            <var>0"
+43,0x109bd3,10,"['\\n', '<waita>@']",,"Black Bass
+            <var>0"
+44,0x109bee,10,"['\\n', '<waita>@']",,"Bluegill
+            <var>0"
+45,0x109c07,10,"['\\n', '<waita>@']",,"King Salmon
+            <var>0"
+46,0x109c23,10,"['\\n', '<waita>@']",,"Parrotfish
+            <var>0"
+47,0x109c3e,10,"['\\n', '<waita>@']",,"Blowfish
+            <var>0"
+48,0x109c57,10,"['\\n', '<waita>@']",,"Dorado
+            <var>0"
+49,0x109c6e,10,"['\\n', '<waita>@']",,"Sailfish
+            <var>0"
+50,0x109c87,10,"['\\n', '<waita>@']",,"Coelacanth
+            <var>0"
+51,0x109ca2,10,"['\\n', '<waita>@']",,"Archerfish
+            <var>0"
+52,0x109cbd,10,"['\\n', '<waita>@']",,"Horned Shark
+            <var>0"
+53,0x109cda,10,"['\\n', '<waita>@']",,"Blue Maomao
+            <var>0"
+54,0x109cf6,10,"['\\n', '<waita>@']",,"Pink Maomao
+            <var>0"
+55,0x109d12,10,"['\\n', '<waita>@']",,"King of Lake
+            <var>0"
+56,0x109d2f,16,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', ' <arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', ' <arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Cozy,"We have both
+salt and fresh
+water fish here.
+You can see them
+for free, but we
+only have Carp
+and King Carp
+now… I want to
+make this
+aquarium a lot
+bigger…
+I know we've
+just met, but
+since I don't
+have time to do
+it myself, can
+you go fishing
+for me? You can
+keep the fish in
+your rucksack.
+When you get the
+fish, give it to
+me, and I'll put
+them in the fish
+tank. If you
+want to see the
+fish, press the
+A Button in
+front of the
+tank. I'm
+counting on you!
+"
+57,0x109f34,16,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Cozy,"Hi <player>. Make
+yourself at
+home.
+"
+58,0x109f58,16,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Cozy,"Thank you
+<player>! I will
+take good
+care of it."
+59,0x109f88,18,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Choco,"Hey <player>!!
+Long time no
+see.
+"
+60,0x109fa9,18,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Choco,"I love aquariums
+very much!! They
+are fun!
+"
+61,0x109fdb,20,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Chet,"How have you
+been, <player>? How
+is your farm?
+"
+62,0x10a00b,20,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Chet,"This is the
+only place where
+you can see the
+fish swimming."
+63,0x10a04d,20,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Fish that live
+on the farm and
+in the lake.
+"
+64,0x10a07e,20,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Fish that live
+around the pier
+and around the
+island town."
+65,0x10a0bd,20,"['\\n', '<waita>@']",,"Fish that live
+in the ocean."
+66,0x10a0db,20,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"You can see the
+mystical fish
+here.
+"
+67,0x10a104,20,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"View inside of
+the fish tank?
+
+ Yes          No<ask>"
+68,0x10a13f,20,"['\\n', '<waita>@']",,"Is the fish
+tank full?"
+69,0x10a157,8,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Elza,"Hi <player>.
+You look happy.
+What? A meteor
+shower!? …I
+totally forgot
+about that! Did
+you come to ask
+me to go with
+you? Of course
+I'll go with
+you. I will be
+at the cliff at
+11PM waiting for
+you."
+70,0x10a22c,8,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Elza,"Hey, I've been
+waiting for you!
+It is almost
+time."
+71,0x10a267,8,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Elza,"Hey <player>!!
+Wasn't it
+romantic? I was
+speachless.
+Let's come here
+together next
+time too.
+"
+72,0x10a2cc,11,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Kate,"<player>, you made
+it. This is the
+best spot. It's
+about time…"
+73,0x10a30c,11,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Kate,"Don't you think
+fireworks are so
+romantic? Thank
+you for watching
+them with me
+tonight. I hope
+we can do this
+next year too."
+74,0x10a396,12,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Marla,"Are you <player> by
+any chance? My
+name is Marla!
+Nice to meet
+you! How many
+years have past
+since I saw
+someone? I
+thought it was
+going to be just
+another day by
+myself. You
+are just as I'd
+imagined.
+Nice and kind…
+I'm so happy…
+Oh, no. I don't
+mean to cry…
+Here, please
+have this!!
+It is a Power
+Berry, which
+gives you
+strength if you
+eat it. Please
+come and see me
+again. I will
+always be here.
+I hope to talk
+to you again."
+75,0x10a56d,12,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Marla,"Thank you for
+coming here so
+early… I'm
+always alone, so
+I'm happy to see
+you."
+76,0x10a5c8,12,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Marla,"You have come a
+long way too see
+me… I am happy
+too be your
+friend.
+"
+77,0x10a616,12,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",Marla,"Have you ever
+heard that there
+is a devil in
+the ocean at
+night? I'm just
+kidding, but the
+ocean can be
+very dangerous
+at night."
+78,0x10a6a8,12,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Marla,"Ah, <player>…
+Hello! What? I
+look sad? No,
+I'm fine… Did
+you hear about
+the lake?…
+… … … …
+… … … …
+Really. It's
+become a legend
+like that…
+Yes, I used to
+have a boyfriend
+named Rocky. He
+went fishing on
+a stormy night
+with Ricky…
+But I belive
+that he is still
+alive somewhere,
+and I will see
+him again. I'll
+keep looking for
+him. I am not
+lonely, you see?
+I have you too."
+79,0x10a844,12,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Marla,"Well, do you
+know how Ricky
+is doing…?
+"
+80,0x10a873,12,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Go back to the
+village?
+
+ Yes          No<ask>"
+81,0x10a8a8,12,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Go to the
+village?
+
+ Yes          No<ask>"
+82,0x10a8d8,12,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Go out to the
+ocean?
+
+ Yes          No<ask>"
+83,0x10a90a,12,"['\\n', '10GT000@']",,"Go outside?
+ Yes          No<ask>"
+84,0x10a92f,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"I'll mainly take
+care of the
+animals, but in
+the morning can
+you tell me what
+daily chores
+to do? Let's
+work hard
+together to
+build a great
+farm, partner!
+"
+85,0x10a92f,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"I'll mainly take
+care of the
+animals, but in
+the morning can
+you tell me what
+daily chores
+to do? Let's
+work hard
+together to
+build a great
+farm, partner!
+"
+86,0x10a9e2,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",<partner>,"By the way
+<player>. Are you
+going to work on
+the field too? I
+think it's
+best if you
+focus on the
+animals. In the
+morning, can you
+tell me the
+daily chores
+you want me to
+do? Do you want
+to know how to
+give me
+instructions?
+
+ Yes          No<ask>"
+87,0x10aaf2,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"First, you'll
+see the map of
+the field, so
+choose a plot
+to work on.
+<arrow>0"
+88,0x10ab46,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",<partner>,"Then select the
+work: prepare
+the soil, till
+the soil, sow
+the seed, water
+the crops and
+harvest. Choose
+one icon for
+each plot.<arrow>0"
+89,0x10abdc,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Press the B
+Button to make
+changes.
+<arrow>0"
+90,0x10ac09,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",<partner>,"When you're done
+selecting the
+work, press
+START.
+Do you want to
+listen to it
+again?
+ Yes          No<ask>"
+91,0x10ac84,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Let's try our
+best to make
+Harry's dream
+come true!"
