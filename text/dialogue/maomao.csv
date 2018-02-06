@@ -1,84 +1,84 @@
-i,address,name_i,newline_types,name,string
-0,0x1e4de5,1,"['\\n', '<fc>づ<clear>', '\\n', '@']",,"<noname>Deep inside of
+i,address,end,name_i,newlines,name,string
+0,0x1e4de5,0x1e4e23,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""@""]",,"<noname>Deep inside of
 the ocean… We
 are born and
 grow up there.<fc><f0>"
-1,0x1e4e23,1,"['\\n', '\\n', '\\n', '\\n', '\\n', '<fc>づ@']",,"<noname>I'm a Blue
-Maomao. My name<fc><f0><clear>
+1,0x1e4e23,0x1e4ebe,,"[""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc>\u3065@""]",,"<noname>I'm a Blue
+Maomao. My name
 is Blue because
-my body is<fc><f0><clear>
+my body is
 blue. I have a
-good friend, she<fc><f0><clear>
+good friend, she
 is very shy. Her
-name is Pink<fc><f0><clear>
+name is Pink
 because her body
 is pink."
-2,0x1e4ebe,29,"['\\n', '\\n', '<fc>づ<clear>', '\\n', '\\n', '@']",Blue,"Hey Pink.
-I found some<fc><f0><clear>
+2,0x1e4ebe,0x1e4f37,29,"[""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""@""]",,"Hey Pink.
+I found some
 good seaweed.
-Let's eat it<fc><f0><clear>
+Let's eat it
 together.
-<name:30>Wow! Thanks!
-<fc><f0><clear>
-<name:29>You can have
+<name>UWow! Thanks!
+
+<name>TYou can have
 this one, Pink.<fc><f0>"
-3,0x1e4f37,29,"['<fc>づ<clear>', '<fc>づ<clear>', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '\\n', '<fc>づ@']",,"<noname>…Chomp, chomp.
+3,0x1e4f37,0x1e513a,,"[""<fc>\u3065<clear>"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", "" <fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc>\u3065@""]",,"<noname>…Chomp, chomp.
 Mmmm… Good!
-<name:29>Pink? Why do you
-think our body<fc><f0><clear>
+<name>TPink? Why do you
+think our body
 colors are
-different even<fc><f0><clear>
+different even
 though we are
-eating the same<fc><f0><clear>
+eating the same
 food?
-<fc><f0><clear>
-<name:30>I don't know
-why…<fc><f0><clear>
-<name:29>I heard sun
-tanning changes<fc><f0><clear>
+
+<name>UI don't know
+why…
+<name>TI heard sun
+tanning changes
 our body color.
-Why don't we try<fc><f0><clear>
+Why don't we try
 it and surprise
-everyone?<fc><f0><clear>
-<name:30>Interesting!
-I want to be<fc><f0><clear>
+everyone?
+<name>UInteresting!
+I want to be
 green.
-<fc><f0><clear>
-<name:29>There is a
-shallow spot<fc><f0><clear>
+
+<name>TThere is a
+shallow spot
 where strong
-sun light<fc><f0><clear>
+sun light
 reaches 10 yards
-north of here.<fc><f0><clear>
+north of here.
 They said that
-the spot is very<fc><f0><clear>
+the spot is very
 dangerous, but
-I think we can<fc><f0><clear>
+I think we can
 get tanned if we
-go there. Let's <fc><f0><clear>
+go there. Let's
 go!
-<fc><f0><clear>
-<name:30>OK! Let's go.
+
+<name>UOK! Let's go.
 "
-4,0x1e513a,29,"['\\n', '\\n', '\\n', '\\n', '<fc>づ@']",,"<noname>On the way to
-the shallows.<fc><f0><clear>
-<name:30>We've come
-pretty far. Are<fc><f0><clear>
+4,0x1e513a,0x1e51a3,,"[""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc>\u3065@""]",,"<noname>On the way to
+the shallows.
+<name>UWe've come
+pretty far. Are
 we there yet?
-<fc><f0><clear>
-<name:29>We are almost
+
+<name>TWe are almost
 there."
-5,0x1e51a3,29,"['\\n', '\\n', '\\n', '\\n', '@']",,"<noname>A shark sneaks
-up to them.<fc><f0><clear>
-<name:30>Hey Blue!
-Something is <fc><f0><clear>
+5,0x1e51a3,0x1e5209,,"[""\\n"", ""<fc><f0><clear>"", ""\\n"", "" <fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""@""]",,"<noname>A shark sneaks
+up to them.
+<name>UHey Blue!
+Something is
 coming toward
-us!<fc><f0><clear>
-<name:29>…I know…
+us!
+<name>T…I know…
 Ignore it.<fc><f0>"
-6,0x1e5209,31,"['\\n', '<fc>ラ@']",Brown,"Hey kids! There
+6,0x1e5209,0x1e522e,31,"[""\\n"", ""<fc>\u30e9@""]",,"Hey kids! There
 is a shark! Run!"
-7,0x1e522e,31,"['\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ@']",,"<noname>Blue and Pink
+7,0x1e522e,0x1e528f,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9@""]",,"<noname>Blue and Pink
 are swimming as
 fast as they
 can, but the
@@ -86,23 +86,23 @@ shark is
 catching up to
 them.
 "
-8,0x1e528f,31,"['\\n', '<fc>ラ<clear>', '\\n', '<fc>づ<clear>', '\\n', '\\n', '<fc>ラ@']",,"<noname>Brown approaches
+8,0x1e528f,0x1e52fc,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc>\u30e9@""]",,"<noname>Brown approaches
 the shark to try
 and rescue
 them… Oh No!
 The shark
-turned around<fc><f0><clear>
+turned around
 and caught
 Brown!"
-9,0x1e52fc,31,"['\\n', '\\n', '\\n', '\\n', '@']",,"<noname>Blue and Pink
-are swimming<fc><f0><clear>
+9,0x1e52fc,0x1e5361,,"[""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""@""]",,"<noname>Blue and Pink
+are swimming
 away crying…
-They hear the<fc><f0><clear>
+They hear the
 sound of the
-shark swallowing<fc><f0><clear>
+shark swallowing
 Brown…
 <fc><f0>"
-10,0x1e5361,31,"['\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ@']",,"<noname>Blue and Pink
+10,0x1e5361,0x1e5412,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9@""]",,"<noname>Blue and Pink
 had a life
 threatening
 experience.
@@ -114,13 +114,13 @@ tell if blue is
 pale because he
 is blue to begin
 with…"
-11,0x1e5412,30,"['\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', ' \\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '<fc>ラ<clear>', '\\n', '@']",Pink,"…Blue? What
+11,0x1e5412,0x1e56d7,30,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", "" \\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""@""]",,"…Blue? What
 happened to
 Uncle Brown? Did
 he get eaten by
 the shark? Are
 we safe here?
-<name:29>Brown was
+<name>TBrown was
 attacked because
 of us! Darn! The
 shark was
@@ -130,11 +130,11 @@ He will come
 here soon.
 …Darn.
 
-<name:30>Then let's go
+<name>UThen let's go
 hide somewhere
 safe!
 
-<name:29>No use! There is
+<name>TNo use! There is
 no place sharks
 can't go! …
 … … … …
@@ -144,37 +144,37 @@ called the
 'LAND' which is
 above the sea?
 
-<name:30>I've heard of it
+<name>UI've heard of it
 before, but fish
 can't live on
 the land…
-<name:29>Grandpa told me
+<name>TGrandpa told me
 that there is a
 place where many
 fish live safely
 on the land.
 
-<name:30>How can we get
+<name>UHow can we get
 there?
-<name:30>Get caught by a
+<name>UGet caught by a
 fisherman! It
 might hurt a
 little, but it's
 worth the pain.
 
-<name:30>Oh, OK! I'm
+<name>UOh, OK! I'm
 scared, but I'll
 try!
 <fc><f0>"
-12,0x1e56d7,30,"['\\n', '<fc>ラ<clear>', '\\n', '@']",,"<noname>Blue and Pink
+12,0x1e56d7,0x1e5718,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""@""]",,"<noname>Blue and Pink
 were caught by
 a farmer on the
 little island.<fc><f0>"
-13,0x1e5718,30,"['\\n', '<fc>ラ<clear>', '\\n', '@']",,"<noname>They safely
+13,0x1e5718,0x1e573f,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""@""]",,"<noname>They safely
 got to the
 aquarium.
 <fc><f0>"
-14,0x1e573f,30,"['\\n', '<fc>ラ<clear>', '\\n', '<fc>づ@']",,"<noname>Now they've
+14,0x1e573f,0x1e5778,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u3065@""]",,"<noname>Now they've
 become very
 popular in the
 aquarium.<fc><f0>"

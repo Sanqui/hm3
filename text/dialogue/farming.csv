@@ -1,63 +1,63 @@
-i,address,name_i,newline_types,name,string
-0,0x10c659,1,"['\\n', '<waita>@']",,"Caught a
+i,address,end,name_i,newlines,name,string
+0,0x10c659,0x10c668,,"[""\\n"", ""<waita>@""]",,"Caught a
 <var>0!!"
-1,0x10c668,1,"['\\n', '<waita>@']",,"No space in my
+1,0x10c668,0x10c688,,"[""\\n"", ""<waita>@""]",,"No space in my
 bag. Let it go!"
-2,0x10c688,1,"['\\n', '<waita>@']",,"<var>0Year <var>4<var>C
+2,0x10c688,0x10c6a6,,"[""\\n"", ""<waita>@""]",,"<var>0Year <var>4<var>C
        <var>G <var>O <var>KM"
-3,0x10c6a6,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"I can call the
+3,0x10c6a6,0x10c6e9,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I can call the
 Farmers' Union
 to arrange a
 shipment at 6PM."
-4,0x10c6e9,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"I can call the
+4,0x10c6e9,0x10c72d,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I can call the
  Farmers' Union
 to arrange a
 shipment at 6PM."
-5,0x10c72d,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",<player>,"Call the
+5,0x10c72d,0x10c766,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Call the
 Farmers' Union?
 
  Yes          No<ask>"
-6,0x10c766,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"What is that in
+6,0x10c766,0x10c7a7,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"What is that in
 the fireplace?
 1000G secret
 savings! Yeah!"
-7,0x10c7a7,0,"['\\n', '<waita>@']",<player>,"In the soot…?
+7,0x10c7a7,0x10c7c8,0,"[""\\n"", ""<waita>@""]",,"In the soot…?
 Nothing. Ha ha."
-8,0x10c7c8,0,"['\\n', '<waita>@']",<player>,"Be careful when
+8,0x10c7c8,0x10c7e9,0,"[""\\n"", ""<waita>@""]",,"Be careful when
 you use fire!"
-9,0x10c7e9,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"A secret savings
+9,0x10c7e9,0x10c81f,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"A secret savings
 in the drawer?
 Of course not.
 "
-10,0x10c81f,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"<var>0's secret
+10,0x10c81f,0x10c853,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"<var>0's secret
 savings might be
 in here… Nope.
 "
-11,0x10c853,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"A machine that
+11,0x10c853,0x10c895,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"A machine that
 makes fertilizer
 from vegetables
 and fruits."
-12,0x10c895,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",,"<noname>Hello this is
+12,0x10c895,0x10c8eb,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"<noname>Hello this is
 Farmers' Union.
 How may I help
 you?
  Shipment
  P/T Job<ask>"
-13,0x10c8eb,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"We'll pick them
+13,0x10c8eb,0x10c948,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We'll pick them
 up right away
 and deposit the
 money at 6PM.
 Thank you for
 your call."
-14,0x10c948,0,"['\\n', '<waita>@']",,"There is no work
+14,0x10c948,0x10c968,,"[""\\n"", ""<waita>@""]",,"There is no work
 at this time."
-15,0x10c968,0,"['\\n', '10GP000@']",,"P/T job…
+15,0x10c968,0x10c98b,,"[""\\n"", ""10GP000@""]",,"P/T job…
  Done     Cancel<ask>"
-16,0x10c98b,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"We ordered
+16,0x10c98b,0x10c9a2,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We ordered
 
 <var>O
 <var>0."
-17,0x10c9a2,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Your work has
+17,0x10c9a2,0x10ca1a,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Your work has
 been confirmed.
 Bonus G will be
 added by the
@@ -65,85 +65,85 @@ client…
 <var>0G will be
 deposited into
 your account.<arrow>0"
-18,0x10ca1a,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"You need <var>0
+18,0x10ca1a,0x10ca5d,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"You need <var>0
 more to complete
 your work. Thank
 you for calling."
-19,0x10ca5d,0,"['\\n', '10GT000@']",,"Cancel the job?
+19,0x10ca5d,0x10ca86,,"[""\\n"", ""10GT000@""]",,"Cancel the job?
  Yes          No<ask>"
-20,0x10ca86,0,"['\\n', '<waita>@']",,"The job has been
+20,0x10ca86,0x10caa2,,"[""\\n"", ""<waita>@""]",,"The job has been
 canceled."
-21,0x10caa2,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"We're looking
+21,0x10caa2,0x10cad2,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We're looking
 forward to your
 call again.
 "
-22,0x10cad2,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"No shipment was
+22,0x10cad2,0x10cb25,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"No shipment was
 made this time.
 We're looking
 forward to your
 call again.
 "
-23,0x10cb25,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Currently we are
+23,0x10cb25,0x10cb61,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Currently we are
 closed. Please
 try calling back
 later."
-24,0x10cb61,28,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lisa,"Tomorrow will be
+24,0x10cb61,0x10cb96,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Tomorrow will be
 a warm and sunny
 Spring day.
 "
-25,0x10cb96,28,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lisa,"It will rain
+25,0x10cb96,0x10cbc7,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"It will rain
 throughout the
 day tomorrow.
 "
-26,0x10cbc7,28,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lisa,"It'll be a clear
+26,0x10cbc7,0x10cbff,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"It'll be a clear
 and sunny Summer
 day tomorrow.
 "
-27,0x10cbff,28,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lisa,"It will rain
+27,0x10cbff,0x10cc2d,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"It will rain
 heavily all day
 tomorrow.
 "
-28,0x10cc2d,28,"['\\n', '<waita>@']",Lisa,"A hurricane is
+28,0x10cc2d,0x10cc4f,28,"[""\\n"", ""<waita>@""]",,"A hurricane is
 approaching us."
-29,0x10cc4f,28,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lisa,"We will have
+29,0x10cc4f,0x10cc7e,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We will have
 clear blue skies
 tomorrow.
 "
-30,0x10cc7e,28,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lisa,"It will rain
+30,0x10cc7e,0x10ccaf,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"It will rain
 throughout the
 day tomorrow.
 "
-31,0x10ccaf,28,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lisa,"It'll be clear
+31,0x10ccaf,0x10cce4,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"It'll be clear
 and relatively
 warm tomorrow.
 "
-32,0x10cce4,28,"['\\n', '<waita>@']",Lisa,"It will snow all
+32,0x10cce4,0x10cd06,28,"[""\\n"", ""<waita>@""]",,"It will snow all
 day tomorrow."
-33,0x10cd06,28,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lisa,"We are expecting
+33,0x10cd06,0x10cd39,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We are expecting
 a big snow storm
 tomorrow.
 "
-34,0x10cd39,28,"['\\n', '<waita>@']",,"…………………………………………
+34,0x10cd39,0x10cd5c,,"[""\\n"", ""<waita>@""]",,"…………………………………………
 …………………………………………"
-35,0x10cd5c,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"Wow! Look! We
+35,0x10cd5c,0x10cd94,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wow! Look! We
 can't go out
 in weather
 like this…"
-36,0x10cd94,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"Oh my! Look!
+36,0x10cd94,0x10cdce,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Oh my! Look!
 We can't go out
 in weather
 like this…"
-37,0x10cdce,1,"['\\n', '<waita>@']",<partner>,"We can't work
+37,0x10cdce,0x10cdf1,1,"[""\\n"", ""<waita>@""]",,"We can't work
 in this weather."
-38,0x10cdf1,1,"['\\n', '<waita>@']",<partner>,"I guess we can't
+38,0x10cdf1,0x10ce12,1,"[""\\n"", ""<waita>@""]",,"I guess we can't
 work today…"
-39,0x10ce12,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Don't go out.
+39,0x10ce12,0x10ce3d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Don't go out.
 A typhoon is
 coming.
 "
-40,0x10ce3d,28,"['\\n', '<waita>@']",Lisa,"Caution!
+40,0x10ce3d,0x10ce58,28,"[""\\n"", ""<waita>@""]",,"Caution!
 Typhoon alert!"
-41,0x10ce58,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"You didn't do
+41,0x10ce58,0x10cee9,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"You didn't do
 anything to the
 hot spring at
 night, did you?
@@ -153,7 +153,7 @@ hot spring's
 been completed
 …Hmmm…
 "
-42,0x10cee9,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Did you do
+42,0x10cee9,0x10cf62,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Did you do
 anything to the
 hot spring? No?
 Hmmm… Did you
@@ -161,15 +161,15 @@ notice the hot
 spring's been
 completed?
 How weird."
-43,0x10cf62,0,"['\\n', '<waita>@']",<player>,"Oh..,??? An
+43,0x10cf62,0x10cf7f,0,"[""\\n"", ""<waita>@""]",,"Oh..,??? An
 egg hatched…"
-44,0x10cf7f,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"How cute! He
+44,0x10cf7f,0x10cfe4,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"How cute! He
 thinks you're
 his mom… Oh!
 Why don't we
-name him 'Pak'?!
+name him ‘Pak'?!
 Yes! He's a Pak!"
-45,0x10cfe4,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"How funny! He
+45,0x10cfe4,0x10d05b,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"How funny! He
 thinks you're
 his mom… Oh!
 I have a good
@@ -177,19 +177,19 @@ idea! Let's
 name him 'Pak'!
 Yes! He's a Pak!
 "
-46,0x10d05b,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"This…is a
+46,0x10d05b,0x10d09e,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"This…is a
 glacier that
 never melts…
 Cool. I'll take
 it.
 "
-47,0x10d09e,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"This…is a
+47,0x10d09e,0x10d0e1,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"This…is a
 glacier that
 never melts…
 Good. I'll take
 it.
 "
-48,0x10d0e1,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Oh <player>.
+48,0x10d0e1,0x10d14d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Oh <player>.
 Lucus came by
 yesterday and
 said he's done
@@ -197,7 +197,7 @@ converting the
 storage… What
 does that mean?
 "
-49,0x10d14d,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Hey <player>.
+49,0x10d14d,0x10d1ba,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey <player>.
 Lucus came by
 yesterday and
 said he's done
@@ -205,7 +205,7 @@ converting the
 storage… What
 does that mean?
 "
-50,0x10d1ba,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",<partner>,"Listen <player>.
+50,0x10d1ba,0x10d2dd,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Listen <player>.
 I saw a garbage
 disposal on the
 TV Shopping
@@ -223,19 +223,19 @@ only 49800G!!
 Can I please buy
 it? Please?
  Yes          No<ask>"
-51,0x10d2dd,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Yes! I'll order
+51,0x10d2dd,0x10d321,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Yes! I'll order
 it right away.
 We'll have it in
 three days."
-52,0x10d321,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",<partner>,"No? It's really
+52,0x10d321,0x10d382,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"No? It's really
 a good deal! Are
 you sure you
 don't want it?
 
  Yes          No<ask>"
-53,0x10d382,1,"['\\n', '<waita>@']",<partner>,"OK. Ahhh…It's
+53,0x10d382,0x10d3a1,1,"[""\\n"", ""<waita>@""]",,"OK. Ahhh…It's
 a good deal…"
-54,0x10d3a1,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",<partner>,"Listen <player>.
+54,0x10d3a1,0x10d4b6,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Listen <player>.
 I saw a garbage
 disposal on the
 TV Shopping
@@ -253,21 +253,21 @@ only 49800G!!
 Can I buy it?
 
  Yes          No<ask>"
-55,0x10d4b6,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Alright! I'll
+55,0x10d4b6,0x10d505,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Alright! I'll
 order it right
 away. It should
 be here in three
 days.
 "
-56,0x10d505,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",<partner>,"No? Why? It's
+56,0x10d505,0x10d54d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"No? Why? It's
 really cool…
 Are you sure?
  Yes          No<ask>"
-57,0x10d54d,1,"['\\n', ' <arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"I guess you
+57,0x10d54d,0x10d578,1,"[""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I guess you
 really don't
 want it…
 "
-58,0x10d578,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"<player>…
+58,0x10d578,0x10d692,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"<player>…
 I was thinking
 maybe we should
 set a goal to
@@ -283,9 +283,9 @@ by the end of
 next Winter?
 Is it too hard?
 
-<noname><name:0> Let's try!
+<noname><name>0 Let's try!
  No way.<ask>"
-59,0x10d692,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"OK <player>!
+59,0x10d692,0x10d6f9,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"OK <player>!
 You're one true
 farm owner.
 I'll work as
@@ -293,15 +293,15 @@ hard as I can,
 so give me lots
 of work!
 "
-60,0x10d6f9,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Really? I like
+60,0x10d6f9,0x10d763,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"Really? I like
 setting goals
 a little high.
 <player>…let's try
 it!
 
-<noname><name:0> OK… I will.
+<noname><name>0 OK… I will.
  No way.<ask>"
-61,0x10d763,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Dreams can come
+61,0x10d763,0x10d7f7,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dreams can come
 true if you try
 with all your
 heart. It's just
@@ -311,47 +311,47 @@ long time ago.
 I'm counting
 on you <player>.
 "
-62,0x10d7f7,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Why can't you
+62,0x10d7f7,0x10d844,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Why can't you
 try…? Forget
 it. You are the
 owner. I'm going
 out.
 "
-63,0x10d844,1,"['\\n', ' <arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"<player>
+63,0x10d844,0x10d885,1,"[""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"<player>
 What date is it
 today? <var>C of
 <var>4? It's my
 birthday.
 "
-64,0x10d885,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Is this a
+64,0x10d885,0x10d8b5,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Is this a
 birthday gift?
 Thanks <player>!
 Yippy!"
-65,0x10d8b5,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', ' \\n', '<waita>@']",<partner>,"What? Is this
+65,0x10d8b5,0x10d90a,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<waita>@""]",,"What? Is this
 possibly a
 birthday gift?
 …Thanks, I
 guess…I don't
 really…"
-66,0x10d90a,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"A birthday gift
+66,0x10d90a,0x10d966,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"A birthday gift
 is not about
 quantity, so
 I don't need
 anymore <player>.
 Thanks anyway."
-67,0x10d966,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Hey <player>!
+67,0x10d966,0x10d9aa,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"Hey <player>!
 Nice day, huh?
-<noname><name:0> What's up?
+<noname><name>0 What's up?
  You're weird.<ask>"
-68,0x10d9aa,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Alright!
+68,0x10d9aa,0x10da2d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"Alright!
 Another busy day
 tomorrow! …
 Ouch…! Hmmmm!
 Nothing. Don't
 worry.
-<noname><name:0> You're hurt.
+<noname><name>0 You're hurt.
  You're limping.<ask>"
-69,0x10da2d,1,"['\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', ' <arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Huh? Oh, I
+69,0x10da2d,0x10daba,1,"[""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Huh? Oh, I
 already treated
 it… I didn't
 mean to make you
@@ -361,17 +361,17 @@ think I can work
 for the next 10
 days…
 "
-70,0x10daba,1,"['\\n', '<waita>@']",<partner>,"I'll be fine…
+70,0x10daba,0x10dad5,1,"[""\\n"", ""<waita>@""]",,"I'll be fine…
 Sorry <player>."
-71,0x10dad5,1,"['\\n', '<arrow>0<waita><clear>', '\\n', ' <arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"…Uh <player>?
+71,0x10dad5,0x10db53,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"…Uh <player>?
 I know it was my
 idea to set a
 goal, but don't
 you think it's
 too hard?
-<noname><name:0> Not at all.
+<noname><name>0 Not at all.
  Maybe…<ask>"
-72,0x10db53,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"I was wondering
+72,0x10db53,0x10dbe3,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"I was wondering
 why is it you
 work so hard…
 Is it because
@@ -379,27 +379,27 @@ you want to make
 Harry's dream
 come true?
 
-<noname><name:0> No…
+<noname><name>0 No…
  Of course!<ask>"
-73,0x10dbe3,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Right? But you
+73,0x10dbe3,0x10dc62,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"Right? But you
 work so hard…
 Is that because
 you want to make
 Harry's dream
 come true?
-<noname><name:0> No…
+<noname><name>0 No…
  Of course!<ask>"
-74,0x10dc62,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Then why are you
+74,0x10dc62,0x10dcb5,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"Then why are you
 working so hard?
-<noname><name:0> I just want to.
+<noname><name>0 I just want to.
  I don't know.<ask>"
-75,0x10dcb5,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"…That's all?
+75,0x10dcb5,0x10dd19,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"…That's all?
 You are making
 me work only for
 that reason?
-<noname><name:0> Making you…?
+<noname><name>0 Making you…?
  Sorry…<ask>"
-76,0x10dd19,1,"['\\n', '<arrow>0<waita><clear>', '\\n', ' <arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Ha ha ha! Right!
+76,0x10dd19,0x10ddbb,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Ha ha ha! Right!
 You do it
 because you want
 to. I can't
@@ -409,7 +409,7 @@ simple thing.
 Thanks <player>.
 OK! Let's work
 harder tomorrow!"
-77,0x10ddbb,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"…don't know…
+77,0x10ddbb,0x10de2f,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"…don't know…
 You're just
 working and I'm
 just here…
@@ -417,29 +417,29 @@ just here…
 try to find a
 purpose in your
 life…"
-78,0x10de2f,1,"['\\n', '<waita>@']",<partner>,"…Sorry. I've
+78,0x10de2f,0x10de4f,1,"[""\\n"", ""<waita>@""]",,"…Sorry. I've
 said too much…"
-79,0x10de4f,1,"['\\n', '<waita>@']",<partner>,"Don't apologize!
+79,0x10de4f,0x10de72,1,"[""\\n"", ""<waita>@""]",,"Don't apologize!
 I feel worse…"
-80,0x10de72,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"…? Time to
+80,0x10de72,0x10dea4,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"…? Time to
 get up…Oooh I
 don't feel well.
 "
-81,0x10dea4,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Good morning
+81,0x10dea4,0x10decb,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Good morning
 <player>! Time to
 get up!
 "
-82,0x10decb,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Wake up… Are
+82,0x10decb,0x10df2a,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wake up… Are
 you OK? You have
 a fever… I'll
 do the work, so
 you can take a
 day off."
-83,0x10df2a,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Umm…low heat…
+83,0x10df2a,0x10df71,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Umm…low heat…
 Add beaten eggs.
 A pinch of salt.
 OK! It's ready!"
-84,0x10df71,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"<player>? Are you
+84,0x10df71,0x10e069,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"<player>? Are you
 feeling better?
 Your temperature
 is lower this
@@ -455,9 +455,9 @@ pretty hot…
 … … … …
 How is it?
 
-<noname><name:0> Good!
+<noname><name>0 Good!
  ……<ask>"
-85,0x10e069,1,"[' \\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"…Good? That's
+85,0x10e069,0x10e0f4,1,"["" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"…Good? That's
 good! Rose from
 the restaurant
 in my hometown
@@ -465,7 +465,7 @@ showed me how to
 make this. I
 hope you'll feel
 better tomorrow."
-86,0x10e0f4,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"…Ha ha. You
+86,0x10e0f4,0x10e17d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"…Ha ha. You
 are so honest..,
 Well, it was my
 first time, you
@@ -473,15 +473,15 @@ know? I hope you
 don't get worse
 because of it…
 Good night…"
-87,0x10e17d,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"No! Don't step
+87,0x10e17d,0x10e1fd,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"No! Don't step
 on it! Oh good.
 It's OK… This?
 This pendant
 is my mom's…
 
-<noname><name:0> How beautiful.
+<noname><name>0 How beautiful.
  Oh, really…<ask>"
-88,0x10e1fd,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Isn't it pretty?
+88,0x10e1fd,0x10e2aa,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"Isn't it pretty?
 It's called a
 Moonlight Stone.
 It's a very rare
@@ -489,14 +489,14 @@ stone only found
 in a mine
 faraway from my
 hometown.
-<noname><name:0> …I want…it.
+<noname><name>0 …I want…it.
  Oh, really.<ask>"
-89,0x10e2aa,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",<partner>,"'Oh, really.'?
+89,0x10e2aa,0x10e2f3,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"‘Oh, really.'?
 That's it?
 Humph… Another
 busy day
 tomorrow!"
-90,0x10e2f3,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"What? There is
+90,0x10e2f3,0x10e380,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"What? There is
 no way you can
 have this! Ha!
 I was thinking
@@ -506,7 +506,7 @@ wife… You are
 probably not the
 one…
 "
-91,0x10e380,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Hey <player>.
+91,0x10e380,0x10e419,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey <player>.
 I'm going out.
 I'll be at that
 place where we
@@ -516,11 +516,11 @@ you want. I'll
 be there until
 midnight. See
 you <player>."
-92,0x10e419,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Good work today.
+92,0x10e419,0x10e452,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"Good work today.
 Let's talk.
-<noname><name:0> Why?
+<noname><name>0 Why?
  OK…<ask>"
-93,0x10e452,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"…Just listen.
+93,0x10e452,0x10e596,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"…Just listen.
 I'm serious. I
 think I should
 get off of this
@@ -538,9 +538,9 @@ a dream again…
 So, I want to
 get off of this
 island…
-<noname><name:0> No way!
+<noname><name>0 No way!
  You're right…<ask>"
-94,0x10e596,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"I'm serious.
+94,0x10e596,0x10e69f,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"I'm serious.
 I think I will
 move off of this
 island. I've
@@ -554,9 +554,9 @@ over again.
 I used to like
 you, you know?
 My dream…
-<noname><name:0> Whhaaaat?!
+<noname><name>0 Whhaaaat?!
  OK, I guess.<ask>"
-95,0x10e69f,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Wha…? Ha ha!
+95,0x10e69f,0x10e7b2,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"Wha…? Ha ha!
 Thanks <player>!
 I was about to
 make the same
@@ -572,9 +572,9 @@ said. Now I
 want to work
 with you on
 this farm!
-<noname><name:0> Of course!
+<noname><name>0 Of course!
  Your dream?<ask>"
-96,0x10e7b2,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Wha…? Ha ha!
+96,0x10e7b2,0x10e853,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"Wha…? Ha ha!
 Thanks <player>!
 Now I know what
 I want! I think
@@ -582,15 +582,15 @@ I can be like I
 used to be. It's
 all thanks to
 you…
-<noname><name:0> What about me?
+<noname><name>0 What about me?
  Good luck!<ask>"
-97,0x10e853,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', ' \\n', '<waita>@']",<partner>,"Thanks <player>…
+97,0x10e853,0x10e8ab,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<waita>@""]",,"Thanks <player>…
 I'm really
 sorry. Ha ha…
 It's kind of
 funny…I don't
 mean to cry…"
-98,0x10e8ab,1,"['\\n', '<arrow>0<waita><clear>', ' \\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"I'll never give
+98,0x10e8ab,0x10e945,1,"[""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"I'll never give
 up my dream!…
 If… you don't
 want me to stay
@@ -598,35 +598,35 @@ here… I'll…
 Do you want me
 to leave…?
 
-<noname><name:0> No way!
+<noname><name>0 No way!
  Get your dream.<ask>"
-99,0x10e945,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '100G001@']",<partner>,"Don't say that.
+99,0x10e945,0x10e9bf,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"Don't say that.
 I want to stay
 here, too…
 Well, but… Can
 I stay… here?
 
-<noname><name:0> Of course!
+<noname><name>0 Of course!
  Your dream?<ask>"
-100,0x10e9bf,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Yes… I will
+100,0x10e9bf,0x10ea08,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Yes… I will
 search for my
 dream! Thanks
 for everything.
 Bye <player>…
 "
-101,0x10ea08,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Are you sure
+101,0x10ea08,0x10ea66,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Are you sure
 that I can stay
 here? Oh no,
 I don't mean to
 cry… I'm just
 so happy…"
-102,0x10ea66,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"<var>0 really
+102,0x10ea66,0x10eabc,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"<var>0 really
 went to search
 for his dream…
 I have to work
 harder by myself
 now…"
-103,0x10eabc,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"A few days
+103,0x10eabc,0x10eb9c,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"A few days
 later, I came to
 realize that the
 farm is too big
@@ -640,7 +640,7 @@ my dream was one
 of them…
 <noname>Harvest Moon 3
 The End"
-104,0x10eb9c,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"<player>…Ah…
+104,0x10eb9c,0x10ec2f,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"<player>…Ah…
 I have something
 to tell you, so
 please come to
@@ -650,15 +650,15 @@ night, you know?
 I'll be waiting
 for you.
 "
-105,0x10ec2f,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Good morning
+105,0x10ec2f,0x10ec73,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Good morning
 <player>. It's today.
 Are you ready to
 go to Elder's?"
-106,0x10ec73,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Good morning
+106,0x10ec73,0x10ecb7,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Good morning
 <player>. It's today.
 Are you ready to
 go to Elder's?"
-107,0x10ecb7,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Ah…<player>?
+107,0x10ecb7,0x10ed2a,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Ah…<player>?
 I'm always like
 this as you
 know, but I will
@@ -666,7 +666,7 @@ make you happy
 for the rest of
 my life,
 Darling."
-108,0x10ed2a,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Good morning
+108,0x10ed2a,0x10edf6,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Good morning
 <player>. I had a
 strange dream
 last night…
@@ -680,7 +680,7 @@ think? It might
 be telling me
 about our baby?!
 "
-109,0x10edf6,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Good morning
+109,0x10edf6,0x10eea3,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Good morning
 <player>. Ah…please
 listen to me
 calmly. I… may
@@ -692,47 +692,47 @@ for two months
 be busy…Good
 luck DADDY!
 "
-110,0x10eea3,1,['<waita>@'],<partner>,What is it?
-111,0x10eeb2,1,"['\\n', '<waita>@']",<partner>,"I'm getting used
+110,0x10eea3,0x10eeb2,1,"[""<waita>@""]",,What is it?
+111,0x10eeb2,0x10eed7,1,"[""\\n"", ""<waita>@""]",,"I'm getting used
 to a farm life."
-112,0x10eed7,1,"['\\n', '<waita>@']",<partner>,"Umm…I'm kind
+112,0x10eed7,0x10eef2,1,"[""\\n"", ""<waita>@""]",,"Umm…I'm kind
 of bored…"
-113,0x10eef2,1,"['\\n', '<waita>@']",<partner>,"Let's work
+113,0x10eef2,0x10ef10,1,"[""\\n"", ""<waita>@""]",,"Let's work
 hard together."
-114,0x10ef10,1,"['\\n', '<waita>@']",<partner>,"What? Ah, what
+114,0x10ef10,0x10ef2c,1,"[""\\n"", ""<waita>@""]",,"What? Ah, what
 is it <player>?"
-115,0x10ef2c,1,"['\\n', '<waita>@']",<partner>,"I guess we live
+115,0x10ef2c,0x10ef49,1,"[""\\n"", ""<waita>@""]",,"I guess we live
 together…"
-116,0x10ef49,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Did Mom feel
+116,0x10ef49,0x10ef76,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Did Mom feel
 this way about
 Dad…hmmm?
 "
-117,0x10ef76,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"I have to make
+117,0x10ef76,0x10efa4,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I have to make
 Dad's dream come
 true!
 "
-118,0x10efa4,1,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",<partner>,"I am so happy
+118,0x10efa4,0x10efca,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"I am so happy
 Darling!
 Hee hee!"
-119,0x10efca,1,['<waita>@'],<partner>,What?
-120,0x10efd3,1,"['\\n', '<waita>@']",<partner>,"I wonder about
+119,0x10efca,0x10efd3,1,"[""<waita>@""]",,What?
+120,0x10efd3,0x10efee,1,"[""\\n"", ""<waita>@""]",,"I wonder about
 my farm…"
-121,0x10efee,1,"['\\n', '<waita>@']",<partner>,"I'm getting used
+121,0x10efee,0x10f00f,1,"[""\\n"", ""<waita>@""]",,"I'm getting used
 to it here."
-122,0x10f00f,1,"['\\n', '<waita>@']",<partner>,"Do you like
+122,0x10f00f,0x10f02f,1,"[""\\n"", ""<waita>@""]",,"Do you like
 living here now?"
-123,0x10f02f,1,"['\\n', '<waita>@']",<partner>,"Oh, sorry…What
+123,0x10f02f,0x10f04f,1,"[""\\n"", ""<waita>@""]",,"Oh, sorry…What
 did you say?"
-124,0x10f04f,1,"['\\n', '<waita>@']",<partner>,"…I guess we
+124,0x10f04f,0x10f06d,1,"[""\\n"", ""<waita>@""]",,"…I guess we
 live together…"
-125,0x10f06d,1,"['\\n', '<waita>@']",,"This feeling…
+125,0x10f06d,0x10f089,,"[""\\n"", ""<waita>@""]",,"This feeling…
 What is it…?"
-126,0x10f089,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"I'm happy that
+126,0x10f089,0x10f0c8,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I'm happy that
 I can help you
 with what you
 want to do…"
-127,0x10f0c8,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"I see you everyー
+127,0x10f0c8,0x10f0fa,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I see you everyー
 day, but I feel
 strange…
 "
-128,0x10f0fa,1,['<waita>@'],<partner>,<name:1>Leave me alone!!
+128,0x10f0fa,0x10f110,1,"[""<waita>@""]",,<name>1Leave me alone!!

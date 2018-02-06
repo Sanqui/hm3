@@ -1,13 +1,13 @@
-i,address,name_i,newline_types,name,string
-0,0x1e7c6f,1,"['\\n', '@']",,"Good at field
+i,address,end,name_i,newlines,name,string
+0,0x1e7c6f,0x1e7c83,,"[""\\n"", ""@""]",,"Good at field
 work."
-1,0x1e7c83,1,"['\\n', '@']",,"Good at taking
+1,0x1e7c83,0x1e7ca3,,"[""\\n"", ""@""]",,"Good at taking
 care of animals."
-2,0x1e7ca3,1,"['\\n', '<arrow>2<waita><clear>', '\\n', '<waita>@']",,"<var>0 will be
+2,0x1e7ca3,0x1e7cde,,"[""\\n"", ""<arrow>2<waita><clear>"", ""\\n"", ""<waita>@""]",,"<var>0 will be
 your partner and
 help you with
 the farming."
-3,0x1e7cde,1,"['\\n', '10GT000@']",,"Everything OK?
+3,0x1e7cde,0x1e7d06,,"[""\\n"", ""10GT000@""]",,"Everything OK?
  Yes          No<ask>"
-4,0x1e7d06,1,"['\\n', '@']",,"Select and press
+4,0x1e7d06,0x1e7d25,,"[""\\n"", ""@""]",,"Select and press
 the A Button."

@@ -1,5 +1,5 @@
-i,address,name_i,newline_types,name,string
-0,0x1e59f0,30,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', ' \\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",,"A long, long
+i,address,end,name_i,newlines,name,string
+0,0x1e59f0,0x1e5aa0,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", "" \\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"A long, long
 time ago. There
 was a small
 village with
@@ -11,7 +11,7 @@ anything in
 return for what
 they did for
 others."
-1,0x1e5aa0,30,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",,"One day, good
+1,0x1e5aa0,0x1e5b11,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"One day, good
 things happened
 to everyone in
 the village…
@@ -19,7 +19,7 @@ as if they were
 rewarded for
 their kindness.
 "
-2,0x1e5b11,30,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",,"However, nothing
+2,0x1e5b11,0x1e5bc9,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"However, nothing
 good happened to
 one lazy man.
 Moreover, he
@@ -31,7 +31,7 @@ last he got
 tired of being
 good and became
 bad."
-3,0x1e5bc9,30,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",,"When the lazy
+3,0x1e5bc9,0x1e5c7d,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"When the lazy
 man got attacked
 by a wild dog,
 he accidentally
@@ -43,7 +43,7 @@ the little
 flower came to
 thank the lazy
 man."
-4,0x1e5c7d,30,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",,"Although the
+4,0x1e5c7d,0x1e5d74,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Although the
 lazy man did not
 mean to save the
 little flower,
@@ -59,7 +59,7 @@ anything.
 Moreover, it
 was lazier than
 the man was."
-5,0x1e5d74,30,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",,"Even the lazy
+5,0x1e5d74,0x1e5ea7,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Even the lazy
 man thought the
 little flower
 was too lazy to
@@ -79,7 +79,7 @@ flower was fun
 for a lazy man
 with no friends.
 "
-6,0x1e5ea7,30,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '<fc>づ@']",,"One night, the
+6,0x1e5ea7,0x1e600c,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""<fc>\u3065@""]",,"One night, the
 lazy man asked
 the flower if
 there was
@@ -102,7 +102,7 @@ it could do for
 him and decided
 to tell him
 about it."
-7,0x1e600c,30,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",,"The next day
+7,0x1e600c,0x1e617a,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"The next day
 when the lazy
 man woke up, the
 flower could not
@@ -126,7 +126,7 @@ He just wanted
 to live with the
 lazy flower.
 "
-8,0x1e617a,30,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', ' <fc>づ@']",,"Since that day,
+8,0x1e617a,0x1e6234,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", "" <fc>\u3065@""]",,"Since that day,
 the lazy man
 started to work
 hard. The

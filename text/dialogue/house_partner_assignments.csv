@@ -1,46 +1,46 @@
-i,address,name_i,newline_types,name,string
-0,0x10c2eb,1,"['\\n', '10GT000@']",<partner>,"Start working?
+i,address,end,name_i,newlines,name,string
+0,0x10c2eb,0x10c315,1,"[""\\n"", ""10GT000@""]",,"Start working?
  Yes          No<ask>"
-1,0x10c315,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '3009GP0@']",<partner>,"<name:1>What should I
+1,0x10c315,0x10c35b,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""3009GP0@""]",,"<name>1What should I
 do today?
  Animals  MーEーW
  Anything None<ask>"
-2,0x10c35b,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Take care of
+2,0x10c35b,0x10c380,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Take care of
 the animals?
 OK!
 "
-3,0x10c380,1,"['\\n', '<waita>@']",<partner>,"Collect the
+3,0x10c380,0x10c39c,1,"[""\\n"", ""<waita>@""]",,"Collect the
 produce? OK!"
-4,0x10c39c,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Are you sure?
+4,0x10c39c,0x10c3cd,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Are you sure?
 Yes! I'll work
 hard! Yeah!
 "
-5,0x10c3cd,1,['<waita>@'],<partner>,Nothing? OK…
-6,0x10c3dd,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"I fed <var>0 and
+5,0x10c3cd,0x10c3dd,1,"[""<waita>@""]",,Nothing? OK…
+6,0x10c3dd,0x10c40a,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I fed <var>0 and
 took care of <var>8
 animals.
 "
-7,0x10c40a,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"I carried <var>0
+7,0x10c40a,0x10c448,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I carried <var>0
 animals' produce
 to the shipping
 storage."
-8,0x10c448,1,"['\\n', '10GT000@']",<partner>,"Start working?
+8,0x10c448,0x10c472,1,"[""\\n"", ""10GT000@""]",,"Start working?
  Yes          No<ask>"
-9,0x10c472,1,"['\\n', '<waita>@']",<partner>,"Decide my work
+9,0x10c472,0x10c493,1,"[""\\n"", ""<waita>@""]",,"Decide my work
 with this map."
-10,0x10c493,1,"['\\n', '<waita>@']",<partner>,"How do you want
+10,0x10c493,0x10c4b4,1,"[""\\n"", ""<waita>@""]",,"How do you want
 me to till?<arrow>0"
-11,0x10c4b4,1,"['\\n', '<waita>@']",<partner>,"Choose the seeds
+11,0x10c4b4,0x10c4d5,1,"[""\\n"", ""<waita>@""]",,"Choose the seeds
 to sow here."
-12,0x10c4d5,1,"['\\n', '<waita>@']",<partner>,"OK! Leave it
+12,0x10c4d5,0x10c4ec,1,"[""\\n"", ""<waita>@""]",,"OK! Leave it
 to me!"
-13,0x10c4ec,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"What do you
+13,0x10c4ec,0x10c522,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"What do you
 think? Use the
 Control Pad to
 view."
-14,0x10c522,1,"['\\n', '<waita>@']",<partner>,"…<player>… We
+14,0x10c522,0x10c53d,1,"[""\\n"", ""<waita>@""]",,"…<player>… We
 have no animals."
-15,0x10c53d,1,"['\\n', '<waita>@']",<partner>,"Anything? What
+15,0x10c53d,0x10c55d,1,"[""\\n"", ""<waita>@""]",,"Anything? What
 do you mean…?"
-16,0x10c55d,1,"['\\n', '<waita>@']",<partner>,"No work? OK. I
+16,0x10c55d,0x10c57e,1,"[""\\n"", ""<waita>@""]",,"No work? OK. I
 can rest then."

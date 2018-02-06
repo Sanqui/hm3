@@ -1,5 +1,5 @@
-i,address,name_i,newline_types,name,string
-0,0x1e6234,30,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",,"In the meeting
+i,address,end,name_i,newlines,name,string
+0,0x1e6234,0x1e62c3,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"In the meeting
 room of a record
 company…
 Producer One is
@@ -9,15 +9,15 @@ audition tape
 made by a band
 called the
 Indies."
-1,0x1e62c3,32,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",Mr.One,"We heard your
+1,0x1e62c3,0x1e63fb,32,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"We heard your
 songs.
-<name:37>Thank you very
+<name>bThank you very
 much.
-<name:32>About the result
+<name>WAbout the result
 … Mr. Meow, we
 decided to hire
 only you.
-<name:34>Wait a minute!
+<name>YWait a minute!
 I've been making
 music with him
 from the start.
@@ -25,19 +25,19 @@ There is no way
 you can hire
 only one of us!
 
-<name:33>… … … …
+<name>X… … … …
 
-<name:32>Well, it's all
+<name>WWell, it's all
 up to you. Our
 decision will
 not change."
-2,0x1e63fb,32,"['<fc>づ<clear>', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '<fc>づ<clear>', '\\n', '<fc>づ@']",,"<noname><name:34>Darn!!
-<name:33>Good for you…
-<name:34>What are you
+2,0x1e63fb,0x1e65c6,,"[""<fc>\u3065<clear>"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"<noname><name>YDarn!!
+<name>XGood for you…
+<name>YWhat are you
 saying!? We've
 been together…
 
-<name:33>It's your dream!
+<name>XIt's your dream!
 You always
 wanted to become
 famous and sing
@@ -45,8 +45,8 @@ in front of
 large audiences
 all around the
 world!
-<name:34>But…
-<name:33>I've been just
+<name>YBut…
+<name>XI've been just
 holding you up…
 You're a star
 and I've always
@@ -60,31 +60,31 @@ someday! Don't
 worry about me.
 Take their
 offer…
-<name:32>… … … …
-<name:34>…Alright,
+<name>W… … … …
+<name>Y…Alright,
 Polo…"
-3,0x1e65c6,32,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",,"<noname><name:32>Mr. Meow. What
+3,0x1e65c6,0x1e6623,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"<noname><name>WMr. Meow. What
 do you think?
-<name:34>…Yes. I…
+<name>Y…Yes. I…
 will do it!
-<name:32>Good. I'm glad
+<name>WGood. I'm glad
 to hear that."
-4,0x1e6623,32,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '<fc>づ@']",Mr.One,"OK. Now the two
+4,0x1e6623,0x1e666e,32,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""<fc>\u3065@""]",,"OK. Now the two
 of you have to
 try even harder
 to make good
 music!"
-5,0x1e666e,34,"['\\n', '<fc>づ<clear>', '\\n', ' <fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",Meow,"<name:34>What!? You
+5,0x1e666e,0x1e66e4,34,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", "" <fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"<name>YWhat!? You
 mean…?
-<name:32>Yes. It was our
+<name>WYes. It was our
 company's
 decision to
 hire both of
 you!!
 
-<name:37>Thank you very
+<name>bThank you very
 much!!"
-6,0x1e66e4,34,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '<fc>づ@']",,"<noname><name:32>“It's your
+6,0x1e66e4,0x1e677c,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""<fc>\u3065@""]",,"<noname><name>W“It's your
 dreams!”…
 Those kids…
 They're just

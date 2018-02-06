@@ -1,4 +1,4 @@
-INCLUDE "charmap.asm"
+INCLUDE "build/charmap.asm"
 
 CHARACTER_NAME_LENGTH   EQU 6
 PLAYER_NAME_LENGTH      EQU 4

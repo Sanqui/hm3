@@ -1,17 +1,17 @@
-i,address,name_i,newline_types,name,string
-0,0x12c19b,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"There are <var>0
+i,address,end,name_i,newlines,name,string
+0,0x12c19b,0x12c1d2,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"There are <var>0
 books. Read?
 
  Yes          No<ask>"
-1,0x12c1d2,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GR000@']",,"Read 'Blessings
+1,0x12c1d2,0x12c210,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GR000@""]",,"Read ‘Blessings
 of the Field'?
 
  Read       Next<ask>"
-2,0x12c210,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GR000@']",,"Ch1:Tilling the
+2,0x12c210,0x12c247,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GR000@""]",,"Ch1:Tilling the
     Soil
 
  Read       Next<ask>"
-3,0x12c247,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Use a hoe to
+3,0x12c247,0x12c35c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Use a hoe to
 till the soil.
 The hoe only
 works on the
@@ -29,9 +29,9 @@ Ch1:Tilling the
     Soil     END
  By Florist Nina
 "
-4,0x12c35c,1,"['\\n', '10GR000@']",,"Ch2:Sowing
+4,0x12c35c,0x12c381,,"[""\\n"", ""10GR000@""]",,"Ch2:Sowing
  Read       Next<ask>"
-5,0x12c381,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '<waita>@']",,"One sack of
+5,0x12c381,0x12c561,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"One sack of
 seeds covers a
 3x3 square area
 of tilled soil.
@@ -62,9 +62,9 @@ flowers!
 Ch2:Sowing
              END
  By Florist Nina"
-6,0x12c561,1,"['\\n', '10GR000@']",,"Ch3:Watering
+6,0x12c561,0x12c588,,"[""\\n"", ""10GR000@""]",,"Ch3:Watering
  Read       Next<ask>"
-7,0x12c588,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Don't forget to
+7,0x12c588,0x12c680,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Don't forget to
 water the
 vegetables and
 the flowers
@@ -80,13 +80,13 @@ flowers!
 Ch3:Watering
              END
  By Florist Nina"
-8,0x12c680,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GR000@']",,"Read 'Living
+8,0x12c680,0x12c6bb,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GR000@""]",,"Read ‘Living
 with Animals'?
 
  Read       Next<ask>"
-9,0x12c6bb,1,"['\\n', '10GR000@']",,"Ch1:Animals
+9,0x12c6bb,0x12c6e1,,"[""\\n"", ""10GR000@""]",,"Ch1:Animals
  Read       Next<ask>"
-10,0x12c6e1,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Animals are
+10,0x12c6e1,0x12c7b3,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Animals are
 pretty tidy.
 Brushing and
 shampooing is
@@ -100,9 +100,9 @@ Ch1:Animals
              END
 By David at the
 Animal Shop"
-11,0x12c7b3,1,"['\\n', '10GR000@']",,"Ch2:Feeding
+11,0x12c7b3,0x12c7d9,,"[""\\n"", ""10GR000@""]",,"Ch2:Feeding
  Read       Next<ask>"
-12,0x12c7d9,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"You give fodder
+12,0x12c7d9,0x12c917,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"You give fodder
 to the animals,
 but you need to
 grow grass to
@@ -122,9 +122,9 @@ Ch2:Feeding
              END
 By David at the
 Animal Shop"
-13,0x12c917,1,"['\\n', '10GR000@']",,"Ch3:Baby Animals
+13,0x12c917,0x12c942,,"[""\\n"", ""10GR000@""]",,"Ch3:Baby Animals
  Read       Next<ask>"
-14,0x12c942,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"If you want a
+14,0x12c942,0x12cb41,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"If you want a
 female animal to
 have a baby, you
 need to place a
@@ -154,13 +154,13 @@ Ch3:Baby Animals
              END
 By David at the
 Animal Shop"
-15,0x12cb41,1,"['\\n', '10GR000@']",,"Read 'Pioneers'?
+15,0x12cb41,0x12cb6d,,"[""\\n"", ""10GR000@""]",,"Read ‘Pioneers'?
  Read       Next<ask>"
-16,0x12cb6d,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GR000@']",,"Ch1:Selecting
+16,0x12cb6d,0x12cba3,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GR000@""]",,"Ch1:Selecting
     Tools
 
  Read       Next<ask>"
-17,0x12cba3,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', ' <arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Tools used to be
+17,0x12cba3,0x12cccb,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Tools used to be
 stored in the
 tool box, but
 you will use the
@@ -178,9 +178,9 @@ tool box…
 Ch1:Selecting
     Tools    END
 By Inventor Ann"
-18,0x12cccb,1,"['\\n', '10GR000@']",,"Ch2:How It Works
+18,0x12cccb,0x12ccf6,,"[""\\n"", ""10GR000@""]",,"Ch2:How It Works
  Read       Next<ask>"
-19,0x12ccf6,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Sickle, hoe, ax,
+19,0x12ccf6,0x12cf46,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Sickle, hoe, ax,
 hammer, watering
 can and shovel
 work as follows.
@@ -216,27 +216,27 @@ shoveled fields.
 Ch2:How It Works
       END
 By Inventor Ann"
-20,0x12cf46,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GR000@']",,"Read 'Cherry Cup
+20,0x12cf46,0x12cf7f,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GR000@""]",,"Read ‘Cherry Cup
 Report'?
 
  Read       Next<ask>"
-21,0x12cf7f,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GR000@']",,"Read 'Gallop
+21,0x12cf7f,0x12cfbb,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GR000@""]",,"Read ‘Gallop
 Stakes Report'?
 
  Read       Next<ask>"
-22,0x12cf7f,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GR000@']",,"Read 'Gallop
+22,0x12cf7f,0x12cfbb,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GR000@""]",,"Read ‘Gallop
 Stakes Report'?
 
  Read       Next<ask>"
-23,0x12cfbb,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GR000@']",,"Read 'Catch
+23,0x12cfbb,0x12cff2,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GR000@""]",,"Read ‘Catch
 the King!'?
 
  Read       Next<ask>"
-24,0x12cfbb,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GR000@']",,"Read 'Catch
+24,0x12cfbb,0x12cff2,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GR000@""]",,"Read ‘Catch
 the King!'?
 
  Read       Next<ask>"
-25,0x12cff2,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Fish List
+25,0x12cff2,0x12d180,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fish List
          By Greg
 Farm River:Carp,
 King Carp, Black
@@ -262,11 +262,11 @@ Secret Info!
 Secret Place:
 King of Lake.
 "
-26,0x12d180,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GR000@']",,"Read 'Mysteries
+26,0x12d180,0x12d1bf,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GR000@""]",,"Read ‘Mysteries
 of the Island'?
 
  Read       Next<ask>"
-27,0x12d1bf,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"No.1:Legend of
+27,0x12d1bf,0x12d449,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"No.1:Legend of
 the Lake
 The water of a
 lake, deep
@@ -308,54 +308,54 @@ year. The cliff
 on the island
 is the best
 place to see!"
-28,0x12d449,1,"['\\n', '10GT000@']",,"Stop reading?
+28,0x12d449,0x12d470,,"[""\\n"", ""10GT000@""]",,"Stop reading?
  Yes          No<ask>"
-29,0x12d470,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Choose another
+29,0x12d470,0x12d4a2,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Choose another
 book?
 
  Yes          No<ask>"
-30,0x12d4a2,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Cherry Cup
+30,0x12d4a2,0x12d4c6,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Cherry Cup
 Derby Race
 
 5th…<var>4<arrow>0"
-31,0x12d4c6,1,"['\\n', '<waita>@']",,"4th…<var>4
+31,0x12d4c6,0x12d4d7,,"[""\\n"", ""<waita>@""]",,"4th…<var>4
 3rd…<var>G<arrow>0"
-32,0x12d4d7,1,"['\\n', '<waita>@']",,"2nd…<var>4
+32,0x12d4d7,0x12d4e8,,"[""\\n"", ""<waita>@""]",,"2nd…<var>4
 1st…<var>G<arrow>0"
-33,0x12d4e8,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Cherry Cup
+33,0x12d4e8,0x12d50c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Cherry Cup
 Filly Race
 5th…<var>4
 <arrow>0"
-34,0x12d50c,1,"['\\n', '<waita>@']",,"4th…<var>4
+34,0x12d50c,0x12d51d,,"[""\\n"", ""<waita>@""]",,"4th…<var>4
 3rd…<var>G<arrow>0"
-35,0x12d51d,1,"['\\n', '<waita>@']",,"2nd…<var>4
+35,0x12d51d,0x12d52c,,"[""\\n"", ""<waita>@""]",,"2nd…<var>4
 1st…<var>G"
-36,0x12d52c,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Gallop Stakes
+36,0x12d52c,0x12d553,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Gallop Stakes
 Derby Race
 5th…<var>4
 <arrow>0"
-37,0x12d553,1,"['\\n', '<waita>@']",,"4th…<var>4
+37,0x12d553,0x12d564,,"[""\\n"", ""<waita>@""]",,"4th…<var>4
 3rd…<var>G<arrow>0"
-38,0x12d564,1,"['\\n', '<waita>@']",,"2nd…<var>4
+38,0x12d564,0x12d575,,"[""\\n"", ""<waita>@""]",,"2nd…<var>4
 1st…<var>G<arrow>0"
-39,0x12d575,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Gallop Stakes
+39,0x12d575,0x12d59c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Gallop Stakes
 Filly Race
 5th…<var>4
 <arrow>0"
-40,0x12d59c,1,"['\\n', '<waita>@']",,"4th…<var>4
+40,0x12d59c,0x12d5ad,,"[""\\n"", ""<waita>@""]",,"4th…<var>4
 3rd…<var>G<arrow>0"
-41,0x12d5ad,1,"['\\n', '<waita>@']",,"2nd…<var>4
+41,0x12d5ad,0x12d5bc,,"[""\\n"", ""<waita>@""]",,"2nd…<var>4
 1st…<var>G"
-42,0x12d5bc,1,['@'],,Sp Diamond
-43,0x12d5c7,1,['@'],,Rice Shower
-44,0x12d5d3,1,['@'],,Ocean King
-45,0x12d5de,1,['@'],,H.Mountain
-46,0x12d5e9,1,['@'],,RB King
-47,0x12d5f1,1,['@'],,Great Brian
-48,0x12d5fd,1,['@'],,Simply Stay
-49,0x12d609,1,['@'],,Winning Gun
-50,0x12d615,1,['@'],,White Dove
-51,0x12d620,1,['@'],,Diana Act
-52,0x12d62a,1,['@'],,Ride Leader
-53,0x12d636,1,['@'],,North Frost
-54,0x12d642,1,['@'],,Stone Flyer
+42,0x12d5bc,0x12d5c7,,"[""@""]",,Sp Diamond
+43,0x12d5c7,0x12d5d3,,"[""@""]",,Rice Shower
+44,0x12d5d3,0x12d5de,,"[""@""]",,Ocean King
+45,0x12d5de,0x12d5e9,,"[""@""]",,H.Mountain
+46,0x12d5e9,0x12d5f1,,"[""@""]",,RB King
+47,0x12d5f1,0x12d5fd,,"[""@""]",,Great Brian
+48,0x12d5fd,0x12d609,,"[""@""]",,Simply Stay
+49,0x12d609,0x12d615,,"[""@""]",,Winning Gun
+50,0x12d615,0x12d620,,"[""@""]",,White Dove
+51,0x12d620,0x12d62a,,"[""@""]",,Diana Act
+52,0x12d62a,0x12d636,,"[""@""]",,Ride Leader
+53,0x12d636,0x12d642,,"[""@""]",,North Frost
+54,0x12d642,0x12d64e,,"[""@""]",,Stone Flyer

@@ -1,16 +1,16 @@
-i,address,name_i,newline_types,name,string
-0,0x1e7d25,1,"['\\n', '10GT000@']",,"Throw this out?
+i,address,end,name_i,newlines,name,string
+0,0x1e7d25,0x1e7d4e,,"[""\\n"", ""10GT000@""]",,"Throw this out?
  Yes          No<ask>"
-1,0x1e7d4e,1,['@'],,<var>S<var>0<var>4<var>C<var>G<var>K<var>OM
-2,0x1e7d5e,1,"['\\n', '@']",,"Which file do
+1,0x1e7d4e,0x1e7d5e,,"[""@""]",,<var>S<var>0<var>4<var>C<var>G<var>K<var>OM
+2,0x1e7d5e,0x1e7d7d,,"[""\\n"", ""@""]",,"Which file do
 you want to use?"
-3,0x1e7d7d,1,"['\\n', '10GT000@']",,"Use this one?
+3,0x1e7d7d,0x1e7da4,,"[""\\n"", ""10GT000@""]",,"Use this one?
  Yes          No<ask>"
-4,0x1e7da4,1,"['\\n', '10GT000@']",,"Overwrite?
+4,0x1e7da4,0x1e7dc8,,"[""\\n"", ""10GT000@""]",,"Overwrite?
  Yes          No<ask>"
-5,0x1e7dc8,1,"['\\n', '<waita>@']",,"Data has been
+5,0x1e7dc8,0x1e7de0,,"[""\\n"", ""<waita>@""]",,"Data has been
 saved!<arrow>2"
-6,0x1e7de0,1,"['\\n', '@']",,"<var>0
+6,0x1e7de0,0x1e7df2,,"[""\\n"", ""@""]",,"<var>0
 <var>O in <var>G days."
-7,0x1e7df2,1,"['\\n', '@']",,"No partーtime
+7,0x1e7df2,0x1e7e09,,"[""\\n"", ""@""]",,"No partーtime
 work now."

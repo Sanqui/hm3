@@ -1,71 +1,71 @@
-i,address,name_i,newline_types,name,string
-0,0x1e477c,1,['@'],,Hand
-1,0x1e4781,1,['@'],,Shovel
-2,0x1e4788,1,['@'],,Turnip Seeds
-3,0x1e4795,1,['@'],,Potato Seeds
-4,0x1e47a2,1,['@'],,Asparagus Seeds
-5,0x1e47b2,1,['@'],,Corn Seeds
-6,0x1e47bd,1,['@'],,Tomato Seeds
-7,0x1e47ca,1,['@'],,W.Melon Seeds
-8,0x1e47d8,1,['@'],,S.Potato Seeds
-9,0x1e47e7,1,['@'],,Peanut Seeds
-10,0x1e47f4,1,['@'],,Eggplant Seeds
-11,0x1e4803,1,['@'],,Rice Seeds
-12,0x1e480e,1,['@'],,Wheat Seeds
-13,0x1e481a,1,['@'],,Fertilizer
-14,0x1e4825,1,['@'],,Sprinkler
-15,0x1e482f,1,['@'],,Stardust Seeds
-16,0x1e483e,1,['@'],,Cherry F. Seeds
-17,0x1e484e,1,['@'],,Primerose Seeds
-18,0x1e485e,1,['@'],,Moonlight Seeds
-19,0x1e486e,1,['@'],,S.Star Seeds
-20,0x1e487b,1,['@'],,Comet Seeds
-21,0x1e4887,1,['@'],,Full Moon Seeds
-22,0x1e4897,1,['@'],,S. Dream Seeds
-23,0x1e48a6,1,['@'],,Grass Seeds
-24,0x1e48b2,1,['@'],,Sheep Medicine
-25,0x1e48c1,1,['@'],,Chicken Med.
-26,0x1e48ce,1,['@'],,Cow Medicine
-27,0x1e48db,1,['@'],,Horse Medicine
-28,0x1e48ea,1,['@'],,Brush
-29,0x1e48f0,1,['@'],,Shampoo
-30,0x1e48f8,1,['@'],,Clippers
-31,0x1e4901,1,['@'],,Milker
-32,0x1e4908,1,['@'],,Saddle
-33,0x1e490f,1,['@'],,Scarecrow
-34,0x1e4919,1,['@'],,Miracle Gloves
-35,0x1e4928,1,['@'],,Fodder Set
-36,0x1e4933,1,['@'],,Fishing Rod
-37,0x1e493f,1,['@'],,??? Egg
-38,0x1e4947,1,['@'],,Snowboard
-39,0x1e4951,1,['@'],,Pak
-40,0x1e4955,1,['@'],,Sickle Lv1
-41,0x1e4960,1,['@'],,Sickle Lv2
-42,0x1e496b,1,['@'],,Sickle Lv3
-43,0x1e4976,1,['@'],,Hoe Lv1
-44,0x1e497e,1,['@'],,Hoe Lv2
-45,0x1e4986,1,['@'],,Hoe Lv3
-46,0x1e498e,1,['@'],,Ax Lv1
-47,0x1e4995,1,['@'],,Ax Lv2
-48,0x1e499c,1,['@'],,Ax Lv3
-49,0x1e49a3,1,['@'],,Hammer Lv1
-50,0x1e49ae,1,['@'],,Hammer Lv2
-51,0x1e49b9,1,['@'],,Hammer Lv3
-52,0x1e49c4,1,['@'],,Watering C.Lv1
-53,0x1e49d3,1,['@'],,Watering C.Lv2
-54,0x1e49e2,1,['@'],,Watering C.LV3
-55,0x1e49f1,1,['@'],,Sickle
-56,0x1e49f8,1,['@'],,Sickle
-57,0x1e49ff,1,['@'],,Sickle
-58,0x1e4a06,1,['@'],,Hoe
-59,0x1e4a0a,1,['@'],,Hoe
-60,0x1e4a0e,1,['@'],,Hoe
-61,0x1e4a12,1,['@'],,Ax
-62,0x1e4a15,1,['@'],,Ax
-63,0x1e4a18,1,['@'],,Ax
-64,0x1e4a1b,1,['@'],,Hammer
-65,0x1e4a22,1,['@'],,Hammer
-66,0x1e4a29,1,['@'],,Hammer
-67,0x1e4a30,1,['@'],,Watering Can
-68,0x1e4a3d,1,['@'],,Watering Can
-69,0x1e4a4a,1,['@'],,Watering Can
+i,address,end,name_i,newlines,name,string
+0,0x1e477c,0x1e4781,,"[""@""]",,Hand
+1,0x1e4781,0x1e4788,,"[""@""]",,Shovel
+2,0x1e4788,0x1e4795,,"[""@""]",,Turnip Seeds
+3,0x1e4795,0x1e47a2,,"[""@""]",,Potato Seeds
+4,0x1e47a2,0x1e47b2,,"[""@""]",,Asparagus Seeds
+5,0x1e47b2,0x1e47bd,,"[""@""]",,Corn Seeds
+6,0x1e47bd,0x1e47ca,,"[""@""]",,Tomato Seeds
+7,0x1e47ca,0x1e47d8,,"[""@""]",,W.Melon Seeds
+8,0x1e47d8,0x1e47e7,,"[""@""]",,S.Potato Seeds
+9,0x1e47e7,0x1e47f4,,"[""@""]",,Peanut Seeds
+10,0x1e47f4,0x1e4803,,"[""@""]",,Eggplant Seeds
+11,0x1e4803,0x1e480e,,"[""@""]",,Rice Seeds
+12,0x1e480e,0x1e481a,,"[""@""]",,Wheat Seeds
+13,0x1e481a,0x1e4825,,"[""@""]",,Fertilizer
+14,0x1e4825,0x1e482f,,"[""@""]",,Sprinkler
+15,0x1e482f,0x1e483e,,"[""@""]",,Stardust Seeds
+16,0x1e483e,0x1e484e,,"[""@""]",,Cherry F. Seeds
+17,0x1e484e,0x1e485e,,"[""@""]",,Primerose Seeds
+18,0x1e485e,0x1e486e,,"[""@""]",,Moonlight Seeds
+19,0x1e486e,0x1e487b,,"[""@""]",,S.Star Seeds
+20,0x1e487b,0x1e4887,,"[""@""]",,Comet Seeds
+21,0x1e4887,0x1e4897,,"[""@""]",,Full Moon Seeds
+22,0x1e4897,0x1e48a6,,"[""@""]",,S. Dream Seeds
+23,0x1e48a6,0x1e48b2,,"[""@""]",,Grass Seeds
+24,0x1e48b2,0x1e48c1,,"[""@""]",,Sheep Medicine
+25,0x1e48c1,0x1e48ce,,"[""@""]",,Chicken Med.
+26,0x1e48ce,0x1e48db,,"[""@""]",,Cow Medicine
+27,0x1e48db,0x1e48ea,,"[""@""]",,Horse Medicine
+28,0x1e48ea,0x1e48f0,,"[""@""]",,Brush
+29,0x1e48f0,0x1e48f8,,"[""@""]",,Shampoo
+30,0x1e48f8,0x1e4901,,"[""@""]",,Clippers
+31,0x1e4901,0x1e4908,,"[""@""]",,Milker
+32,0x1e4908,0x1e490f,,"[""@""]",,Saddle
+33,0x1e490f,0x1e4919,,"[""@""]",,Scarecrow
+34,0x1e4919,0x1e4928,,"[""@""]",,Miracle Gloves
+35,0x1e4928,0x1e4933,,"[""@""]",,Fodder Set
+36,0x1e4933,0x1e493f,,"[""@""]",,Fishing Rod
+37,0x1e493f,0x1e4947,,"[""@""]",,??? Egg
+38,0x1e4947,0x1e4951,,"[""@""]",,Snowboard
+39,0x1e4951,0x1e4955,,"[""@""]",,Pak
+40,0x1e4955,0x1e4960,,"[""@""]",,Sickle Lv1
+41,0x1e4960,0x1e496b,,"[""@""]",,Sickle Lv2
+42,0x1e496b,0x1e4976,,"[""@""]",,Sickle Lv3
+43,0x1e4976,0x1e497e,,"[""@""]",,Hoe Lv1
+44,0x1e497e,0x1e4986,,"[""@""]",,Hoe Lv2
+45,0x1e4986,0x1e498e,,"[""@""]",,Hoe Lv3
+46,0x1e498e,0x1e4995,,"[""@""]",,Ax Lv1
+47,0x1e4995,0x1e499c,,"[""@""]",,Ax Lv2
+48,0x1e499c,0x1e49a3,,"[""@""]",,Ax Lv3
+49,0x1e49a3,0x1e49ae,,"[""@""]",,Hammer Lv1
+50,0x1e49ae,0x1e49b9,,"[""@""]",,Hammer Lv2
+51,0x1e49b9,0x1e49c4,,"[""@""]",,Hammer Lv3
+52,0x1e49c4,0x1e49d3,,"[""@""]",,Watering C.Lv1
+53,0x1e49d3,0x1e49e2,,"[""@""]",,Watering C.Lv2
+54,0x1e49e2,0x1e49f1,,"[""@""]",,Watering C.LV3
+55,0x1e49f1,0x1e49f8,,"[""@""]",,Sickle
+56,0x1e49f8,0x1e49ff,,"[""@""]",,Sickle
+57,0x1e49ff,0x1e4a06,,"[""@""]",,Sickle
+58,0x1e4a06,0x1e4a0a,,"[""@""]",,Hoe
+59,0x1e4a0a,0x1e4a0e,,"[""@""]",,Hoe
+60,0x1e4a0e,0x1e4a12,,"[""@""]",,Hoe
+61,0x1e4a12,0x1e4a15,,"[""@""]",,Ax
+62,0x1e4a15,0x1e4a18,,"[""@""]",,Ax
+63,0x1e4a18,0x1e4a1b,,"[""@""]",,Ax
+64,0x1e4a1b,0x1e4a22,,"[""@""]",,Hammer
+65,0x1e4a22,0x1e4a29,,"[""@""]",,Hammer
+66,0x1e4a29,0x1e4a30,,"[""@""]",,Hammer
+67,0x1e4a30,0x1e4a3d,,"[""@""]",,Watering Can
+68,0x1e4a3d,0x1e4a4a,,"[""@""]",,Watering Can
+69,0x1e4a4a,0x1e4a57,,"[""@""]",,Watering Can

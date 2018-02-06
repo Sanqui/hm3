@@ -1,5 +1,5 @@
-i,address,name_i,newline_types,name,string
-0,0x10812f,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",<player>,"What… is this?
+i,address,end,name_i,newlines,name,string
+0,0x10812f,0x1081c0,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"What… is this?
 It seems like an
 egg. If I leave
 it here, the
@@ -7,15 +7,16 @@ wild dogs might
 eat it. Should I
 take it home?
  Yes          No<ask>"
-1,0x1081ca,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"Cool, I found a
+0-TRASH,0x1081c0,0x1081ca,,,,Get Shovel
+1,0x1081ca,0x10820d,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Cool, I found a
 shovel! Could I
 dig a hot spring
 with this?"
-2,0x10820d,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"Wha…what is
+2,0x10820d,0x10824e,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wha…what is
 going on!? It
 has gotten dark
 all of a sudden!"
-3,0x10824e,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"No, you found
+3,0x10824e,0x1082df,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"No, you found
 me… I thought
 no one would
 find me here…
@@ -25,23 +26,23 @@ me not to tell
 anyone where I
 am! Please!
 "
-4,0x1082df,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Please do not
+4,0x1082df,0x10832b,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Please do not
 tell anyone
 about me. I
 trust you, so
 please don't!
 "
-5,0x10832b,0,"[' \\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"No, no! Don't
+5,0x10832b,0x108360,,"["" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"No, no! Don't
 put it down!
 I'll get
 smashed!"
-6,0x108360,0,"['\\n', '<waita>@']",,"All stores
+6,0x108360,0x10837a,,"[""\\n"", ""<waita>@""]",,"All stores
 closed today."
-7,0x10837a,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"The field is
+7,0x10837a,0x1083b3,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"The field is
 damaged too.
 Today's been a
 bad day…"
-8,0x1083b3,0,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<player>,"Oh, no! All of
+8,0x1083b3,0x1083e2,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Oh, no! All of
 my animals are
 unhappy!
 "

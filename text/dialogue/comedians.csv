@@ -1,33 +1,33 @@
-i,address,name_i,newline_types,name,string
-0,0x1e677c,34,"['\\n', '<fc>づ@']",,"Comedians
+i,address,end,name_i,newlines,name,string
+0,0x1e677c,0x1e679b,,"[""\\n"", ""<fc>\u3065@""]",,"Comedians
 “Your Own Fault”"
-1,0x1e679b,35,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",Kojima,"Hey, how are YOU
+1,0x1e679b,0x1e699e,35,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Hey, how are YOU
 doing?
-<name:37>How are YOU
+<name>bHow are YOU
 doing?
-<name:36>How are YOU
+<name>aHow are YOU
 doing?
-<name:35>OK, enough. I've
+<name>ZOK, enough. I've
 been working too
 much lately… I
 want to be a kid
 again…
 
-<name:36>I know. When I
+<name>aI know. When I
 was a kid, all I
 did was play.
 I did all sorts
 of mischief.
 
-<name:35>Oh, yeah. Ding
+<name>ZOh, yeah. Ding
 ーDong Ditch…
-<name:36>Yes! You knock
+<name>aYes! You knock
 on someone's
 door and before
 they come out,
 you run away!
 
-<name:35>I did it
+<name>ZI did it
 somewhat
 differently. I
 would disguise
@@ -39,40 +39,40 @@ just knock on
 the door and
 run!
 "
-2,0x1e699e,36,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",Otose,"Was it really
+2,0x1e699e,0x1e6a03,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Was it really
 necessary?
-<name:35>Then someone
+<name>ZThen someone
 would come out
 and say, “Who is
 it? Oh, Kojima.”"
-3,0x1e6a03,36,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', ' <fc>づ@']",Otose,"Then why did you
+3,0x1e6a03,0x1e6af9,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", "" <fc>\u3065@""]",,"Then why did you
 disguise
 yourself!?
 
-<name:35>Well…
-<name:36>Anyway, do you
+<name>ZWell…
+<name>aAnyway, do you
 rememer kids who
 would put push
 pins on
 someone's chair?
 
-<name:35>Yes. I did that
+<name>ZYes. I did that
 too. And someone
 who sat on the
 push pins would
 say, “Ouch, I'm
 not a poster!”"
-4,0x1e6af9,36,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ@']",Otose,"What kind of kid
+4,0x1e6af9,0x1e6c6a,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"What kind of kid
 would respond so
 nicely to that!?
 
-<name:35>How about
+<name>ZHow about
 sticking a piece
 of paper saying
 “Stupid” on
 someone's back?
 
-<name:36>Oh, right. I'd
+<name>aOh, right. I'd
 tap on someone's
 back when I was
 saying 'Hi', and
@@ -80,7 +80,7 @@ secretly stick
 the paper on
 them.
 
-<name:35>I went to my
+<name>ZI went to my
 5thーyear class
 reunion the
 other day, and
@@ -88,20 +88,20 @@ one guy still
 had a paper I
 put on his back.
 "
-5,0x1e6c6a,36,"['\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', '<fc>づ<clear>', '\\n', ' <fc>づ<clear>', '\\n', '<fc>づ@']",Otose,"You liar! Who
+5,0x1e6c6a,0x1e6d07,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", "" <fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"You liar! Who
 wouldn't notice
 it for 5 years?
 
-<name:35>He takes a
+<name>ZHe takes a
 shower with his
 clothes on.
 
-<name:36>You are such a
+<name>aYou are such a
 liar! I can't
 handle it any
 more!"
-6,0x1e6d07,37,"['\\n', '<fc>づ@']",2 guys,"Thank you very
+6,0x1e6d07,0x1e6d20,37,"[""\\n"", ""<fc>\u3065@""]",,"Thank you very
 much."
-7,0x1e6d20,36,['<fc>づ@'],Otose,You too!?
-8,0x1e6d2e,36,"['\\n', '@']",,"
+7,0x1e6d20,0x1e6d2e,36,"[""<fc>\u3065@""]",,You too!?
+8,0x1e6d2e,0x1e6d40,,"[""\\n"", ""@""]",,"
          The END"

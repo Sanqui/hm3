@@ -1,22 +1,22 @@
-i,address,name_i,newline_types,name,string
-0,0x1e4d4d,1,['@'],,Adult Cow
-1,0x1e4d57,1,['@'],,Young Cow
-2,0x1e4d61,1,['@'],,Calf
-3,0x1e4d66,1,['@'],,Pregnant
-4,0x1e4d6f,1,['@'],,Chick
-5,0x1e4d75,1,['@'],,Golden Chick
-6,0x1e4d82,1,['@'],,Chicken
-7,0x1e4d8a,1,['@'],,G. Chicken
-8,0x1e4d95,1,['@'],,Sheep
-9,0x1e4d9b,1,['@'],,Lamb
-10,0x1e4da0,1,['@'],,Sheep
-11,0x1e4da6,1,['@'],,Pregnant
-12,0x1e4daf,1,['@'],,Horse
-13,0x1e4db5,1,['@'],,Foal
-14,0x1e4dba,1,['@'],,
-15,0x1e4dbb,1,['@'],,Pregnant
-16,0x1e4dc4,1,['@'],,Healthy
-17,0x1e4dcc,1,['@'],,Unhappy
-18,0x1e4dd4,1,['@'],,Sick
-19,0x1e4dd9,1,['@'],,Male
-20,0x1e4dde,1,['@'],,Female
+i,address,end,name_i,newlines,name,string
+0,0x1e4d4d,0x1e4d57,,"[""@""]",,Adult Cow
+1,0x1e4d57,0x1e4d61,,"[""@""]",,Young Cow
+2,0x1e4d61,0x1e4d66,,"[""@""]",,Calf
+3,0x1e4d66,0x1e4d6f,,"[""@""]",,Pregnant
+4,0x1e4d6f,0x1e4d75,,"[""@""]",,Chick
+5,0x1e4d75,0x1e4d82,,"[""@""]",,Golden Chick
+6,0x1e4d82,0x1e4d8a,,"[""@""]",,Chicken
+7,0x1e4d8a,0x1e4d95,,"[""@""]",,G. Chicken
+8,0x1e4d95,0x1e4d9b,,"[""@""]",,Sheep
+9,0x1e4d9b,0x1e4da0,,"[""@""]",,Lamb
+10,0x1e4da0,0x1e4da6,,"[""@""]",,Sheep
+11,0x1e4da6,0x1e4daf,,"[""@""]",,Pregnant
+12,0x1e4daf,0x1e4db5,,"[""@""]",,Horse
+13,0x1e4db5,0x1e4dba,,"[""@""]",,Foal
+14,0x1e4dba,0x1e4dbb,,"[""@""]",,
+15,0x1e4dbb,0x1e4dc4,,"[""@""]",,Pregnant
+16,0x1e4dc4,0x1e4dcc,,"[""@""]",,Healthy
+17,0x1e4dcc,0x1e4dd4,,"[""@""]",,Unhappy
+18,0x1e4dd4,0x1e4dd9,,"[""@""]",,Sick
+19,0x1e4dd9,0x1e4dde,,"[""@""]",,Male
+20,0x1e4dde,0x1e4de5,,"[""@""]",,Female

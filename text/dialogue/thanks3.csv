@@ -1,23 +1,23 @@
-i,address,name_i,newline_types,name,string
-0,0x12daa0,15,"['\\n', '<waita>@']",Lucus,"Oh! Are you
+i,address,end,name_i,newlines,name,string
+0,0x12daa0,0x12dabd,15,"[""\\n"", ""<waita>@""]",,"Oh! Are you
 sure? Thanks!"
-1,0x12dabd,15,"['\\n', '<waita>@']",Lucus,"Is this for me?
+1,0x12dabd,0x12dade,15,"[""\\n"", ""<waita>@""]",,"Is this for me?
 You're nice."
-2,0x12dabd,15,"['\\n', '<waita>@']",Lucus,"Is this for me?
+2,0x12dabd,0x12dade,15,"[""\\n"", ""<waita>@""]",,"Is this for me?
 You're nice."
-3,0x12dade,15,"['\\n', '<waita>@']",,"I don't need
+3,0x12dade,0x12daf3,,"[""\\n"", ""<waita>@""]",,"I don't need
 this…"
-4,0x12daf3,14,"['\\n', '<waita>@']",Lyla,"Thank you. You
+4,0x12daf3,0x12db12,14,"[""\\n"", ""<waita>@""]",,"Thank you. You
 are so kind!"
-5,0x12db12,14,"['\\n', '<waita>@']",Lyla,"Is this for me?
+5,0x12db12,0x12db30,14,"[""\\n"", ""<waita>@""]",,"Is this for me?
 Thank you!"
-6,0x12db12,14,"['\\n', '<waita>@']",Lyla,"Is this for me?
+6,0x12db12,0x12db30,14,"[""\\n"", ""<waita>@""]",,"Is this for me?
 Thank you!"
-7,0x12db30,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"… What's this?
+7,0x12db30,0x12db63,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"… What's this?
 Are you trying
 to annoy me?
 "
-8,0x12db63,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Hey, how are ya?
+8,0x12db63,0x12dc1b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey, how are ya?
 You must be a
 new comer. I'm
 Lucus the tool
@@ -29,7 +29,7 @@ useful tools
 here. Take a
 look around
 <player>!!"
-9,0x12db63,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Hey, how are ya?
+9,0x12db63,0x12dc1b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey, how are ya?
 You must be a
 new comer. I'm
 Lucus the tool
@@ -41,7 +41,7 @@ useful tools
 here. Take a
 look around
 <player>!!"
-10,0x12db63,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Hey, how are ya?
+10,0x12db63,0x12dc1b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey, how are ya?
 You must be a
 new comer. I'm
 Lucus the tool
@@ -53,7 +53,7 @@ useful tools
 here. Take a
 look around
 <player>!!"
-11,0x12db63,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Hey, how are ya?
+11,0x12db63,0x12dc1b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey, how are ya?
 You must be a
 new comer. I'm
 Lucus the tool
@@ -65,7 +65,7 @@ useful tools
 here. Take a
 look around
 <player>!!"
-12,0x12db63,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Hey, how are ya?
+12,0x12db63,0x12dc1b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey, how are ya?
 You must be a
 new comer. I'm
 Lucus the tool
@@ -77,7 +77,7 @@ useful tools
 here. Take a
 look around
 <player>!!"
-13,0x12db63,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Hey, how are ya?
+13,0x12db63,0x12dc1b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey, how are ya?
 You must be a
 new comer. I'm
 Lucus the tool
@@ -89,7 +89,7 @@ useful tools
 here. Take a
 look around
 <player>!!"
-14,0x12db63,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Hey, how are ya?
+14,0x12db63,0x12dc1b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey, how are ya?
 You must be a
 new comer. I'm
 Lucus the tool
@@ -101,7 +101,7 @@ useful tools
 here. Take a
 look around
 <player>!!"
-15,0x12db63,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Hey, how are ya?
+15,0x12db63,0x12dc1b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey, how are ya?
 You must be a
 new comer. I'm
 Lucus the tool
@@ -113,7 +113,7 @@ useful tools
 here. Take a
 look around
 <player>!!"
-16,0x12db63,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Hey, how are ya?
+16,0x12db63,0x12dc1b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey, how are ya?
 You must be a
 new comer. I'm
 Lucus the tool
@@ -125,16 +125,16 @@ useful tools
 here. Take a
 look around
 <player>!!"
-17,0x12dc1b,15,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lucus,"Hey <player>!!
+17,0x12dc1b,0x12dc47,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey <player>!!
 What can I do
 for you today?
 "
-18,0x12dc47,15,"['\\n', '<waita>@']",Lucus,"I made them all
+18,0x12dc47,0x12dc65,15,"[""\\n"", ""<waita>@""]",,"I made them all
 by myself."
-19,0x12dc65,15,"['\\n', '<arrow>0<waita><clear>', '<waita>@']",Lucus,"Stay here as
+19,0x12dc65,0x12dc8a,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Stay here as
 long as you
 like."
-20,0x12dc8a,13,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lukia,"Hi, nice to meet
+20,0x12dc8a,0x12dd2e,13,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hi, nice to meet
 you. I heard
 that you own a
 farm from the
@@ -144,13 +144,13 @@ got different
 seeds for every
 season, so come
 often."
-21,0x12dd2e,13,"['\\n', '<waita>@']",Lukia,"Welcome.
+21,0x12dd2e,0x12dd4a,13,"[""\\n"", ""<waita>@""]",,"Welcome.
 Take your time."
-22,0x12dd4a,13,"['\\n', '<waita>@']",Lukia,"Flower lovers
+22,0x12dd4a,0x12dd65,13,"[""\\n"", ""<waita>@""]",,"Flower lovers
 are good."
-23,0x12dd65,13,"['\\n', '<waita>@']",Lukia,"Lavender makes
+23,0x12dd65,0x12dd87,13,"[""\\n"", ""<waita>@""]",,"Lavender makes
 me feel better."
-24,0x12dd87,14,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"Hello. I'm Lyla.
+24,0x12dd87,0x12ddfc,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hello. I'm Lyla.
 You must be
 <player>. Do you
 live on the
@@ -158,14 +158,14 @@ farm? We have a
 lot of useful
 books.
 Check them out."
-25,0x12ddfc,14,['<waita>@'],Lyla,Welcome.
-26,0x12de08,14,"[' \\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Lyla,"<player>? Why don't
+25,0x12ddfc,0x12de08,14,"[""<waita>@""]",,Welcome.
+26,0x12de08,0x12de41,14,"["" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"<player>? Why don't
 you take your
 time and read
 a book?"
-27,0x12de41,14,"['\\n', '<waita>@']",Lyla,"Reading books
+27,0x12de41,0x12de61,14,"[""\\n"", ""<waita>@""]",,"Reading books
 calms me down."
-28,0x12de61,7,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Chloe,"Hello. My name
+28,0x12de61,0x12df20,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hello. My name
 is Cloe. You
 must be <player>.
 My son, Billy
@@ -177,184 +177,184 @@ please come and
 eat here. My
 food is very
 energizing!!"
-29,0x12df20,7,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Chloe,"Welcome <player>.
+29,0x12df20,0x12df47,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Welcome <player>.
 What would you
 like?
 "
-30,0x12df47,7,"['\\n', '<waita>@']",Chloe,"I love white
+30,0x12df47,0x12df67,7,"[""\\n"", ""<waita>@""]",,"I love white
 cats very much."
-31,0x12df67,7,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Chloe,"His name is
+31,0x12df67,0x12df91,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"His name is
 Bubba. Isn't
 he cute?
 "
-32,0x12df91,19,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Daisy,"Long time no
+32,0x12df91,0x12dfb8,19,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Long time no
 see!! How are
 you?
 "
-33,0x12dfb8,19,"['\\n', '<waita>@']",Daisy,"They have good
+33,0x12dfb8,0x12dfd3,19,"[""\\n"", ""<waita>@""]",,"They have good
 flowers."
-34,0x12dfd3,19,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Daisy,"I came here all
+34,0x12dfd3,0x12e02b,19,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I came here all
 the way from
 Flower Bud
 Village to buy
 some beautiful
 flowers."
-35,0x12e02b,19,"['\\n', '<waita>@']",Daisy,"I love looking
+35,0x12e02b,0x12e049,19,"[""\\n"", ""<waita>@""]",,"I love looking
 at flowers."
-36,0x12e049,19,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Daisy,"You'll come back
+36,0x12e049,0x12e081,19,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"You'll come back
 to Flower Bud
 Village, right?
 "
-37,0x12e081,19,"['\\n', '<waita>@']",Daisy,"Just wanted to
+37,0x12e081,0x12e0a2,19,"[""\\n"", ""<waita>@""]",,"Just wanted to
 talk to Lukia…"
-38,0x12e0a2,19,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Oh, you are the
+38,0x12e0a2,0x12e0de,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Oh, you are the
 guy from…
 Mmm… No, I
 don't remember."
-39,0x12e0de,19,"['\\n', '<waita>@']",,"What should I
+39,0x12e0de,0x12e0fd,,"[""\\n"", ""<waita>@""]",,"What should I
 have for lunch?"
-40,0x12e0fd,19,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"I'm too old to
+40,0x12e0fd,0x12e127,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I'm too old to
 remember
 everything.
 "
-41,0x12e127,19,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"What should I
+41,0x12e127,0x12e14b,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"What should I
 have for
 dinner?
 "
-42,0x12e14b,19,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Are you the
+42,0x12e14b,0x12e17e,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Are you the
 farm owner in
 Flower Bud
 Village…?"
-43,0x12e17e,19,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"I can't do
+43,0x12e17e,0x12e1aa,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I can't do
 anything when
 I'm hungry.
 "
-44,0x12e1aa,24,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Mary,"Ah…<player>.
+44,0x12e1aa,0x12e1c9,24,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Ah…<player>.
 Long time no
 see…
 "
-45,0x12e1c9,24,"['\\n', '<waita>@']",Mary,"I'm looking for
+45,0x12e1c9,0x12e1ed,24,"[""\\n"", ""<waita>@""]",,"I'm looking for
 a lot of books."
-46,0x12e1ed,24,"['\\n', '<waita>@']",Mary,"You seem to be
+46,0x12e1ed,0x12e20e,24,"[""\\n"", ""<waita>@""]",,"You seem to be
 busy everyday."
-47,0x12e20e,24,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Mary,"I want to buy
+47,0x12e20e,0x12e257,24,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I want to buy
 a knitting
 book and knit
 a sweater or
 something.
 "
-48,0x12e257,24,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Mary,"Ah…come
+48,0x12e257,0x12e280,24,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Ah…come
 visit my
 library
 sometime."
-49,0x12e280,24,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Mary,"'Mysteries of
+49,0x12e280,0x12e2bb,24,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"‘Mysteries of
 the Island'…
 My library can
 use one."
-50,0x12e2bb,38,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Gen,"Hey <player>.
+50,0x12e2bb,0x12e2dd,38,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Hey <player>.
 How have you
 been?!
 "
-51,0x12e2dd,38,"['\\n', '<waita>@']",Gen,"I'm looking for
+51,0x12e2dd,0x12e302,38,"[""\\n"", ""<waita>@""]",,"I'm looking for
 some good tools."
-52,0x12e302,38,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Gen,"Let me know if
+52,0x12e302,0x12e33f,38,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Let me know if
 you want me to
 build something
 for you."
-53,0x12e33f,38,"['\\n', '<waita>@']",Gen,"There is some
+53,0x12e33f,0x12e361,38,"[""\\n"", ""<waita>@""]",,"There is some
 good stuff here."
-54,0x12e361,38,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Gen,"My dream is to
+54,0x12e361,0x12e394,38,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"My dream is to
 build a big
 place like this!
 "
-55,0x12e394,38,"['\\n', '<waita>@']",Gen,"I'm tired. I'm
+55,0x12e394,0x12e3b8,38,"[""\\n"", ""<waita>@""]",,"I'm tired. I'm
 going home now."
-56,0x12e3b8,20,"['\\n', '<waita>@']",Chet,"Is this for me?
+56,0x12e3b8,0x12e3d5,20,"[""\\n"", ""<waita>@""]",,"Is this for me?
 Thanks <player>."
-57,0x12e3d5,20,"['\\n', '<waita>@']",Chet,"Thank you. It's
+57,0x12e3d5,0x12e3f5,20,"[""\\n"", ""<waita>@""]",,"Thank you. It's
 wonderful!!"
-58,0x12e3d5,20,"['\\n', '<waita>@']",Chet,"Thank you. It's
+58,0x12e3d5,0x12e3f5,20,"[""\\n"", ""<waita>@""]",,"Thank you. It's
 wonderful!!"
-59,0x12e3f5,20,"['\\n', '<waita>@']",Chet,"I don't like
+59,0x12e3f5,0x12e40c,20,"[""\\n"", ""<waita>@""]",,"I don't like
 this."
-60,0x12e40c,18,"['\\n', '<waita>@']",Choco,"Yeah! Thanks!
+60,0x12e40c,0x12e42c,18,"[""\\n"", ""<waita>@""]",,"Yeah! Thanks!
 I'm so happy!"
-61,0x12e42c,18,"['\\n', '<waita>@']",Choco,"Is this for me?
+61,0x12e42c,0x12e44b,18,"[""\\n"", ""<waita>@""]",,"Is this for me?
 Yeah! Yeah!"
-62,0x12e42c,18,"['\\n', '<waita>@']",Choco,"Is this for me?
+62,0x12e42c,0x12e44b,18,"[""\\n"", ""<waita>@""]",,"Is this for me?
 Yeah! Yeah!"
-63,0x12e44b,18,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",Choco,"I don't want it.
+63,0x12e44b,0x12e47f,18,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I don't want it.
 I'll throw it
 away later!
 "
-64,0x12e47f,19,"['\\n', '<waita>@']",Daisy,"For me?
+64,0x12e47f,0x12e498,19,"[""\\n"", ""<waita>@""]",,"For me?
 You're cool!"
-65,0x12e498,19,"['\\n', '<waita>@']",Daisy,"A present for
+65,0x12e498,0x12e4bb,19,"[""\\n"", ""<waita>@""]",,"A present for
 me? I'm excited!"
-66,0x12e498,19,"['\\n', '<waita>@']",Daisy,"A present for
+66,0x12e498,0x12e4bb,19,"[""\\n"", ""<waita>@""]",,"A present for
 me? I'm excited!"
-67,0x12e4bb,19,"['\\n', '<waita>@']",Daisy,"Are you trying
+67,0x12e4bb,0x12e4dd,19,"[""\\n"", ""<waita>@""]",,"Are you trying
 to make me mad?"
-68,0x12e4dd,19,"['\\n', '<waita>@']",,"For me? Is it
+68,0x12e4dd,0x12e4f5,,"[""\\n"", ""<waita>@""]",,"For me? Is it
 edible…?"
-69,0x12e4f5,19,"['\\n', '<waita>@']",,"A present!? Is
+69,0x12e4f5,0x12e510,,"[""\\n"", ""<waita>@""]",,"A present!? Is
 it edible?"
-70,0x12e4f5,19,"['\\n', '<waita>@']",,"A present!? Is
+70,0x12e4f5,0x12e510,,"[""\\n"", ""<waita>@""]",,"A present!? Is
 it edible?"
-71,0x12e510,19,"['\\n', '<waita>@']",,"I don't think
+71,0x12e510,0x12e52e,,"[""\\n"", ""<waita>@""]",,"I don't think
 it's edible…"
-72,0x12e52e,24,"['\\n', '<waita>@']",Mary,"Are you sure?
+72,0x12e52e,0x12e54a,24,"[""\\n"", ""<waita>@""]",,"Are you sure?
 Thank you…"
-73,0x12e54a,24,"['\\n', '<waita>@']",Mary,"Is it really
+73,0x12e54a,0x12e569,24,"[""\\n"", ""<waita>@""]",,"Is it really
 OK? Thank you."
-74,0x12e54a,24,"['\\n', '<waita>@']",Mary,"Is it really
+74,0x12e54a,0x12e569,24,"[""\\n"", ""<waita>@""]",,"Is it really
 OK? Thank you."
-75,0x12e569,24,"['\\n', '<waita>@']",Mary,"What…? You
+75,0x12e569,0x12e582,24,"[""\\n"", ""<waita>@""]",,"What…? You
 are mean…!"
-76,0x12e582,38,"['\\n', '<waita>@']",Gen,"Oh, cool.
+76,0x12e582,0x12e59a,38,"[""\\n"", ""<waita>@""]",,"Oh, cool.
 Thanks <player>!"
-77,0x12e59a,38,"['\\n', '<waita>@']",Gen,"What? For me?
+77,0x12e59a,0x12e5b9,38,"[""\\n"", ""<waita>@""]",,"What? For me?
 Thanks buddy!"
-78,0x12e59a,38,"['\\n', '<waita>@']",Gen,"What? For me?
+78,0x12e59a,0x12e5b9,38,"[""\\n"", ""<waita>@""]",,"What? For me?
 Thanks buddy!"
-79,0x12e5b9,38,"['\\n', '<waita>@']",Gen,"I don't like
+79,0x12e5b9,0x12e5db,38,"[""\\n"", ""<waita>@""]",,"I don't like
 jokes like this."
-80,0x12e5db,2,['<waita>@'],<2>,Daーda! Paーpa!
-81,0x12e5ec,2,"['\\n', '<waita>@']",<2>,"Daddy, have a
+80,0x12e5db,0x12e5ec,2,"[""<waita>@""]",,Daーda! Paーpa!
+81,0x12e5ec,0x12e608,2,"[""\\n"", ""<waita>@""]",,"Daddy, have a
 good day!"
-82,0x12e608,2,['<waita>@'],<2>,Thank you Daddy!
-83,0x12e61c,3,['<waita>@'],<3>,Gaーga… Daーda…
-84,0x12e62d,3,"['\\n', '<waita>@']",<3>,"Have a nice
+82,0x12e608,0x12e61c,2,"[""<waita>@""]",,Thank you Daddy!
+83,0x12e61c,0x12e62d,3,"[""<waita>@""]",,Gaーga… Daーda…
+84,0x12e62d,0x12e647,3,"[""\\n"", ""<waita>@""]",,"Have a nice
 day Daddy!"
-85,0x12e647,3,"['\\n', '<waita>@']",<3>,"Yeah!
+85,0x12e647,0x12e65c,3,"[""\\n"", ""<waita>@""]",,"Yeah!
 Thanks Dad!"
-86,0x12e65c,0,"['\\n', '<waita>@']",<player>,"Oh…??? An egg
+86,0x12e65c,0x12e67a,0,"[""\\n"", ""<waita>@""]",,"Oh…??? An egg
 has hatched…"
-87,0x12e67a,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"Wow, cute!
+87,0x12e67a,0x12e711,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wow, cute!
 They are always
 together…
 Ha ha ha, he
 thinks you're
 his mommy. Yes!
 Let's name him
-'Pak'! OK! He's
+‘Pak'! OK! He's
 definately a
 Pak!"
-88,0x12e711,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",<partner>,"How cute. He's
+88,0x12e711,0x12e7a0,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"How cute. He's
 stuck to you
 like glue. He
 thinks you are
 his mommy. Yes!
 Let's name him
-'Pak'! OK! He's
+‘Pak'! OK! He's
 definately a
 Pak!
 "
-89,0x12e7a0,1,"['\\n', '10GT000@']",,"Snowboard?
+89,0x12e7a0,0x12e7c4,,"[""\\n"", ""10GT000@""]",,"Snowboard?
  Yes          No<ask>"
-90,0x12e7c4,1,"['\\n', '10GT000@']",,"Do you know how?
+90,0x12e7c4,0x12e7ee,,"[""\\n"", ""10GT000@""]",,"Do you know how?
  Yes          No<ask>"
-91,0x12e7ee,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Use the snowー
+91,0x12e7ee,0x12e85a,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Use the snowー
 board on the
 snow… There are
 obstacles,
@@ -362,28 +362,28 @@ so avoid them by
 using the
 Control Pad.
 <arrow>0"
-92,0x12e85a,1,['<waita>@'],,Ready?!
-93,0x12e863,1,"['\\n', '10GT000@']",,"Are you done?
+92,0x12e85a,0x12e863,,"[""<waita>@""]",,Ready?!
+93,0x12e863,0x12e88a,,"[""\\n"", ""10GT000@""]",,"Are you done?
  Yes          No<ask>"
-94,0x12e88a,1,"['\\n', '<waita>@']",,"Yeah! You're
+94,0x12e88a,0x12e8a4,,"[""\\n"", ""<waita>@""]",,"Yeah! You're
 an expert!"
-95,0x12e8a4,1,"['\\n', '<waita>@']",,"Cool! Get the
+95,0x12e8a4,0x12e8c3,,"[""\\n"", ""<waita>@""]",,"Cool! Get the
 S ranking next!"
-96,0x12e8c3,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Good job! Keep
+96,0x12e8c3,0x12e8e9,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Good job! Keep
 up the good
 work!
 "
-97,0x12e8e9,1,"['\\n', '<waita>@']",,"Try a little
+97,0x12e8e9,0x12e8ff,,"[""\\n"", ""<waita>@""]",,"Try a little
 harder…"
-98,0x12e8ff,1,"['\\n', '<waita>@']",,"You need a lot
+98,0x12e8ff,0x12e91e,,"[""\\n"", ""<waita>@""]",,"You need a lot
 more practice!"
-99,0x12e91e,1,"['\\n', '<waita>@']",,"Wow!! A new
+99,0x12e91e,0x12e933,,"[""\\n"", ""<waita>@""]",,"Wow!! A new
 record!"
-100,0x12e933,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Go to the
+100,0x12e933,0x12e953,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Go to the
 advanced
 course?
 "
-101,0x12e953,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Since you've
+101,0x12e953,0x12e9f4,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Since you've
 set a new
 record, I'll
 tell you a
@@ -395,45 +395,45 @@ the tree in the
 grass field in
 the Winter…
 "
-102,0x12e9f4,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Lucky! I've got
+102,0x12e9f4,0x12ea33,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Lucky! I've got
 a Power Berry!
 It was worth
 falling down!"
-103,0x12ea33,1,"['\\n', '10GT000@']",,"I'm not done!
+103,0x12ea33,0x12ea5b,,"[""\\n"", ""10GT000@""]",,"I'm not done!
  Yes          No<ask>"
-104,0x12ea5b,1,"['\\n', '<waita>@']",,"I'll come back
+104,0x12ea5b,0x12ea72,,"[""\\n"", ""<waita>@""]",,"I'll come back
 soon!"
-105,0x12ea72,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '10GT000@']",,"Go to the
+105,0x12ea72,0x12eaaa,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Go to the
 advanced course?
 
  Yes          No<ask>"
-106,0x12eaaa,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Complete! You're
+106,0x12eaaa,0x12eadb,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Complete! You're
 the King of
 Snowboarding!
 "
-107,0x12eadb,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Great! You may
+107,0x12eadb,0x12eb0c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Great! You may
 want to try a
 harder course?
 "
-108,0x12eb0c,1,"['\\n', '<waita>@']",,"Good. Polish up
+108,0x12eb0c,0x12eb2e,,"[""\\n"", ""<waita>@""]",,"Good. Polish up
 your techniques!"
-109,0x12eb2e,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Well, it's too
+109,0x12eb2e,0x12eb5c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Well, it's too
 hard for you
 right now.
 "
-110,0x12eb5c,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"No! Go home
+110,0x12eb5c,0x12eb87,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"No! Go home
 before you hurt
 yourself.
 "
-111,0x12eb87,1,"['\\n', '<waita>@']",,"Fantastic! A
+111,0x12eb87,0x12eba1,,"[""\\n"", ""<waita>@""]",,"Fantastic! A
 new record!"
-112,0x12eba1,1,"['\\n', '<arrow>0<waita><clear>', '\\n', '<waita>@']",,"Let's not
+112,0x12eba1,0x12ebc5,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Let's not
 snowboard at
 night.
 "
-113,0x12ebc5,1,['<waita>@'],,Sheep Pen
-114,0x12ebd0,1,['<waita>@'],,Chicken Coop
-115,0x12ebde,1,['<waita>@'],,Cow Barn
-116,0x12ebe8,1,['<waita>@'],,Stable
-117,0x12ebf0,1,"['\\n', '<waita>@']",,"It's locked.
+113,0x12ebc5,0x12ebd0,,"[""<waita>@""]",,Sheep Pen
+114,0x12ebd0,0x12ebde,,"[""<waita>@""]",,Chicken Coop
+115,0x12ebde,0x12ebe8,,"[""<waita>@""]",,Cow Barn
+116,0x12ebe8,0x12ebf0,,"[""<waita>@""]",,Stable
+117,0x12ebf0,0x12ec11,,"[""\\n"", ""<waita>@""]",,"It's locked.
 You can't go in."
