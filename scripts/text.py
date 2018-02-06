@@ -288,6 +288,54 @@ def strings_to_csv():
     print("; Wrote CSV files")
 
 def print_strings_from_csvs():
+    def calculate_newlines(string):
+        LINELEN = 16
+        def xlen(string):
+            string = (c for c in string)
+            l = 0
+            while True:
+                try:
+                    c = next(string)
+                except StopIteration:
+                    break
+                if c != "<":
+                    l += 1
+                else:
+                    code = ""
+                    while c != ">":
+                        c = next(string)
+                        code += c
+                    if code == "player":
+                        l += 4
+                    elif code == "var":
+                        l += 4
+                    else:
+                        l += 0
+            return l
+        
+        lines = []
+        for oline in string.split('\n'):
+            owords = oline.split(" ")
+            line = ""
+            for wordi, word in enumerate(owords):
+                if xlen(line + word) == LINELEN:
+                    line += word
+                    lines.append(line)
+                    line = ""
+                    continue
+                elif xlen(line + word) > LINELEN:
+                    lines.append(line)
+                    line = word
+                    if wordi < len(owords):
+                        line += " "
+                else:
+                    line += word
+                    if wordi < len(owords):
+                        line += " "
+            lines.append(line)
+        
+        return "\n".join(lines)
+
     filenames = []
     for _, _, subtables in METATABLES:
         filenames += subtables
@@ -303,10 +351,18 @@ def print_strings_from_csvs():
             fcsv = csv.reader(f)
             next(fcsv)
             for row in fcsv:
-                i, address, end, name_i, newlines, name, string = row
+                newstring = None
+                new = False
+                if len(row) == 7:
+                    csvi, address, end, name_i, newlines, name, string = row
+                else:
+                    csvi, address, end, name_i, newlines, name, string, newstring = row
+                if newstring != None and newstring != "":
+                    new = True
+                    string = newstring
                 #if i != "TRASH":
                 #    i = int(i)
-                i = i.replace("-", "_")
+                csvi = csvi.replace("-", "_")
                 address = int(address, 16)
                 end = int(end, 16)
                 if name_i:
@@ -321,8 +377,18 @@ def print_strings_from_csvs():
                 if name_i is not None:
                     csvstring += "<name>" + charmap[name_i]
                 if newlines:
-                    for line, newline in zip(string.split("\n"), newlines):
-                        csvstring += line + newline + "\n"
+                    if not new:
+                        for line, newline in zip(string.split("\n"), newlines):
+                            csvstring += line + newline + "\n"
+                    else:
+                        string = calculate_newlines(string)
+                        numlines = len(string.split("\n"))
+                        for linei, line in enumerate(string.split("\n")):
+                            csvstring += line
+                            if linei == numlines-1:
+                                csvstring += newlines[-1]
+                            else:
+                                csvstring += newlines[linei%2]
                 else:
                     csvstring = string+"\n"
                 csvstring = csvstring[:-1].split("\n")
@@ -330,7 +396,7 @@ def print_strings_from_csvs():
                 csvstringends[address] = end
                 if address not in csvstringindexes:
                     csvstringindexes[address] = []
-                csvstringindexes[address].append((filename, i))
+                csvstringindexes[address].append((filename, csvi))
     
     SANIT_CHECK = False
     if SANIT_CHECK:

@@ -32,7 +32,7 @@ build/shim.asm: shim.sym
 build/charmap.asm: charmap.tbl
 	python3 tools/tbl_to_charmap.py $^ > $@
 
-build/text.asm: build/charmap.asm
+build/text.asm: build/charmap.asm $(wildcard text/*.csv)
 	python3 scripts/text.py asm_from_csv > build/text.asm
 
 $(ROMS): $(OBJS)
