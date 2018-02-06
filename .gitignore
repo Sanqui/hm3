@@ -32,3 +32,4 @@ build/*
 
 ; binaries
 tools/scan_includes
+pret/

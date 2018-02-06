@@ -207,7 +207,7 @@ endr
     ld a, h
     and $0f
     ld h, a
-    ld de, $2fd8 ; FontGfx????
+    ld de, FontGfx
     add hl, de
     pop de
     call CopyTile
@@ -453,6 +453,10 @@ ControlCodeEnd:
     xor a
     ld [$3000], a
     ret 
+
+SECTION "Font GFX", ROM0[$2fd8]
+FontGfx:
+	INCBIN "gfx/font.2bpp"
 
 SECTION "Pointers to PrintDialogue functions in different banks", ROMX[$44be], BANK[$2f]
 PrintDialoguePointers:
