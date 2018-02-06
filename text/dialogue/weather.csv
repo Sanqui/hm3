@@ -1,0 +1,57 @@
+i,address,end,name_i,newlines,name,string
+0,0x10cb61,0x10cb96,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lisa,"Tomorrow will be
+a warm and sunny
+Spring day.
+"
+1,0x10cb96,0x10cbc7,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lisa,"It will rain
+throughout the
+day tomorrow.
+"
+2,0x10cbc7,0x10cbff,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lisa,"It'll be a clear
+and sunny Summer
+day tomorrow.
+"
+3,0x10cbff,0x10cc2d,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lisa,"It will rain
+heavily all day
+tomorrow.
+"
+4,0x10cc2d,0x10cc4f,28,"[""\\n"", ""<waita>@""]",Lisa,"A hurricane is
+approaching us."
+5,0x10cc4f,0x10cc7e,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lisa,"We will have
+clear blue skies
+tomorrow.
+"
+6,0x10cc7e,0x10ccaf,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lisa,"It will rain
+throughout the
+day tomorrow.
+"
+7,0x10ccaf,0x10cce4,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lisa,"It'll be clear
+and relatively
+warm tomorrow.
+"
+8,0x10cce4,0x10cd06,28,"[""\\n"", ""<waita>@""]",Lisa,"It will snow all
+day tomorrow."
+9,0x10cd06,0x10cd39,28,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lisa,"We are expecting
+a big snow storm
+tomorrow.
+"
+10,0x10cd39,0x10cd5c,,"[""\\n"", ""<waita>@""]",,"…………………………………………
+…………………………………………"
+11,0x10cd5c,0x10cd94,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"Wow! Look! We
+can't go out
+in weather
+like this…"
+12,0x10cd94,0x10cdce,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"Oh my! Look!
+We can't go out
+in weather
+like this…"
+13,0x10cdce,0x10cdf1,1,"[""\\n"", ""<waita>@""]",<partner>,"We can't work
+in this weather."
+14,0x10cdf1,0x10ce12,1,"[""\\n"", ""<waita>@""]",<partner>,"I guess we can't
+work today…"
+15,0x10ce12,0x10ce3d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Don't go out.
+A typhoon is
+coming.
+"
+16,0x10ce3d,0x10ce58,28,"[""\\n"", ""<waita>@""]",Lisa,"Caution!
+Typhoon alert!"

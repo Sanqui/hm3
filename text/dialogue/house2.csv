@@ -1,0 +1,85 @@
+i,address,end,name_i,newlines,name,string
+0,0x10c688,0x10c6a6,,"[""\\n"", ""<waita>@""]",,"<var>0Year <var>4<var>C
+       <var>G <var>O <var>KM"
+1,0x10c6a6,0x10c6e9,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"I can call the
+Farmers' Union
+to arrange a
+shipment at 6PM."
+2,0x10c6e9,0x10c72d,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"I can call the
+ Farmers' Union
+to arrange a
+shipment at 6PM."
+3,0x10c72d,0x10c766,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",<player>,"Call the
+Farmers' Union?
+
+ Yes          No<ask>"
+4,0x10c766,0x10c7a7,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"What is that in
+the fireplace?
+1000G secret
+savings! Yeah!"
+5,0x10c7a7,0x10c7c8,0,"[""\\n"", ""<waita>@""]",<player>,"In the soot…?
+Nothing. Ha ha."
+6,0x10c7c8,0x10c7e9,0,"[""\\n"", ""<waita>@""]",<player>,"Be careful when
+you use fire!"
+7,0x10c7e9,0x10c81f,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"A secret savings
+in the drawer?
+Of course not.
+"
+8,0x10c81f,0x10c853,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"<var>0's secret
+savings might be
+in here… Nope.
+"
+9,0x10c853,0x10c895,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"A machine that
+makes fertilizer
+from vegetables
+and fruits."
+10,0x10c895,0x10c8eb,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"<noname>Hello this is
+Farmers' Union.
+How may I help
+you?
+ Shipment
+ P/T Job<ask>"
+11,0x10c8eb,0x10c948,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We'll pick them
+up right away
+and deposit the
+money at 6PM.
+Thank you for
+your call."
+12,0x10c948,0x10c968,,"[""\\n"", ""<waita>@""]",,"There is no work
+at this time."
+13,0x10c968,0x10c98b,,"[""\\n"", ""10GP000@""]",,"P/T job…
+ Done     Cancel<ask>"
+14,0x10c98b,0x10c9a2,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We ordered
+
+<var>O
+<var>0."
+15,0x10c9a2,0x10ca1a,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Your work has
+been confirmed.
+Bonus G will be
+added by the
+client…
+<var>0G will be
+deposited into
+your account.<arrow>0"
+16,0x10ca1a,0x10ca5d,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"You need <var>0
+more to complete
+your work. Thank
+you for calling."
+17,0x10ca5d,0x10ca86,,"[""\\n"", ""10GT000@""]",,"Cancel the job?
+ Yes          No<ask>"
+18,0x10ca86,0x10caa2,,"[""\\n"", ""<waita>@""]",,"The job has been
+canceled."
+19,0x10caa2,0x10cad2,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We're looking
+forward to your
+call again.
+"
+20,0x10cad2,0x10cb25,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"No shipment was
+made this time.
+We're looking
+forward to your
+call again.
+"
+21,0x10cb25,0x10cb61,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Currently we are
+closed. Please
+try calling back
+later."

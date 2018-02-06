@@ -1,0 +1,176 @@
+i,address,end,name_i,newlines,name,string
+0,0xbaa48,0xbaae7,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Elza,"Hey… <player>.
+Can I ask you
+something? Can
+you take me to
+the aquarium on
+the mainland
+today? I want to
+see the fish.
+Please?
+ Yes          No<ask>"
+1,0xbaae7,0xbab26,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"Really? OK! I'll
+be waiting for
+you in the town
+at 1PM!"
+2,0xbab26,0xbab42,8,"[""\\n"", ""<waita>@""]",Elza,"That's OK. You
+have <var>0…"
+3,0xbab42,0xbabfe,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Kate,"Listen, <player>.
+I want to ask
+you something.
+I want to go to
+see the movie
+with you… They
+are showing a
+good one on the
+mainland. Do you
+want to go?
+
+ Yes          No<ask>"
+4,0xbabfe,0xbac37,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kate,"Yeah! I'll be
+waiting for you
+in the town at
+1PM."
+5,0xbac37,0xbac4e,11,"[""\\n"", ""<waita>@""]",Kate,"No? I hate you,
+<player>!"
+6,0xbac4e,0xbac7c,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elza,"Thank you for
+today. I had a
+good time."
+7,0xbac7c,0xbacaa,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"The movie was
+good! Let's do
+it again♥"
+8,0xbacaa,0xbacfe,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elza,"Why didn't you
+come? I don't
+like people who
+don't keep their
+promises!"
+9,0xbacfe,0xbad2b,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"Work is more
+important to
+you than me…"
+10,0xbad2b,0xbad59,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"Hi, <player>.
+Thanks for
+coming. Shall we
+go?"
+11,0xbad59,0xbada3,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"<player>!! I was
+waiting for you!
+Come on! Let's
+go see the movie
+now!"
+12,0xbada3,0xbaefd,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"To the person
+who found
+this letter:
+How do you do!
+You might not
+believe me, but
+I am a mermaid.
+I am writing
+this letter from
+the distant
+ocean. If you
+believe me,
+please write me
+a letter and
+release it into
+the ocean. I'll
+be waiting…
+Mermaid
+<name>0What should I
+write?
+ I believe you.
+ You're kidding?<ask>"
+13,0xbaefd,0xbb02e,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"I got your
+letter! You
+believe me! I'm
+in the cave all
+by myself… I
+wanted a friend.
+Usually no one
+believes me…
+But you are so
+kind! I believe
+this letter will
+reach you again.
+Please write me
+back.
+Marla
+the mermaid
+<name>0What should I
+write?
+ Be my friend.
+ A mermaid…?<ask>"
+14,0xbb02e,0xbb144,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Hello, <player>.
+Thank you for
+your letter! If
+you do not mind,
+can I meet you?
+I live in the
+cave below the
+island… You
+need to take the
+right route to
+get here. Left,
+left, up, up, up
+and right. I am
+waiting for you.
+Sincerely,
+Marla
+     the mermaid"
+15,0xbb144,0xbb1f3,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Kirk,"Hello, <player>.
+It is another
+nice day. What?
+You want to know
+about the legend
+of the lake? It
+is a long story.
+Do you really
+want to know?
+ Yes          No<ask>"
+16,0xbb1f3,0xbb3b6,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kirk,"There were twins
+called Rocky and
+Ricky living on
+the island. They
+were good
+sailors. Rocky
+had a fiancee,
+but Ricky was
+also in love
+with her. One
+day, Ricky
+conspired to
+sink Rocky's
+ship… His
+fiancee who was
+waiting for his
+return for a
+long time at
+last gave up
+hope and
+followed Rocky
+to the ocean…
+Since then, the
+ocean became
+calm and the
+lake started to
+turn red… The
+color of Rocky's
+sorrow…"
+17,0xbb3b6,0xbb401,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kirk,"We thank Rocky
+for looking
+after our safe
+voyage to the
+mainland."
+18,0xbb401,0xbb432,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Go to the
+mainland?
+
+ Yes          No<ask>"
+19,0xbb432,0xbb457,,"[""\\n"", ""10GT000@""]",,"Go sailing?
+ Yes          No<ask>"
+20,0xbb457,0xbb4e4,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kirk,"…Rocky's
+fiancee's name?
+Mamee… Mary…
+Oh, I think it
+was Marla. Why
+do you want to
+know? It was a
+long story,
+wasn't it?"

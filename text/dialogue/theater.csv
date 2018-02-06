@@ -1,0 +1,60 @@
+i,address,end,name_i,newlines,name,string
+0,0x61421,0x61429,,"[""<waita>@""]",,Closed
+1,0x61429,0x614d7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Welcome. The
+theater shows a
+new movie or
+a new show every
+season. The
+admission is
+1500G. The show
+time is 11AM to
+9PM. We are open
+everyday. Please
+enjoy.
+"
+2,0x614d7,0x614f1,,"[""\\n"", ""<waita>@""]",,"We will be open
+at 11AM."
+3,0x614f1,0x6154d,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"We are showing
+‘The Laziest in
+Town'.
+The ticket is
+1500G.
+ Yes          No<ask>"
+4,0x614f1,0x6154d,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"We are showing
+‘The Laziest in
+Town'.
+The ticket is
+1500G.
+ Yes          No<ask>"
+5,0x6154d,0x6159e,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"We are showing
+‘Someday…'
+The ticket is
+1500G.
+
+ Yes          No<ask>"
+6,0x6159e,0x615f4,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"We are showing
+‘Comedy Night'.
+The ticket is
+1500G.
+
+ Yes          No<ask>"
+7,0x615f4,0x6164a,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"We are showing
+‘The Bus Stop'.
+The ticket is
+1500G.
+
+ Yes          No<ask>"
+8,0x6164a,0x616a0,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"We are showing
+‘Good Maomaos'.
+The ticket is
+1500G.
+
+ Yes          No<ask>"
+9,0x616a0,0x616b8,,"[""\\n"", ""<waita>@""]",,"Please enjoy
+the show."
+10,0x616b8,0x616cb,,"[""\\n"", ""<waita>@""]",,"Not enough
+money."
+11,0x616cb,0x616df,,"[""\\n"", ""<waita>@""]",,"Please come
+again."
+12,0x616df,0x616f5,,"[""\\n"", ""<waita>@""]",,"We are closed
+today."

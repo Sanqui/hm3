@@ -1,0 +1,82 @@
+i,address,end,name_i,newlines,name,string
+0,0x12e7a0,0x12e7c4,,"[""\\n"", ""10GT000@""]",,"Snowboard?
+ Yes          No<ask>"
+1,0x12e7c4,0x12e7ee,,"[""\\n"", ""10GT000@""]",,"Do you know how?
+ Yes          No<ask>"
+2,0x12e7ee,0x12e85a,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Use the snowー
+board on the
+snow… There are
+obstacles,
+so avoid them by
+using the
+Control Pad.
+<arrow>0"
+3,0x12e85a,0x12e863,,"[""<waita>@""]",,Ready?!
+4,0x12e863,0x12e88a,,"[""\\n"", ""10GT000@""]",,"Are you done?
+ Yes          No<ask>"
+5,0x12e88a,0x12e8a4,,"[""\\n"", ""<waita>@""]",,"Yeah! You're
+an expert!"
+6,0x12e8a4,0x12e8c3,,"[""\\n"", ""<waita>@""]",,"Cool! Get the
+S ranking next!"
+7,0x12e8c3,0x12e8e9,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Good job! Keep
+up the good
+work!
+"
+8,0x12e8e9,0x12e8ff,,"[""\\n"", ""<waita>@""]",,"Try a little
+harder…"
+9,0x12e8ff,0x12e91e,,"[""\\n"", ""<waita>@""]",,"You need a lot
+more practice!"
+10,0x12e91e,0x12e933,,"[""\\n"", ""<waita>@""]",,"Wow!! A new
+record!"
+11,0x12e933,0x12e953,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Go to the
+advanced
+course?
+"
+12,0x12e953,0x12e9f4,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Since you've
+set a new
+record, I'll
+tell you a
+little juicy
+info! There
+might be a
+Power Berry on
+the tree in the
+grass field in
+the Winter…
+"
+13,0x12e9f4,0x12ea33,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Lucky! I've got
+a Power Berry!
+It was worth
+falling down!"
+14,0x12ea33,0x12ea5b,,"[""\\n"", ""10GT000@""]",,"I'm not done!
+ Yes          No<ask>"
+15,0x12ea5b,0x12ea72,,"[""\\n"", ""<waita>@""]",,"I'll come back
+soon!"
+16,0x12ea72,0x12eaaa,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Go to the
+advanced course?
+
+ Yes          No<ask>"
+17,0x12eaaa,0x12eadb,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Complete! You're
+the King of
+Snowboarding!
+"
+18,0x12eadb,0x12eb0c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Great! You may
+want to try a
+harder course?
+"
+19,0x12eb0c,0x12eb2e,,"[""\\n"", ""<waita>@""]",,"Good. Polish up
+your techniques!"
+20,0x12eb2e,0x12eb5c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Well, it's too
+hard for you
+right now.
+"
+21,0x12eb5c,0x12eb87,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"No! Go home
+before you hurt
+yourself.
+"
+22,0x12eb87,0x12eba1,,"[""\\n"", ""<waita>@""]",,"Fantastic! A
+new record!"
+23,0x12eba1,0x12ebc5,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Let's not
+snowboard at
+night.
+"

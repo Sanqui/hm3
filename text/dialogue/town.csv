@@ -1,32 +1,32 @@
 i,address,end,name_i,newlines,name,string
-0,0xb8113,0xb8130,4,"[""\\n"", ""<waita>@""]",,"Ha ha ha…
+0,0xb8113,0xb8130,4,"[""\\n"", ""<waita>@""]",Elder,"Ha ha ha…
 Nice day, huh?"
-1,0xb8130,0xb814a,5,"[""\\n"", ""<waita>@""]",,"Hey, <player>!
+1,0xb8130,0xb814a,5,"[""\\n"", ""<waita>@""]",Billy,"Hey, <player>!
 Working hard?"
-2,0xb814a,0xb815f,8,"[""\\n"", ""<waita>@""]",,"Oh, <player>.
+2,0xb814a,0xb815f,8,"[""\\n"", ""<waita>@""]",Elza,"Oh, <player>.
 Busy day?"
-3,0xb815f,0xb8177,9,"[""\\n"", ""<waita>@""]",,"Hello, <player>.
+3,0xb815f,0xb8177,9,"[""\\n"", ""<waita>@""]",Bigbee,"Hello, <player>.
 Nice day."
-4,0xb8177,0xb81db,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Hello, <player>.
+4,0xb8177,0xb81db,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Kirk,"Hello, <player>.
 The ferry can
 take you to the
 mainland.
 Take the ferry?
  Yes          No<ask>"
-5,0xb81db,0xb8209,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Hello, <player>.
+5,0xb81db,0xb8209,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"Hello, <player>.
 It's nice and
 warm outside."
-6,0xb8209,0xb8222,4,"[""\\n"", ""<waita>@""]",,"It's getting
+6,0xb8209,0xb8222,4,"[""\\n"", ""<waita>@""]",Elder,"It's getting
 colder…"
-7,0xb8222,0xb8258,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"It's time to
+7,0xb8222,0xb8258,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Billy,"It's time to
 get ready to
 go fishing
 tomorrow."
-8,0xb8258,0xb826f,8,"[""\\n"", ""<waita>@""]",,"It was a nice
+8,0xb8258,0xb826f,8,"[""\\n"", ""<waita>@""]",Elza,"It was a nice
 day!!"
-9,0xb826f,0xb828e,9,"[""\\n"", ""<waita>@""]",,"We can see the
+9,0xb826f,0xb828e,9,"[""\\n"", ""<waita>@""]",Bigbee,"We can see the
 sunset soon."
-10,0xb828e,0xb8300,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Do you want to
+10,0xb828e,0xb8300,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Kirk,"Do you want to
 take the ferry?
 The last
 departure is at
@@ -34,116 +34,116 @@ departure is at
 
 Take the ferry?
  Yes          No<ask>"
-11,0xb8300,0xb833a,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Can we see a
+11,0xb8300,0xb833a,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kate,"Can we see a
 pretty sunset
 like this in a
 big city?"
-12,0xb833a,0xb836b,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"<player>… Isn't it
+12,0xb833a,0xb836b,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"<player>… Isn't it
 time to go back
 to your farm?"
-13,0xb836b,0xb8383,5,"[""\\n"", ""<waita>@""]",,"It's late.
+13,0xb836b,0xb8383,5,"[""\\n"", ""<waita>@""]",Billy,"It's late.
 Go home."
-14,0xb8383,0xb83c5,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I heard you have
+14,0xb8383,0xb83c5,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"I heard you have
 to get up early
 every morning.
 Are you OK?"
-15,0xb83c5,0xb83de,9,"[""\\n"", ""<waita>@""]",,"<player>? It's
+15,0xb83c5,0xb83de,9,"[""\\n"", ""<waita>@""]",Bigbee,"<player>? It's
 really late."
-16,0xb83de,0xb844f,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"<player>. The ferry
+16,0xb83de,0xb844f,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kirk,"<player>. The ferry
 hours are over.
 It's dangerous
 to sail at
 night, so I
 can't take you
 across the sea."
-17,0xb844f,0xb8469,11,"[""\\n"", ""<waita>@""]",,"Oh, <player>?
+17,0xb844f,0xb8469,11,"[""\\n"", ""<waita>@""]",Kate,"Oh, <player>?
 It's so late."
-18,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+18,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-19,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+19,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-20,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+20,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-21,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+21,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-22,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+22,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-23,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+23,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-24,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+24,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-25,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+25,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-26,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+26,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-27,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+27,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-28,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+28,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-29,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+29,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-30,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+30,0xb8469,0xb8496,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>."
-31,0xb8496,0xb84b8,5,"[""\\n"", ""<waita>@""]",,"Thanks, <player>!!
+31,0xb8496,0xb84b8,5,"[""\\n"", ""<waita>@""]",Billy,"Thanks, <player>!!
 It'll be useful!"
-32,0xb84b8,0xb84ec,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this from
+32,0xb84b8,0xb84ec,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elza,"Is this from
 your farm? Thank
 you! I love it!"
-33,0xb84ec,0xb851c,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Wow, this is
+33,0xb84ec,0xb851c,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"Wow, this is
 great! Thank you
 very much."
-34,0xb851c,0xb854b,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Oh, thank you.
+34,0xb851c,0xb854b,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kirk,"Oh, thank you.
 Kate will be
 very happy."
-35,0xb854b,0xb8578,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Yeah! A present
+35,0xb854b,0xb8578,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"Yeah! A present
 for me? Thank
 you, <player>!"
-36,0xb8578,0xb8595,4,"[""\\n"", ""<waita>@""]",,"What? For me?
+36,0xb8578,0xb8595,4,"[""\\n"", ""<waita>@""]",Elder,"What? For me?
 Thanks, <player>."
-37,0xb8595,0xb85b3,5,"[""\\n"", ""<waita>@""]",,"A gift for me?
+37,0xb8595,0xb85b3,5,"[""\\n"", ""<waita>@""]",Billy,"A gift for me?
 Thanks, <player>."
-38,0xb85b3,0xb85dc,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Wow, it's for
+38,0xb85b3,0xb85dc,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elza,"Wow, it's for
 me? Thank you,
 <player>."
-39,0xb85dc,0xb860b,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"What? Are you
+39,0xb85dc,0xb860b,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"What? Are you
 sure? Thank you
 very much."
-40,0xb860b,0xb8630,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Is this for
+40,0xb860b,0xb8630,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kirk,"Is this for
 me? Thank you,
 <player>."
-41,0xb8630,0xb865b,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"You are giving
+41,0xb8630,0xb865b,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"You are giving
 it to me?
 Thanks, <player>!"
-42,0xb865b,0xb8675,4,"[""\\n"", ""<waita>@""]",,"…Thank you,
+42,0xb865b,0xb8675,4,"[""\\n"", ""<waita>@""]",Elder,"…Thank you,
 <player>…, Mmm…"
-43,0xb8675,0xb8694,5,"[""\\n"", ""<waita>@""]",,"What the…
+43,0xb8675,0xb8694,5,"[""\\n"", ""<waita>@""]",Billy,"What the…
 Thanks, I guess."
-44,0xb8694,0xb86c1,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"What? Ah, I
+44,0xb8694,0xb86c1,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elza,"What? Ah, I
 guess I should
 accept it…"
-45,0xb86c1,0xb86f2,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Mmm…I don't
+45,0xb86c1,0xb86f2,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"Mmm…I don't
 really… Well,
 thanks anyway."
-46,0xb86f2,0xb871c,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"What is it?
+46,0xb86f2,0xb871c,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kirk,"What is it?
 Mmm…Thank you,
 anyway."
-47,0xb871c,0xb874e,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"No! I'm not
+47,0xb871c,0xb874e,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"No! I'm not
 happy with that
 kind of stuff."
-48,0xb874e,0xb8803,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Zzzz… Oh,
+48,0xb874e,0xb8803,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Zzzz… Oh,
 Harry… What?
 <player>? Huh.
 <var>0's father
@@ -156,7 +156,7 @@ on <var>0's farm.
 care of the
 farm…
 Zzzz…"
-49,0xb8803,0xb88c2,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Hey! You are
+49,0xb8803,0xb88c2,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"Hey! You are
 the guy who came
 from Flower Bud
 Village. I
@@ -169,7 +169,7 @@ Nice to meet
 you! This town
 is nice and
 peaceful."
-50,0xb88c2,0xb894c,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Hello. Nice to
+50,0xb88c2,0xb894c,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elza,"Hello. Nice to
 meet you. You
 are helping on
 <var>0's farm,
@@ -178,7 +178,7 @@ I'm a fisherman.
 Take care of
 <var>0 and the
 farm."
-51,0xb894c,0xb8a0c,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"You are <player>,
+51,0xb894c,0xb8a0c,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"You are <player>,
 right? I'm
 Bigbee. I run
 the Inn. The
@@ -191,7 +191,7 @@ home. I think
 you can build
 one on <var>0's
 farm, too."
-52,0xb8a0c,0xb8b00,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Hello… You
+52,0xb8a0c,0xb8b00,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kirk,"Hello… You
 must be the guy
 who came here
 with <var>0. My
@@ -206,7 +206,7 @@ between 6AM to
 6PM. Let me know
 when you want to
 take the ferry."
-53,0xb8b00,0xb8b9a,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Who are you?
+53,0xb8b00,0xb8b9a,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kate,"Who are you?
 I've never seen
 you before.
 Your name is
@@ -216,7 +216,7 @@ is a captain of
 a ship. You're
 helping <var>0?
 I love milk!"
-54,0xb8b9a,0xb8c4f,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Zzzz… <player>.
+54,0xb8b9a,0xb8c4f,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elder,"Zzzz… <player>.
 Long time no
 see. I'm Elder.
 You're working
@@ -228,7 +228,7 @@ is full of
 Harry's dream.
 Please take
 good care of it."
-55,0xb8c4f,0xb8ce2,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Hey? You are…
+55,0xb8c4f,0xb8ce2,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"Hey? You are…
 <player>, right? You
 used to play at
 Elder's place a
@@ -237,7 +237,7 @@ You wouldn't
 remember me…
 Good luck with
 your farm!"
-56,0xb8ce2,0xb8d85,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"<player>! How are
+56,0xb8ce2,0xb8d85,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elza,"<player>! How are
 you? It's Elza.
 Remember me?
 We used to play
@@ -248,7 +248,7 @@ working on
 Harry's farm?
 Wow. Good luck,
 <player>!"
-57,0xb8d85,0xb8e64,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"You must be
+57,0xb8d85,0xb8e64,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"You must be
 <player>. Harry's
 daughter, right?
 I'm Bigbee. I
@@ -263,7 +263,7 @@ should be able
 to build one
 on your farm,
 too."
-58,0xb8e64,0xb8f5c,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Hi. You must be
+58,0xb8e64,0xb8f5c,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kirk,"Hi. You must be
 the daughter of
 Harry. Now you
 are working on
@@ -278,7 +278,7 @@ between 6AM and
 6PM. Let me know
 when you want to
 take the ferry."
-59,0xb8f5c,0xb8fe6,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Hello. You're
+59,0xb8f5c,0xb8fe6,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"Hello. You're
 the new owner
 of Harry's farm,
 right? I'm Kate.

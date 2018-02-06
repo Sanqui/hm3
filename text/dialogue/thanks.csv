@@ -1,105 +1,105 @@
 i,address,end,name_i,newlines,name,string
-0,0x1083e2,0x10841a,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"What? You
+0,0x1083e2,0x10841a,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"What? You
 harvested this.
 I can have it?
 …Thanks!"
-1,0x10841a,0x108454,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"This… is what
+1,0x10841a,0x108454,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"This… is what
 you harvested…
 Are you sure?
 …Thanks!"
-2,0x108454,0x108488,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wow, how pretty.
+2,0x108454,0x108488,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Wow, how pretty.
 I'll keep it in
 the room.
 "
-3,0x108488,0x1084c1,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Oh, it bloomed
+3,0x108488,0x1084c1,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Oh, it bloomed
 nicely. I'll
 keep it in the
 room."
-4,0x1084c1,0x10851e,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wow, how pretty.
+4,0x1084c1,0x10851e,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Wow, how pretty.
 I want to keep
 it in the room,
 but I don't have
 a vase… Sorry.
 "
-5,0x10851e,0x108573,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Oh, it bloomed
+5,0x10851e,0x108573,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Oh, it bloomed
 nicely. I have
 to buy a vase
 so I can keep it
 in the room…
 "
-6,0x108573,0x108585,1,"[""<waita>@""]",,"Thank you, <player>."
-7,0x108585,0x108594,1,"[""<waita>@""]",,"Thanks, <player>."
-8,0x108594,0x1085c8,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <waita>@""]",,"…<player>? Are
+6,0x108573,0x108585,1,"[""<waita>@""]",<partner>,"Thank you, <player>."
+7,0x108585,0x108594,1,"[""<waita>@""]",<partner>,"Thanks, <player>."
+8,0x108594,0x1085c8,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <waita>@""]",<partner>,"…<player>? Are
 you trying to
 annoy me or
 something?"
-9,0x1085c8,0x1085f5,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <waita>@""]",,"…<player>? You
+9,0x1085c8,0x1085f5,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <waita>@""]",<partner>,"…<player>? You
 don't like me
 or something?
 "
-10,0x1085f5,0x108623,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Is this from
+10,0x1085f5,0x108623,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elder,"Is this from
 your farm? Thank
 you, <player>.
 "
-11,0x108623,0x108643,5,"[""\\n"", ""<waita>@""]",,"Thanks <player>!!
+11,0x108623,0x108643,5,"[""\\n"", ""<waita>@""]",Billy,"Thanks <player>!!
 It'll be useful!"
-12,0x108643,0x108679,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Is this from
+12,0x108643,0x108679,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"Is this from
  your farm? Thank
 you! I love it!
 "
-13,0x108679,0x1086aa,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wow, this is
+13,0x108679,0x1086aa,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Bigbee,"Wow, this is
 great! Thank you
 very much.
 "
-14,0x1086aa,0x1086da,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Oh, thank you.
+14,0x1086aa,0x1086da,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kirk,"Oh, thank you.
 Kate will be
 very happy.
 "
-15,0x1086da,0x108708,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Yeah! A present
+15,0x1086da,0x108708,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kate,"Yeah! A present
 for me? Thank
 you, <player>!
 "
-16,0x108708,0x108725,4,"[""\\n"", ""<waita>@""]",,"What? For me?
+16,0x108708,0x108725,4,"[""\\n"", ""<waita>@""]",Elder,"What? For me?
 Thanks, <player>."
-17,0x108725,0x108743,5,"[""\\n"", ""<waita>@""]",,"A gift for me?
+17,0x108725,0x108743,5,"[""\\n"", ""<waita>@""]",Billy,"A gift for me?
 Thanks, <player>."
-18,0x108743,0x10876d,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wow, it's for
+18,0x108743,0x10876d,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"Wow, it's for
 me? Thank you,
 <player>.
 "
-19,0x10876d,0x10879d,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"What? Are you
+19,0x10876d,0x10879d,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Bigbee,"What? Are you
 sure? Thank you
 very much.
 "
-20,0x10879d,0x1087c1,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Is this for
+20,0x10879d,0x1087c1,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kirk,"Is this for
 me? Thank you
 <player>.
 "
-21,0x1087c1,0x1087ee,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"You are giving
+21,0x1087c1,0x1087ee,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kate,"You are giving
 this to me?
  Thanks <player>!
 "
-22,0x1087ee,0x108808,4,"[""\\n"", ""<waita>@""]",,"…Thank you,
+22,0x1087ee,0x108808,4,"[""\\n"", ""<waita>@""]",Elder,"…Thank you,
 <player>…, Mmm…"
-23,0x108808,0x108827,5,"[""\\n"", ""<waita>@""]",,"What the…
+23,0x108808,0x108827,5,"[""\\n"", ""<waita>@""]",Billy,"What the…
 Thanks, I guess."
-24,0x108827,0x108855,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"What? Ah, I
+24,0x108827,0x108855,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"What? Ah, I
 guess I should
 accept it…
 "
-25,0x108855,0x108888,9,"["" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Mmm…I don't
+25,0x108855,0x108888,9,"["" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Bigbee,"Mmm…I don't
 really… Well,
 thanks anyway.
 "
-26,0x108888,0x1088b4,10,"["" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"What is it?
+26,0x108888,0x1088b4,10,"["" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kirk,"What is it?
 Mmm…Thank you,
 anyway.
 "
-27,0x1088b4,0x1088e7,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"No! I'm not
+27,0x1088b4,0x1088e7,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kate,"No! I'm not
 happy with that
 kind of stuff.
 "
-28,0x1088e7,0x108917,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Sorry… Nothing
+28,0x1088e7,0x108917,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Sorry… Nothing
 makes me happy
 right now…
 "

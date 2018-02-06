@@ -1,5 +1,5 @@
 i,address,end,name_i,newlines,name,string
-0,0x10812f,0x1081c0,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"What… is this?
+0,0x10812f,0x1081c0,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",<player>,"What… is this?
 It seems like an
 egg. If I leave
 it here, the
@@ -8,11 +8,11 @@ eat it. Should I
 take it home?
  Yes          No<ask>"
 0-TRASH,0x1081c0,0x1081ca,,,,Get Shovel
-1,0x1081ca,0x10820d,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Cool, I found a
+1,0x1081ca,0x10820d,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"Cool, I found a
 shovel! Could I
 dig a hot spring
 with this?"
-2,0x10820d,0x10824e,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wha…what is
+2,0x10820d,0x10824e,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"Wha…what is
 going on!? It
 has gotten dark
 all of a sudden!"
@@ -38,11 +38,11 @@ I'll get
 smashed!"
 6,0x108360,0x10837a,,"[""\\n"", ""<waita>@""]",,"All stores
 closed today."
-7,0x10837a,0x1083b3,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"The field is
+7,0x10837a,0x1083b3,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"The field is
 damaged too.
 Today's been a
 bad day…"
-8,0x1083b3,0x1083e2,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Oh, no! All of
+8,0x1083b3,0x1083e2,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"Oh, no! All of
 my animals are
 unhappy!
 "

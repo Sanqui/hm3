@@ -1,0 +1,109 @@
+i,address,end,name_i,newlines,name,string
+0,0x109b8a,0x109b9f,,"[""\\n"", ""<waita>@""]",,"Carp
+            <var>0"
+1,0x109b9f,0x109bb9,,"[""\\n"", ""<waita>@""]",,"King Carp
+            <var>0"
+2,0x109bb9,0x109bd3,,"[""\\n"", ""<waita>@""]",,"Snakehead
+            <var>0"
+3,0x109bd3,0x109bee,,"[""\\n"", ""<waita>@""]",,"Black Bass
+            <var>0"
+4,0x109bee,0x109c07,,"[""\\n"", ""<waita>@""]",,"Bluegill
+            <var>0"
+5,0x109c07,0x109c23,,"[""\\n"", ""<waita>@""]",,"King Salmon
+            <var>0"
+6,0x109c23,0x109c3e,,"[""\\n"", ""<waita>@""]",,"Parrotfish
+            <var>0"
+7,0x109c3e,0x109c57,,"[""\\n"", ""<waita>@""]",,"Blowfish
+            <var>0"
+8,0x109c57,0x109c6e,,"[""\\n"", ""<waita>@""]",,"Dorado
+            <var>0"
+9,0x109c6e,0x109c87,,"[""\\n"", ""<waita>@""]",,"Sailfish
+            <var>0"
+10,0x109c87,0x109ca2,,"[""\\n"", ""<waita>@""]",,"Coelacanth
+            <var>0"
+11,0x109ca2,0x109cbd,,"[""\\n"", ""<waita>@""]",,"Archerfish
+            <var>0"
+12,0x109cbd,0x109cda,,"[""\\n"", ""<waita>@""]",,"Horned Shark
+            <var>0"
+13,0x109cda,0x109cf6,,"[""\\n"", ""<waita>@""]",,"Blue Maomao
+            <var>0"
+14,0x109cf6,0x109d12,,"[""\\n"", ""<waita>@""]",,"Pink Maomao
+            <var>0"
+15,0x109d12,0x109d2f,,"[""\\n"", ""<waita>@""]",,"King of Lake
+            <var>0"
+16,0x109d2f,0x109f34,16,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Cozy,"We have both
+salt and fresh
+water fish here.
+You can see them
+for free, but we
+only have Carp
+and King Carp
+now… I want to
+make this
+aquarium a lot
+bigger…
+I know we've
+just met, but
+since I don't
+have time to do
+it myself, can
+you go fishing
+for me? You can
+keep the fish in
+your rucksack.
+When you get the
+fish, give it to
+me, and I'll put
+them in the fish
+tank. If you
+want to see the
+fish, press the
+A Button in
+front of the
+tank. I'm
+counting on you!
+"
+17,0x109f34,0x109f58,16,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Cozy,"Hi <player>. Make
+yourself at
+home.
+"
+18,0x109f58,0x109f88,16,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Cozy,"Thank you
+<player>! I will
+take good
+care of it."
+19,0x109f88,0x109fa9,18,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Choco,"Hey <player>!!
+Long time no
+see.
+"
+20,0x109fa9,0x109fdb,18,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Choco,"I love aquariums
+very much!! They
+are fun!
+"
+21,0x109fdb,0x10a00b,20,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Chet,"How have you
+been, <player>? How
+is your farm?
+"
+22,0x10a00b,0x10a04d,20,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Chet,"This is the
+only place where
+you can see the
+fish swimming."
+23,0x10a04d,0x10a07e,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fish that live
+on the farm and
+in the lake.
+"
+24,0x10a07e,0x10a0bd,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fish that live
+around the pier
+and around the
+island town."
+25,0x10a0bd,0x10a0db,,"[""\\n"", ""<waita>@""]",,"Fish that live
+in the ocean."
+26,0x10a0db,0x10a104,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"You can see the
+mystical fish
+here.
+"
+27,0x10a104,0x10a13f,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"View inside of
+the fish tank?
+
+ Yes          No<ask>"
+28,0x10a13f,0x10a157,,"[""\\n"", ""<waita>@""]",,"Is the fish
+tank full?"

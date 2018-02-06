@@ -1,0 +1,406 @@
+i,address,end,name_i,newlines,name,string
+0,0xb90ea,0xb91a8,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",Billy,"Hey, <player>.
+How is the farm?
+Did you like the
+fishing rod I
+gave you? You
+must be busy on
+the farm. Oh.
+I have a gift
+for you. Do you
+want it?
+<noname><name>0 Thanks!
+ What is it?<ask>"
+1,0xb91a8,0xb9253,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Billy,"It's from me and
+Elza. I'll bring
+a boat next to
+the lighthouse.
+We've been using
+it, and I think
+it will be very
+useful for you.
+Take good care
+of it."
+2,0xb9253,0xb9384,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"Ha ha ha…
+Don't be
+surprised! It's
+a boat from me
+and Elza. I'll
+bring it next to
+the lighthouse.
+Now you can go
+fishing or go to
+the mainland
+anytime. It's
+kind of an old
+boat that we
+used to use, but
+we fixed it up
+for you! Take
+good care of it,
+OK? It's all
+yours!"
+3,0xb9384,0xb9407,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",Billy,"Hey, <player>!
+Can you do me a
+favor? I'm
+fixing a ship,
+but my hammer
+broke.
+Can I borrow
+yours?
+<noname><name>0 Sure.
+ No.<ask>"
+4,0xb9407,0xb942a,5,"[""\\n"", ""10GT000@""]",Billy,"Please?
+ OK           No<ask>"
+5,0xb942a,0xb944f,5,"[""\\n"", ""10GT000@""]",Billy,"…Please?!
+ OK           No<ask>"
+6,0xb944f,0xb947c,5,"[""\\n"", ""10GR000@""]",Billy,"Please, please?!
+ OK         Nope<ask>"
+7,0xb947c,0xb94a9,5,"[""\\n"", ""10GR000@""]",Billy,"I'm begging you!
+ OK         Nope<ask>"
+8,0xb94a9,0xb94d5,5,"[""\\n"", ""10GS000@""]",Billy,"Pleeeeeeeeeease?
+ OK          NO!<ask>"
+9,0xb94d5,0xb94f4,5,"[""\\n"", ""<waita>@""]",Billy,"Oh, thanks!
+I owe you one."
+10,0xb94f4,0xb9524,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"I need your
+hammer a little
+while longer."
+11,0xb9524,0xb9635,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Billy,"Hey, <player>.
+I'm done fixing
+the ship. Thanks
+for your hammer.
+Here. It's my
+fishing rod. You
+don't know how
+to fish? Press
+the A Button to
+cast. Press it
+again when the
+fish bites. You
+might catch some
+junk too. Well,
+thanks again for
+your hammer!"
+12,0xb9635,0xb9785,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"…<player>. You
+must love your
+hammer so much.
+Alright! I like
+your love for
+your hammer.
+Here. It's my
+fishing rod. You
+don't know how
+to fish? Press
+the A Button to
+cast. Press it
+again when the
+fish bites. You
+might catch some
+junk too. I
+hope you'll love
+the fishing rod
+as much as you
+love your
+hammer."
+13,0xb9785,0xb97b4,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"I love fishing.
+You can catch
+100 a day."
+14,0xb97b4,0xb9842,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elder,"Oh, <player>.
+How are you?
+I'll tell you
+something
+interesting.
+Go to the lake
+in the forest by
+noon. Something
+might happen
+there…"
+15,0xb9842,0xb9a51,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Did you go to
+the lake in the
+forest? A long
+time ago, there
+was a captain
+called Rocky. He
+was a great
+sailor. However,
+even he couldn't
+win aginst a
+storm. He went
+down with his
+ship one night,
+and his girlー
+friend, Marla,
+followed him…
+But, ten years
+later, Rocky
+suddenly
+returned to the
+island. Where he
+heard about
+Marla. He became
+desperate and
+went into the
+lake… Since
+then, the lake
+becomes red on
+the day every
+fall…
+They must be
+happy together
+in heaven…"
+16,0xb9a51,0xb9aa1,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"What? Your cat
+is missing? That
+is not good. I
+will keep my
+eyes open."
+17,0xb9aa1,0xb9ae6,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"What? Your pet
+is missing? I
+don't know
+anything about
+it…"
+18,0xb9ae6,0xb9b42,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kirk,"What? You can't
+find your pet?
+I wish there was
+something I
+could do to help
+you."
+19,0xb9b42,0xb9b8e,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"Hi, <player>!
+What's wrong?
+Your pet is
+gone!? Oh, no!
+I'll help you!"
+20,0xb9b8e,0xb9d34,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elder,"Oh, I remember
+now! I think it
+was last night.
+I woke up in the
+middle of the
+night, so I went
+outside to get
+some air.
+Then I saw
+someone holding
+a cat. I believe
+it was between
+midnight and
+2AM. Billy and
+Elza were away
+for a night
+fishing. So, if
+it wasn't you or
+<var>0, it's
+either Bigbee,
+Kirk or Kate. I
+don't mean to
+doubt them, but
+there is no one
+else on this
+island…"
+21,0xb9d34,0xb9de0,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"What was I doing
+last night? I
+was picking
+wild berries for
+my guests. It
+was past midー
+night. Why are
+you asking me
+this? Do you
+think I took
+your pet!?"
+22,0xb9de0,0xb9e92,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kirk,"Hi, how are you
+doing? Did you
+find your pet?
+What was I doing
+last night? I
+was just looking
+at the stars
+between 11PM and
+1AM here. Why do
+you want to
+know?"
+23,0xb9e92,0xb9f3f,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"Hello, <player>.
+I was looking
+for you! What
+does your cat
+look like? I'll
+find it for you!
+What was I doing
+last night? Ah,
+last night…
+Mmm… I forgot!
+Sorry!"
+24,0xb9f3f,0xba04f,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",<partner>,"How is it going,
+<player>? What's up?
+Ah, huh…
+Whatever the
+reason is, Elder
+thinks those
+three are
+suspicious. I'm
+worried about
+<var>0, <player>.
+I don't want to
+doubt innocent
+people, but once
+you know the
+most suspicious
+person, tell me
+by midnight."
+25,0xba04f,0xba11d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Hey, <player>.
+What's up?
+…Mmmm…
+According to
+Elder, I guess
+those three are
+suspicious. Hey,
+<player>. Talk to
+them and when
+you know who
+might be the
+most suspicious,
+let me know by
+midnight."
+26,0xba11d,0xba16d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""3008GO0@""]",<partner>,"You know who did
+it? Choose one.
+<noname><name>0 Bigbee  Kirk
+ Kate    Not yet<ask>"
+27,0xba16d,0xba1bd,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""3008GO0@""]",<partner>,"You know who did
+it? Choose one.
+<noname><name>0 Bigbee  Kirk
+ Kate    Not yet<ask>"
+28,0xba1bd,0xba23c,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Ah, huh. Then,
+can you go to
+see <var>0 and
+kind of talk
+about it? I know
+it's not easy,
+but I'm counting
+on you."
+29,0xba23c,0xba2b7,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Alright… Then,
+can you go to
+see <var>0 and
+kind of talk
+about it? It's
+not easy, but I
+know you can do
+it, <player>."
+30,0xba2b7,0xba36f,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"Why are you
+accusing me? I
+was acting
+strangely? Was I
+holding your pet
+instead of wild
+berries? What
+are you talking
+about? I didn't
+even know your
+pet was a cat!!"
+31,0xba36f,0xba447,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"What was I doing
+here last night?
+I was picking
+wild berries for
+my guests. It…
+it was around
+midnight. But
+why are you
+asking me this?
+You lost your
+pet? Are you
+accusing me of
+taking your pet?"
+32,0xba447,0xba4ad,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kirk,"I took your cat?
+You are wrong
+about that. I
+didn't even know
+your pet was a
+cat until now."
+33,0xba4ad,0xba578,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kirk,"Hi. How are you
+doing? Did you
+find your pet?
+What was I doing
+last night? I
+was just looking
+at the stars
+from the cliff.
+I was there
+between 11PM and
+1AM. Why are you
+asking me this?"
+34,0xba578,0xba6ec,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"What's up, <player>?
+Did you find
+your cat? What?
+I took your cat?
+Why do you say
+such a thing!?
+… … … …
+How did you find
+out? I thought
+no one would
+know… What?
+I was the only
+one who knew
+your pet was a
+cat? Oh, no! I
+didn't realize
+that! I'm sorry.
+Your cat was so
+cute that I
+couldn't help
+it… I will
+bring your cat
+back. I promise!"
+35,0xba6ec,0xba797,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"Hi, <player>.
+I was looking
+for you! What
+does your cat
+look like? I'll
+help you look
+for it. What?
+What was I doing
+last night? Ah,
+mmm… I don't
+remember."
+36,0xba797,0xba832,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Billy,"Hey, <player>!
+What good
+timing. I want
+to repair the
+lighthouse, so
+can you spare
+me <var>0 logs?
+You don't have
+to, but…
+ Yes          No<ask>"
+37,0xba832,0xba897,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"Really? Then,
+can you bring
+me <var>0 logs
+within a week?
+Thanks, <player>.
+I'm counting on
+you!"
+38,0xba897,0xba8e8,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"Oh, never mind.
+Sorry for asking
+such a thing all
+of a sudden.
+See ya."
+39,0xba8e8,0xba976,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"Hey! Thanks,
+<player>! Thanks for
+keeping your
+promise! Now the
+lighthouse will
+be in good
+shape. I will
+never forget
+your kindness."
+40,0xba976,0xba9cc,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Billy,"Oh, <player>.
+Did you bring
+the logs? I
+guess we need
+some more. I'll
+be waiting!"
+41,0xba9cc,0xbaa48,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Billy,"One week has
+already passed.
+I was expecting
+too much from
+you… I got
+logs from Elder
+and fixed the
+lighthouse."

@@ -1,23 +1,23 @@
 i,address,end,name_i,newlines,name,string
-0,0x600a1,0x600e7,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Delicious, fullー
+0,0x600a1,0x600e7,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Chloe,"Delicious, fullー
 flavored coffee.
 <var>0G.
  Yes          No<ask>"
-1,0x600e7,0x6011d,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Hot and tasty
+1,0x600e7,0x6011d,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Chloe,"Hot and tasty
 tea.
 <var>0G.
  Yes          No<ask>"
-2,0x6011d,0x6015b,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Dessert with
+2,0x6011d,0x6015b,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Chloe,"Dessert with
 fresh fruits.
 <var>0G.
  Yes          No<ask>"
-3,0x6015b,0x6019e,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Meal set with
+3,0x6015b,0x6019e,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Chloe,"Meal set with
 fish and
 veggies. <var>0G.
  Yes          No<ask>"
-4,0x6019e,0x601b4,7,"[""\\n"", ""<waita>@""]",,"Please come
+4,0x6019e,0x601b4,7,"[""\\n"", ""<waita>@""]",Chloe,"Please come
 again."
-5,0x601b4,0x601d1,7,"[""\\n"", ""<waita>@""]",,"Oh no, not
+5,0x601b4,0x601d1,7,"[""\\n"", ""<waita>@""]",Chloe,"Oh no, not
 enough money."
-6,0x601d1,0x601eb,7,"[""\\n"", ""<waita>@""]",,"Thank you for
+6,0x601d1,0x601eb,7,"[""\\n"", ""<waita>@""]",Chloe,"Thank you for
 waiting."

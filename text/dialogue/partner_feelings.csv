@@ -1,0 +1,45 @@
+i,address,end,name_i,newlines,name,string
+0,0x10eea3,0x10eeb2,1,"[""<waita>@""]",<partner>,What is it?
+1,0x10eeb2,0x10eed7,1,"[""\\n"", ""<waita>@""]",<partner>,"I'm getting used
+to a farm life."
+2,0x10eed7,0x10eef2,1,"[""\\n"", ""<waita>@""]",<partner>,"Umm…I'm kind
+of bored…"
+3,0x10eef2,0x10ef10,1,"[""\\n"", ""<waita>@""]",<partner>,"Let's work
+hard together."
+4,0x10ef10,0x10ef2c,1,"[""\\n"", ""<waita>@""]",<partner>,"What? Ah, what
+is it <player>?"
+5,0x10ef2c,0x10ef49,1,"[""\\n"", ""<waita>@""]",<partner>,"I guess we live
+together…"
+6,0x10ef49,0x10ef76,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Did Mom feel
+this way about
+Dad…hmmm?
+"
+7,0x10ef76,0x10efa4,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"I have to make
+Dad's dream come
+true!
+"
+8,0x10efa4,0x10efca,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",<partner>,"I am so happy
+Darling!
+Hee hee!"
+9,0x10efca,0x10efd3,1,"[""<waita>@""]",<partner>,What?
+10,0x10efd3,0x10efee,1,"[""\\n"", ""<waita>@""]",<partner>,"I wonder about
+my farm…"
+11,0x10efee,0x10f00f,1,"[""\\n"", ""<waita>@""]",<partner>,"I'm getting used
+to it here."
+12,0x10f00f,0x10f02f,1,"[""\\n"", ""<waita>@""]",<partner>,"Do you like
+living here now?"
+13,0x10f02f,0x10f04f,1,"[""\\n"", ""<waita>@""]",<partner>,"Oh, sorry…What
+did you say?"
+14,0x10f04f,0x10f06d,1,"[""\\n"", ""<waita>@""]",<partner>,"…I guess we
+live together…"
+15,0x10f06d,0x10f089,,"[""\\n"", ""<waita>@""]",,"This feeling…
+What is it…?"
+16,0x10f089,0x10f0c8,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"I'm happy that
+I can help you
+with what you
+want to do…"
+17,0x10f0c8,0x10f0fa,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"I see you everyー
+day, but I feel
+strange…
+"
+18,0x10f0fa,0x10f110,1,"[""<waita>@""]",<partner>,<name>1Leave me alone!!

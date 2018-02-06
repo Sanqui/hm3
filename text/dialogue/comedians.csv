@@ -1,7 +1,7 @@
 i,address,end,name_i,newlines,name,string
 0,0x1e677c,0x1e679b,,"[""\\n"", ""<fc>\u3065@""]",,"Comedians
 “Your Own Fault”"
-1,0x1e679b,0x1e699e,35,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Hey, how are YOU
+1,0x1e679b,0x1e699e,35,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",Kojima,"Hey, how are YOU
 doing?
 <name>bHow are YOU
 doing?
@@ -39,13 +39,13 @@ just knock on
 the door and
 run!
 "
-2,0x1e699e,0x1e6a03,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Was it really
+2,0x1e699e,0x1e6a03,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",Otose,"Was it really
 necessary?
 <name>ZThen someone
 would come out
 and say, “Who is
 it? Oh, Kojima.”"
-3,0x1e6a03,0x1e6af9,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", "" <fc>\u3065@""]",,"Then why did you
+3,0x1e6a03,0x1e6af9,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", "" <fc>\u3065@""]",Otose,"Then why did you
 disguise
 yourself!?
 
@@ -62,7 +62,7 @@ who sat on the
 push pins would
 say, “Ouch, I'm
 not a poster!”"
-4,0x1e6af9,0x1e6c6a,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"What kind of kid
+4,0x1e6af9,0x1e6c6a,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",Otose,"What kind of kid
 would respond so
 nicely to that!?
 
@@ -88,7 +88,7 @@ one guy still
 had a paper I
 put on his back.
 "
-5,0x1e6c6a,0x1e6d07,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", "" <fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"You liar! Who
+5,0x1e6c6a,0x1e6d07,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", "" <fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",Otose,"You liar! Who
 wouldn't notice
 it for 5 years?
 
@@ -100,8 +100,8 @@ clothes on.
 liar! I can't
 handle it any
 more!"
-6,0x1e6d07,0x1e6d20,37,"[""\\n"", ""<fc>\u3065@""]",,"Thank you very
+6,0x1e6d07,0x1e6d20,37,"[""\\n"", ""<fc>\u3065@""]",2 guys,"Thank you very
 much."
-7,0x1e6d20,0x1e6d2e,36,"[""<fc>\u3065@""]",,You too!?
+7,0x1e6d20,0x1e6d2e,36,"[""<fc>\u3065@""]",Otose,You too!?
 8,0x1e6d2e,0x1e6d40,,"[""\\n"", ""@""]",,"
          The END"

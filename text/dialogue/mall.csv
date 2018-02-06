@@ -1,0 +1,81 @@
+i,address,end,name_i,newlines,name,string
+0,0x60f96,0x61032,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"You can watch
+popular programs
+at home…, but
+you can only
+receive Lisa's
+Weather Report
+on the island.
+It's <var>0G.
+
+ Yes          No<ask>"
+1,0x61032,0x6108a,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"Kid's bed. Get
+it before you
+have a baby.
+It's <var>0G.
+
+ Yes          No<ask>"
+2,0x6108a,0x610da,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"A small rug to
+decorate your
+room.
+It's <var>0G.
+
+ Yes          No<ask>"
+3,0x610da,0x61132,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"A mediumーsized
+rug to make your
+room cozy.
+It's <var>0G.
+
+ Yes          No<ask>"
+4,0x61132,0x61183,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"A large rug to
+keep your room
+warm.
+It's <var>0G.
+
+ Yes          No<ask>"
+5,0x61183,0x611cc,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"Kitchen cabinet
+to hold dishes.
+It's <var>0G.
+ Yes          No<ask>"
+6,0x611cc,0x61210,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"You can go snowー
+boarding.
+It's <var>0G.
+ Yes          No<ask>"
+7,0x61210,0x61258,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"Put milk in it
+to make butter.
+It's <var>0G.
+ Yes          No<ask>"
+8,0x61258,0x612a0,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"Put milk in it
+to make cheese.
+It's <var>0G.
+ Yes          No<ask>"
+9,0x612a0,0x612f0,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"Put eggs in it
+to make
+mayonnaise.
+It's <var>0G.
+
+ Yes          No<ask>"
+10,0x612f0,0x61336,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"Put wool in it
+to make yarn.
+It's <var>0G.
+ Yes          No<ask>"
+11,0x61336,0x61385,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"Put wool in it
+to knit a
+sweater.
+It's <var>0G.
+
+ Yes          No<ask>"
+12,0x61385,0x613dc,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"You can ride any
+kind of horse
+with this.
+It's <var>0G.
+
+ Yes          No<ask>"
+13,0x613dc,0x613f3,15,"[""\\n"", ""<waita>@""]",Lucus,"You don't want
+it?"
+14,0x613f3,0x61408,15,"[""\\n"", ""<waita>@""]",Lucus,"Not enough
+money!"
+15,0x61408,0x61421,15,"[""\\n"", ""<waita>@""]",Lucus,"Thank you.
+Take care."
+16,0x61421,0x61429,,"[""<waita>@""]",,Closed
+17,0x61421,0x61429,,"[""<waita>@""]",,Closed

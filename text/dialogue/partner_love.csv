@@ -1,0 +1,277 @@
+i,address,end,name_i,newlines,name,string
+0,0x108917,0x1089a2,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",<partner>,"Aahhh!…<player>.
+You scared me.
+What? I look
+depressed? I'm
+fine… Maybe
+not… <player>?
+Is running a
+farm your dream?
+<noname><name>0 Yes
+ No<ask>"
+0-TRASH,0x1089a2,0x1089b1,,,,"Yes\n
+No<ask>100G001@"
+1,0x1089b1,0x108a33,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",<partner>,"Of course. You
+will make
+Harry's dream
+come true. I
+used to have a
+dream too…
+<noname><name>0 What was it?
+ Oh, you did.<ask>"
+2,0x108a33,0x108b1a,1,"[""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"…No? I thought
+you wanted to
+make Harry's
+dream come true.
+Well, you are a
+girl. You must
+have something
+better to do…
+What is it that
+I want? Well, I
+have time to
+think about it.
+Ha ha ha…
+Let's go home."
+3,0x108b1a,0x108c16,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"My grandpa ran
+a huge farm too.
+I always wanted
+to be like him.
+But, now that I
+have made my
+dream come true
+I don't know
+what I really
+want… What is
+my dream? I've
+got time to
+think about it,
+right? Well…
+let's go home.
+"
+4,0x108c16,0x108ca0,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Yes, I used to
+ have a dream
+too. I forgot
+all about it,
+though… I
+guess I have
+time to think
+about it…
+Let's go home.
+"
+5,0x108ca0,0x108d1f,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",<partner>,"…<player>? Let
+me ask you a
+question…
+Can I stay here
+and help you
+with the farm
+forever?
+
+<noname><name>0 Of course!
+ Why?<ask>"
+6,0x108d1f,0x108db9,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",<partner>,"Oh, good… I
+think you and I
+make a great
+team. Are you
+sure you want to
+live with a guy
+like me forever?
+
+<noname><name>0 Yes, I'm sure!
+ ……<ask>"
+7,0x108db9,0x108e55,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",<partner>,"I've never felt
+this way before.
+<player>, I love you
+so much that my
+heart aches for
+you… I want to
+be with you…
+forever…
+<noname><name>0 Me too!
+ ……<ask>"
+8,0x108e55,0x108ea9,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",<partner>,"…Does that
+mean you will
+marry me?
+
+<noname><name>0 Yes, it does.
+ Not really…<ask>"
+9,0x108ea9,0x108f26,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"…Of course.
+Harry's dream is
+more important
+to you now…
+Sorry to ask you
+such a silly
+question.
+Let's go home."
+10,0x108f26,0x108f81,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"You made me the
+happiest man in
+the whole world!
+I promise to
+make you happy
+too!"
+11,0x108f81,0x108fed,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"…Of course…
+Ha ha ha… I
+got kind of
+carried away…
+It's cold here,
+isn't it?
+Let's go home.
+"
+12,0x108fed,0x10906e,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Ever since you
+came to my farm,
+time's gone by
+so quickly or
+slowly… Ha ha.
+I don't know
+what I'm talking
+about…"
+13,0x10906e,0x1090ca,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",<partner>,"The truth is…
+Do you mind if
+I like you…?
+
+<noname><name>0 No, I don't.
+ …Yes, I do…<ask>"
+14,0x1090ca,0x109129,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"…Good… I
+feel much better
+now. Thank you,
+<player>. We make a
+pretty good
+team, don't we?"
+15,0x109129,0x10918c,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"…Ha ha ha. Of
+course you do.
+Forget what I
+just said. Well,
+let's keep on
+working hard!"
+16,0x10918c,0x109211,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",<partner>,"<player>, can I ask
+you something?
+Will you stay
+here and help me
+with the farm
+forever?
+<noname><name>0 Of course!
+ I don't know.<ask>"
+17,0x109211,0x109285,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",<partner>,"<name>1Good…I know we
+make a great
+team. Are you
+sure? How about
+your farm?
+
+<noname><name>0 Yes, I'm sure.
+ ……<ask>"
+18,0x109285,0x10933f,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",<partner>,"I've never loved
+someone like
+this before…
+My heart aches
+for you… I
+love you more
+than anyone in
+the world!
+Please stay with
+me forever…
+<noname><name>0 Yes, I will.
+ ……<ask>"
+19,0x10933f,0x109395,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",<partner>,"…Are you
+saying that you
+will marry me?
+
+<noname><name>0 Yes, I am.
+ Not really.<ask>"
+20,0x109395,0x109413,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"…Of course.
+You have to go
+back to your own
+farm, and maybe
+someone else is
+waiting for you.
+Let's go home,
+<player>."
+21,0x109413,0x109450,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"I'm so happy…
+I will make you
+happy too! I
+promise <player>…"
+22,0x109450,0x1094a1,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",<partner>,"Ha ha…
+Of course.
+What was
+I thinking…?
+Achoo! Let's
+go home now
+<player>."
+23,0x1094a1,0x1095e8,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",<partner>,"Aahhh! <player>…
+Did you find a
+cub? Really…
+Well, If you
+think about it,
+it was a good
+thing <player>.
+If there was a
+cub, there would
+also be a
+mother. What if
+someone got
+attacked by the
+mother bear?
+The hunters
+might hunt her
+down too. So, it
+was good that we
+didn't find the
+cub. Let's go
+home <player>."
+24,0x1095e8,0x109619,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"Time to get up.
+… I don't feel
+too well…
+"
+25,0x109619,0x1096a6,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"What happened
+<player>? You look
+pale…
+
+<name>0I think I got
+sick…Can I stay
+in bed today?
+
+<name>1No way!…I'm
+kidding. Have a
+good rest♥
+"
+26,0x1096a6,0x1096d4,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"It's time to get
+up… I have a
+fever…?
+"
+27,0x1096d4,0x10974d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"What's wrong?
+You look pale,
+<player>…
+
+<name>0I think I'm
+sick. Can I
+stay in bed
+today…?
+<name>1OK. Have a
+good rest."
+28,0x10974d,0x1097b8,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Good morning
+<player>! Today is
+your birthday,
+isn't it? I have
+a present for
+you. Happy
+birthday!
+"
+29,0x1097b8,0x1097ed,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"Her present was
+a very warm and
+kind gesture…
+"
+30,0x1097ed,0x10984d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Good morning
+<player>. Today is
+your birthday,
+right? I have
+a gift for you.
+Happy birthday!"
+31,0x10984d,0x10987f,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"His gift was a
+very warm and
+kind gesture…
+"
+32,0x10987f,0x1098d0,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"The present is
+a big rucksack!!
+Now you can
+carry twice as
+many items!
+"

@@ -1,5 +1,5 @@
 i,address,end,name_i,newlines,name,string
-0,0x12d64e,0x12d81b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Hey <player>…
+0,0x12d64e,0x12d81b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"Hey <player>…
 Isn't that a
 glacier? Cool!
 It's my first
@@ -27,23 +27,23 @@ convert the
 storage into a
 refrigerator?
  Yes          No<ask>"
-1,0x12d81b,0x12d86d,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Alright! I'll
+1,0x12d81b,0x12d86d,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lucus,"Alright! I'll
 work on it right
 away. I'll show
 you how talented
 I am!
 "
-2,0x12d86d,0x12d898,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"OK… Ask me
+2,0x12d86d,0x12d898,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lucus,"OK… Ask me
 if you change
 your mind.
 "
-3,0x12d898,0x12d8f2,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Do you want to
+3,0x12d898,0x12d8f2,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"Do you want to
 convert the
 storage into a
 refrigerator?
 
  Yes          No<ask>"
-4,0x12d8f2,0x12d921,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fine job. You
+4,0x12d8f2,0x12d921,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Fine job. You
 must work for
 your child.
 "

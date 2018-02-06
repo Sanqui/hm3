@@ -23,8 +23,8 @@ NAMES_TABLE = gbaddr("4a:4089")
 names = []
 
 METATABLES = [
- (gbaddr("79:44a0"), float("inf"), (
-    *"""strings/dummy
+ (gbaddr("79:44a0"), 368 - (48 - 7), (
+    """strings/dummy
     strings/items
     strings/strings
     strings/goods
@@ -37,27 +37,32 @@ METATABLES = [
     dialogue/boy_intro
     dialogue/endings
     strings/character_choice
-    strings/save""".split(),
-    *((None,)*8)
+    strings/save""".split()
  )),
  (gbaddr("2e:400f"), 126,
-  "dialogue/town dialogue/town2".split()),
+  "dialogue/town dialogue/town2 dialogue/billy dialogue/town3".split()),
  (gbaddr("43:401f"), 177,
-  "dialogue/house dialogue/house_partner_assignments strings/assignments dialogue/farming".split()),
+  "dialogue/house dialogue/partner_assignments strings/assignments dialogue/caught\
+  dialogue/house2 dialogue/weather dialogue/partner dialogue/partner_feelings".split()),
  (gbaddr("7c:55f7"), 55,
-  (None, None, None, None, "dialogue/partner_events")),
+  (None, None, None, None, None,
+  None, None, None, "dialogue/partner_events", "dialogue/missing")),
  (gbaddr("18:400f"), 68,
-  "dialogue/restaurant dialogue/seed_shop dialogue/book_shop".split()),
- (gbaddr("50:5804"), 67,
-  ("dialogue/farmers_union", None, None, None)),
+  "dialogue/restaurant dialogue/seed_shop dialogue/book_shop \
+  dialogue/mall dialogue/theater".split()),
+ (gbaddr("50:5804"), 62,
+  ("dialogue/farmers_union",)),
  (gbaddr("42:401f"), 130,
-  "dialogue/player_found dialogue/thanks assorted".split()),
+  "dialogue/player_found dialogue/thanks dialogue/partner_love\
+  dialogue/ferry fishing dialogue/assorted".split()),
  (gbaddr("50:6878"), 41,
-  (None, None, None, "dialogue/assorted")),
+  (None, None, None, None,
+  None, None, "dialogue/assorted2")),
  (gbaddr("4b:400f"), 190,
-  "books dialogue/lucas dialogue/thanks2 dialogue/thanks3".split()),
+  "books dialogue/lucas dialogue/thanks2 dialogue/thanks3 \
+  dialogue/assorted3 dialogue/pak dialogue/snowboarding strings/buildings".split()),
  (gbaddr("17:400f"), 15,
-  ("strings/locations",)),
+  ("strings/locations_island", "strings/locations_mainland",)),
 ]
 
 def readbyte():  return struct.unpack("B",  rom.read(1))[0]
@@ -150,6 +155,8 @@ for table, count, name in TABLES:
     tables[table] = addresses
     tablenames[table] = name
 
+metatable_subtable_addresses = {}
+subtable_string_counts = {}
 for metatable in METATABLES:
     metatable_address, count, subtable_names = metatable
     #print(f"Reading metatable 0x{gbswitch(metatable_address)} w/ {count} strings")
@@ -162,6 +169,7 @@ for metatable in METATABLES:
         subtable_address = bank * 0x4000 + ptr - 0x4000
         subtable_addresses.append((subtable_address, subtable_name))
     
+    metatable_subtable_addresses[metatable_address] = subtable_addresses
     
     metatable_string_count = 0
     for (i, ((staddr, stname), (staddrnext, stnamenext))) \
@@ -280,6 +288,7 @@ def strings_to_csv():
                 if string.startswith("<name>"):
                     name_i = charmap_r[string[6]]
                     string = string[7:]
+                    name = names[name_i]
                 stringend = stringends[address] if address in stringends else -1
                 fcsv.writerow([i, hex(address), hex(stringend), name_i, json.dumps(newline_types), name, string])
                 if trash != None:
@@ -444,29 +453,63 @@ def print_strings_from_csvs():
         print()
 
 def print_pointer_table():
-    bank = POINTER_TABLE_ADDRESS // 0x4000
-    pointer = POINTER_TABLE_ADDRESS % 0x4000 + 0x4000
-    print("SECTION \"Text pointer table\", ROMX[${:04x}], BANK[${:02x}]".format(pointer, bank))
-    for i in range(NUMSTRINGS):
-        print("\tdw Dialogue{}".format(i))
-    
-    print()
-    bank = BANK_TABLE_ADDRESS // 0x4000
-    pointer = BANK_TABLE_ADDRESS % 0x4000 + 0x4000
-    print("SECTION \"Text bank table\", ROMX[${:04x}], BANK[${:02x}]".format(pointer, bank))
-    for i in range(NUMSTRINGS):
-        bank = banks[i]
-        bank_high = bank & 0xc0
-        if bank_high:
-            print("\tdb BANK(Dialogue{}) | ${:02x}".format(i, bank_high))
+    for metatable in METATABLES:
+        metatable_address, count, subtable_names = metatable
+        bank = metatable_address//0x4000
+        pointer = metatable_address%0x4000+0x4000
+        print("SECTION \"Text pointer metatable at {}\", ROMX[${:04x}], BANK[${:02x}]".format(gbswitch(metatable_address), metatable_address%0x4000 + 0x4000, bank))
+        if bank != 0x50:
+            print(f"Metatable{bank:02X}:: ; {gbswitch(metatable_address)}")
         else:
-            print("\tdb BANK(Dialogue{})".format(i))
+            print(f"Metatable{bank:02X}_{pointer:04X}:: ; {gbswitch(metatable_address)}")
+        for i, (subtable_name, subtable_address) in enumerate(zip(subtable_names, metatable_subtable_addresses[metatable_address])):
+            subtable_address = subtable_address[0]
+            if subtable_name:
+                print(f"    dw Table{tolabel(subtable_name)}\t; {gbswitch(subtable_address)}")
+            else:
+                print(f"    dw ${subtable_address%0x4000 + 0x4000:04x}")
+        
+        print()
+        last_table_name = None
+        for i, (table_address, table_name) in enumerate(metatables[metatable_address]):
+            if table_name and table_name != last_table_name:
+                print()
+                print(f"Table{tolabel(table_name)}:: ; {gbswitch(subtable_address)}")
+            for i, address in enumerate(tables[table_address]):
+                if table_name:
+                    print(f"    dw String{tolabel(table_name)}_{i}")
+                else:
+                    continue
+            last_table_name = table_name
+        print()
+    
+    for table in TABLES:
+        address, count, name = table
+        bank = address // 0x4000
+        pointer = address % 0x4000 + 0x4000
+        print(f'SECTION "Text pointer table for {name}", ROMX[${pointer:04x}], BANK[${bank:02x}]')
+        print()
+        print(f"Table{tolabel(name)}:: ; {gbswitch(address)}")
+        for i, address in enumerate(tables[address]):
+            if address > 0:
+                print(f"    dw String{tolabel(name)}_{i}")
+            else:
+                print(f"    dw ${-address:04x}")
+    
 
 if __name__ == "__main__":
     # comment/uncomment whichever you want
 
     #pprint(dict(enumerate(strings)))
     #strings_to_csv()
-    if argv[1] == "asm_from_csv":
+    if argv[1] == "csv":
+        strings_to_csv()
+    elif argv[1] == "asm_from_csv":
         print_strings_from_csvs()
+    elif argv[1] == "pointer_table":
+        print("; Warning: This was a one-off and was later corrected by hand.")
+        print_pointer_table()
+    else:
+        print("?")
+        exit(1)
     #print_pointer_table()
