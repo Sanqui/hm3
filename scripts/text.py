@@ -22,6 +22,8 @@ TABLES = [
 NAMES_TABLE = gbaddr("4a:4089")
 names = []
 
+FORCE_NEW = True
+
 METATABLES = [
  (gbaddr("79:44a0"), 368 - (48 - 7), (
     """strings/dummy
@@ -130,6 +132,14 @@ for line in open("build/charmap.asm"):
         num = int(num.strip().lstrip("$"), 16)
         charmap[num] = string
 charmap_r = dict([[v,k] for k,v in charmap.items()])
+
+vwflength = []
+for line in open("src/hack/vwftable.asm"):
+    line = line.split(';')[0]
+    line = line.strip()
+    if line.startswith("db "):
+        line = line.split("db ")[1]
+        vwflength += [int(w) for w in line.split(',')]
 
 rom = open("baserom.gbc", "br")
 
@@ -298,7 +308,7 @@ def strings_to_csv():
 
 def print_strings_from_csvs():
     def calculate_newlines(string):
-        LINELEN = 16
+        LINELEN = 16*8
         def xlen(string):
             string = (c for c in string)
             l = 0
@@ -308,7 +318,10 @@ def print_strings_from_csvs():
                 except StopIteration:
                     break
                 if c != "<":
-                    l += 1
+                    cnum = charmap_r[c]
+                    if cnum >= 0x100:
+                        cnum = (cnum & 0xff) + 0xf0
+                    l += vwflength[cnum]
                 else:
                     code = ""
                     while c != ">":
@@ -316,9 +329,9 @@ def print_strings_from_csvs():
                         code += c
                     code =code.rstrip(">")
                     if code == "player":
-                        l += 4
+                        l += 4*8
                     elif code == "var":
-                        l += 4
+                        l += 4*8
                     else:
                         l += 0
             return l
@@ -328,7 +341,7 @@ def print_strings_from_csvs():
             owords = oline.split(" ")
             line = ""
             for wordi, word in enumerate(owords):
-                #print(f"; DEBUG \"{line}\" ({xlen(line)}) + \"{word}\" = {xlen(line+word)}")
+                print(f"; DEBUG \"{line}\" ({xlen(line)}) + \"{word}\" = {xlen(line+word)}")
                 if xlen(line + word) == LINELEN:
                     line += word
                     lines.append(line)
@@ -372,6 +385,9 @@ def print_strings_from_csvs():
                     new = True
                     origstring = string
                     string = newstring
+                elif FORCE_NEW:
+                    string = string.replace("\n", " ")
+                    new = True
                 #if i != "TRASH":
                 #    i = int(i)
                 csvi = csvi.replace("-", "_")
