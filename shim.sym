@@ -1,0 +1,90 @@
+00:0000 JumpTable
+00:098c JumpTable_
+00:0038 AddHL_A
+
+00:0040 VBlankInt
+00:04a0 VBlank
+00:0048 LCDInt
+00:0058 SerialInt
+
+
+00:0100 Start
+
+00:0979 ReadBCFar
+00:09a5 FarCall
+00:09c0 JpHL
+
+00:19fa ClearTile
+00:1a29 CopyTile
+00:1a64 WaitVBlank
+
+00:243b DoDialogue
+; de: pointer table
+
+00:2464 
+00:2489 PrepareDialogueBox
+00:2a25 ArrowTilemapPointers
+
+2f:4496 OpenMapDialogue
+
+4a:4089 NameTable
+
+2e:4001 PrintDialogue0
+43:4001 PrintDialogue1
+7c:55e9 PrintDialogue1Alt
+18:4001 PrintDialogue2
+50:57f6 PrintDialogue3
+42:4001 PrintDialogue4
+50:686a PrintDialogue4Alt
+4b:4001 PrintDialogue5
+
+2e:400f Dialogue0Table
+43:401f Dialogue1Table
+7c:55f7 Dialogue1AltTable
+18:400f Dialogue2Table
+50:5804 Dialogue3Table
+42:401f Dialogue4Table
+50:6878 Dialogue4AltTable
+4b:400f Dialogue5Table
+
+17:4008 PrintLocation
+17:400f LocationTable
+17:4c4d PrintSelectedLocation
+
+79:41ba PrintStringID
+79:43b5 PrintString
+79:43c1 PrintString.next
+79:4477 StringIDToPointer
+79:44a0 StringPointerTable
+79:404a GetPointer
+; hl: pointer to string
+; c: tile id
+79:40a4 TileNumToPointer
+
+00:c0aa wSelectedLocation
+
+00:c526 wStringID ; wrong?
+00:c527 wStringID2
+00:c528 wDialogueBank
+00:c529 wDialogueTilesPtr
+00:c52d wDialogueOffset
+00:c53e wDialogueTextByte
+00:c52b wDialogueBoxWidth
+00:c52c wDialogueBoxHeight
+00:c52d wDialogueOffset2
+00:c531 wRemainingCharacters
+00:c532 wRemainingLines
+00:c537 wDialogueState
+00:c53f wCurName
+
+00:2e3b Decompress
+; at a:hl to de
+7f:445a LoadScreenAtDE ; at de
+; might be doing more
+7f:4681 LdBCAtDE
+7f:4674 LoadHLAAtDE
+7f:467a LoadHLAtDE
+
+01:d400 wPlayerName
+01:d7d2 wTmpBank
+01:d7d6 wDialogueSectionX

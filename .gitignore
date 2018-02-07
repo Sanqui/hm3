@@ -13,7 +13,7 @@ build/*
 *.1bpp
 *.pcm
 *.map
-*.sym
+hm3.sym
 *.tmap
 *.pyc
 
