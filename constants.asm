@@ -30,3 +30,14 @@ ENDM
 pwb: MACRO
     dwb \1, BANK(\1)
 ENDM
+
+lda: MACRO
+    ld a, \2
+    ld \1, a
+    ENDM
+
+
+hack: MACRO
+    ld a, (Hack\1Entry-HackPredefTable) / 2
+    rst $10
+ENDM

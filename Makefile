@@ -9,7 +9,7 @@ BASEROM := baserom.gbc
 OBJS := main.o wram.o build/shim.o
 
 # Link objects together to build a rom.
-all: $(ROMS) compare
+all: $(ROMS)
 
 tools:
 	$(MAKE) -C tools/

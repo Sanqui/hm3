@@ -53,9 +53,13 @@ GetDialogueAddress:
     ret 
 
 PrepareDialogueBox::
-    ld hl, wDialogueTilesPtr
-    ld a, [hli]
-    ld e, a
+    ;ld hl, wDialogueTilesPtr
+    ;ld a, [hli]
+    ;ld e, a
+    hack VWFInit
+    nop
+    nop
+    
     ld d, [hl]
     push de
     ld hl, wDialogueBoxWidth
@@ -791,11 +795,16 @@ ControlCodeFD: ; <clear> - reset dialogue state
     jr ControlCodeEnd
 
 ControlCodeFE:: ; \n
-    ld a, [wRemainingLines]
-    and a
-    jr z, ControlCodeFF
-
-    dec a
+    ;ld a, [wRemainingLines]
+    ;and a
+    ;jr z, ControlCodeFF
+    ;
+    ;dec a
+    ; 7
+    hack Newline
+    ld b, 0
+    jr ControlCodeEnd
+    
     ld [wRemainingLines], a
     ld a, [wDialogueBoxWidth]
     ld [wRemainingCharacters], a
@@ -889,8 +898,12 @@ DrawChar:
     db $f0, $f1, $f2, $f3, $f4, $f5, $f6, $f7
 
 .visible
-    ld a, [wDialogueTextByte]
-    swap a
+    ;ld a, [wDialogueTextByte]
+    ;swap a
+    hack DrawChar
+    ret
+    nop
+    
     ld h, a
     and $f0
     ld l, a
