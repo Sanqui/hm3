@@ -1,4 +1,435 @@
-SECTION "dialogue handling", ROM0[$26AB]
+SECTION "Dialogue handling", ROM0[$243b]
+
+DoDialogue::
+; de: pointer table
+    push de
+    call PrepareDialogueBox
+    ld hl, wDialogueTilesPtr
+    ld de, $c52f
+    ld b, $04
+
+jr_000_2447:
+    ld a, [hli]
+    ld [de], a
+    inc de
+    dec b
+    jr nz, jr_000_2447
+
+    pop de
+    push de
+    ld a, e
+    ld [$c535], a
+    ld a, d
+    ld [$c536], a
+    pop de
+    call Call_000_2464
+    ld a, [wDialogueState]
+    or $01
+    ld [wDialogueState], a
+    ret 
+
+
+Call_000_2464:
+    ld a, [$4000]
+    ld [wDialogueBank], a
+    ld a, [wStringID]
+    ld l, a
+    ld h, $00
+    add hl, hl
+    add hl, de
+    ld e, [hl]
+    inc hl
+    ld d, [hl]
+    ld a, [wStringID2]
+    ld l, a
+    ld h, $00
+    add hl, hl
+    add hl, de
+    ld a, [hli]
+    ld e, a
+    ld d, [hl]
+    ld a, e
+    ld [wDialogueOffset2], a
+    ld a, d
+    ld [$c52e], a
+    ret 
+
+
+PrepareDialogueBox::
+    ld hl, wDialogueTilesPtr
+    ld a, [hli]
+    ld e, a
+    ld d, [hl]
+    push de
+    ld hl, wDialogueBoxWidth
+    ld a, [hli]
+    ld c, [hl]
+    call $06bb
+    ld c, l
+    ld b, h
+    pop de
+
+jr_000_249b:
+    ld hl, $24a9
+    push bc
+    call CopyTile
+    pop bc
+    dec bc
+    ld a, b
+    or c
+    jr nz, jr_000_249b
+
+    ret 
+
+
+    rst $38
+    nop 
+    rst $38
+    nop 
+    rst $38
+    nop 
+    rst $38
+    nop 
+    rst $38
+    nop 
+    rst $38
+    nop 
+    rst $38
+    nop 
+    rst $38
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    nop 
+    ld a, [wDialogueState]
+    or $80
+    ld [wDialogueState], a
+    ld a, $80
+    ld [$c53d], a
+
+Jump_000_24d6:
+    ld a, [wDialogueState]
+    bit 0, a
+    ret z
+
+    bit 7, a
+    jr z, jr_000_24ee
+
+jr_000_24e0:
+    ld a, [wDialogueState]
+    call Call_000_24ee
+    ld a, [wDialogueState]
+    bit 0, a
+    jr nz, jr_000_24e0
+
+    ret 
+
+
+Call_000_24ee:
+Jump_000_24ee:
+jr_000_24ee:
+    bit 6, a
+    jp nz, Jump_000_2564
+
+    bit 5, a
+    jp nz, Jump_000_2575
+
+    bit 4, a
+    jp nz, Jump_000_2585
+
+    bit 3, a
+
+Call_000_24ff:
+    jp nz, Jump_000_25a9
+
+    bit 2, a
+    jp nz, Jump_000_2647
+
+    ld a, [$c53d]
+    bit 7, a
+    jr nz, jr_000_2538
+
+    ld a, [$ff00+$8a]
+    bit 6, a
+    jr nz, jr_000_2530
+
+    bit 7, a
+    jr nz, jr_000_2530
+
+    bit 4, a
+    jr nz, jr_000_2530
+
+    bit 5, a
+    jr nz, jr_000_2530
+
+    ld a, [$c53c]
+    inc a
+    ld [$c53c], a
+    cp $04
+    ret c
+
+    xor a
+    ld [$c53c], a
+    jr jr_000_2538
+
+jr_000_2530:
+    ld a, [$c53d]
+    set 7, a
+    ld [$c53d], a
+
+jr_000_2538:
+    ld a, [wDialogueState]
+    bit 1, a
+    jp nz, Jump_000_266d
+
+    call Call_000_29fd
+    push de
+    call DialogueNextChar
+    pop de
+    ld a, [wDialogueTextByte]
+    and $f0
+    cp $f0
+    ret z
+
+    call Call_000_297a
+    ld a, [wDialogueTextByte]
+    cp $ef
+    ret nz
+
+    ld a, $03
+    ld [$c53c], a
+    ld a, [wDialogueState]
+    jp Jump_000_24ee
+
+
+Jump_000_2564:
+    xor a
+    ld [$c538], a
+    ld [wDialogueState], a
+    ld [wDialogueTextByte], a
+    ld [$c53c], a
+    ld [$c53d], a
+    ret 
+
+
+Jump_000_2575:
+    ld a, [$ff00+$8c]
+    cp $01
+    ret nz
+
+    ld a, [wDialogueState]
+    res 5, a
+    ld [wDialogueState], a
+    jp Jump_000_24d6
+
+
+Jump_000_2585:
+    ld a, [$c539]
+    ld b, a
+    ld a, [$c538]
+    inc a
+    ld [$c538], a
+    cp b
+    ret c
+
+    xor a
+    ld [$c538], a
+    ld a, [wDialogueState]
+    res 4, a
+    ld [wDialogueState], a
+    ld a, [$c53d]
+    res 7, a
+    ld [$c53d], a
+    jp Jump_000_24d6
+
+
+Jump_000_25a9:
+    ld a, [$ff00+$8c]
+    cp $01
+    jr z, jr_000_2601
+
+    cp $40
+    jr z, jr_000_25c5
+
+    cp $80
+    jr z, jr_000_25d4
+
+    cp $10
+    jr z, jr_000_25e3
+
+    cp $20
+    jr z, jr_000_25f2
+
+    ld b, $e2
+    call Call_000_2a2d
+    ret 
+
+
+jr_000_25c5:
+    ld a, [$c545]
+    bit 0, a
+    jr z, jr_000_25d0
+
+    call Call_000_2ac6
+    ret 
+
+
+jr_000_25d0:
+    call Call_000_2a66
+    ret 
+
+
+jr_000_25d4:
+    ld a, [$c545]
+    bit 0, a
+    jr z, jr_000_25df
+
+    call Call_000_2b07
+    ret 
+
+
+jr_000_25df:
+    call Call_000_2aa8
+    ret 
+
+
+jr_000_25e3:
+    ld a, [$c545]
+    bit 0, a
+    jr z, jr_000_25ee
+
+    call Call_000_2a66
+    ret 
+
+
+jr_000_25ee:
+    call Call_000_2ac6
+    ret 
+
+
+jr_000_25f2:
+    ld a, [$c545]
+    bit 0, a
+    jr z, jr_000_25fd
+
+    call Call_000_2aa8
+    ret 
+
+
+jr_000_25fd:
+    call Call_000_2b07
+    ret 
+
+
+jr_000_2601:
+    ld a, [wDialogueState]
+    res 3, a
+    ld [wDialogueState], a
+    ld b, $ef
+    ld a, [$c541]
+    ld c, a
+    call Call_000_2a3b
+    ld a, [wCurName]
+    and a
+    jp z, Jump_000_24d6
+
+    ld b, $ef
+    ld a, [$c542]
+    ld c, a
+    call Call_000_2a3b
+    ld a, [wCurName]
+    cp $01
+    jp z, Jump_000_24d6
+
+    ld b, $ef
+    ld a, [$c543]
+    ld c, a
+    call Call_000_2a3b
+    ld a, [wCurName]
+    cp $02
+    jp z, Jump_000_24d6
+
+    ld b, $ef
+    ld a, [$c544]
+    ld c, a
+    call Call_000_2a3b
+    jp Jump_000_24d6
+
+
+Jump_000_2647:
+    ld a, [$ff00+$8c]
+    cp $01
+    jr z, jr_000_2656
+
+    ld a, [$c539]
+    ld b, a
+    ld a, [$c538]
+    cp b
+    ret c
+
+jr_000_2656:
+    xor a
+    ld [$c538], a
+    ld a, [wDialogueState]
+    res 2, a
+    ld [wDialogueState], a
+    ld a, [$c53d]
+    res 7, a
+    ld [$c53d], a
+    jp Jump_000_24d6
+
+
+Jump_000_266d:
+    ld hl, wDialogueOffset2
+    ld a, [hli]
+    ld h, [hl]
+    ld l, a
+    ld a, [hli]
+    cp $ff
+    jr z, jr_000_2692
+
+    ld [wDialogueTextByte], a
+    ld a, l
+    ld [wDialogueOffset2], a
+    ld a, h
+    ld [$c52e], a
+    call Call_000_297a
+    ld a, [wDialogueTextByte]
+    cp $ef
+    ret nz
+
+    ld a, [wDialogueState]
+    jp Jump_000_24ee
+
+
+jr_000_2692:
+    ld hl, $c533
+    ld a, [hli]
+    ld h, [hl]
+    ld l, a
+    ld a, l
+    ld [wDialogueOffset2], a
+    ld a, h
+    ld [$c52e], a
+    ld a, [wDialogueState]
+    res 1, a
+    ld [wDialogueState], a
+    jp Jump_000_24d6
+
+
 DialogueNextChar::
     ld a, [$4000]
     push af
@@ -398,7 +829,7 @@ ControlCodeFD: ; <clear> - reset dialogue state
     ld b, $00
     jr ControlCodeEnd
 
-ControlCodeFE::
+ControlCodeFE:: ; \n
     ld a, [wRemainingLines]
     and a
     jr z, ControlCodeFF
@@ -452,6 +883,939 @@ ControlCodeEnd:
     ld [$2000], a
     xor a
     ld [$3000], a
+    ret 
+
+
+
+Call_000_297a:
+    ld a, [wDialogueTextByte]
+    cp $ed
+    jr nz, jr_000_29be
+
+    ld a, [$4000]
+    push af
+    ld a, [wDialogueBank]
+    ld [$2000], a
+    xor a
+    ld [$3000], a
+    ld hl, wDialogueOffset2
+    ld a, [hli]
+    ld h, [hl]
+    ld l, a
+    ld a, [hli]
+    ld b, a
+    ld a, l
+    ld [wDialogueOffset2], a
+    ld a, h
+    ld [$c52e], a
+    ld hl, $29b6
+    ld a, b
+    add l
+    ld l, a
+    jr nc, jr_000_29a8
+
+    inc h
+
+jr_000_29a8:
+    ld a, [hl]
+    ld [wDialogueTextByte], a
+    pop af
+    ld [$2000], a
+    xor a
+    ld [$3000], a
+    jr jr_000_29be
+
+    ld a, [$ff00+$f1]
+    ld a, [$ff00+c]
+    di 
+    DB $f4
+    push af
+    or $f7
+
+jr_000_29be:
+    ld a, [wDialogueTextByte]
+    swap a
+    ld h, a
+    and $f0
+    ld l, a
+    ld a, h
+    and $0f
+    ld h, a
+    ld de, $2fd8
+    add hl, de
+    ld a, [$c52f]
+    ld e, a
+    ld a, [$c530]
+    ld d, a
+    call CopyTile
+    ld a, e
+    ld [$c52f], a
+    ld a, d
+    ld [$c530], a
+    ld a, [wRemainingCharacters]
+    and a
+    jr z, jr_000_29ed
+
+    dec a
+    ld [wRemainingCharacters], a
+    ret 
+
+
+jr_000_29ed:
+    ld a, [wRemainingLines]
+    and a
+    ret z
+
+    dec a
+    ld [wRemainingLines], a
+    ld a, [wDialogueBoxWidth]
+    ld [wRemainingCharacters], a
+    ret 
+
+
+Call_000_29fd:
+    ld a, [wDialogueTextByte]
+    cp $f9
+    ret z
+
+    ld a, [$c53a]
+    bit 7, a
+    ret z
+
+    res 7, a
+    ld [$c53a], a
+    sla a
+    push de
+    ld hl, $2a25
+    add l
+    ld l, a
+    jr nc, jr_000_2a19
+
+    inc h
+
+jr_000_2a19:
+    ld e, [hl]
+    inc hl
+    ld d, [hl]
+    call WaitVBlank
+    ld a, $d7
+    ld [de], a
+    ei 
+    pop de
+    ret 
+
+
+ArrowTilemapPointers:: ; TODO
+    sub d
+    sbc h
+    ld [hl], d
+    sbc h
+    ld [de], a
+    sbc d
+    nop 
+    sbc b
+
+
+Call_000_2a2d:
+    ld a, [$c53b]
+    ld hl, $c541
+    add l
+    ld l, a
+    jr nc, jr_000_2a38
+
+    inc h
+
+jr_000_2a38:
+    ld a, [hl]
+    jr jr_000_2a3c
+
+Call_000_2a3b:
+    ld a, c
+
+jr_000_2a3c:
+    swap a
+    ld h, a
+    and $f0
+    ld l, a
+    ld a, h
+    and $0f
+    ld h, a
+    ld a, [wDialogueTilesPtr]
+    ld e, a
+    ld a, [$c52a]
+    ld d, a
+    add hl, de
+    ld e, l
+    ld d, h
+    push de
+    ld a, b
+    swap a
+    ld h, a
+    and $f0
+    ld l, a
+    ld a, h
+    and $0f
+    ld h, a
+    ld de, $2fd8
+    add hl, de
+    pop de
+    call CopyTile
+    ret 
+
+
+Call_000_2a66:
+    ld a, [wCurName]
+    cp $02
+    ret c
+
+    jr nz, jr_000_2a89
+
+    ld a, [$c53b]
+    bit 0, a
+    jr z, jr_000_2a89
+
+    ret 
+
+
+
+
+jr_000_2a76:
+    ld a, [$c53b]
+    set 1, a
+    ld [$c53b], a
+    ld b, $e2
+    call Call_000_2a2d
+    ld a, $59
+    call $0ee4
+    ret 
+
+
+jr_000_2a89:
+    ld b, $ef
+    call Call_000_2a2d
+    ld a, [$c53b]
+    bit 1, a
+    jr z, jr_000_2a76
+
+jr_000_2a95:
+    ld a, [$c53b]
+    res 1, a
+    ld [$c53b], a
+    ld b, $e2
+    call Call_000_2a2d
+    ld a, $59
+    call $0ee4
+    ret 
+
+
+Call_000_2aa8:
+    ld a, [wCurName]
+    cp $02
+    ret c
+
+    jr nz, jr_000_2ab8
+
+    ld a, [$c53b]
+    bit 0, a
+    jr z, jr_000_2ab8
+
+    ret 
+
+
+jr_000_2ab8:
+    ld b, $ef
+    call Call_000_2a2d
+    ld a, [$c53b]
+    bit 1, a
+    jr z, jr_000_2a76
+
+    jr jr_000_2a95
+
+Call_000_2ac6:
+    ld a, [wCurName]
+    and a
+    ret z
+
+    cp $02
+    jr nz, jr_000_2ad5
+
+    ld a, [$c53b]
+    bit 1, a
+    ret nz
+
+jr_000_2ad5:
+    ld b, $ef
+    call Call_000_2a2d
+    ld a, [$c53b]
+    bit 0, a
+    jr z, jr_000_2af4
+
+jr_000_2ae1:
+    ld a, [$c53b]
+    res 0, a
+    ld [$c53b], a
+    ld b, $e2
+    call Call_000_2a2d
+    ld a, $59
+    call $0ee4
+    ret 
+
+
+jr_000_2af4:
+    ld a, [$c53b]
+    set 0, a
+    ld [$c53b], a
+    ld b, $e2
+    call Call_000_2a2d
+    ld a, $59
+    call $0ee4
+    ret 
+
+
+Call_000_2b07:
+    ld a, [wCurName]
+    and a
+    ret z
+
+    cp $02
+    jr nz, jr_000_2b16
+
+    ld a, [$c53b]
+    bit 1, a
+    ret nz
+
+jr_000_2b16:
+    ld b, $ef
+    call Call_000_2a2d
+    ld a, [$c53b]
+    bit 0, a
+    jr nz, jr_000_2ae1
+
+    jr jr_000_2af4
+
+    ld b, d
+    sbc h
+    ld c, d
+    sbc h
+    add d
+    sbc h
+    adc d
+    sbc h
+
+Call_000_2b2c:
+Jump_000_2b2c:
+    xor a
+    ld [$d963], a
+    ld [$d964], a
+
+Jump_000_2b33:
+    ld a, [$d964]
+    cp $03
+    jp z, Jump_000_2bf9
+
+    ld hl, $ff47
+    ld bc, $c0a4
+    push af
+    add l
+    ld l, a
+    jr nc, jr_000_2b47
+
+    inc h
+
+jr_000_2b47:
+    pop af
+    add c
+    ld c, a
+    jr nc, jr_000_2b4d
+
+    inc b
+
+Jump_000_2b4d:
+jr_000_2b4d:
+    call Call_000_2d41
+    ld a, [$d963]
+    and a
+    jp z, Jump_000_2b84
+
+    cp $01
+    jp z, Jump_000_2baf
+
+    cp $02
+    jp z, Jump_000_2bd2
+
+    ld a, [bc]
+    and $03
+    ld e, a
+    ld a, [hl]
+    and $03
+    cp e
+    jr c, jr_000_2b6d
+
+    jr jr_000_2b76
+
+jr_000_2b6d:
+    inc a
+    and $03
+    ld e, a
+    ld a, [hl]
+    and $fc
+    or e
+    ld [hl], a
+
+jr_000_2b76:
+    xor a
+    ld [$d963], a
+    ld a, [$d964]
+    inc a
+    ld [$d964], a
+    jp Jump_000_2b33
+
+
+Jump_000_2b84:
+    ld a, [bc]
+    and $c0
+    ld e, a
+    ld a, [hl]
+    and $c0
+    cp e
+    jr c, jr_000_2b90
+
+    jr jr_000_2ba5
+
+jr_000_2b90:
+    swap a
+    srl a
+    srl a
+    inc a
+    and $03
+    swap a
+    sla a
+    sla a
+    ld e, a
+    ld a, [hl]
+    and $3f
+    or e
+    ld [hl], a
+
+jr_000_2ba5:
+    ld a, [$d963]
+    inc a
+    ld [$d963], a
+    jp Jump_000_2b4d
+
+
+Jump_000_2baf:
+    ld a, [bc]
+    and $30
+    ld e, a
+    ld a, [hl]
+    and $30
+    cp e
+    jr c, jr_000_2bbb
+
+    jr jr_000_2bc8
+
+jr_000_2bbb:
+    swap a
+    inc a
+    and $03
+    swap a
+    ld e, a
+    ld a, [hl]
+    and $cf
+    or e
+    ld [hl], a
+
+jr_000_2bc8:
+    ld a, [$d963]
+    inc a
+    ld [$d963], a
+    jp Jump_000_2b4d
+
+Jump_000_2bd2:
+    ld a, [bc]
+    and $0c
+    ld e, a
+    ld a, [hl]
+    and $0c
+    cp e
+    jr c, jr_000_2bde
+
+    jr jr_000_2bef
+
+jr_000_2bde:
+    srl a
+    srl a
+    inc a
+    and $03
+    sla a
+    sla a
+    ld e, a
+    ld a, [hl]
+    and $f3
+    or e
+    ld [hl], a
+
+jr_000_2bef:
+    ld a, [$d963]
+    inc a
+    ld [$d963], a
+    jp Jump_000_2b4d
+
+
+Jump_000_2bf9:
+    ld bc, $c0a4
+    ld hl, $ff47
+    ld e, $00
+
+jr_000_2c01:
+    ld a, [hl]
+    ld d, a
+    ld a, [bc]
+    cp d
+    jp nz, Jump_000_2b2c
+
+    inc hl
+    inc bc
+    inc e
+    ld a, e
+    cp $03
+    jr nz, jr_000_2c01
+
+    ret 
+
+
+Call_000_2c11:
+    ld a, [$da2d]
+    ld [REG_BGP], a
+    ld a, [$da2e]
+    ld [REG_OBP0], a
+    ld a, [$da2f]
+    ld [REG_OBP1], a
+    ret 
+
+
+Call_000_2c21:
+Jump_000_2c21:
+    ld a, [$dcf0]
+    and a
+    jr z, jr_000_2c42
+
+jr_000_2c27:
+    ld hl, $66a5
+    ld a, $01
+    call FarCall
+    call Call_000_2d41
+    xor a
+    ld [$d962], a
+    call Call_000_2e19
+    cp $ff
+    jr nz, jr_000_2c27
+
+    xor a
+    ld [$c50d], a
+    ret 
+
+
+jr_000_2c42:
+    xor a
+    ld [$d963], a
+    ld [$d964], a
+    ld hl, $ff47
+
+Jump_000_2c4c:
+    ld a, [$d964]
+    cp $03
+    jp z, Jump_000_2d0d
+
+    and a
+    jr z, jr_000_2c5f
+
+    ld c, $00
+    ld a, l
+    inc a
+    ld l, a
+    ld a, h
+    adc c
+    ld h, a
+
+Jump_000_2c5f:
+jr_000_2c5f:
+    push hl
+    ld hl, $66a5
+    ld a, $01
+    call FarCall
+    call Call_000_2d41
+    pop hl
+    ld a, [$d963]
+    and a
+    jp z, Jump_000_2c9e
+
+    cp $01
+    jp z, Jump_000_2cc7
+
+    cp $02
+    jp z, Jump_000_2ce8
+
+    ld a, [hl]
+    and $03
+    dec a
+    cp $ff
+    jr z, jr_000_2c87
+
+    jr jr_000_2c88
+
+jr_000_2c87:
+    xor a
+
+jr_000_2c88:
+    and $03
+    ld c, a
+    ld a, [hl]
+    and $fc
+    or c
+    ld [hl], a
+    xor a
+    ld [$d963], a
+    ld a, [$d964]
+    inc a
+    ld [$d964], a
+    jp Jump_000_2c4c
+
+
+Jump_000_2c9e:
+    ld a, [hl]
+    and $c0
+    swap a
+    srl a
+    srl a
+    dec a
+    cp $ff
+    jr z, jr_000_2cae
+
+    jr jr_000_2caf
+
+jr_000_2cae:
+    xor a
+
+jr_000_2caf:
+    and $03
+    swap a
+    sla a
+    sla a
+    ld c, a
+    ld a, [hl]
+    and $3f
+    or c
+    ld [hl], a
+    ld a, [$d963]
+    inc a
+    ld [$d963], a
+    jp Jump_000_2c5f
+
+
+Jump_000_2cc7:
+    ld a, [hl]
+    and $30
+    swap a
+    dec a
+    cp $ff
+    jr z, jr_000_2cd3
+
+    jr jr_000_2cd4
+
+jr_000_2cd3:
+    xor a
+
+jr_000_2cd4:
+    and $03
+    swap a
+    ld c, a
+    ld a, [hl]
+    and $cf
+    or c
+    ld [hl], a
+    ld a, [$d963]
+    inc a
+    ld [$d963], a
+    jp Jump_000_2c5f
+
+
+Jump_000_2ce8:
+    ld a, [hl]
+    and $0c
+    srl a
+    srl a
+    dec a
+    cp $ff
+    jr z, jr_000_2cf6
+
+    jr jr_000_2cf7
+
+jr_000_2cf6:
+    xor a
+
+jr_000_2cf7:
+    and $03
+    sla a
+    sla a
+    ld c, a
+    ld a, [hl]
+    and $f3
+    or c
+    ld [hl], a
+    ld a, [$d963]
+    inc a
+    ld [$d963], a
+    jp Jump_000_2c5f
+
+
+Jump_000_2d0d:
+    ld a, [REG_BGP]
+    and a
+    jp nz, Jump_000_2c21
+
+    ld a, [REG_OBP0]
+    and a
+    jp nz, Jump_000_2c21
+
+    ld a, [REG_OBP1]
+    and a
+    jp nz, Jump_000_2c21
+
+    xor a
+    ld [$d963], a
+    ld [$d964], a
+    ld [$c50d], a
+    ret 
+
+
+Call_000_2d2a:
+    ld a, [REG_BGP]
+    ld [$da2d], a
+    ld a, [REG_OBP0]
+    ld [$da2e], a
+    ld a, [REG_OBP1]
+    ld [$da2f], a
+    xor a
+    ld [REG_BGP], a
+    ld [REG_OBP0], a
+    ld [REG_OBP1], a
+    ret 
+
+
+Call_000_2d41:
+    ld de, $01b5
+
+jr_000_2d44:
+    nop 
+    nop 
+    nop 
+    dec de
+    ld a, d
+    or e
+    jr nz, jr_000_2d44
+
+    ret 
+
+
+Call_000_2d4d:
+    ld a, [$dcf0]
+    and a
+    jr nz, jr_000_2d5f
+
+    call Call_000_2d2a
+    ld a, [$c0a3]
+    ld [REG_LCDC], a
+    call Call_000_2b2c
+    ret 
+
+
+jr_000_2d5f:
+    ld a, [$c0a3]
+    ld [REG_LCDC], a
+    call Call_000_2d41
+    ret 
+
+
+Call_000_2d68:
+    ld a, [$d962]
+    bit 7, a
+    and a
+    ret z
+
+    bit 6, a
+    jr nz, jr_000_2d8d
+
+    bit 5, a
+    jr nz, jr_000_2d82
+
+    call Call_000_2df4
+    cp $ff
+    ret nz
+
+    xor a
+    ld [$d962], a
+    ret 
+
+
+jr_000_2d82:
+    call Call_000_2e19
+    cp $ff
+    ret nz
+
+    xor a
+    ld [$d962], a
+    ret 
+
+
+jr_000_2d8d:
+    bit 5, a
+    jr nz, jr_000_2d9c
+
+    call Call_000_2dad
+    cp $ff
+    ret nz
+
+    xor a
+    ld [$d962], a
+    ret 
+
+
+jr_000_2d9c:
+    call Call_000_2dd2
+    cp $ff
+    ret nz
+
+    xor a
+    ld [$d962], a
+    ret 
+
+
+    or $80
+    ld [$d962], a
+    ret 
+
+
+Call_000_2dad:
+    ld a, [$dcf0]
+    and a
+    jr z, jr_000_2dc5
+
+    ld hl, $5d94
+    ld a, $01
+    call FarCall
+    ld a, c
+    cp $ff
+    jr nz, jr_000_2dc3
+
+    ld a, $ff
+    ret 
+
+
+jr_000_2dc3:
+    xor a
+    ret 
+
+
+jr_000_2dc5:
+    ld a, $e4
+    ld [REG_BGP], a
+    ld a, $d2
+    ld [REG_OBP0], a
+    ld [REG_OBP1], a
+    ld a, $ff
+    ret 
+
+
+Call_000_2dd2:
+    ld a, [$dcf0]
+    and a
+    jr z, jr_000_2dea
+
+    ld hl, $5cb4
+    ld a, $01
+    call FarCall
+    ld a, c
+    cp $ff
+    jr nz, jr_000_2de8
+
+    ld a, $ff
+    ret 
+
+
+jr_000_2de8:
+    xor a
+    ret 
+
+
+jr_000_2dea:
+    xor a
+    ld [REG_BGP], a
+    ld [REG_OBP0], a
+    ld [REG_OBP1], a
+    ld a, $ff
+    ret 
+
+
+Call_000_2df4:
+    ld a, [$dcf0]
+    and a
+    jr z, jr_000_2e0c
+
+    ld hl, $5ee3
+    ld a, $01
+    call FarCall
+    ld a, c
+    cp $ff
+    jr nz, jr_000_2e0a
+
+    ld a, $ff
+    ret 
+
+
+jr_000_2e0a:
+    xor a
+    ret 
+
+
+jr_000_2e0c:
+    ld a, $e4
+    ld [REG_BGP], a
+    ld a, $d2
+    ld [REG_OBP0], a
+    ld [REG_OBP1], a
+    ld a, $ff
+    ret 
+
+
+Call_000_2e19:
+    ld a, [$dcf0]
+    and a
+    jr z, jr_000_2e31
+
+    ld hl, $5bd3
+    ld a, $01
+    call FarCall
+    ld a, c
+    cp $ff
+    jr nz, jr_000_2e2f
+
+    ld a, $ff
+    ret 
+
+
+jr_000_2e2f:
+    xor a
+    ret 
+
+
+jr_000_2e31:
+    xor a
+    ld [REG_BGP], a
+    ld [REG_OBP0], a
+    ld [REG_OBP1], a
+    ld a, $ff
     ret 
 
 SECTION "Font GFX", ROM0[$2fd8]

@@ -1,3 +1,4 @@
+INCLUDE "constants/registers.asm"
 INCLUDE "build/charmap.asm"
 
 CHARACTER_NAME_LENGTH   EQU 6

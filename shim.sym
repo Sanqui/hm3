@@ -18,12 +18,11 @@
 00:1a29 CopyTile
 00:1a64 WaitVBlank
 
-00:243b DoDialogue
-; de: pointer table
+;00:243b DoDialogue
 
-00:2464 
-00:2489 PrepareDialogueBox
-00:2a25 ArrowTilemapPointers
+;00:2464 
+;00:2489 PrepareDialogueBox
+;00:2a25 ArrowTilemapPointers
 
 2f:4496 OpenMapDialogue
 
@@ -77,7 +76,7 @@
 00:c537 wDialogueState
 00:c53f wCurName
 
-00:2e3b Decompress
+;00:2e3b Decompress
 ; at a:hl to de
 7f:445a LoadScreenAtDE ; at de
 ; might be doing more
