@@ -103,11 +103,11 @@ DoDialogue:
     ret 
 
 .handle_state
-    bit DIALOGUE_STATE_6, a
-    jp nz, DialogueState6 ; $2564
+    bit DIALOGUE_STATE_END, a
+    jp nz, DialogueStateEnd ; $2564
 
     bit DIALOGUE_STATE_WAITA, a
-    jp nz, DialogueState5 ; $2575
+    jp nz, DialogueStateWaitA ; $2575
 
     bit DIALOGUE_STATE_4, a
     jp nz, DialogueState4 ; $2585
@@ -132,14 +132,14 @@ DoDialogue:
     bit 5, a
     jr nz, .jr_2530
 
-    ld a, [$c53c]
+    ld a, [wDialogueDelay]
     inc a
-    ld [$c53c], a
-    cp $04
+    ld [wDialogueDelay], a
+    cp DIALOGUE_DELAY_FRAMES
     ret c
 
     xor a
-    ld [$c53c], a
+    ld [wDialogueDelay], a
     jr .advance
 
 .jr_2530:
@@ -163,32 +163,32 @@ DoDialogue:
 
     call DrawChar
     ld a, [wDialogueTextByte]
-    cp $ef
+    cp " "
     ret nz
 
-    ld a, $03
-    ld [$c53c], a
+    ld a, DIALOGUE_DELAY_FRAMES-1
+    ld [wDialogueDelay], a
     ld a, [wDialogueState]
     jp .handle_state
 
 
-DialogueState6:
+DialogueStateEnd:
     xor a
     ld [$c538], a
     ld [wDialogueState], a
     ld [wDialogueTextByte], a
-    ld [$c53c], a
+    ld [wDialogueDelay], a
     ld [$c53d], a
     ret 
 
 
-DialogueState5:
+DialogueStateWaitA:
     ld a, [$ff00+$8c]
     cp $01
     ret nz
 
     ld a, [wDialogueState]
-    res 5, a
+    res DIALOGUE_STATE_WAITA, a
     ld [wDialogueState], a
     jp DoDialogue
 
@@ -768,7 +768,7 @@ ControlCodeFC::
 ControlCodeFD: ; <clear> - reset dialogue state
     call PrepareDialogueBox
     xor a
-    ld [$c53c], a
+    ld [wDialogueDelay], a
     ld [$c53d], a
     ld hl, wDialogueTilesPtr
     ld a, [hli]
@@ -834,7 +834,7 @@ ControlCodeFE:: ; \n
     jr ControlCodeEnd
 
 ControlCodeFF::
-    ld b, $40
+    ld b, 1<<DIALOGUE_STATE_END
 ; fallthru
 
 ControlCodeEnd:
