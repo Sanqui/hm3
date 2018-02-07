@@ -1,19 +1,18 @@
 SECTION "Dialogue handling", ROM0[$243b]
 
-DoDialogue::
+SetupDialogue:: ; $243b
 ; de: pointer table
     push de
     call PrepareDialogueBox
     ld hl, wDialogueTilesPtr
-    ld de, $c52f
+    ld de, wDialogueTileDestination
     ld b, $04
-
-jr_000_2447:
+.loop
     ld a, [hli]
     ld [de], a
     inc de
     dec b
-    jr nz, jr_000_2447
+    jr nz, .loop
 
     pop de
     push de
@@ -22,14 +21,13 @@ jr_000_2447:
     ld a, d
     ld [$c536], a
     pop de
-    call Call_000_2464
+    call GetDialogueAddress
     ld a, [wDialogueState]
     or $01
     ld [wDialogueState], a
     ret 
 
-
-Call_000_2464:
+GetDialogueAddress:
     ld a, [$4000]
     ld [wDialogueBank], a
     ld a, [wStringID]
@@ -51,9 +49,8 @@ Call_000_2464:
     ld a, e
     ld [wDialogueOffset2], a
     ld a, d
-    ld [$c52e], a
+    ld [wDialogueOffset2+1], a
     ret 
-
 
 PrepareDialogueBox::
     ld hl, wDialogueTilesPtr
@@ -64,116 +61,76 @@ PrepareDialogueBox::
     ld hl, wDialogueBoxWidth
     ld a, [hli]
     ld c, [hl]
-    call $06bb
+    call GetTilePtr
     ld c, l
     ld b, h
     pop de
-
-jr_000_249b:
-    ld hl, $24a9
+.loop:
+    ld hl, BlankTilesGFX
     push bc
     call CopyTile
     pop bc
     dec bc
     ld a, b
     or c
-    jr nz, jr_000_249b
+    jr nz, .loop
 
     ret 
 
+BlankTilesGFX: ; $64a9
+	INCBIN "gfx/blank_tiles.2bpp"
 
-    rst $38
-    nop 
-    rst $38
-    nop 
-    rst $38
-    nop 
-    rst $38
-    nop 
-    rst $38
-    nop 
-    rst $38
-    nop 
-    rst $38
-    nop 
-    rst $38
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
-    nop 
+StartDialogue:
     ld a, [wDialogueState]
-    or $80
+    or 1<<DIALOGUE_STATE_ONCE
     ld [wDialogueState], a
     ld a, $80
     ld [$c53d], a
 
-Jump_000_24d6:
+DoDialogue:
     ld a, [wDialogueState]
-    bit 0, a
+    bit DIALOGUE_STATE_OFF, a
     ret z
 
-    bit 7, a
-    jr z, jr_000_24ee
-
-jr_000_24e0:
+    bit DIALOGUE_STATE_ONCE, a
+    jr z, .handle_state
+.loop:
     ld a, [wDialogueState]
-    call Call_000_24ee
+    call .handle_state
     ld a, [wDialogueState]
-    bit 0, a
-    jr nz, jr_000_24e0
-
+    bit DIALOGUE_STATE_OFF, a
+    jr nz, .loop
     ret 
 
+.handle_state
+    bit DIALOGUE_STATE_6, a
+    jp nz, DialogueState6 ; $2564
 
-Call_000_24ee:
-Jump_000_24ee:
-jr_000_24ee:
-    bit 6, a
-    jp nz, Jump_000_2564
+    bit DIALOGUE_STATE_WAITA, a
+    jp nz, DialogueState5 ; $2575
 
-    bit 5, a
-    jp nz, Jump_000_2575
+    bit DIALOGUE_STATE_4, a
+    jp nz, DialogueState4 ; $2585
 
-    bit 4, a
-    jp nz, Jump_000_2585
+    bit DIALOGUE_STATE_3, a
+    jp nz, DialogueState3 ; $25a9
 
-    bit 3, a
-
-Call_000_24ff:
-    jp nz, Jump_000_25a9
-
-    bit 2, a
-    jp nz, Jump_000_2647
+    bit DIALOGUE_STATE_2, a
+    jp nz, DialogueState2 ; $2647
 
     ld a, [$c53d]
     bit 7, a
-    jr nz, jr_000_2538
+    jr nz, .advance
 
     ld a, [$ff00+$8a]
     bit 6, a
-    jr nz, jr_000_2530
-
+    jr nz, .jr_2530
     bit 7, a
-    jr nz, jr_000_2530
-
+    jr nz, .jr_2530
     bit 4, a
-    jr nz, jr_000_2530
-
+    jr nz, .jr_2530
     bit 5, a
-    jr nz, jr_000_2530
+    jr nz, .jr_2530
 
     ld a, [$c53c]
     inc a
@@ -183,28 +140,28 @@ Call_000_24ff:
 
     xor a
     ld [$c53c], a
-    jr jr_000_2538
+    jr .advance
 
-jr_000_2530:
+.jr_2530:
     ld a, [$c53d]
     set 7, a
     ld [$c53d], a
 
-jr_000_2538:
+.advance:
     ld a, [wDialogueState]
-    bit 1, a
-    jp nz, Jump_000_266d
+    bit DIALOGUE_STATE_1, a
+    jp nz, Jump_266d
 
-    call Call_000_29fd
+    call Call_29fd
     push de
     call DialogueNextChar
     pop de
     ld a, [wDialogueTextByte]
     and $f0
     cp $f0
-    ret z
+    ret z ; command byte, already handled in DialogueNextChar
 
-    call Call_000_297a
+    call DrawChar
     ld a, [wDialogueTextByte]
     cp $ef
     ret nz
@@ -212,10 +169,10 @@ jr_000_2538:
     ld a, $03
     ld [$c53c], a
     ld a, [wDialogueState]
-    jp Jump_000_24ee
+    jp .handle_state
 
 
-Jump_000_2564:
+DialogueState6:
     xor a
     ld [$c538], a
     ld [wDialogueState], a
@@ -225,7 +182,7 @@ Jump_000_2564:
     ret 
 
 
-Jump_000_2575:
+DialogueState5:
     ld a, [$ff00+$8c]
     cp $01
     ret nz
@@ -233,10 +190,10 @@ Jump_000_2575:
     ld a, [wDialogueState]
     res 5, a
     ld [wDialogueState], a
-    jp Jump_000_24d6
+    jp DoDialogue
 
 
-Jump_000_2585:
+DialogueState4:
     ld a, [$c539]
     ld b, a
     ld a, [$c538]
@@ -253,126 +210,126 @@ Jump_000_2585:
     ld a, [$c53d]
     res 7, a
     ld [$c53d], a
-    jp Jump_000_24d6
+    jp DoDialogue
 
 
-Jump_000_25a9:
+DialogueState3:
     ld a, [$ff00+$8c]
     cp $01
-    jr z, jr_000_2601
+    jr z, jr_2601
 
     cp $40
-    jr z, jr_000_25c5
+    jr z, jr_25c5
 
     cp $80
-    jr z, jr_000_25d4
+    jr z, jr_25d4
 
     cp $10
-    jr z, jr_000_25e3
+    jr z, jr_25e3
 
     cp $20
-    jr z, jr_000_25f2
+    jr z, jr_25f2
 
     ld b, $e2
-    call Call_000_2a2d
+    call Call_2a2d
     ret 
 
 
-jr_000_25c5:
+jr_25c5:
     ld a, [$c545]
     bit 0, a
-    jr z, jr_000_25d0
+    jr z, jr_25d0
 
-    call Call_000_2ac6
+    call Call_2ac6
     ret 
 
 
-jr_000_25d0:
-    call Call_000_2a66
+jr_25d0:
+    call Call_2a66
     ret 
 
 
-jr_000_25d4:
+jr_25d4:
     ld a, [$c545]
     bit 0, a
-    jr z, jr_000_25df
+    jr z, jr_25df
 
-    call Call_000_2b07
+    call Call_2b07
     ret 
 
 
-jr_000_25df:
-    call Call_000_2aa8
+jr_25df:
+    call Call_2aa8
     ret 
 
 
-jr_000_25e3:
+jr_25e3:
     ld a, [$c545]
     bit 0, a
-    jr z, jr_000_25ee
+    jr z, jr_25ee
 
-    call Call_000_2a66
+    call Call_2a66
     ret 
 
 
-jr_000_25ee:
-    call Call_000_2ac6
+jr_25ee:
+    call Call_2ac6
     ret 
 
 
-jr_000_25f2:
+jr_25f2:
     ld a, [$c545]
     bit 0, a
-    jr z, jr_000_25fd
+    jr z, jr_25fd
 
-    call Call_000_2aa8
+    call Call_2aa8
     ret 
 
 
-jr_000_25fd:
-    call Call_000_2b07
+jr_25fd:
+    call Call_2b07
     ret 
 
 
-jr_000_2601:
+jr_2601:
     ld a, [wDialogueState]
     res 3, a
     ld [wDialogueState], a
     ld b, $ef
     ld a, [$c541]
     ld c, a
-    call Call_000_2a3b
+    call Call_2a3b
     ld a, [wCurName]
     and a
-    jp z, Jump_000_24d6
+    jp z, DoDialogue
 
     ld b, $ef
     ld a, [$c542]
     ld c, a
-    call Call_000_2a3b
+    call Call_2a3b
     ld a, [wCurName]
     cp $01
-    jp z, Jump_000_24d6
+    jp z, DoDialogue
 
     ld b, $ef
     ld a, [$c543]
     ld c, a
-    call Call_000_2a3b
+    call Call_2a3b
     ld a, [wCurName]
     cp $02
-    jp z, Jump_000_24d6
+    jp z, DoDialogue
 
     ld b, $ef
     ld a, [$c544]
     ld c, a
-    call Call_000_2a3b
-    jp Jump_000_24d6
+    call Call_2a3b
+    jp DoDialogue
 
 
-Jump_000_2647:
+DialogueState2:
     ld a, [$ff00+$8c]
     cp $01
-    jr z, jr_000_2656
+    jr z, jr_2656
 
     ld a, [$c539]
     ld b, a
@@ -380,7 +337,7 @@ Jump_000_2647:
     cp b
     ret c
 
-jr_000_2656:
+jr_2656:
     xor a
     ld [$c538], a
     ld a, [wDialogueState]
@@ -389,33 +346,33 @@ jr_000_2656:
     ld a, [$c53d]
     res 7, a
     ld [$c53d], a
-    jp Jump_000_24d6
+    jp DoDialogue
 
 
-Jump_000_266d:
+Jump_266d:
     ld hl, wDialogueOffset2
     ld a, [hli]
     ld h, [hl]
     ld l, a
     ld a, [hli]
     cp $ff
-    jr z, jr_000_2692
+    jr z, jr_2692
 
     ld [wDialogueTextByte], a
     ld a, l
     ld [wDialogueOffset2], a
     ld a, h
-    ld [$c52e], a
-    call Call_000_297a
+    ld [wDialogueOffset2+1], a
+    call DrawChar
     ld a, [wDialogueTextByte]
     cp $ef
     ret nz
 
     ld a, [wDialogueState]
-    jp Jump_000_24ee
+    jp DoDialogue.handle_state
 
 
-jr_000_2692:
+jr_2692:
     ld hl, $c533
     ld a, [hli]
     ld h, [hl]
@@ -423,11 +380,11 @@ jr_000_2692:
     ld a, l
     ld [wDialogueOffset2], a
     ld a, h
-    ld [$c52e], a
+    ld [wDialogueOffset2+1], a
     ld a, [wDialogueState]
     res 1, a
     ld [wDialogueState], a
-    jp Jump_000_24d6
+    jp DoDialogue
 
 
 DialogueNextChar::
@@ -662,14 +619,14 @@ endr
     dec c
     jr nz, .loop
 
-    ld b, $00
+    ld b, 0
     jp ControlCodeEnd
 
 .tiles
     db $b5, $b6, $b7, $b8, $b9, $ba, $bb, $bc
 .tiles_end
 
-ControlCodeF7::
+ControlCodeF7: ; <var>
     ld hl, wDialogueOffset2
     ld a, [hli]
     ld h, [hl]
@@ -691,12 +648,12 @@ ControlCodeF7::
     ld a, l
     ld [wDialogueOffset2], a
     ld a, h
-    ld [$c52e], a
-    ld b, $02
+    ld [wDialogueOffset2+1], a
+    ld b, 1<<DIALOGUE_STATE_1
     jp ControlCodeEnd
 
 
-ControlCodeF8::
+ControlCodeF8: ; <player>
     ld hl, wPlayerName
     ld de, $c55f
     ld b, PLAYER_NAME_LENGTH
@@ -723,9 +680,9 @@ ControlCodeF8::
     ld a, l
     ld [wDialogueOffset2], a
     ld a, h
-    ld [$c52e], a
+    ld [wDialogueOffset2+1], a
     
-    ld b, $02
+    ld b, 1<<DIALOGUE_STATE_1
     jp ControlCodeEnd
 
 
@@ -759,7 +716,8 @@ ControlCodeF9:: ; arrow
     ld a, $d4 ; down arrow tile
     ld [de], a
     ei
-    ld b, $00
+    
+    ld b, 0
     jp ControlCodeEnd
 
 
@@ -775,16 +733,17 @@ ControlCodeFA:
     ld a, l
     ld [wDialogueOffset2], a
     ld a, h
-    ld [$c52e], a
+    ld [wDialogueOffset2+1], a
     ld a, [$c53d]
     set 7, a
     ld [$c53d], a
-    ld b, $04
+    
+    ld b, 1<<DIALOGUE_STATE_2
     jp ControlCodeEnd
 
 
 ControlCodeFB:: ; wait for A
-    ld b, $20
+    ld b, 1<<DIALOGUE_STATE_WAITA
     jp ControlCodeEnd
 
 
@@ -798,11 +757,12 @@ ControlCodeFC::
     ld a, l
     ld [wDialogueOffset2], a
     ld a, h
-    ld [$c52e], a
+    ld [wDialogueOffset2+1], a
     ld a, [$c53d]
     set 7, a
     ld [$c53d], a
-    ld b, $10
+    
+    ld b, 1<<DIALOGUE_STATE_4
     jp ControlCodeEnd
 
 ControlCodeFD: ; <clear> - reset dialogue state
@@ -810,14 +770,14 @@ ControlCodeFD: ; <clear> - reset dialogue state
     xor a
     ld [$c53c], a
     ld [$c53d], a
-    ld hl, $c529
+    ld hl, wDialogueTilesPtr
     ld a, [hli]
     ld h, [hl]
     ld l, a
     ld a, l
-    ld [$c52f], a
+    ld [wDialogueTileDestination], a
     ld a, h
-    ld [$c530], a
+    ld [wDialogueTileDestination+1], a
     ld hl, wDialogueBoxWidth
     ld a, [hli]
     ld h, [hl]
@@ -826,7 +786,8 @@ ControlCodeFD: ; <clear> - reset dialogue state
     ld [wRemainingCharacters], a
     ld a, h
     ld [wRemainingLines], a
-    ld b, $00
+
+    ld b, 0
     jr ControlCodeEnd
 
 ControlCodeFE:: ; \n
@@ -838,22 +799,23 @@ ControlCodeFE:: ; \n
     ld [wRemainingLines], a
     ld a, [wDialogueBoxWidth]
     ld [wRemainingCharacters], a
-    ld hl, $c52f
+    ld hl, wDialogueTileDestination
     ld a, [hli]
     ld h, [hl]
     ld l, a
-    ld a, [$c52a]
+    ld a, [wDialogueTilesPtr+1]
     cp h
-    jr z, .jr_000_2948
+    jr z, .first_row
 
     ld a, l
     and a
-    jr z, .jr_000_2962
+    ; would overflow, so stop?
+    jr z, .stop
 
-.jr_000_2948:
-    ld a, [$c529]
+.first_row
+    ld a, [wDialogueTilesPtr]
     ld l, a
-    ld a, [$c52b]
+    ld a, [wDialogueBoxWidth]
     swap a
     ld d, a
     and $f0
@@ -863,12 +825,12 @@ ControlCodeFE:: ; \n
     ld d, a
     add hl, de
     ld a, l
-    ld [$c52f], a
+    ld [wDialogueTileDestination], a
     ld a, h
-    ld [$c530], a
+    ld [wDialogueTileDestination+1], a
 
-.jr_000_2962:
-    ld b, $00
+.stop
+    ld b, 0
     jr ControlCodeEnd
 
 ControlCodeFF::
@@ -885,13 +847,12 @@ ControlCodeEnd:
     ld [$3000], a
     ret 
 
-
-
-Call_000_297a:
+DrawChar:
     ld a, [wDialogueTextByte]
-    cp $ed
-    jr nz, jr_000_29be
-
+    cp $ed ; XXX replace with control code?
+    jr nz, .visible
+    
+.extra_tile
     ld a, [$4000]
     push af
     ld a, [wDialogueBank]
@@ -907,32 +868,27 @@ Call_000_297a:
     ld a, l
     ld [wDialogueOffset2], a
     ld a, h
-    ld [$c52e], a
-    ld hl, $29b6
+    ld [wDialogueOffset2+1], a
+    ld hl, .extra_tiles
     ld a, b
     add l
     ld l, a
-    jr nc, jr_000_29a8
-
+    jr nc, .nc
     inc h
-
-jr_000_29a8:
+.nc
     ld a, [hl]
     ld [wDialogueTextByte], a
     pop af
     ld [$2000], a
     xor a
     ld [$3000], a
-    jr jr_000_29be
+    jr .visible
 
-    ld a, [$ff00+$f1]
-    ld a, [$ff00+c]
-    di 
-    DB $f4
-    push af
-    or $f7
+.extra_tiles
+    ; $f0-$f7
+    db $f0, $f1, $f2, $f3, $f4, $f5, $f6, $f7
 
-jr_000_29be:
+.visible
     ld a, [wDialogueTextByte]
     swap a
     ld h, a
@@ -941,27 +897,27 @@ jr_000_29be:
     ld a, h
     and $0f
     ld h, a
-    ld de, $2fd8
+    ld de, FontGfx
     add hl, de
-    ld a, [$c52f]
+    ld a, [wDialogueTileDestination]
     ld e, a
-    ld a, [$c530]
+    ld a, [wDialogueTileDestination+1]
     ld d, a
     call CopyTile
     ld a, e
-    ld [$c52f], a
+    ld [wDialogueTileDestination], a
     ld a, d
-    ld [$c530], a
+    ld [wDialogueTileDestination+1], a
+    
     ld a, [wRemainingCharacters]
     and a
-    jr z, jr_000_29ed
-
+    jr z, .no_remaining_characters
+    
     dec a
     ld [wRemainingCharacters], a
-    ret 
-
-
-jr_000_29ed:
+    ret
+    
+.no_remaining_characters:
     ld a, [wRemainingLines]
     and a
     ret z
@@ -973,9 +929,9 @@ jr_000_29ed:
     ret 
 
 
-Call_000_29fd:
+Call_29fd:
     ld a, [wDialogueTextByte]
-    cp $f9
+    cp "<arrow>"
     ret z
 
     ld a, [$c53a]
@@ -989,11 +945,11 @@ Call_000_29fd:
     ld hl, $2a25
     add l
     ld l, a
-    jr nc, jr_000_2a19
+    jr nc, jr_2a19
 
     inc h
 
-jr_000_2a19:
+jr_2a19:
     ld e, [hl]
     inc hl
     ld d, [hl]
@@ -1016,23 +972,23 @@ ArrowTilemapPointers:: ; TODO
     sbc b
 
 
-Call_000_2a2d:
+Call_2a2d:
     ld a, [$c53b]
     ld hl, $c541
     add l
     ld l, a
-    jr nc, jr_000_2a38
+    jr nc, jr_2a38
 
     inc h
 
-jr_000_2a38:
+jr_2a38:
     ld a, [hl]
-    jr jr_000_2a3c
+    jr jr_2a3c
 
-Call_000_2a3b:
+Call_2a3b:
     ld a, c
 
-jr_000_2a3c:
+jr_2a3c:
     swap a
     ld h, a
     and $f0
@@ -1042,7 +998,7 @@ jr_000_2a3c:
     ld h, a
     ld a, [wDialogueTilesPtr]
     ld e, a
-    ld a, [$c52a]
+    ld a, [wDialogueTilesPtr+1]
     ld d, a
     add hl, de
     ld e, l
@@ -1063,135 +1019,135 @@ jr_000_2a3c:
     ret 
 
 
-Call_000_2a66:
+Call_2a66:
     ld a, [wCurName]
     cp $02
     ret c
 
-    jr nz, jr_000_2a89
+    jr nz, jr_2a89
 
     ld a, [$c53b]
     bit 0, a
-    jr z, jr_000_2a89
+    jr z, jr_2a89
 
     ret 
 
 
 
 
-jr_000_2a76:
+jr_2a76:
     ld a, [$c53b]
     set 1, a
     ld [$c53b], a
     ld b, $e2
-    call Call_000_2a2d
+    call Call_2a2d
     ld a, $59
     call $0ee4
     ret 
 
 
-jr_000_2a89:
+jr_2a89:
     ld b, $ef
-    call Call_000_2a2d
+    call Call_2a2d
     ld a, [$c53b]
     bit 1, a
-    jr z, jr_000_2a76
+    jr z, jr_2a76
 
-jr_000_2a95:
+jr_2a95:
     ld a, [$c53b]
     res 1, a
     ld [$c53b], a
     ld b, $e2
-    call Call_000_2a2d
+    call Call_2a2d
     ld a, $59
     call $0ee4
     ret 
 
 
-Call_000_2aa8:
+Call_2aa8:
     ld a, [wCurName]
     cp $02
     ret c
 
-    jr nz, jr_000_2ab8
+    jr nz, jr_2ab8
 
     ld a, [$c53b]
     bit 0, a
-    jr z, jr_000_2ab8
+    jr z, jr_2ab8
 
     ret 
 
 
-jr_000_2ab8:
+jr_2ab8:
     ld b, $ef
-    call Call_000_2a2d
+    call Call_2a2d
     ld a, [$c53b]
     bit 1, a
-    jr z, jr_000_2a76
+    jr z, jr_2a76
 
-    jr jr_000_2a95
+    jr jr_2a95
 
-Call_000_2ac6:
+Call_2ac6:
     ld a, [wCurName]
     and a
     ret z
 
     cp $02
-    jr nz, jr_000_2ad5
+    jr nz, jr_2ad5
 
     ld a, [$c53b]
     bit 1, a
     ret nz
 
-jr_000_2ad5:
+jr_2ad5:
     ld b, $ef
-    call Call_000_2a2d
+    call Call_2a2d
     ld a, [$c53b]
     bit 0, a
-    jr z, jr_000_2af4
+    jr z, jr_2af4
 
-jr_000_2ae1:
+jr_2ae1:
     ld a, [$c53b]
     res 0, a
     ld [$c53b], a
     ld b, $e2
-    call Call_000_2a2d
+    call Call_2a2d
     ld a, $59
     call $0ee4
     ret 
 
 
-jr_000_2af4:
+jr_2af4:
     ld a, [$c53b]
     set 0, a
     ld [$c53b], a
     ld b, $e2
-    call Call_000_2a2d
+    call Call_2a2d
     ld a, $59
     call $0ee4
     ret 
 
 
-Call_000_2b07:
+Call_2b07:
     ld a, [wCurName]
     and a
     ret z
 
     cp $02
-    jr nz, jr_000_2b16
+    jr nz, jr_2b16
 
     ld a, [$c53b]
     bit 1, a
     ret nz
 
-jr_000_2b16:
+jr_2b16:
     ld b, $ef
-    call Call_000_2a2d
+    call Call_2a2d
     ld a, [$c53b]
     bit 0, a
-    jr nz, jr_000_2ae1
+    jr nz, jr_2ae1
 
-    jr jr_000_2af4
+    jr jr_2af4
 
     ld b, d
     sbc h
@@ -1202,46 +1158,46 @@ jr_000_2b16:
     adc d
     sbc h
 
-Call_000_2b2c:
-Jump_000_2b2c:
+Call_2b2c:
+Jump_2b2c:
     xor a
     ld [$d963], a
     ld [$d964], a
 
-Jump_000_2b33:
+Jump_2b33:
     ld a, [$d964]
     cp $03
-    jp z, Jump_000_2bf9
+    jp z, Jump_2bf9
 
     ld hl, $ff47
     ld bc, $c0a4
     push af
     add l
     ld l, a
-    jr nc, jr_000_2b47
+    jr nc, jr_2b47
 
     inc h
 
-jr_000_2b47:
+jr_2b47:
     pop af
     add c
     ld c, a
-    jr nc, jr_000_2b4d
+    jr nc, jr_2b4d
 
     inc b
 
-Jump_000_2b4d:
-jr_000_2b4d:
-    call Call_000_2d41
+Jump_2b4d:
+jr_2b4d:
+    call Call_2d41
     ld a, [$d963]
     and a
-    jp z, Jump_000_2b84
+    jp z, Jump_2b84
 
     cp $01
-    jp z, Jump_000_2baf
+    jp z, Jump_2baf
 
     cp $02
-    jp z, Jump_000_2bd2
+    jp z, Jump_2bd2
 
     ld a, [bc]
     and $03
@@ -1249,11 +1205,11 @@ jr_000_2b4d:
     ld a, [hl]
     and $03
     cp e
-    jr c, jr_000_2b6d
+    jr c, jr_2b6d
 
-    jr jr_000_2b76
+    jr jr_2b76
 
-jr_000_2b6d:
+jr_2b6d:
     inc a
     and $03
     ld e, a
@@ -1262,27 +1218,27 @@ jr_000_2b6d:
     or e
     ld [hl], a
 
-jr_000_2b76:
+jr_2b76:
     xor a
     ld [$d963], a
     ld a, [$d964]
     inc a
     ld [$d964], a
-    jp Jump_000_2b33
+    jp Jump_2b33
 
 
-Jump_000_2b84:
+Jump_2b84:
     ld a, [bc]
     and $c0
     ld e, a
     ld a, [hl]
     and $c0
     cp e
-    jr c, jr_000_2b90
+    jr c, jr_2b90
 
-    jr jr_000_2ba5
+    jr jr_2ba5
 
-jr_000_2b90:
+jr_2b90:
     swap a
     srl a
     srl a
@@ -1297,25 +1253,25 @@ jr_000_2b90:
     or e
     ld [hl], a
 
-jr_000_2ba5:
+jr_2ba5:
     ld a, [$d963]
     inc a
     ld [$d963], a
-    jp Jump_000_2b4d
+    jp Jump_2b4d
 
 
-Jump_000_2baf:
+Jump_2baf:
     ld a, [bc]
     and $30
     ld e, a
     ld a, [hl]
     and $30
     cp e
-    jr c, jr_000_2bbb
+    jr c, jr_2bbb
 
-    jr jr_000_2bc8
+    jr jr_2bc8
 
-jr_000_2bbb:
+jr_2bbb:
     swap a
     inc a
     and $03
@@ -1326,24 +1282,24 @@ jr_000_2bbb:
     or e
     ld [hl], a
 
-jr_000_2bc8:
+jr_2bc8:
     ld a, [$d963]
     inc a
     ld [$d963], a
-    jp Jump_000_2b4d
+    jp Jump_2b4d
 
-Jump_000_2bd2:
+Jump_2bd2:
     ld a, [bc]
     and $0c
     ld e, a
     ld a, [hl]
     and $0c
     cp e
-    jr c, jr_000_2bde
+    jr c, jr_2bde
 
-    jr jr_000_2bef
+    jr jr_2bef
 
-jr_000_2bde:
+jr_2bde:
     srl a
     srl a
     inc a
@@ -1356,36 +1312,36 @@ jr_000_2bde:
     or e
     ld [hl], a
 
-jr_000_2bef:
+jr_2bef:
     ld a, [$d963]
     inc a
     ld [$d963], a
-    jp Jump_000_2b4d
+    jp Jump_2b4d
 
 
-Jump_000_2bf9:
+Jump_2bf9:
     ld bc, $c0a4
     ld hl, $ff47
     ld e, $00
 
-jr_000_2c01:
+jr_2c01:
     ld a, [hl]
     ld d, a
     ld a, [bc]
     cp d
-    jp nz, Jump_000_2b2c
+    jp nz, Jump_2b2c
 
     inc hl
     inc bc
     inc e
     ld a, e
     cp $03
-    jr nz, jr_000_2c01
+    jr nz, jr_2c01
 
     ret 
 
 
-Call_000_2c11:
+Call_2c11:
     ld a, [$da2d]
     ld [REG_BGP], a
     ld a, [$da2e]
@@ -1395,41 +1351,41 @@ Call_000_2c11:
     ret 
 
 
-Call_000_2c21:
-Jump_000_2c21:
+Call_2c21:
+Jump_2c21:
     ld a, [$dcf0]
     and a
-    jr z, jr_000_2c42
+    jr z, jr_2c42
 
-jr_000_2c27:
+jr_2c27:
     ld hl, $66a5
     ld a, $01
     call FarCall
-    call Call_000_2d41
+    call Call_2d41
     xor a
     ld [$d962], a
-    call Call_000_2e19
+    call Call_2e19
     cp $ff
-    jr nz, jr_000_2c27
+    jr nz, jr_2c27
 
     xor a
     ld [$c50d], a
     ret 
 
 
-jr_000_2c42:
+jr_2c42:
     xor a
     ld [$d963], a
     ld [$d964], a
     ld hl, $ff47
 
-Jump_000_2c4c:
+Jump_2c4c:
     ld a, [$d964]
     cp $03
-    jp z, Jump_000_2d0d
+    jp z, Jump_2d0d
 
     and a
-    jr z, jr_000_2c5f
+    jr z, jr_2c5f
 
     ld c, $00
     ld a, l
@@ -1439,36 +1395,36 @@ Jump_000_2c4c:
     adc c
     ld h, a
 
-Jump_000_2c5f:
-jr_000_2c5f:
+Jump_2c5f:
+jr_2c5f:
     push hl
     ld hl, $66a5
     ld a, $01
     call FarCall
-    call Call_000_2d41
+    call Call_2d41
     pop hl
     ld a, [$d963]
     and a
-    jp z, Jump_000_2c9e
+    jp z, Jump_2c9e
 
     cp $01
-    jp z, Jump_000_2cc7
+    jp z, Jump_2cc7
 
     cp $02
-    jp z, Jump_000_2ce8
+    jp z, Jump_2ce8
 
     ld a, [hl]
     and $03
     dec a
     cp $ff
-    jr z, jr_000_2c87
+    jr z, jr_2c87
 
-    jr jr_000_2c88
+    jr jr_2c88
 
-jr_000_2c87:
+jr_2c87:
     xor a
 
-jr_000_2c88:
+jr_2c88:
     and $03
     ld c, a
     ld a, [hl]
@@ -1480,10 +1436,10 @@ jr_000_2c88:
     ld a, [$d964]
     inc a
     ld [$d964], a
-    jp Jump_000_2c4c
+    jp Jump_2c4c
 
 
-Jump_000_2c9e:
+Jump_2c9e:
     ld a, [hl]
     and $c0
     swap a
@@ -1491,14 +1447,14 @@ Jump_000_2c9e:
     srl a
     dec a
     cp $ff
-    jr z, jr_000_2cae
+    jr z, jr_2cae
 
-    jr jr_000_2caf
+    jr jr_2caf
 
-jr_000_2cae:
+jr_2cae:
     xor a
 
-jr_000_2caf:
+jr_2caf:
     and $03
     swap a
     sla a
@@ -1511,23 +1467,23 @@ jr_000_2caf:
     ld a, [$d963]
     inc a
     ld [$d963], a
-    jp Jump_000_2c5f
+    jp Jump_2c5f
 
 
-Jump_000_2cc7:
+Jump_2cc7:
     ld a, [hl]
     and $30
     swap a
     dec a
     cp $ff
-    jr z, jr_000_2cd3
+    jr z, jr_2cd3
 
-    jr jr_000_2cd4
+    jr jr_2cd4
 
-jr_000_2cd3:
+jr_2cd3:
     xor a
 
-jr_000_2cd4:
+jr_2cd4:
     and $03
     swap a
     ld c, a
@@ -1538,24 +1494,24 @@ jr_000_2cd4:
     ld a, [$d963]
     inc a
     ld [$d963], a
-    jp Jump_000_2c5f
+    jp Jump_2c5f
 
 
-Jump_000_2ce8:
+Jump_2ce8:
     ld a, [hl]
     and $0c
     srl a
     srl a
     dec a
     cp $ff
-    jr z, jr_000_2cf6
+    jr z, jr_2cf6
 
-    jr jr_000_2cf7
+    jr jr_2cf7
 
-jr_000_2cf6:
+jr_2cf6:
     xor a
 
-jr_000_2cf7:
+jr_2cf7:
     and $03
     sla a
     sla a
@@ -1567,21 +1523,21 @@ jr_000_2cf7:
     ld a, [$d963]
     inc a
     ld [$d963], a
-    jp Jump_000_2c5f
+    jp Jump_2c5f
 
 
-Jump_000_2d0d:
+Jump_2d0d:
     ld a, [REG_BGP]
     and a
-    jp nz, Jump_000_2c21
+    jp nz, Jump_2c21
 
     ld a, [REG_OBP0]
     and a
-    jp nz, Jump_000_2c21
+    jp nz, Jump_2c21
 
     ld a, [REG_OBP1]
     and a
-    jp nz, Jump_000_2c21
+    jp nz, Jump_2c21
 
     xor a
     ld [$d963], a
@@ -1590,7 +1546,7 @@ Jump_000_2d0d:
     ret 
 
 
-Call_000_2d2a:
+Call_2d2a:
     ld a, [REG_BGP]
     ld [$da2d], a
     ld a, [REG_OBP0]
@@ -1604,53 +1560,53 @@ Call_000_2d2a:
     ret 
 
 
-Call_000_2d41:
+Call_2d41:
     ld de, $01b5
 
-jr_000_2d44:
+jr_2d44:
     nop 
     nop 
     nop 
     dec de
     ld a, d
     or e
-    jr nz, jr_000_2d44
+    jr nz, jr_2d44
 
     ret 
 
 
-Call_000_2d4d:
+Call_2d4d:
     ld a, [$dcf0]
     and a
-    jr nz, jr_000_2d5f
+    jr nz, jr_2d5f
 
-    call Call_000_2d2a
+    call Call_2d2a
     ld a, [$c0a3]
     ld [REG_LCDC], a
-    call Call_000_2b2c
+    call Call_2b2c
     ret 
 
 
-jr_000_2d5f:
+jr_2d5f:
     ld a, [$c0a3]
     ld [REG_LCDC], a
-    call Call_000_2d41
+    call Call_2d41
     ret 
 
 
-Call_000_2d68:
+Call_2d68:
     ld a, [$d962]
     bit 7, a
     and a
     ret z
 
     bit 6, a
-    jr nz, jr_000_2d8d
+    jr nz, jr_2d8d
 
     bit 5, a
-    jr nz, jr_000_2d82
+    jr nz, jr_2d82
 
-    call Call_000_2df4
+    call Call_2df4
     cp $ff
     ret nz
 
@@ -1659,8 +1615,8 @@ Call_000_2d68:
     ret 
 
 
-jr_000_2d82:
-    call Call_000_2e19
+jr_2d82:
+    call Call_2e19
     cp $ff
     ret nz
 
@@ -1669,11 +1625,11 @@ jr_000_2d82:
     ret 
 
 
-jr_000_2d8d:
+jr_2d8d:
     bit 5, a
-    jr nz, jr_000_2d9c
+    jr nz, jr_2d9c
 
-    call Call_000_2dad
+    call Call_2dad
     cp $ff
     ret nz
 
@@ -1682,8 +1638,8 @@ jr_000_2d8d:
     ret 
 
 
-jr_000_2d9c:
-    call Call_000_2dd2
+jr_2d9c:
+    call Call_2dd2
     cp $ff
     ret nz
 
@@ -1697,28 +1653,28 @@ jr_000_2d9c:
     ret 
 
 
-Call_000_2dad:
+Call_2dad:
     ld a, [$dcf0]
     and a
-    jr z, jr_000_2dc5
+    jr z, jr_2dc5
 
     ld hl, $5d94
     ld a, $01
     call FarCall
     ld a, c
     cp $ff
-    jr nz, jr_000_2dc3
+    jr nz, jr_2dc3
 
     ld a, $ff
     ret 
 
 
-jr_000_2dc3:
+jr_2dc3:
     xor a
     ret 
 
 
-jr_000_2dc5:
+jr_2dc5:
     ld a, $e4
     ld [REG_BGP], a
     ld a, $d2
@@ -1728,28 +1684,28 @@ jr_000_2dc5:
     ret 
 
 
-Call_000_2dd2:
+Call_2dd2:
     ld a, [$dcf0]
     and a
-    jr z, jr_000_2dea
+    jr z, jr_2dea
 
     ld hl, $5cb4
     ld a, $01
     call FarCall
     ld a, c
     cp $ff
-    jr nz, jr_000_2de8
+    jr nz, jr_2de8
 
     ld a, $ff
     ret 
 
 
-jr_000_2de8:
+jr_2de8:
     xor a
     ret 
 
 
-jr_000_2dea:
+jr_2dea:
     xor a
     ld [REG_BGP], a
     ld [REG_OBP0], a
@@ -1758,28 +1714,28 @@ jr_000_2dea:
     ret 
 
 
-Call_000_2df4:
+Call_2df4:
     ld a, [$dcf0]
     and a
-    jr z, jr_000_2e0c
+    jr z, jr_2e0c
 
     ld hl, $5ee3
     ld a, $01
     call FarCall
     ld a, c
     cp $ff
-    jr nz, jr_000_2e0a
+    jr nz, jr_2e0a
 
     ld a, $ff
     ret 
 
 
-jr_000_2e0a:
+jr_2e0a:
     xor a
     ret 
 
 
-jr_000_2e0c:
+jr_2e0c:
     ld a, $e4
     ld [REG_BGP], a
     ld a, $d2
@@ -1789,28 +1745,28 @@ jr_000_2e0c:
     ret 
 
 
-Call_000_2e19:
+Call_2e19:
     ld a, [$dcf0]
     and a
-    jr z, jr_000_2e31
+    jr z, jr_2e31
 
     ld hl, $5bd3
     ld a, $01
     call FarCall
     ld a, c
     cp $ff
-    jr nz, jr_000_2e2f
+    jr nz, jr_2e2f
 
     ld a, $ff
     ret 
 
 
-jr_000_2e2f:
+jr_2e2f:
     xor a
     ret 
 
 
-jr_000_2e31:
+jr_2e31:
     xor a
     ld [REG_BGP], a
     ld [REG_OBP0], a
