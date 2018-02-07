@@ -78,6 +78,7 @@
 00:c531 wRemainingCharacters
 00:c532 wRemainingLines
 00:c537 wDialogueState
+00:c53c wDialogueDelay
 00:c53f wCurName
 
 00:06bb GetTilePtr
