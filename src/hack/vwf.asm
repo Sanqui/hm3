@@ -33,10 +33,68 @@ VWFInit:
     xor a
     ld [wVWFCurTileCol], a
     ld [wVWFCurTileNum], a
+    ld [wVWFHangingTile], a
+    
+    ld a, 1
+    ld [wVWFInstant], a
     ld hl, wVWFBuildArea2
     ld b, 16
     xor a
     call MyFillMemory
+    
+    ld b, $10
+    ld hl, wVWFCopyArea
+.loop
+    ld a, $ff
+    ld [hli], a
+    xor a
+    ld [hli], a
+    dec b
+    jr nz, .loop
+    ret
+
+
+VWFCopyTiles:
+    ; 1bpp -> 2bpp
+    ld a, [wVWFNumTilesUsed]
+    sla a
+    sla a
+    sla a
+    ld b, a
+    ld de, wVWFBuildArea2
+    ld hl, wVWFCopyArea
+    
+.doubleloop
+    inc hl
+    ld a, [de]
+    inc de
+    ld [hli], a
+    dec b
+    jr nz, .doubleloop
+
+    ; Get the tileset offset.
+    ;ld hl, $8800
+    lda l, [wDialogueTilesPtr]
+    lda h, [wDialogueTilesPtr+1]
+    ld a, [wVWFCurTileNum]
+    ld b, $0
+    ld c, a
+    ld a, 16
+    call MyMultiply
+    
+    push hl
+    pop de
+    ld hl, wVWFCopyArea
+    
+    ; Write the new tile(s)
+    
+    call CopyTile
+
+    ld a, [wVWFNumTilesUsed]
+    dec a
+    ret z
+    
+    call CopyTile
     ret
 
 VWFDrawChar:
@@ -108,43 +166,20 @@ VWFDrawChar:
     ld a, c
     ld [wVWFCurTileCol], a
     
-    ; 1bpp -> 2bpp
-    ld b, $10
-    ld de, wVWFBuildArea2
-    ld hl, wVWFCopyArea
-    
-.doubleloop
-    ld a, $ff
-    ld [hli], a
-    ld a, [de]
-    inc de
-    ld [hli], a
-    dec b
-    jr nz, .doubleloop
-
-    ; Get the tileset offset.
-    ;ld hl, $8800
-    lda l, [wDialogueTilesPtr]
-    lda h, [wDialogueTilesPtr+1]
-    ld a, [wVWFCurTileNum]
-    ld b, $0
-    ld c, a
-    ld a, 16
-    call MyMultiply
-    
-    push hl
-    pop de
-    ld hl, wVWFCopyArea
-    
-    ; Write the new tile(s)
-    
-    call CopyTile
-
+    ld a, [wVWFInstant]
+    and a
+    jr z, .draw
     ld a, [wVWFNumTilesUsed]
     dec a
-    jr z, .copied
-    
-    call CopyTile
+    ; only one tile is used --
+    ; wait for the second one
+    ; (or have it be copied when text is done)
+    ; to be fast.
+    jr nz, .draw
+    lda [wVWFHangingTile], 1
+    jr .copied
+.draw
+    call VWFCopyTiles
 
 .copied
 
@@ -180,7 +215,17 @@ VWFDrawChar:
     pop hl
     pop de
     ret
-    
+
+VWFFinish:
+    ld a, [wVWFInstant]
+    and a
+    ret z
+    ld a, [wVWFHangingTile]
+    and a
+    ret z
+    lda [wVWFNumTilesUsed], 1
+    jp VWFCopyTiles
+
 VWFTable:
     db 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
     db 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6
