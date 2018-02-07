@@ -4,6 +4,8 @@ INCLUDE "src/text.asm"
 INCLUDE "data/text_pointers.asm"
 INCLUDE "build/text.asm"
 
+INCLUDE "src/hack/hack.asm"
+
 blankbank: MACRO
 SECTION "Blank bank \1", ROMX[$4000], BANK[\1]
     db \1 ; BANK(@) doesn't work atm
@@ -11,7 +13,7 @@ SECTION "Blank bank \1", ROMX[$4000], BANK[\1]
 ENDM
 
 
-    blankbank $4e
+;    blankbank $4e
     blankbank $4f
     blankbank $51
     blankbank $52
