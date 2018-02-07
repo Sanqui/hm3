@@ -36,7 +36,7 @@ VWFInit:
     ld [wVWFHangingTile], a
     
     ld a, 1
-    ld [wVWFInstant], a
+    ld [wVWFFast], a
     ld hl, wVWFBuildArea2
     ld b, 16
     xor a
@@ -166,7 +166,7 @@ VWFDrawChar:
     ld a, c
     ld [wVWFCurTileCol], a
     
-    ld a, [wVWFInstant]
+    ld a, [wVWFFast]
     and a
     jr z, .draw
     ld a, [wVWFNumTilesUsed]
@@ -217,7 +217,7 @@ VWFDrawChar:
     ret
 
 VWFFinish:
-    ld a, [wVWFInstant]
+    ld a, [wVWFFast]
     and a
     ret z
     ld a, [wVWFHangingTile]

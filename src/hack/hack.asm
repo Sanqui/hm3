@@ -21,7 +21,7 @@ wVWFNumTilesUsed:
     ds 1
 wVWFCharWidth:
     ds 1
-wVWFInstant: ds 1
+wVWFFast: ds 1
 wVWFHangingTile: ds 1
 
 wVWFBuildArea0:
@@ -124,7 +124,9 @@ HackPredefTable:
     hack_entry VWFInit
     hack_entry DrawChar
     hack_entry Newline
-    hack_entry VWFFinish
+    hack_entry DialogueStateEnd
+    hack_entry ControlCodeF5
+    hack_entry ControlCodeFB
 
 HackNop:
     ret
@@ -148,8 +150,20 @@ HackNewline:
     ld [wVWFCurTileNum], a
     ret
 
-HackVWFFinish:
+HackDialogueStateEnd:
     call VWFFinish
+    xor a
+    ld [$c538], a
+    ret
+
+HackControlCodeF5:
+    call VWFFinish
+    ld hl, wDialogueOffset2
+    ret
+    
+HackControlCodeFB:
+    call VWFFinish
+    ld b, 1<<DIALOGUE_STATE_WAITA
     ret
 
 INCLUDE "src/hack/vwf.asm"

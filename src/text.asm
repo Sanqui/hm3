@@ -177,8 +177,10 @@ DoDialogue:
 
 
 DialogueStateEnd:
+    ;xor a
+    ;ld [$c538], a
+    hack DialogueStateEnd
     xor a
-    ld [$c538], a
     ld [wDialogueState], a
     ld [wDialogueTextByte], a
     ld [wDialogueDelay], a
@@ -502,7 +504,8 @@ ControlCodeF4::
 .table_end
 
 ControlCodeF5: ; <ask> (yes/no)
-    ld hl, wDialogueOffset2
+    hack ControlCodeF5
+    ;ld hl, wDialogueOffset2
     ld a, [hli]
     ld h, [hl]
     ld l, a
@@ -743,12 +746,16 @@ ControlCodeFA:
     ld [$c53d], a
     
     ld b, 1<<DIALOGUE_STATE_2
+.end
     jp ControlCodeEnd
 
 
 ControlCodeFB:: ; wait for A
-    ld b, 1<<DIALOGUE_STATE_WAITA
-    jp ControlCodeEnd
+    ; TODO VWFFinish
+    ;ld b, 1<<DIALOGUE_STATE_WAITA
+    ;jp ControlCodeEnd
+    hack ControlCodeFB
+    jr ControlCodeFA.end
 
 
 ControlCodeFC::
