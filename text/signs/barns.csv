@@ -1,75 +1,75 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x1c13e,0x1c1a1,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fodder can be
 taken out from
 here. Put one
 fodder piece for
 each animal in
-the feeding box."
+the feeding box.","Hier wird das Futter entnommen. Lege für jedes Tier eine Futtereinheit in die Futterbox."
 1,0x1c1a1,0x1c208,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Place a male and
 a female animal
 in this area to
 have a baby.
 Don't forget to
-feed the female."
+feed the female.","Platziere in diese Ecke zwei Tiere mit gegensetzlichem Geschlecht, damit sie sich paaren und das Weibchen ein Baby gebärt. Vergiss nicht, das Weibchen zu füttern! "
 2,0x1c208,0x1c26b,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fodder can be
 taken out from
 here. Put one
 fodder piece for
 each animal in
-the feeding box."
+the feeding box.","Hier wird das Futter entnommen. Lege für jedes Tier eine Futtereinheit in die Futterbox."
 3,0x1c26b,0x1c2ce,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fodder can be
 taken out from
 here. Put one
 fodder piece for
 each animal in
-the feeding box."
+the feeding box.","Hier wird das Futter entnommen. Lege für jedes Tier eine Futtereinheit in die Futterbox."
 4,0x1c2ce,0x1c2f6,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Place an egg
 here for it to
 hatch.
-"
+","Lege ein Ei hinein, um es auszubrüten."
 5,0x1c2f6,0x1c359,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fodder can be
 taken out from
 here. Put one
 fodder piece for
 each animal in
-the feeding box."
+the feeding box.","Hier wird das Futter entnommen. Lege für jedes Tier eine Futtereinheit in die Futterbox."
 6,0x1c359,0x1c3bc,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fodder can be
 taken out from
 here. Put one
 fodder piece for
 each animal in
-the feeding box."
+the feeding box.","Hier wird das Futter entnommen. Lege für jedes Tier eine Futtereinheit in die Futterbox."
 7,0x1c3bc,0x1c423,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Place a male and
 a female animal
 in this area to
 have a baby.
 Don't forget to
-feed the female."
+feed the female.","Platziere in diese Ecke zwei Tiere mit gegensetzlichem Geschlecht, damit sie sich paaren und das Weibchen ein Baby gebärt. Vergiss nicht, das Weibchen zu füttern! "
 8,0x1c423,0x1c486,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fodder can be
 taken out from
 here. Put one
 fodder piece for
 each animal in
-the feeding box."
+the feeding box.","Hier wird das Futter entnommen. Lege für jedes Tier eine Futtereinheit in die Futterbox."
 9,0x1c486,0x1c4e9,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fodder can be
 taken out from
 here. Put one
 fodder piece for
 each animal in
-the feeding box."
+the feeding box.","Hier wird das Futter entnommen. Lege für jedes Tier eine Futtereinheit in die Futterbox."
 10,0x1c4e9,0x1c550,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Place a male and
 a female animal
 in this area to
 have a baby.
 Don't forget to
-feed the female."
+feed the female.","Platziere in diese Ecke zwei Tiere mit gegensetzlichem Geschlecht, damit sie sich paaren und das Weibchen ein Baby gebärt. Vergiss nicht, das Weibchen zu füttern! "
 11,0x1c550,0x1c5b3,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fodder can be
 taken out from
 here. Put one
 fodder piece for
 each animal in
-the feeding box."
-12,0x1c5b3,0x1c5c5,,"[""<waita>@""]",,Down: Sheep Pen
-13,0x1c5b3,0x1c5c5,,"[""<waita>@""]",,Down: Sheep Pen
-14,0x1c5b3,0x1c5c5,,"[""<waita>@""]",,Down: Sheep Pen
-15,0x1c5b3,0x1c5c5,,"[""<waita>@""]",,Down: Sheep Pen
+the feeding box.","Hier wird das Futter entnommen. Lege für jedes Tier eine Futtereinheit in die Futterbox."
+12,0x1c5b3,0x1c5c5,,"[""<waita>@""]",,"Down: Sheep Pen","Unten: Schafspferch"
+13,0x1c5b3,0x1c5c5,,"[""<waita>@""]",,"Down: Sheep Pen","Unten: Schafspferch"
+14,0x1c5b3,0x1c5c5,,"[""<waita>@""]",,"Down: Sheep Pen","Unten: Schafspferch"
+15,0x1c5b3,0x1c5c5,,"[""<waita>@""]",,"Down: Sheep Pen","Unten: Schafspferch"

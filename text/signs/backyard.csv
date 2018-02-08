@@ -1,43 +1,43 @@
-i,address,end,name_i,newlines,name,string
-0,0x1c5b3,0x1c5c5,,"[""<waita>@""]",,Down: Sheep Pen
+i,address,end,name_i,newlines,name,string,translation
+0,0x1c5b3,0x1c5c5,,"[""<waita>@""]",,"Down: Sheep Pen","Unten: Schafspferch"
 1,0x1c5c5,0x1c5dd,,"[""\\n"", ""<waita>@""]",,"Left: Chicken
-Pasture"
+Pasture","Links: Hühnerwiese"
 2,0x1c5dd,0x1c5f2,,"[""\\n"", ""<waita>@""]",,"Down: Chicken
-Coop"
+Coop","Unten: Hühnerstall"
 3,0x1c5f2,0x1c606,,"[""\\n"", ""<waita>@""]",,"Left: Cow
-Pasture"
+Pasture","Links: Kuhweide"
 4,0x1c606,0x1c61d,,"[""\\n"", ""<waita>@""]",,"Right: Sheep
-Pasture"
-5,0x1c61d,0x1c62e,,"[""<waita>@""]",,Down: Cow Barn
+Pasture","Rechts: Schafweide"
+5,0x1c61d,0x1c62e,,"[""<waita>@""]",,"Down: Cow Barn","Unten: Kuhstall"
 6,0x1c62e,0x1c644,,"[""\\n"", ""<waita>@""]",,"Left: Horse
-Pasture"
+Pasture","Links: Pferdewiese"
 7,0x1c644,0x1c65d,,"[""\\n"", ""<waita>@""]",,"Right: Chicken
-Pasture"
+Pasture","Rechts: Hühnerwiese"
 8,0x1c65d,0x1c672,,"[""\\n"", ""<waita>@""]",,"Down: Horse
-Stable"
+Stable","Unten: Pferdestall"
 9,0x1c672,0x1c687,,"[""\\n"", ""<waita>@""]",,"Right: Cow
-Pasture"
+Pasture","Rechts: Kuhstall"
 10,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
 shovel to build
 a hot spring.
-"
+","Grabe mit der Schaufel um eine heiße Quelle freizulegen."
 11,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
 shovel to build
 a hot spring.
-"
+","Grabe mit der Schaufel um eine heiße Quelle freizulegen."
 12,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
 shovel to build
 a hot spring.
-"
+","Grabe mit der Schaufel um eine heiße Quelle freizulegen."
 13,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
 shovel to build
 a hot spring.
-"
+","Grabe mit der Schaufel um eine heiße Quelle freizulegen."
 14,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
 shovel to build
 a hot spring.
-"
+","Grabe mit der Schaufel um eine heiße Quelle freizulegen."
 15,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
 shovel to build
 a hot spring.
-"
+","Grabe mit der Schaufel um eine heiße Quelle freizulegen."
