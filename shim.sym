@@ -9,6 +9,9 @@
 
 
 00:0100 Start
+00:0150 Start_
+
+00:0ab4 ClearMemory
 
 00:0979 ReadBCFar
 00:09a5 FarCall
@@ -93,3 +96,4 @@
 01:d400 wPlayerName
 01:d7d2 wTmpBank
 01:d7d6 wDialogueSectionX
+01:dcf0 wCGB
