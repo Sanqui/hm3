@@ -554,11 +554,15 @@ def print_pointer_tables():
         metatable_file = open(table_filename, "w")
         
         metatable_file.write(f"Metatable{bank:02x}_{pointer:04x}:: ; {gbswitch(metatable_address)}\n")
+        last_subtable_name = None
         for i, (subtable_name, subtable_address) in enumerate(zip(subtable_names, metatable_subtable_addresses[metatable_address])):
             subtable_address = subtable_address[0]
+            if not subtable_name:
+                subtable_name = last_subtable_name
             if subtable_name and not subtable_name.startswith("<"):
                 subtable_name = subtable_name.lstrip(">")
                 metatable_file.write(f"    dw Table{tolabel(subtable_name)}\t; {gbswitch(subtable_address)}\n")
+                last_subtable_name = subtable_name
             else:
                 metatable_file.write(f"    dw ${subtable_address%0x4000 + 0x4000:04x}\n")
         

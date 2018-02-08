@@ -52,6 +52,7 @@ PrintString::
 ; string in hl
 ; b: tiles to clear (reserve)
     push hl
+    nop
     hack PrintStringInit
     ;ld a, c
     ;call TileNumToPointer
