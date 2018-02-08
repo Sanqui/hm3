@@ -18,7 +18,7 @@ ENDM
 ;    blankbank $51
 ;    blankbank $52
 ;    blankbank $53
-    blankbank $54
+;    blankbank $54
     blankbank $55
     blankbank $56
     blankbank $57

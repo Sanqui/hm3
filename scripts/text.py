@@ -47,9 +47,9 @@ METATABLES = [
     dialogue/record
     dialogue/comedians
     dialogue/boy_intro
-    dialogue/endings
-    strings/character_choice
-    strings/save""".split()
+    <dialogue/endings
+    <strings/character_choice
+    <strings/save""".split()
  )),
  (gbaddr("2e:400f"), 126,
   "dialogue/town dialogue/town2 dialogue/billy dialogue/town3".split()),
@@ -76,7 +76,9 @@ METATABLES = [
  (gbaddr("17:400f"), 15,
   ("strings/locations_island", "strings/locations_mainland",)),
  (gbaddr("50:4b7e"), 15+2+9+10+8,
-  (*(None,)*14, "strings/main_menu", "dialogue/partner_introductions",
+  (*(None,)*11,
+  ">dialogue/endings", ">strings/character_choice", ">strings/save",
+  "strings/main_menu", "dialogue/partner_introductions",
   "dialogue/wedding_boy", "dialogue/wedding_girl",
   "dialogue/evaluation")
  ),
@@ -174,6 +176,7 @@ rom = open("baserom.gbc", "br")
 #stringtables = []
 metatables = {}
 tables = {}
+tables_by_name = {}
 tablenames = {}
 
 names = []
@@ -211,6 +214,7 @@ for metatable in METATABLES:
     for (i, ((staddr, stname), (staddrnext, stnamenext))) \
       in enumerate(zip(subtable_addresses, subtable_addresses[1:]+[(None, None)])):
         if stname == None: continue
+        if stname.startswith(">"): continue
         rom.seek(staddr)
         string_addresses = []
         while True:
@@ -227,6 +231,7 @@ for metatable in METATABLES:
             metatable_string_count += 1
         metatables[metatable_address] = subtable_addresses
         tables[staddr] = string_addresses
+        tables_by_name[stname] = string_addresses
         tablenames[staddr] = stname
 #pprint(stringtables)
 
@@ -281,6 +286,8 @@ def strings_to_csv():
         print(f"; Table {name} has {len(stringtable)} strings")
         path = "/".join(name.split("/")[0:-1])
         Path.mkdir(Path(f"text/{path}"), parents=True, exist_ok=True)
+        if name.startswith(">"): continue
+        name = name.lstrip("<")
         with open(f"text/{name}.csv", "w") as f:
             fcsv = csv.writer(f)
             fcsv.writerow("i address end name_i newlines name string".split())
@@ -407,6 +414,8 @@ def print_strings_from_csvs():
     csvfilestringaddresses = {}
     for filename in filenames:
         if not filename: continue
+        if filename.startswith("<"): continue
+        filename = filename.lstrip(">")
         with open("text/"+filename+".csv", "r") as f:
             csvfilestringaddresses[filename] = []
             fcsv = csv.reader(f)
@@ -498,7 +507,8 @@ def print_strings_from_csvs():
             metatable_addresses += csvfilestringaddresses[subtable_names]
         else:
             for i, (table_address, table_name) in enumerate(metatables[metatable_address]):
-                if table_name:
+                if table_name and not table_name.startswith("<"):
+                    table_name = table_name.lstrip(">")
                     metatable_addresses += csvfilestringaddresses[table_name]
     
         last_address = None
@@ -546,7 +556,8 @@ def print_pointer_tables():
         metatable_file.write(f"Metatable{bank:02x}_{pointer:04x}:: ; {gbswitch(metatable_address)}\n")
         for i, (subtable_name, subtable_address) in enumerate(zip(subtable_names, metatable_subtable_addresses[metatable_address])):
             subtable_address = subtable_address[0]
-            if subtable_name:
+            if subtable_name and not subtable_name.startswith("<"):
+                subtable_name = subtable_name.lstrip(">")
                 metatable_file.write(f"    dw Table{tolabel(subtable_name)}\t; {gbswitch(subtable_address)}\n")
             else:
                 metatable_file.write(f"    dw ${subtable_address%0x4000 + 0x4000:04x}\n")
@@ -554,12 +565,16 @@ def print_pointer_tables():
         metatable_file.write("\n")
         last_table_name = None
         for i, (table_address, table_name) in enumerate(metatables[metatable_address]):
-            if table_name and table_name != last_table_name:
+            if table_name and table_name != last_table_name and not table_name.startswith("<"):
+                if ">" in table_name:
+                    table_name = "<"+table_name.lstrip(">")
                 metatable_file.write("\n")
-                metatable_file.write(f"Table{tolabel(table_name)}:: ; {gbswitch(subtable_address)}\n")
-            if table_address in tables:
-                for i, address in enumerate(tables[table_address]):
+                metatable_file.write(f"Table{tolabel(table_name.lstrip('<'))}:: ; {gbswitch(subtable_address)}\n")
+            if table_name in tables_by_name:
+                for i, address in enumerate(tables_by_name[table_name]):
                     if table_name:
+                        assert not table_name.startswith(">")
+                        table_name = table_name.lstrip("<")
                         metatable_file.write(f"    dw String{tolabel(table_name)}_{i}\n")
                     else:
                         continue

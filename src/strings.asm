@@ -17,7 +17,7 @@ PrepareStringDialogueBox:
     ld [hl], $02
     jp PrepareDialogueBox
 
-    setup_start_dialogue_overflow_asm 79_44a0, $0e, 50_4b7e
+    setup_start_dialogue_overflow_asm 79_44a0, $0e-3, 50_4b7e
 
 PrintStringID:
     ld hl, wStringID
