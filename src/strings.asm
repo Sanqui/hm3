@@ -7,6 +7,7 @@ PrepareStringDialogueBox:
     ; stay in RAM.
     xor a
     ld [wDialogueState], a
+    ;hack PrepareStringDialogueBox
     ld hl, wDialogueTilesPtr
     ld a, $00
     ld [hli], a
@@ -51,14 +52,17 @@ PrintString::
 ; string in hl
 ; b: tiles to clear (reserve)
     push hl
-    ld a, c
-    call TileNumToPointer
+    hack PrintStringInit
+    ;ld a, c
+    ;call TileNumToPointer
     ld d, h
     ld e, l
     pop hl
     ld a, b
     or a
-    jr z, .no_padding
+    nop
+    nop
+    ;jr z, .no_padding
 .next
     ld a, [hli]
     cp $ed
@@ -82,21 +86,31 @@ PrintString::
 .got_tile
     cp a, "@"
     jr z, .pad
-
-    push hl
-    call WriteFontTile
-    pop hl
+    
+    ld [H_TMP], a
+    hack PrintStringWriteTile
+    ;push hl
+    ;call WriteFontTile
+    ;pop hl
     dec b
     jr nz, .next
     ret 
 
 .pad
-    ld a, " "
-    call WriteFontTile
-    dec b
-    jr nz, .pad
+    hack PrintStringEnd
+    nop
+    nop
+    nop
+    nop
+    nop
+    ;ld a, " "
+    ;call WriteFontTile
+    ;dec b
+    ;jr nz, .pad
 
     ret 
+
+; this is now dead code
 
 .no_padding
 .next_no_padding

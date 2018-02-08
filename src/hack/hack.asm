@@ -23,6 +23,7 @@ wVWFCharWidth:
     ds 1
 wVWFFast: ds 1
 wVWFHangingTile: ds 1
+wVWFTilesPtr: ds 2
 
 wVWFBuildArea0:
     ds 8
@@ -127,6 +128,10 @@ HackPredefTable:
     hack_entry DialogueStateEnd
     hack_entry ControlCodeF5
     hack_entry ControlCodeFB
+    hack_entry PrepareStringDialogueBox
+    hack_entry PrintStringWriteTile
+    hack_entry PrintStringInit
+    hack_entry PrintStringEnd
 
 HackNop:
     ret
@@ -139,6 +144,12 @@ HackVWFInit:
     ret
 
 HackDrawChar:
+    ld a, [wDialogueDelayEnabled]
+    ld [wVWFFast], a
+    
+    lda [wVWFTilesPtr], [wDialogueTilesPtr]
+    lda [wVWFTilesPtr+1], [wDialogueTilesPtr+1]
+    
     ld a, [wDialogueTextByte]
     call VWFDrawChar
     ret
@@ -165,6 +176,83 @@ HackControlCodeFB:
     call VWFFinish
     ld b, 1<<DIALOGUE_STATE_WAITA
     ret
+    
+HackPrepareStringDialogueBox: ; XXX unused
+    push bc
+    push de
+    
+    ;call VWFInit
+    ld a, 1
+    ld [wVWFFast], a
+    
+    pop de
+    pop bc
+    ;o
+    xor a
+    ld [wDialogueState], a
+    ret
+    
+HackPrintStringWriteTile:
+    push hl
+    ld a, [H_TMP]
+    call VWFDrawChar
+    pop hl
+    ret
+
+TileNumToPointerClone:
+    ld h, $08
+    ld l, a
+    bit 7, a
+    jr nc, .nc
+    inc h
+.nc
+    add hl, hl
+    add hl, hl
+    add hl, hl
+    add hl, hl
+    ret
+
+HackPrintStringInit:
+    push bc
+    push de
+    push hl
+    call VWFInit
+    pop hl
+    pop de
+    pop bc
+    ; o, cloned
+    ld a, c
+    call TileNumToPointerClone
+    
+    lda [wVWFTilesPtr], l
+    lda [wVWFTilesPtr+1], h
+    
+    ld a, b
+    and a ; do we need to pad?
+    ret z ; no we don't
+    
+    push bc
+    push de
+    push hl
+    
+    ; instead of padding, erase the tiles...
+    ; could be faster ofc by padding but
+    ld d, h
+    ld e, l
+.eraseloop
+    ld hl, wVWFCopyArea
+    call CopyTile
+    dec b
+    jr nz, .eraseloop
+    
+    pop hl
+    pop de
+    pop bc
+    ld b,0
+    ret
+
+HackPrintStringEnd:
+    jp VWFFinish
 
 INCLUDE "src/hack/vwf.asm"
 

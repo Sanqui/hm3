@@ -74,8 +74,8 @@ VWFCopyTiles:
 
     ; Get the tileset offset.
     ;ld hl, $8800
-    lda l, [wDialogueTilesPtr]
-    lda h, [wDialogueTilesPtr+1]
+    lda l, [wVWFTilesPtr]
+    lda h, [wVWFTilesPtr+1]
     ld a, [wVWFCurTileNum]
     ld b, $0
     ld c, a
@@ -101,9 +101,6 @@ VWFDrawChar:
     push de
     push hl
     ld [wVWFChar], a
-    
-    ld a, [wDialogueDelayEnabled]
-    ld [wVWFFast], a
     
     
     ld a, [wVWFChar]

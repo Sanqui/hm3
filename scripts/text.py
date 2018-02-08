@@ -346,7 +346,7 @@ def strings_to_csv():
 
 def print_strings_from_csvs():
     def calculate_newlines(string):
-        LINELEN = 16*8
+        LINELEN = 16*8-1
         def xlen(string):
             string = (c for c in string)
             l = 0
@@ -459,7 +459,7 @@ def print_strings_from_csvs():
                         string = calculate_newlines(string)
                         numlines = len(string.split("\n"))
                         for linei, line in enumerate(string.split("\n")):
-                            csvstring += line
+                            csvstring += line.rstrip(" ")
                             if linei == numlines-1:
                                 #print("; last: ", newlines[-1])
                                 csvstring += newlines[-1] + "\n"

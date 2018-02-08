@@ -1,6 +1,8 @@
 INCLUDE "constants/registers.asm"
 INCLUDE "build/charmap.asm"
 
+H_TMP EQU $FFFE
+
 CHARACTER_NAME_LENGTH   EQU 6
 PLAYER_NAME_LENGTH      EQU 4
 
