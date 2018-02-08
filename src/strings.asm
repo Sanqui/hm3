@@ -24,7 +24,7 @@ PrintStringID:
     ld a, [hli]
     ld d, a
     ld e, [hl]
-    call StringIDToPointer
+    call StringIDInDToPointer
     call PrintString
     ret 
 
@@ -33,7 +33,7 @@ PrintStringIDX:
     ld a, [hli]
     ld d, a
     ld e, [hl]
-    call StringIDToPointer
+    call StringIDInDToPointer
     call $4419
     ret 
 
@@ -213,9 +213,10 @@ WriteFontTile:
     ret 
 
 
-StringIDToPointer::
+StringIDInDToPointer:
     ld a, d
-    ld hl, $44a0
+StringIDToPointer:
+    ld hl, Metatable79_44a0
     call GetPointer
     ld a, e
     call GetPointer
