@@ -67,7 +67,10 @@ METATABLES = [
   (*(None,)*14, "strings/main_menu", "strings/partner_introductions",
   "dialogue/wedding_boy", "dialogue/wedding_girl",
   "dialogue/evaluation")
- )
+ ),
+ (gbaddr("4b:6c1f"), 17,
+  ("dialogue/naysaying",)
+ ),
 ]
 
 def readbyte():  return struct.unpack("B",  rom.read(1))[0]
@@ -227,7 +230,7 @@ for sti, (tpointer, tpointernext) in enumerate(zip(tablekeys, tablekeys[1:]+[Non
             stringindexes[address] = []
         stringindexes[address].append((tpointer, pti))
         trash_address = end_address
-        if addressnext and addressnext > 0 and 0 < addressnext-trash_address < 64:
+        if addressnext and addressnext > 0 and 0 < addressnext-trash_address < 32:
             stringtrash[address] = readstring(addressnext-trash_address)
             stringends[trash_address] = rom.tell()
 
@@ -498,7 +501,7 @@ def print_pointer_tables():
         table_filename = f"build/text/{bank:02x}_{pointer:04x}_table.asm"
         metatable_file = open(table_filename, "w")
         
-        metatable_file.write(f"Metatable{bank:02X}_{pointer:04X}:: ; {gbswitch(metatable_address)}\n")
+        metatable_file.write(f"Metatable{bank:02x}_{pointer:04x}:: ; {gbswitch(metatable_address)}\n")
         for i, (subtable_name, subtable_address) in enumerate(zip(subtable_names, metatable_subtable_addresses[metatable_address])):
             subtable_address = subtable_address[0]
             if subtable_name:

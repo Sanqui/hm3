@@ -31,26 +31,9 @@
 
 4a:4089 NameTable
 
-2e:4001 PrintDialogue0
-43:4001 PrintDialogue1
-7c:55e9 PrintDialogue1Alt
-18:4001 PrintDialogue2
-50:57f6 PrintDialogue3
-42:4001 PrintDialogue4
-50:686a PrintDialogue4Alt
-4b:4001 PrintDialogue5
 
-2e:400f Dialogue0Table
-43:401f Dialogue1Table
-7c:55f7 Dialogue1AltTable
-18:400f Dialogue2Table
-50:5804 Dialogue3Table
-42:401f Dialogue4Table
-50:6878 Dialogue4AltTable
-4b:400f Dialogue5Table
-
-17:4008 PrintLocation
-17:400f LocationTable
+;17:4008 PrintLocation
+;17:400f LocationTable
 17:4c4d PrintSelectedLocation
 
 79:41ba PrintStringID

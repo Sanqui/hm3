@@ -1780,9 +1780,9 @@ FontGfx:
 
 SECTION "Pointers to PrintDialogue functions in different banks", ROMX[$44be], BANK[$2f]
 PrintDialoguePointers:
-    pwb PrintDialogue0 ; $4001, $2e
-    pwb PrintDialogue1 ; $4001, $43
-    pwb PrintDialogue2 ; $4001, $18
-    pwb PrintDialogue3 ; $57f6, $50
-    pwb PrintDialogue4 ; $4001, $42
-    pwb PrintDialogue5 ; $4001, $4b
+    pwb SetupDialogue2e_400f ; $4001, $2e
+    pwb SetupDialogue43_401f ; $4001, $43
+    pwb SetupDialogue18_400f ; $4001, $18
+    pwb SetupDialogue50_5804 ; $57f6, $50
+    pwb SetupDialogue42_401f ; $4001, $42
+    pwb SetupDialogue4b_400f ; $4001, $4b
