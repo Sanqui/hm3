@@ -102,6 +102,11 @@ VWFDrawChar:
     push hl
     ld [wVWFChar], a
     
+    ld a, [wDialogueDelayEnabled]
+    ld [wVWFFast], a
+    
+    
+    ld a, [wVWFChar]
     ; Store the character tile in BuildArea0.
     ld hl, VWFFont
     ld b, 0
