@@ -2,6 +2,7 @@ INCLUDE "constants.asm"
 
 INCLUDE "src/text.asm"
 INCLUDE "src/text_sections.asm"
+INCLUDE "src/strings.asm"
 
 blankbank: MACRO
 SECTION "Blank bank \1", ROMX[$4000], BANK[\1]

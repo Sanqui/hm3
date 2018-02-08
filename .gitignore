@@ -1,4 +1,5 @@
 build/*
+*.zip
 
 ;Prevent sharing ROMs accidentally.
 *.gb

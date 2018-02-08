@@ -144,6 +144,11 @@ TextSection79_44a0_END
 SECTION "Start/setup diloague for 7c:437a", ROMX[$4187], BANK[$7c]
     setup_start_dialogue_asm 7c_437a
 
+    ; wtf is the following code?  I'm out.
+    ; also I just realized I cared for bank 79 not this anyway.
+    
+    
+
 SECTION "Text pointer metatable at 7c:437a", ROMX[$437a], BANK[$7c]
 ; covers: dialogue/snowboard, dialogue/market, dialogue/tutorial, text/credits, dialogue/sound_test
     ; the relevant code is at 7c:4187 (wth...)

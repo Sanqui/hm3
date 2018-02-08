@@ -36,11 +36,12 @@
 ;17:400f LocationTable
 17:4c4d PrintSelectedLocation
 
-79:41ba PrintStringID
-79:43b5 PrintString
-79:43c1 PrintString.next
-79:4477 StringIDToPointer
-79:44a0 StringPointerTable
+79:4023 VCopy79
+;79:41ba PrintStringID
+;79:43b5 PrintString
+;79:43c1 PrintString.next
+;79:4477 StringIDToPointer
+;79:44a0 StringPointerTable
 79:404a GetPointer
 ; hl: pointer to string
 ; c: tile id
@@ -67,6 +68,7 @@
 00:c53c wDialogueDelay
 00:c53d wDialogueDelayEnabled ; bit 7
 00:c53f wCurName
+00:c547 wTmpFormattedString
 
 00:06bb GetTilePtr
 00:2e3b Decompress
