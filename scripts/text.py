@@ -354,7 +354,7 @@ def print_strings_from_csvs():
             owords = oline.split(" ")
             line = ""
             for wordi, word in enumerate(owords):
-                print(f"; DEBUG \"{line}\" ({xlen(line)}) + \"{word}\" = {xlen(line+word)}")
+                #print(f"; DEBUG \"{line}\" ({xlen(line)}) + \"{word}\" = {xlen(line+word)}")
                 if xlen(line + word) == LINELEN:
                     line += word
                     lines.append(line)
@@ -429,10 +429,13 @@ def print_strings_from_csvs():
                         for linei, line in enumerate(string.split("\n")):
                             csvstring += line
                             if linei == numlines-1:
-                                print("; last: ", newlines[-1])
+                                #print("; last: ", newlines[-1])
                                 csvstring += newlines[-1] + "\n"
                             else:
-                                csvstring += newlines[linei%2] + "\n"
+                                if linei%2 == 1 and len(newlines) < 2:
+                                    print(f"WARNING: {address:x} doesn't have newlines[1], but we need it")
+                                else:
+                                    csvstring += newlines[linei%2] + "\n"
                 else:
                     csvstring = string+"\n"
                 csvstring = csvstring[:-1].split("\n")

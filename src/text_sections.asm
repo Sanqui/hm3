@@ -33,38 +33,116 @@ StartDialogue\1:
     ret
 ENDM
 
-SECTION "Text bank at 17:4001", ROMX[$4001], BANK[$17]
-; covers: strings/locations_island, strings/locations_mainland
-    setup_start_dialogue_asm 17_400f
+setup_start_dialogue_relocate_asm: MACRO
+; this needs to preserve addresses
+SetupDialogue\1:
+    ld de, Metatable\1
+    call SetupDialogueRelocate\1
+    ret
+
+StartDialogue\1:
+    call SetupDialogue\1
+    call StartDialogue
+    ret
+
+SetupDialogueRelocate\1:
+    ld hl, SetupDialogue\1Relocated
+    ld a, BANK(SetupDialogue\1Relocated)
+    jp FarCall
+ENDM
+
+setup_start_dialogue_overflow_relocate_asm: MACRO
+; this needs to preserve addresses
+SetupDialogue\1:
+    ld a, [wStringID]
+    cp a, \2
+    jr c, .here
+    ld hl, SetupDialogue\3
+    ld a, BANK(SetupDialogue\3)
+    call FarCall
+    ret
+.here
+    ld de, Metatable\1
+    call SetupDialogueRelocate\1
+    ret
+
+StartDialogue\1:
+    call SetupDialogue\1
+    call StartDialogue
+    ret
+
+SetupDialogueRelocate\1:
+    ld hl, SetupDialogue\1Relocated
+    ld a, BANK(SetupDialogue\1Relocated)
+    jp FarCall
+ENDM
+
+setup_dialogue_relocated_asm: MACRO
+SetupDialogue\1Relocated:
+    ld de, Metatable\1
+    call SetupDialogue
+    ret
+ENDM
+
+SECTION "Relocations 1", ROMX[$4001], BANK[$4f]
+    setup_dialogue_relocated_asm 17_400f
     INCLUDE "build/text/17_400f_table.asm"
     INCLUDE "build/text/17_400f.asm"
+    setup_dialogue_relocated_asm 18_400f
+    INCLUDE "build/text/18_400f_table.asm"
+    INCLUDE "build/text/18_400f.asm"
+
+SECTION "Relocations 2", ROMX[$4001], BANK[$51]
+    setup_dialogue_relocated_asm 2e_400f
+    INCLUDE "build/text/2e_400f_table.asm"
+    INCLUDE "build/text/2e_400f.asm"
+    
+SECTION "Relocations 3", ROMX[$4001], BANK[$52]
+    setup_dialogue_relocated_asm 42_401f
+    INCLUDE "build/text/42_401f_table.asm"
+    INCLUDE "build/text/42_401f.asm"
+    
+SECTION "Relocations 4", ROMX[$4001], BANK[$53]
+    setup_dialogue_relocated_asm 4b_400f
+    INCLUDE "build/text/4b_400f_table.asm"
+    INCLUDE "build/text/4b_400f.asm"
+    setup_dialogue_relocated_asm 4b_6c1f
+    INCLUDE "build/text/4b_6c1f_table.asm"
+    INCLUDE "build/text/4b_6c1f.asm"
+
+
+SECTION "Text bank at 17:4001", ROMX[$4001], BANK[$17]
+; covers: strings/locations_island, strings/locations_mainland
+    setup_start_dialogue_relocate_asm 17_400f
+    ;INCLUDE "build/text/17_400f_table.asm"
+    ;INCLUDE "build/text/17_400f.asm"
 TextSection17_400f_END
 
 ; code and other data follows
 
 SECTION "Text pointer metatable at 18:4001", ROMX[$4001], BANK[$18]
 ; covers: dialogue/restaurant, dialogue/seed_shop, dialogue/book_shop, dialogue/mall, dialogue/theater
-    setup_start_dialogue_asm 18_400f
-    INCLUDE "build/text/18_400f_table.asm"
-    INCLUDE "build/text/18_400f.asm"
+    setup_start_dialogue_relocate_asm 18_400f
+    ;INCLUDE "build/text/18_400f_table.asm"
+    ;INCLUDE "build/text/18_400f.asm"
 TextSection18_400f_END
 
 ; code follows
 
 SECTION "Text pointer metatable at 2e:4001", ROMX[$4001], BANK[$2e]
 ; covers: dialogue/town, dialogue/town2, dialogue/billy, dialogue/town3
-    setup_start_dialogue_asm 2e_400f
-    INCLUDE "build/text/2e_400f_table.asm"
-    INCLUDE "build/text/2e_400f.asm"
+    setup_start_dialogue_relocate_asm 2e_400f
+    ;INCLUDE "build/text/2e_400f_table.asm"
+    ;INCLUDE "build/text/2e_400f.asm"
 TextSection2e_400f_END
 
 ; code follows
 
 SECTION "Text pointer metatable at 42:4001", ROMX[$4001], BANK[$42]
 ; covers: dialogue/player_found, dialogue/thanks, dialogue/partner_love, dialogue/ferry, fishing, dialogue/assorted
-    setup_start_dialogue_overflow_asm 42_401f, 6, 50_6878
-    INCLUDE "build/text/42_401f_table.asm"
-    INCLUDE "build/text/42_401f.asm"
+    setup_start_dialogue_overflow_relocate_asm 42_401f, 6, 50_6878
+    ;INCLUDE "build/text/42_401f_table.asm"
+    ;INCLUDE "build/text/42_401f.asm"
 TextSection42_401f_END
 
 ; data and code follows
@@ -88,15 +166,16 @@ TextSection4a_4089_END
 
 SECTION "Text pointer metatable at 4b:4001", ROMX[$4001], BANK[$4b]
 ; covers: books, dialogue/lucas, dialogue/thanks2, dialogue/thanks3, dialogue/assorted3, dialogue/pak, dialogue/snowboarding, strings/buildings
-    setup_start_dialogue_asm 4b_400f
-    INCLUDE "build/text/4b_400f_table.asm"
-    INCLUDE "build/text/4b_400f.asm"
+    setup_start_dialogue_relocate_asm 4b_400f
+    ;INCLUDE "build/text/4b_400f_table.asm"
+    ;INCLUDE "build/text/4b_400f.asm"
 TextSection4b_400f_END
 
+SECTION "Text pointer metatable at 4b:6c1f", ROMX[$6c1f], BANK[$4b]
 ; covers: dialogue/naysaying
-    setup_start_dialogue_asm 4b_6c1f
-    INCLUDE "build/text/4b_6c1f_table.asm"
-    INCLUDE "build/text/4b_6c1f.asm"
+    setup_start_dialogue_relocate_asm 4b_6c1f
+    ;INCLUDE "build/text/4b_6c1f_table.asm"
+    ;INCLUDE "build/text/4b_6c1f.asm"
 TextSection4b_6c1f_END
 
 ; data and code follows
