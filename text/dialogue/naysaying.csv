@@ -1,0 +1,39 @@
+i,address,end,name_i,newlines,name,string
+0,0x12ec43,0x12ec78,,"[""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<waita>@""]",,"What?
+It's midnight
+already. Let's
+go to bed."
+1,0x12ec78,0x12ecb1,,"[""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<waita>@""]",,"Oh, wow.
+It's midnight
+already. Let's
+go to bed."
+2,0x12ecb1,0x12eccd,,"[""\\n"", ""<waita>@""]",,"You can't sow
+seeds here!"
+3,0x12eccd,0x12ecef,,"[""\\n"", ""<waita>@""]",,"Wrong season to
+sow these seeds!"
+4,0x12ecef,0x12ed00,,"[""<waita>@""]",,Wrong medicine!
+5,0x12ed00,0x12ed19,,"[""\\n"", ""<waita>@""]",,"The animal is
+not sick!"
+6,0x12ed19,0x12ed3b,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wait!
+This egg won't
+hatch!
+"
+7,0x12ed3b,0x12ed5f,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wait!
+An egg is
+already in it!
+"
+8,0x12ed5f,0x12ed74,,"[""\\n"", ""<waita>@""]",,"Too little to
+ride!"
+9,0x12ed74,0x12ed8b,,"[""\\n"", ""<waita>@""]",,"Cure the horse
+first!"
+10,0x12ed8b,0x12edb5,,"[""\\n"", ""10GT000@""]",,"Ride this horse?
+ Yes          No<ask>"
+11,0x12edb5,0x12edc7,,"[""<waita>@""]",,No Horse Allowed
+12,0x12edc7,0x12ede3,,"[""\\n"", ""<waita>@""]",,"It's 6PM! Did I
+get paid?"
+13,0x12ede3,0x12edf4,,"[""<waita>@""]",,No Pets Allowed
+14,0x12edf4,0x12ee04,,"[""<waita>@""]",,We're closed.
+15,0x12ee04,0x12ee25,,"[""\\n"", ""<waita>@""]",,"Ride after she's
+had the baby."
+16,0x12ee25,0x12ee3c,,"[""\\n"", ""<waita>@""]",,"Is the horse
+unhappy?"

@@ -1,0 +1,60 @@
+i,address,end,name_i,newlines,name,string
+0,0x140fc9,0x141088,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Bigbee,"Uh, this is a
+test… 「Cough」.
+Thank you for
+waiting. We are
+going to start
+the wedding of
+<player> and <var>0!
+Here they come!
+…Oh, they're
+already here…
+OK. Please say
+your vows…<arrow>0"
+1,0x140fc9,0x141088,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Bigbee,"Uh, this is a
+test… 「Cough」.
+Thank you for
+waiting. We are
+going to start
+the wedding of
+<player> and <var>0!
+Here they come!
+…Oh, they're
+already here…
+OK. Please say
+your vows…<arrow>0"
+2,0x141088,0x141180,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Bigbee,"Ah…, <player>?
+Do you take
+<var>0 as your
+lawfully wedded
+wife and promise
+to love her as
+long as you both
+shall live?
+OK <var>0.
+Do you take
+<player> as your
+lawfully wedded
+husband and
+promise to love
+him as long as
+you both shall
+live?
+<arrow>0"
+3,0x141180,0x14118c,1,"[""<waita>@""]",<partner>,I… do…<arrow>0
+4,0x14118c,0x1411b0,9,"[""\\n"", ""<waita>@""]",Bigbee,"Now, you may
+kiss your bride.<arrow>0"
+5,0x1411b0,0x1411e1,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Billy,"Congratulations!
+Don't make me
+<var>0 cry!
+<arrow>0"
+6,0x1411e1,0x1411fb,4,"[""\\n"", ""<waita>@""]",Elder,"Yahoo♪
+Let's party!<arrow>0"
+7,0x1411fb,0x141234,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kirk,"I wish you both
+all the
+happiness in the
+world!!<arrow>0"
+8,0x141234,0x14126d,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"<var>G <var>O, <var>8
+We promised to
+love each other
+forever."

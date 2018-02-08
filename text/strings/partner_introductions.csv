@@ -1,0 +1,37 @@
+i,address,end,name_i,newlines,name,string
+0,0x140dba,0x140ebb,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Hello!
+… Are you the
+guy who will
+help me on the
+farm? My name
+is
+<var>0. Nice
+to meet you♥
+It's too late to
+start working by
+the time we get
+to the island,
+so let's start
+tomorrow.
+OK. Shall we go
+to the island?
+There is a
+ferry."
+1,0x140ebb,0x140fc9,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Hello. Are you
+the girl Mr.
+Heinz was
+talking about?
+I'm <var>0. I
+think you've
+heard about me
+from Mr. Heinz.
+By the time we
+get to the
+island,it'll be
+too late to
+start working.
+So we will start
+the work
+tomorrow. Let's
+head to the
+island."
