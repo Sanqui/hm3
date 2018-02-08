@@ -97,6 +97,22 @@ VWFCopyTiles:
     call CopyTile
     ret
 
+VWFShiftTile:
+    ld a, [wVWFCurTileNum]
+    inc a
+    ld [wVWFCurTileNum], a
+    
+    ld hl, wVWFBuildArea3
+    ld de, wVWFBuildArea2
+    ld bc, 8
+    call MyCopyData
+    
+    ld hl, wVWFBuildArea3
+    ld b, 8
+    xor a
+    call MyFillMemory
+    ret
+
 VWFDrawChar:
     push de
     push hl
@@ -133,6 +149,19 @@ VWFDrawChar:
     ;ld b, a
     ld b, %10000000
     ld a, [wVWFCurTileCol]
+    cp $80
+    jr nz, .dontshift
+    push bc
+    push de
+    push hl
+    call VWFShiftTile
+    ld a, $1
+    ld [wVWFNumTilesUsed], a
+    pop hl
+    pop de
+    pop bc
+.dontshift
+    ld a, [wVWFCurTileCol]
     and a
     jr nz, .ColumnIsFine
     ld a, $80
@@ -141,30 +170,31 @@ VWFDrawChar:
 .DoColumn
     ; Copy the column.
     call CopyColumn
-    rr c
-    jr c, .TileOverflow
     rrc b
     ld a, [wVWFCharWidth]
     dec a
     ld [wVWFCharWidth], a
-    jr nz, .DoColumn
-    jr .Done
+    jr z, .Done
+    rrc c
+    jr c, .TileOverflow
+    jr .DoColumn
 .TileOverflow
     ld c, $80
     ld a, $2
     ld [wVWFNumTilesUsed], a
     ld hl, wVWFBuildArea3
-    jr .ShiftB
+    ;jr .ShiftB
 .DoColumnTile2
     call CopyColumn
-    rr c
-.ShiftB
     rrc b
     ld a, [wVWFCharWidth]
     dec a
     ld [wVWFCharWidth], a
-    jr nz, .DoColumnTile2
+    jr z, .Done
+    rrc c
+    jr .DoColumnTile2
 .Done
+    rrc c
     ld a, c
     ld [wVWFCurTileCol], a
     
@@ -178,6 +208,9 @@ VWFDrawChar:
     ; (or have it be copied when text is done)
     ; to be fast.
     jr nz, .drawtwofast
+    ld a, [wVWFCurTileCol]
+    cp $80
+    jr z, .draw
     lda [wVWFHangingTile], 1
     jr .copied
 .drawtwofast
@@ -190,27 +223,18 @@ VWFDrawChar:
     call VWFCopyTiles
 
 .copied
-
-    ld a, [wVWFNumTilesUsed]
-    dec a
-    dec a
-    jr nz, .SecondAreaUnused
     
+    ld a, [wVWFNumTilesUsed]
+    cp $2
+    jr z, .forcenewtile
+    ;ld a, [wVWFCurTileCol]
+    ;cp $80
+    ;jr z, .forcenewtile
+    jr .SecondAreaUnused
+.forcenewtile
     ; If we went over one tile, make sure we start with it next time.
     ; also move through the tilemap.
-    ld a, [wVWFCurTileNum]
-    inc a
-    ld [wVWFCurTileNum], a
-    
-    ld hl, wVWFBuildArea3
-    ld de, wVWFBuildArea2
-    ld bc, 8
-    call MyCopyData
-    
-    ld hl, wVWFBuildArea3
-    ld b, 8
-    xor a
-    call MyFillMemory
+    call VWFShiftTile
     
     ;ld hl, wVWFCopyArea
     ;ld b, 16

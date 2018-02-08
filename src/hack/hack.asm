@@ -132,6 +132,9 @@ HackPredefTable:
     hack_entry PrintStringWriteTile
     hack_entry PrintStringInit
     hack_entry PrintStringEnd
+    hack_entry NameWriteTile
+    hack_entry NameSetupVWF
+    hack_entry NameEnd
 
 HackNop:
     ret
@@ -253,6 +256,31 @@ HackPrintStringInit:
 
 HackPrintStringEnd:
     jp VWFFinish
+
+HackNameSetupVWF:
+    push bc
+    push de
+    push hl
+    call VWFInit
+    pop hl
+    pop de
+    pop bc
+    ld de, $8b60 ; o
+    lda [wVWFTilesPtr], e
+    lda [wVWFTilesPtr+1], d
+    ret
+
+HackNameWriteTile:
+    ld a, [H_TMP]
+    call VWFDrawChar
+    ret
+    
+HackNameEnd:
+    call VWFFinish
+    call VWFInit
+    ; o
+    ld de, $9c01
+    ret
 
 INCLUDE "src/hack/vwf.asm"
 

@@ -569,7 +569,8 @@ endr
     ld [$d7d2], a
     ld l, b
     ld h, c
-    ld de, $8b60
+    hack NameSetupVWF
+    ;ld de, $8b60
     ld c, $10
     ld a, [$d7d2]
     push af
@@ -594,11 +595,15 @@ endr
 
     push bc
     push hl
-    push de
-    swap a
-    ld h, a
-    and $f0
-    ld l, a
+    ;push de
+    ;swap a
+    ;ld h, a
+    ;and $f0
+    ;ld l, a
+    ld [H_TMP], a
+    hack NameWriteTile
+    jr .drawn
+    ; dead code
     ld a, h
     and $0f
     ld h, a
@@ -606,6 +611,7 @@ endr
     add hl, de
     pop de
     call CopyTile
+.drawn
     pop hl
     pop bc
     inc hl
@@ -615,7 +621,8 @@ endr
 .done
     pop af
     ld [$d7d2], a
-    ld de, $9c01
+    ;ld de, $9c01
+    hack NameEnd
     ld hl, .tiles
     ld c, .tiles_end-.tiles
 .loop
