@@ -1,0 +1,111 @@
+i,address,end,name_i,newlines,name,string
+0,0x1f0bc7,0x1f0c47,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Use a shovel to
+till the soil on
+the lowland to
+grow rice. The
+lowland is next
+to the river on
+the farm. Pay
+attention!"
+1,0x1f0c47,0x1f0cb7,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"How about the
+distance from
+land to the
+river? Well…
+Keep digging
+away from the
+water towards
+the land."
+2,0x1f0cb7,0x1f0d28,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Prepare the
+field before you
+start using your
+shovel. You can
+now keep the
+water around the
+rice field.
+"
+3,0x1f0d28,0x1f0d87,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"What do you have
+on your back? A
+rucksack! You
+can put anything
+you pick up in
+it. Look!"
+4,0x1f0d87,0x1f0dee,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Press the A
+Button to pick
+it up, and press
+the B Button to
+put it in the
+rucksack.
+You see?
+"
+5,0x1f0dee,0x1f0ecb,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""<fc>\u3065@""]",,"You can put 8
+items in the
+rucksack. Once
+you enter the
+storage… items
+will be unloaded
+automatically.
+When you are
+ready to ship,
+call the
+Farmars' Union!
+Also, a
+scarecrow is
+very useful
+around here."
+6,0x1f0ecb,0x1f0f03,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", """"]",,"To get a baby
+animal, talk to
+adult animals.
+Look!
+"
+7,0x1f0f03,0x1f0f66,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"See? They went
+into the baby
+area. You need
+to place one
+male and one
+female animal
+here.
+"
+8,0x1f0f03,0x1f0f66,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"See? They went
+into the baby
+area. You need
+to place one
+male and one
+female animal
+here.
+"
+9,0x1f0f66,0x1f0fb2,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Understand?
+…How about
+chickens? Well,
+read the book
+in your house.
+"
+10,0x1f0fb2,0x1f0fff,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"When the field
+map comes up
+on the screen,
+select a plot
+to work on.
+"
+11,0x1f0fff,0x1f104f,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Then choose the
+work by using
+the icons: till,
+sow, water or
+harvest.
+"
+12,0x1f104f,0x1f106d,,"[""\\n"", ""<fc>\u3065@""]",,"Use the B Button
+to cancel."
+13,0x1f106d,0x1f10cc,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Press START
+when you
+are done
+selecting the
+work. The work
+will be learned
+gradually.
+"
+14,0x1f10cc,0x1f10d5,,"[""<fc>\u3065@""]",,MOO♥<arrow>0
+15,0x1f10d5,0x1f10f4,,"[""\\n"", ""<fc>\u3065@""]",,"Good, you look
+happy today."
+16,0x1f10f4,0x1f1111,,"[""\\n"", ""@""]",,"Go outside?
+ Yes          No"
+17,0x1f1111,0x1f112f,,"[""\\n"", ""@""]",,"Want a baby?
+ Yes          No"
+18,0x1f112f,0x1f1138,,"[""<fc>\u3065@""]",,MOO♪<arrow>0

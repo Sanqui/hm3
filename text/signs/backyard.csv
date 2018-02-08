@@ -1,0 +1,43 @@
+i,address,end,name_i,newlines,name,string
+0,0x1c5b3,0x1c5c5,,"[""<waita>@""]",,Down: Sheep Pen
+1,0x1c5c5,0x1c5dd,,"[""\\n"", ""<waita>@""]",,"Left: Chicken
+Pasture"
+2,0x1c5dd,0x1c5f2,,"[""\\n"", ""<waita>@""]",,"Down: Chicken
+Coop"
+3,0x1c5f2,0x1c606,,"[""\\n"", ""<waita>@""]",,"Left: Cow
+Pasture"
+4,0x1c606,0x1c61d,,"[""\\n"", ""<waita>@""]",,"Right: Sheep
+Pasture"
+5,0x1c61d,0x1c62e,,"[""<waita>@""]",,Down: Cow Barn
+6,0x1c62e,0x1c644,,"[""\\n"", ""<waita>@""]",,"Left: Horse
+Pasture"
+7,0x1c644,0x1c65d,,"[""\\n"", ""<waita>@""]",,"Right: Chicken
+Pasture"
+8,0x1c65d,0x1c672,,"[""\\n"", ""<waita>@""]",,"Down: Horse
+Stable"
+9,0x1c672,0x1c687,,"[""\\n"", ""<waita>@""]",,"Right: Cow
+Pasture"
+10,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
+shovel to build
+a hot spring.
+"
+11,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
+shovel to build
+a hot spring.
+"
+12,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
+shovel to build
+a hot spring.
+"
+13,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
+shovel to build
+a hot spring.
+"
+14,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
+shovel to build
+a hot spring.
+"
+15,0x1c687,0x1c6b7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Dig with the
+shovel to build
+a hot spring.
+"

@@ -71,6 +71,13 @@ METATABLES = [
  (gbaddr("4b:6c1f"), 17,
   ("dialogue/naysaying",)
  ),
+ (gbaddr("07:400f"), 16+1+16+16+2+4,
+  ("signs/farm", "signs/garden", "signs/barns", "signs/backyard",
+   "signs/hot_spring", "signs/outside", *(None,)*13)
+ ),
+ (gbaddr("7c:437a"), 24+32+19+47+2,
+  ("dialogue/snowboard", "dialogue/market", "dialogue/tutorial",
+   "strings/credits", "dialogue/sound_test"))
 ]
 
 def readbyte():  return struct.unpack("B",  rom.read(1))[0]
@@ -186,7 +193,7 @@ for metatable in METATABLES:
         rom.seek(staddr)
         string_addresses = []
         while True:
-            if staddrnext and rom.tell() >= staddrnext:
+            if staddrnext and stnamenext and rom.tell() >= staddrnext:
                 break
             if metatable_string_count >= count:
                 break
@@ -515,11 +522,12 @@ def print_pointer_tables():
             if table_name and table_name != last_table_name:
                 metatable_file.write("\n")
                 metatable_file.write(f"Table{tolabel(table_name)}:: ; {gbswitch(subtable_address)}\n")
-            for i, address in enumerate(tables[table_address]):
-                if table_name:
-                    metatable_file.write(f"    dw String{tolabel(table_name)}_{i}\n")
-                else:
-                    continue
+            if table_address in tables:
+                for i, address in enumerate(tables[table_address]):
+                    if table_name:
+                        metatable_file.write(f"    dw String{tolabel(table_name)}_{i}\n")
+                    else:
+                        continue
             last_table_name = table_name
 
     
