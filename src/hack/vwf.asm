@@ -55,8 +55,8 @@ VWFInit:
 
 
 VWFCopyTiles:
+    ; a takes number of tiles to copy
     ; 1bpp -> 2bpp
-    ld a, [wVWFNumTilesUsed]
     sla a
     sla a
     sla a
@@ -175,10 +175,16 @@ VWFDrawChar:
     ; wait for the second one
     ; (or have it be copied when text is done)
     ; to be fast.
-    jr nz, .draw
+    jr nz, .drawtwofast
     lda [wVWFHangingTile], 1
     jr .copied
+.drawtwofast
+    ld a, 1
+    call VWFCopyTiles
+    lda [wVWFHangingTile], 2
+    jr .copied
 .draw
+    ld a, [wVWFNumTilesUsed]
     call VWFCopyTiles
 
 .copied
@@ -223,7 +229,6 @@ VWFFinish:
     ld a, [wVWFHangingTile]
     and a
     ret z
-    lda [wVWFNumTilesUsed], 1
     jp VWFCopyTiles
 
 VWFTable:
