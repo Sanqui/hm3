@@ -1,17 +1,17 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x5c031,0x5c037,,"[""\\n"", ""@""]",,"
-Farm"
+Farm",Farm
 1,0x5c037,0x5c042,,"[""\\n"", ""@""]",,"
-Mountains"
+Mountains",Berge
 2,0x5c042,0x5c04d,,"[""\\n"", ""@""]",,"
-Grassland"
+Grassland",Wiese
 3,0x5c04d,0x5c055,,"[""\\n"", ""@""]",,"
-Forest"
+Forest",Wald
 4,0x5c055,0x5c05e,,"[""\\n"", ""@""]",,"
-Village"
+Village",Dorf
 5,0x5c05e,0x5c065,,"[""\\n"", ""@""]",,"
-Woods"
+Woods",Hain
 6,0x5c065,0x5c06c,,"[""\\n"", ""@""]",,"
-Cliff"
+Cliff",Klippe
 7,0x5c06c,0x5c089,,"[""\\n"", ""@""]",,"Bad weather,
-better not go!"
+better not go!","Bei dem Wetter gehst du besser nicht raus!"

@@ -1,4 +1,4 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x606ff,0x607a3,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 called the Farm
 Story. It tells
@@ -8,7 +8,11 @@ shapes.You can't
 fit it in your
 bookshelf.
 <var>0G.
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch trägt den Titel ""Geschichten von der Farm"".
+Darin wird erklärt, wie man das Feld in einem ""U""-Muster beackert.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 1,0x607a3,0x60856,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 called the Farm
 Story 2. It
@@ -20,7 +24,11 @@ in your bookー
 shelf.
 <var>0G.
 
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch trägt den Titel ""Geschichten von der Farm 2"".
+Darin wird erklärt, wie man das Feld in einem 2-Reihen-Muster beackert.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 2,0x60856,0x608f0,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 about butter.
 You can make
@@ -30,7 +38,11 @@ You can't fit it
 in your bookー
 shelf.
 <var>0G.
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch dreht sich um Butter.
+Darin wird erklärt, wie du auch ohne Buttermacher Butter herstellen kannst.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 3,0x608f0,0x6098a,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 about cheese.
 You can make
@@ -40,7 +52,11 @@ You can't fit it
 in your bookー
 shelf.
 <var>0G.
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch dreht sich um Käse.
+Darin wird erklärt, wie du auch ohne Käsemaschine Käse herstellen kannst.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 4,0x6098a,0x60a2d,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 about
 mayonnaise.
@@ -52,7 +68,11 @@ fit it in your
 bookshelf.
 <var>0G.
 
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch dreht sich um Mayonnaise.
+Darin wird erklärt, wie du auch ohne Mayo-Maschine Mayonnaise herstellen kannst.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 5,0x60a2d,0x60ace,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 called Yarn for
 Beginners. You
@@ -62,7 +82,11 @@ Maker. You can't
 fit it in your
 bookshelf.
 <var>0G.
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch trägt den Titel ""Garn für Einsteiger"".
+Darin wird erklärt, wie du auch ohne Garnmaschine Garn herstellen kannst.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 6,0x60ace,0x60b6e,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 called Easy
 Knitting. You
@@ -74,7 +98,11 @@ in your bookー
 shelf.
 <var>0G.
 
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch trägt den Titel ""Stricken leicht gemacht"".
+Darin wird erklärt, wie du auch ohne Pullimaschine einen Pullover stricken kannst.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 7,0x60b6e,0x60c14,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 about rice
 cakes. Anyone
@@ -86,7 +114,11 @@ in your bookー
 shelf.
 
 <var>0G.
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch dreht sich um Reiskuchen.
+Mit diesem Buch kann wirklich jeder Reiskuchen backen.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 8,0x60c14,0x60cbb,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 about baking
 bread. Anyone
@@ -98,7 +130,11 @@ in your bookー
 shelf.
 <var>0G.
 
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch dreht sich um Brot.
+Mit diesem Buch kann wirklich jeder Brot backen.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 9,0x60cbb,0x60d5f,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 the Cherry Cup
 Report. You can
@@ -110,7 +146,11 @@ in your bookー
 shelf.
 <var>0G.
 
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch ist der Kirschpokal-Bericht.
+Da stehen jede Menge Informationen zu Pferderennen drinnen.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 10,0x60d5f,0x60e02,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 Gallop Stakes
 Report. You can
@@ -122,7 +162,11 @@ in your bookー
 shelf.
 <var>0G.
 
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch ist der Galoppwett-Bericht.
+Da stehen jede Menge Informationen zu Pferderennen drinnen.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 11,0x60e02,0x60ea4,14,"[""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 called Catch
 the King! It
@@ -134,7 +178,11 @@ in your bookー
 shelf.
 <var>0G.
 
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch trägt den Titel ""Wie man sich einen König angelt!"".
+Darin steht alles wissenswerte über das Fischen.
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 12,0x60ea4,0x60f55,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lyla,"That book is
 called Mysteries
 of the Island.
@@ -146,10 +194,14 @@ You can fit it
 in your bookー
 shelf.
 <var>0G.
- Yes          No<ask>"
+ Yes          No<ask>","Dieses Buch trägt den Titel ""Geheimnisse einer Insel"".
+Endlich wurden all die Geheimnisse der Insel gelüftet!
+Leider passt es nicht in dein Bücherregal.
+<var>0G
+ Ja        Nein<ask>"
 13,0x60f55,0x60f6c,14,"[""\\n"", ""<waita>@""]",Lyla,"You don't want
-it?"
+it?","Du willst es nicht?"
 14,0x60f6c,0x60f81,14,"[""\\n"", ""<waita>@""]",Lyla,"Not enough
-money."
+money.","Dein Geld reicht leider nicht aus."
 15,0x60f81,0x60f96,14,"[""\\n"", ""<waita>@""]",Lyla,"Thank you.
-Enjoy."
+Enjoy.","Danke! Viel Spaß damit."

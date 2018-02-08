@@ -23,7 +23,7 @@ Choose one."
 Choose one."
 7,0x1419cd,0x1419e8,,"[""\\n"", ""<waita>@""]",,"Sell a horse?
 Choose one."
-8,0x1419e8,0x1419f9,,"[""<waita>@""]",,Give it a name.
+8,0x1419e8,0x1419f9,,"[""<waita>@""]",,"Give it a name."
 9,0x1419f9,0x141a10,,"[""\\n"", ""<waita>@""]",,"Nice name.
 Take care."
 10,0x141a10,0x141a34,,"[""\\n"", ""10GT000@""]",,"Is <var>0G OK?
@@ -95,7 +95,7 @@ How much?
 25,0x141dfa,0x141dff,,"[""<waita>@""]",,OK…
 26,0x141dff,0x141e12,,"[""\\n"", ""<waita>@""]",,"Not enough
 money."
-27,0x141e12,0x141e1e,,"[""<waita>@""]",,Thank you.
+27,0x141e12,0x141e1e,,"[""<waita>@""]",,"Thank you."
 28,0x141e1e,0x141e4b,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We will take the
 animal from your
 farm.
@@ -167,7 +167,7 @@ will build a
 reputation as a
 farmer. Call to
 cancel the job."
-41,0x14221e,0x14222e,,"[""<waita>@""]",,We're closed.
+41,0x14221e,0x14222e,,"[""<waita>@""]",,"We're closed."
 42,0x14222e,0x142305,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Register your
 cows to get
 rankings. The
@@ -280,5 +280,4 @@ selection?
  Yes          No<ask>"
 61,0x142834,0x14284e,,"[""\\n"", ""<waita>@""]",,"The cow has not
 matured."
-62,0x14284e,0x14286a,,"[""\\n"", ""<waita>@""]",,"The horse has
-not matured."
+62,0x14284e,0x14286a,,"[""\\n"",""<waita>@""]",,"The horse has not matured."

@@ -1,61 +1,61 @@
-i,address,end,name_i,newlines,name,string
-0,0x1e4ad7,0x1e4ad8,,"[""@""]",,
-1,0x1e4ad8,0x1e4add,,"[""@""]",,Weed
-2,0x1e4add,0x1e4ae3,,"[""@""]",,Stone
-3,0x1e4ae3,0x1e4ae9,,"[""@""]",,Fence
-4,0x1e4ae9,0x1e4af0,,"[""@""]",,Turnip
-5,0x1e4af0,0x1e4af7,,"[""@""]",,Potato
-6,0x1e4af7,0x1e4b01,,"[""@""]",,Asparagus
-7,0x1e4b01,0x1e4b06,,"[""@""]",,Corn
-8,0x1e4b06,0x1e4b0d,,"[""@""]",,Tomato
-9,0x1e4b0d,0x1e4b15,,"[""@""]",,W.Melon
-10,0x1e4b15,0x1e4b22,,"[""@""]",,Sweet Potato
-11,0x1e4b22,0x1e4b29,,"[""@""]",,Peanut
-12,0x1e4b29,0x1e4b32,,"[""@""]",,Eggplant
-13,0x1e4b32,0x1e4b33,,"[""@""]",,
-14,0x1e4b33,0x1e4b43,,"[""@""]",,Stardust Flower
-15,0x1e4b43,0x1e4b51,,"[""@""]",,Cherry Flower
-16,0x1e4b51,0x1e4b5b,,"[""@""]",,Primerose
-17,0x1e4b5b,0x1e4b6b,,"[""@""]",,Moonlight Flwer
-18,0x1e4b6b,0x1e4b7a,,"[""@""]",,S. Star Flower
-19,0x1e4b7a,0x1e4b87,,"[""@""]",,Comet Flower
-20,0x1e4b87,0x1e4b97,,"[""@""]",,Full Moon Flwer
-21,0x1e4b97,0x1e4ba7,,"[""@""]",,S. Dream Flower
-22,0x1e4ba7,0x1e4bb2,,"[""@""]",,Wild Berry
-23,0x1e4bb2,0x1e4bb9,,"[""@""]",,Cherry
-24,0x1e4bb9,0x1e4bc2,,"[""@""]",,Mushroom
-25,0x1e4bc2,0x1e4bc9,,"[""@""]",,Fodder
-26,0x1e4bc9,0x1e4bcd,,"[""@""]",,Egg
-27,0x1e4bcd,0x1e4bd8,,"[""@""]",,Golden Egg
-28,0x1e4bd8,0x1e4bdc,,"[""@""]",,Egg
-29,0x1e4bdc,0x1e4be7,,"[""@""]",,Golden Egg
-30,0x1e4be7,0x1e4bee,,"[""@""]",,Wool S
-31,0x1e4bee,0x1e4bf5,,"[""@""]",,Wool M
-32,0x1e4bf5,0x1e4bfc,,"[""@""]",,Wool L
-33,0x1e4bfc,0x1e4c03,,"[""@""]",,Milk S
-34,0x1e4c03,0x1e4c0a,,"[""@""]",,Milk M
-35,0x1e4c0a,0x1e4c11,,"[""@""]",,Milk L
-36,0x1e4c11,0x1e4c12,,"[""@""]",,
-37,0x1e4c12,0x1e4c19,,"[""@""]",,Butter
-38,0x1e4c19,0x1e4c20,,"[""@""]",,Cheese
-39,0x1e4c20,0x1e4c2b,,"[""@""]",,Mayonnaise
-40,0x1e4c2b,0x1e4c30,,"[""@""]",,Yarn
-41,0x1e4c30,0x1e4c38,,"[""@""]",,Sweater
-42,0x1e4c38,0x1e4c3d,,"[""@""]",,Carp
-43,0x1e4c3d,0x1e4c47,,"[""@""]",,King Carp
-44,0x1e4c47,0x1e4c51,,"[""@""]",,Snakehead
-45,0x1e4c51,0x1e4c5c,,"[""@""]",,Black Bass
-46,0x1e4c5c,0x1e4c65,,"[""@""]",,Bluegill
-47,0x1e4c65,0x1e4c71,,"[""@""]",,King Salmon
-48,0x1e4c71,0x1e4c7c,,"[""@""]",,Parrotfish
-49,0x1e4c7c,0x1e4c85,,"[""@""]",,Blowfish
-50,0x1e4c85,0x1e4c8c,,"[""@""]",,Dorado
-51,0x1e4c8c,0x1e4c95,,"[""@""]",,Sailfish
-52,0x1e4c95,0x1e4ca0,,"[""@""]",,Coelacanth
-53,0x1e4ca0,0x1e4cab,,"[""@""]",,Archerfish
-54,0x1e4cab,0x1e4cb8,,"[""@""]",,Horned Shark
-55,0x1e4cb8,0x1e4cc4,,"[""@""]",,Blue Maomao
-56,0x1e4cc4,0x1e4cd0,,"[""@""]",,Pink Maomao
-57,0x1e4cd0,0x1e4cdd,,"[""@""]",,King of Lake
-58,0x1e4cdd,0x1e4ce1,,"[""@""]",,Can
-59,0x1e4ce1,0x1e4d4d,,"[""""]",,BootRiceWheatFarm StoryFarm Story 2ButterButterMayonnaiseRice CakeBaking BreadYarn forBeginnersEasy Knitting
+i,address,end,name_i,newlines,name,string,translation
+0,0x1e4ad7,0x1e4ad8,,"[""@""]",,,
+1,0x1e4ad8,0x1e4add,,"[""@""]",,Weed,Unkraut
+2,0x1e4add,0x1e4ae3,,"[""@""]",,Stone,Stein
+3,0x1e4ae3,0x1e4ae9,,"[""@""]",,Fence,Zaun
+4,0x1e4ae9,0x1e4af0,,"[""@""]",,Turnip,Tulpe
+5,0x1e4af0,0x1e4af7,,"[""@""]",,Potato,Kartoffel
+6,0x1e4af7,0x1e4b01,,"[""@""]",,Asparagus,Spargel
+7,0x1e4b01,0x1e4b06,,"[""@""]",,Corn,Mais
+8,0x1e4b06,0x1e4b0d,,"[""@""]",,Tomato,Tomate
+9,0x1e4b0d,0x1e4b15,,"[""@""]",,W.Melon,Wassermelone
+10,0x1e4b15,0x1e4b22,,"[""@""]",,"Sweet Potato",Süßkartoffel
+11,0x1e4b22,0x1e4b29,,"[""@""]",,Peanut,Erdnuss
+12,0x1e4b29,0x1e4b32,,"[""@""]",,Eggplant,Aubergine
+13,0x1e4b32,0x1e4b33,,"[""@""]",,,
+14,0x1e4b33,0x1e4b43,,"[""@""]",,"Stardust Flower",Sternenstaubblume
+15,0x1e4b43,0x1e4b51,,"[""@""]",,"Cherry Flower",Kirschblütenblume
+16,0x1e4b51,0x1e4b5b,,"[""@""]",,Primerose,Mehlprimel
+17,0x1e4b5b,0x1e4b6b,,"[""@""]",,"Moonlight Flwer",Mondscheinblume
+18,0x1e4b6b,0x1e4b7a,,"[""@""]",,"S. Star Flower",Schweifsternblume
+19,0x1e4b7a,0x1e4b87,,"[""@""]",,"Comet Flower",Kometenblume
+20,0x1e4b87,0x1e4b97,,"[""@""]",,"Full Moon Flwer",Vollmondblume
+21,0x1e4b97,0x1e4ba7,,"[""@""]",,"S. Dream Flower",Wunschtraumblume
+22,0x1e4ba7,0x1e4bb2,,"[""@""]",,"Wild Berry","Wilde Traube"
+23,0x1e4bb2,0x1e4bb9,,"[""@""]",,Cherry,Kirsche
+24,0x1e4bb9,0x1e4bc2,,"[""@""]",,Mushroom,Pilz
+25,0x1e4bc2,0x1e4bc9,,"[""@""]",,Fodder,Tierfutter
+26,0x1e4bc9,0x1e4bcd,,"[""@""]",,Egg,Ei
+27,0x1e4bcd,0x1e4bd8,,"[""@""]",,"Golden Egg","Goldenes Ei"
+28,0x1e4bd8,0x1e4bdc,,"[""@""]",,Egg,Ei
+29,0x1e4bdc,0x1e4be7,,"[""@""]",,"Golden Egg","Goldenes Ei"
+30,0x1e4be7,0x1e4bee,,"[""@""]",,"Wool S","Wolle (S)"
+31,0x1e4bee,0x1e4bf5,,"[""@""]",,"Wool M","Wolle (M)"
+32,0x1e4bf5,0x1e4bfc,,"[""@""]",,"Wool L","Wolle (L)"
+33,0x1e4bfc,0x1e4c03,,"[""@""]",,"Milk S","Milch (S)"
+34,0x1e4c03,0x1e4c0a,,"[""@""]",,"Milk M","Milch (M)"
+35,0x1e4c0a,0x1e4c11,,"[""@""]",,"Milk L","Milch (L)"
+36,0x1e4c11,0x1e4c12,,"[""@""]",,,
+37,0x1e4c12,0x1e4c19,,"[""@""]",,Butter,Butter
+38,0x1e4c19,0x1e4c20,,"[""@""]",,Cheese,Käse
+39,0x1e4c20,0x1e4c2b,,"[""@""]",,Mayonnaise,Mayonnaise
+40,0x1e4c2b,0x1e4c30,,"[""@""]",,Yarn,Garn
+41,0x1e4c30,0x1e4c38,,"[""@""]",,Sweater,Pullover
+42,0x1e4c38,0x1e4c3d,,"[""@""]",,Carp,Karpfen
+43,0x1e4c3d,0x1e4c47,,"[""@""]",,"King Carp",Königskarpfen
+44,0x1e4c47,0x1e4c51,,"[""@""]",,Snakehead,Schlangenkopffisch
+45,0x1e4c51,0x1e4c5c,,"[""@""]",,"Black Bass",Schwarzbarsch
+46,0x1e4c5c,0x1e4c65,,"[""@""]",,Bluegill,"Blauer Sonnenbarsch"
+47,0x1e4c65,0x1e4c71,,"[""@""]",,"King Salmon",Königslachs
+48,0x1e4c71,0x1e4c7c,,"[""@""]",,Parrotfish,Papageienfisch
+49,0x1e4c7c,0x1e4c85,,"[""@""]",,Blowfish,Kugelfisch
+50,0x1e4c85,0x1e4c8c,,"[""@""]",,Dorado,Schwertfisch
+51,0x1e4c8c,0x1e4c95,,"[""@""]",,Sailfish,Speerfisch
+52,0x1e4c95,0x1e4ca0,,"[""@""]",,Coelacanth,Quastenflosser
+53,0x1e4ca0,0x1e4cab,,"[""@""]",,Archerfish,Schützenfisch
+54,0x1e4cab,0x1e4cb8,,"[""@""]",,"Horned Shark",Stierkopfhai
+55,0x1e4cb8,0x1e4cc4,,"[""@""]",,"Blue Maomao","Blauer Maomao"
+56,0x1e4cc4,0x1e4cd0,,"[""@""]",,"Pink Maomao","Pinker Maomao"
+57,0x1e4cd0,0x1e4cdd,,"[""@""]",,"King of Lake",Seekönig
+58,0x1e4cdd,0x1e4ce1,,"[""@""]",,Can,Dose
+59,0x1e4ce1,0x1e4d4d,,[],,"BootRiceWheatFarm StoryFarm Story 2ButterButterMayonnaiseRice CakeBaking BreadYarn forBeginnersEasy Knitting","BootRiceWheatFarm StoryFarm Story 2ButterButterMayonnaiseRice CakeBaking BreadYarn forBeginnersEasy Knitting"

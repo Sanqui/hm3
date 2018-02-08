@@ -1,16 +1,20 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x1e7d25,0x1e7d4e,,"[""\\n"", ""10GT000@""]",,"Throw this out?
- Yes          No<ask>"
-1,0x1e7d4e,0x1e7d5e,,"[""@""]",,<var>S<var>0<var>4<var>C<var>G<var>K<var>OM
+ Yes          No<ask>","Spielstand löschen?
+ Ja           Nein<ask>"
+1,0x1e7d4e,0x1e7d5e,,"[""@""]",,<var>S<var>0<var>4<var>C<var>G<var>K<var>OM,<var>S<var>0<var>4<var>C<var>G<var>K<var>OM
 2,0x1e7d5e,0x1e7d7d,,"[""\\n"", ""@""]",,"Which file do
-you want to use?"
+you want to use?","Auf welchem Speicherplatz soll gespeichert werden?"
 3,0x1e7d7d,0x1e7da4,,"[""\\n"", ""10GT000@""]",,"Use this one?
- Yes          No<ask>"
+ Yes          No<ask>","Hier speichern?
+ Ja           Nein<ask>"
 4,0x1e7da4,0x1e7dc8,,"[""\\n"", ""10GT000@""]",,"Overwrite?
- Yes          No<ask>"
+ Yes          No<ask>","Spielstand überschreiben?
+ Ja           Nein<ask>"
 5,0x1e7dc8,0x1e7de0,,"[""\\n"", ""<waita>@""]",,"Data has been
-saved!<arrow>2"
+saved!<arrow>2","Spielstand wurde gesichert!<arrow>2"
 6,0x1e7de0,0x1e7df2,,"[""\\n"", ""@""]",,"<var>0
-<var>O in <var>G days."
+<var>O in <var>G days.","<var>0
+<var>O in <var>G Tagen."
 7,0x1e7df2,0x1e7e09,,"[""\\n"", ""@""]",,"No partーtime
-work now."
+work now.","Zurzeit wird keinem Nebenjob nachgegangen."

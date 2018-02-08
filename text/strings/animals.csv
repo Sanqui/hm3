@@ -1,22 +1,22 @@
-i,address,end,name_i,newlines,name,string
-0,0x1e4d4d,0x1e4d57,,"[""@""]",,Adult Cow
-1,0x1e4d57,0x1e4d61,,"[""@""]",,Young Cow
-2,0x1e4d61,0x1e4d66,,"[""@""]",,Calf
-3,0x1e4d66,0x1e4d6f,,"[""@""]",,Pregnant
-4,0x1e4d6f,0x1e4d75,,"[""@""]",,Chick
-5,0x1e4d75,0x1e4d82,,"[""@""]",,Golden Chick
-6,0x1e4d82,0x1e4d8a,,"[""@""]",,Chicken
-7,0x1e4d8a,0x1e4d95,,"[""@""]",,G. Chicken
-8,0x1e4d95,0x1e4d9b,,"[""@""]",,Sheep
-9,0x1e4d9b,0x1e4da0,,"[""@""]",,Lamb
-10,0x1e4da0,0x1e4da6,,"[""@""]",,Sheep
-11,0x1e4da6,0x1e4daf,,"[""@""]",,Pregnant
-12,0x1e4daf,0x1e4db5,,"[""@""]",,Horse
-13,0x1e4db5,0x1e4dba,,"[""@""]",,Foal
-14,0x1e4dba,0x1e4dbb,,"[""@""]",,
-15,0x1e4dbb,0x1e4dc4,,"[""@""]",,Pregnant
-16,0x1e4dc4,0x1e4dcc,,"[""@""]",,Healthy
-17,0x1e4dcc,0x1e4dd4,,"[""@""]",,Unhappy
-18,0x1e4dd4,0x1e4dd9,,"[""@""]",,Sick
-19,0x1e4dd9,0x1e4dde,,"[""@""]",,Male
-20,0x1e4dde,0x1e4de5,,"[""@""]",,Female
+i,address,end,name_i,newlines,name,string,translation
+0,0x1e4d4d,0x1e4d57,,"[""@""]",,"Adult Cow",Milchkuh
+1,0x1e4d57,0x1e4d61,,"[""@""]",,"Young Cow",Jungkuh
+2,0x1e4d61,0x1e4d66,,"[""@""]",,Calf,Kalb
+3,0x1e4d66,0x1e4d6f,,"[""@""]",,Pregnant,Trächtig
+4,0x1e4d6f,0x1e4d75,,"[""@""]",,Chick,Küken
+5,0x1e4d75,0x1e4d82,,"[""@""]",,"Golden Chick","Goldenes Küken"
+6,0x1e4d82,0x1e4d8a,,"[""@""]",,Chicken,Huhn
+7,0x1e4d8a,0x1e4d95,,"[""@""]",,"G. Chicken","Goldenes Huhn"
+8,0x1e4d95,0x1e4d9b,,"[""@""]",,Sheep,Schaf
+9,0x1e4d9b,0x1e4da0,,"[""@""]",,Lamb,Lamm
+10,0x1e4da0,0x1e4da6,,"[""@""]",,Sheep,Schaf
+11,0x1e4da6,0x1e4daf,,"[""@""]",,Pregnant,Trächtig
+12,0x1e4daf,0x1e4db5,,"[""@""]",,Horse,Pferd
+13,0x1e4db5,0x1e4dba,,"[""@""]",,Foal,Fohlen
+14,0x1e4dba,0x1e4dbb,,"[""@""]",,,
+15,0x1e4dbb,0x1e4dc4,,"[""@""]",,Pregnant,Trächtig
+16,0x1e4dc4,0x1e4dcc,,"[""@""]",,Healthy,Gesund
+17,0x1e4dcc,0x1e4dd4,,"[""@""]",,Unhappy,Traurig
+18,0x1e4dd4,0x1e4dd9,,"[""@""]",,Sick,Krank
+19,0x1e4dd9,0x1e4dde,,"[""@""]",,Male,Männlich
+20,0x1e4dde,0x1e4de5,,"[""@""]",,Female,Weiblich

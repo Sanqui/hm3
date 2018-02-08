@@ -1,23 +1,23 @@
-i,address,end,name_i,newlines,name,string
-0,0x10c57e,0x10c582,,"[""@""]",,3x3
-1,0x10c582,0x10c58a,,"[""@""]",,U Shape
-2,0x10c58a,0x10c592,,"[""@""]",,2 Lines
-3,0x10c592,0x10c599,,"[""@""]",,Turnip
-4,0x10c599,0x10c5a0,,"[""@""]",,Potato
-5,0x10c5a0,0x10c5aa,,"[""@""]",,Asparagus
-6,0x10c5aa,0x10c5b0,,"[""@""]",,Wheat
-7,0x10c5b0,0x10c5c0,,"[""@""]",,Stardust Flower
-8,0x10c5c0,0x10c5ce,,"[""@""]",,Cherry Flower
-9,0x10c5ce,0x10c5d7,,"[""@""]",,Primrose
-10,0x10c5d7,0x10c5de,,"[""@""]",,Tomato
-11,0x10c5de,0x10c5e3,,"[""@""]",,Corn
-12,0x10c5e3,0x10c5eb,,"[""@""]",,W.Melon
-13,0x10c5eb,0x10c5fb,,"[""@""]",,Moonlight Flwer
-14,0x10c5fb,0x10c60a,,"[""@""]",,S. Star Flower
-15,0x10c60a,0x10c617,,"[""@""]",,Comet Flower
-16,0x10c617,0x10c620,,"[""@""]",,Eggplant
-17,0x10c620,0x10c627,,"[""@""]",,Peanut
-18,0x10c627,0x10c634,,"[""@""]",,Sweet Potato
-19,0x10c634,0x10c644,,"[""@""]",,Full Moon Flwer
-20,0x10c644,0x10c654,,"[""@""]",,S. Dream Flower
-21,0x10c654,0x10c659,,"[""@""]",,None
+i,address,end,name_i,newlines,name,string,translation
+0,0x10c57e,0x10c582,,"[""@""]",,3x3,3x3
+1,0x10c582,0x10c58a,,"[""@""]",,"U Shape",U-Form
+2,0x10c58a,0x10c592,,"[""@""]",,"2 Lines","2 Reihen"
+3,0x10c592,0x10c599,,"[""@""]",,Turnip,Tulpe
+4,0x10c599,0x10c5a0,,"[""@""]",,Potato,Kartoffel
+5,0x10c5a0,0x10c5aa,,"[""@""]",,Asparagus,Spargel
+6,0x10c5aa,0x10c5b0,,"[""@""]",,Wheat,Weizen
+7,0x10c5b0,0x10c5c0,,"[""@""]",,"Stardust Flower",Sternenstaubblume
+8,0x10c5c0,0x10c5ce,,"[""@""]",,"Cherry Flower",Kirschblütenblume
+9,0x10c5ce,0x10c5d7,,"[""@""]",,Primrose,Mehlprimel
+10,0x10c5d7,0x10c5de,,"[""@""]",,Tomato,Tomate
+11,0x10c5de,0x10c5e3,,"[""@""]",,Corn,Mais
+12,0x10c5e3,0x10c5eb,,"[""@""]",,W.Melon,Wassermelone
+13,0x10c5eb,0x10c5fb,,"[""@""]",,"Moonlight Flwer",Mondscheinblume
+14,0x10c5fb,0x10c60a,,"[""@""]",,"S. Star Flower",Schweifsternblume
+15,0x10c60a,0x10c617,,"[""@""]",,"Comet Flower",Kometenblume
+16,0x10c617,0x10c620,,"[""@""]",,Eggplant,Aubergine
+17,0x10c620,0x10c627,,"[""@""]",,Peanut,Erdnuss
+18,0x10c627,0x10c634,,"[""@""]",,"Sweet Potato",Süßkartoffel
+19,0x10c634,0x10c644,,"[""@""]",,"Full Moon Flwer",Vollmondblume
+20,0x10c644,0x10c654,,"[""@""]",,"S. Dream Flower",Wunschtraumblume
+21,0x10c654,0x10c659,,"[""@""]",,None,Nichts

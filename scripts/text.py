@@ -13,6 +13,16 @@ from gbaddr import gbaddr, gbswitch
 def tolabel(string):
     return string.replace("/", " ").replace("_", " ").title().replace(" ", "")
 
+def dumb_smart_quotes(string):
+    even = False
+    while '"' in string:
+        if even:
+            string = string.replace('"', '“')
+        else:
+            string = string.replace('"', '”')
+        even = not even
+    return string
+
 BREAK_CHARS = ("\\n", "<clear>",)
 END_CHARS = ("@", "<end>",  None)
 
@@ -139,6 +149,7 @@ def seekba(bank, address):
     rom.seek(bank*0x4000 + address % 0x4000)
 
 charmap = {}
+charmap_r = {}
 for line in open("build/charmap.asm"):
     if line.startswith("charmap"):
         line = line.split(" ", 1)[1]
@@ -146,7 +157,7 @@ for line in open("build/charmap.asm"):
         string = string.strip()[1:-1]
         num = int(num.strip().lstrip("$"), 16)
         charmap[num] = string
-charmap_r = dict([[v,k] for k,v in charmap.items()])
+        charmap_r[string] = num
 
 vwflength = []
 for line in open("src/hack/vwftable.asm"):
@@ -338,7 +349,11 @@ def print_strings_from_csvs():
                 except StopIteration:
                     break
                 if c != "<":
-                    cnum = charmap_r[c]
+                    if c in charmap_r:
+                        cnum = charmap_r[c]
+                    else:
+                        print(f"Warning: {c} not in charmap_r")
+                        cnum = 8
                     if cnum >= 0x100:
                         cnum = (cnum & 0xff) + 0xf0
                     l += vwflength[cnum]
@@ -370,11 +385,11 @@ def print_strings_from_csvs():
                 elif xlen(line + word) > LINELEN:
                     lines.append(line)
                     line = word
-                    if wordi < len(owords):
+                    if wordi < len(owords)-1:
                         line += " "
                 else:
                     line += word
-                    if wordi < len(owords):
+                    if wordi < len(owords)-1:
                         line += " "
             lines.append(line)
         
@@ -423,6 +438,7 @@ def print_strings_from_csvs():
                     newlines = json.loads(newlines)
                 else:
                     newlines = []
+                string = dumb_smart_quotes(string)
                 csvstring = ""
                 if name_i is not None:
                     csvstring += "<name>" + charmap[name_i]

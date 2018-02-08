@@ -1,7 +1,7 @@
-i,address,end,name_i,newlines,name,string
-0,0x12ebc5,0x12ebd0,,"[""<waita>@""]",,Sheep Pen
-1,0x12ebd0,0x12ebde,,"[""<waita>@""]",,Chicken Coop
-2,0x12ebde,0x12ebe8,,"[""<waita>@""]",,Cow Barn
-3,0x12ebe8,0x12ebf0,,"[""<waita>@""]",,Stable
+i,address,end,name_i,newlines,name,string,translation
+0,0x12ebc5,0x12ebd0,,"[""<waita>@""]",,"Sheep Pen",Schafpferch
+1,0x12ebd0,0x12ebde,,"[""<waita>@""]",,"Chicken Coop",Hühnerstall
+2,0x12ebde,0x12ebe8,,"[""<waita>@""]",,"Cow Barn",Scheune
+3,0x12ebe8,0x12ebf0,,"[""<waita>@""]",,Stable,Pferdestall
 4,0x12ebf0,0x12ec11,,"[""\\n"", ""<waita>@""]",,"It's locked.
-You can't go in."
+You can't go in.",Abgeschlossen.

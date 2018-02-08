@@ -1,24 +1,24 @@
-i,address,end,name_i,newlines,name,string
-0,0x1e4a57,0x1e4a5b,,"[""@""]",,Spr
-1,0x1e4a5b,0x1e4a5f,,"[""@""]",,Sum
-2,0x1e4a5f,0x1e4a64,,"[""@""]",,Fall
-3,0x1e4a64,0x1e4a68,,"[""@""]",,Win
-4,0x1e4a68,0x1e4a6c,,"[""@""]",,Mon
-5,0x1e4a6c,0x1e4a70,,"[""@""]",,Tue
-6,0x1e4a70,0x1e4a74,,"[""@""]",,Wed
-7,0x1e4a74,0x1e4a78,,"[""@""]",,Thu
-8,0x1e4a78,0x1e4a7c,,"[""@""]",,Fri
-9,0x1e4a7c,0x1e4a80,,"[""@""]",,Sat
-10,0x1e4a80,0x1e4a84,,"[""@""]",,Sun
-11,0x1e4a84,0x1e4a87,,"[""@""]",,AM
-12,0x1e4a87,0x1e4a8a,,"[""@""]",,PM
-13,0x1e4a8a,0x1e4a8c,,"[""@""]",,A
-14,0x1e4a8c,0x1e4a8e,,"[""@""]",,B
-15,0x1e4a8e,0x1e4a90,,"[""@""]",,O
-16,0x1e4a90,0x1e4a93,,"[""@""]",,AB
-17,0x1e4a93,0x1e4a94,,"[""@""]",,
-18,0x1e4a94,0x1e4a96,,"[""@""]",,<noname>
-19,0x1e4a96,0x1e4ab7,,"[""@""]",,Quit watching?   Yes          No
+i,address,end,name_i,newlines,name,string,translation
+0,0x1e4a57,0x1e4a5b,,"[""@""]",,Spr,Frühling
+1,0x1e4a5b,0x1e4a5f,,"[""@""]",,Sum,Sommer
+2,0x1e4a5f,0x1e4a64,,"[""@""]",,Fall,Herbst
+3,0x1e4a64,0x1e4a68,,"[""@""]",,Win,Winter
+4,0x1e4a68,0x1e4a6c,,"[""@""]",,Mon,Montag
+5,0x1e4a6c,0x1e4a70,,"[""@""]",,Tue,Dienstag
+6,0x1e4a70,0x1e4a74,,"[""@""]",,Wed,Mittwoch
+7,0x1e4a74,0x1e4a78,,"[""@""]",,Thu,Donnerstag
+8,0x1e4a78,0x1e4a7c,,"[""@""]",,Fri,Freitag
+9,0x1e4a7c,0x1e4a80,,"[""@""]",,Sat,Samstag
+10,0x1e4a80,0x1e4a84,,"[""@""]",,Sun,Sonntag
+11,0x1e4a84,0x1e4a87,,"[""@""]",,AM,
+12,0x1e4a87,0x1e4a8a,,"[""@""]",,PM,
+13,0x1e4a8a,0x1e4a8c,,"[""@""]",,A,A
+14,0x1e4a8c,0x1e4a8e,,"[""@""]",,B,B
+15,0x1e4a8e,0x1e4a90,,"[""@""]",,O,O
+16,0x1e4a90,0x1e4a93,,"[""@""]",,AB,AB
+17,0x1e4a93,0x1e4a94,,"[""@""]",,,
+18,0x1e4a94,0x1e4a96,,"[""@""]",,<noname>,<noname>
+19,0x1e4a96,0x1e4ab7,,"[""@""]",,"Quit watching?   Yes          No","Quit watching?   Yes          No"
 20,0x1e4ab7,0x1e4ad2,,"[""\\n"", ""<waita>@""]",,"You can't use
-that name."
-21,0x1e4ad2,0x1e4ad7,,"[""@""]",,EXIT
+that name.","Diesen Namen kannst du nicht benutzen."
+21,0x1e4ad2,0x1e4ad7,,"[""@""]",,EXIT,EXIT
