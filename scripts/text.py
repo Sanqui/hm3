@@ -64,7 +64,7 @@ METATABLES = [
  (gbaddr("17:400f"), 15,
   ("strings/locations_island", "strings/locations_mainland",)),
  (gbaddr("50:4b7e"), 15+2+9+10+8,
-  (*(None,)*14, "strings/main_menu", "strings/partner_introductions",
+  (*(None,)*14, "strings/main_menu", "dialogue/partner_introductions",
   "dialogue/wedding_boy", "dialogue/wedding_girl",
   "dialogue/evaluation")
  ),
