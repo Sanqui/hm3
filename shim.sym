@@ -9,6 +9,9 @@
 
 
 00:0100 Start
+00:0150 Start_
+
+00:0ab4 ClearMemory
 
 00:0979 ReadBCFar
 00:09a5 FarCall
@@ -79,6 +82,7 @@
 00:c532 wRemainingLines
 00:c537 wDialogueState
 00:c53c wDialogueDelay
+00:c53d wDialogueDelayEnabled ; bit 7
 00:c53f wCurName
 
 00:06bb GetTilePtr
@@ -93,3 +97,4 @@
 01:d400 wPlayerName
 01:d7d2 wTmpBank
 01:d7d6 wDialogueSectionX
+01:dcf0 wCGB

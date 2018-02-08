@@ -88,8 +88,8 @@ StartDialogue:
     ld a, [wDialogueState]
     or 1<<DIALOGUE_STATE_ONCE
     ld [wDialogueState], a
-    ld a, $80
-    ld [$c53d], a
+    ld a, 1<<DIALOGUE_DELAY_BIT
+    ld [wDialogueDelayEnabled], a
 
 DoDialogue:
     ld a, [wDialogueState]
@@ -122,19 +122,19 @@ DoDialogue:
     bit DIALOGUE_STATE_2, a
     jp nz, DialogueState2 ; $2647
 
-    ld a, [$c53d]
-    bit 7, a
-    jr nz, .advance
+    ld a, [wDialogueDelayEnabled]
+    bit DIALOGUE_DELAY_BIT, a
+    jr nz, .no_delay
 
     ld a, [$ff00+$8a]
     bit 6, a
-    jr nz, .jr_2530
+    jr nz, .set_delay
     bit 7, a
-    jr nz, .jr_2530
+    jr nz, .set_delay
     bit 4, a
-    jr nz, .jr_2530
+    jr nz, .set_delay
     bit 5, a
-    jr nz, .jr_2530
+    jr nz, .set_delay
 
     ld a, [wDialogueDelay]
     inc a
@@ -144,14 +144,14 @@ DoDialogue:
 
     xor a
     ld [wDialogueDelay], a
-    jr .advance
+    jr .no_delay
 
-.jr_2530:
-    ld a, [$c53d]
-    set 7, a
-    ld [$c53d], a
+.set_delay
+    ld a, [wDialogueDelayEnabled]
+    set DIALOGUE_DELAY_BIT, a
+    ld [wDialogueDelayEnabled], a
 
-.advance:
+.no_delay
     ld a, [wDialogueState]
     bit DIALOGUE_STATE_1, a
     jp nz, Jump_266d
@@ -184,7 +184,7 @@ DialogueStateEnd:
     ld [wDialogueState], a
     ld [wDialogueTextByte], a
     ld [wDialogueDelay], a
-    ld [$c53d], a
+    ld [wDialogueDelayEnabled], a
     ret 
 
 
@@ -211,11 +211,11 @@ DialogueState4:
     xor a
     ld [$c538], a
     ld a, [wDialogueState]
-    res 4, a
+    res DIALOGUE_STATE_4, a
     ld [wDialogueState], a
-    ld a, [$c53d]
-    res 7, a
-    ld [$c53d], a
+    ld a, [wDialogueDelayEnabled]
+    res DIALOGUE_DELAY_BIT, a
+    ld [wDialogueDelayEnabled], a
     jp DoDialogue
 
 
@@ -347,11 +347,11 @@ jr_2656:
     xor a
     ld [$c538], a
     ld a, [wDialogueState]
-    res 2, a
+    res DIALOGUE_STATE_2, a
     ld [wDialogueState], a
-    ld a, [$c53d]
-    res 7, a
-    ld [$c53d], a
+    ld a, [wDialogueDelayEnabled]
+    res DIALOGUE_DELAY_BIT, a
+    ld [wDialogueDelayEnabled], a
     jp DoDialogue
 
 
@@ -741,9 +741,9 @@ ControlCodeFA:
     ld [wDialogueOffset2], a
     ld a, h
     ld [wDialogueOffset2+1], a
-    ld a, [$c53d]
-    set 7, a
-    ld [$c53d], a
+    ld a, [wDialogueDelayEnabled]
+    set DIALOGUE_DELAY_BIT, a
+    ld [wDialogueDelayEnabled], a
     
     ld b, 1<<DIALOGUE_STATE_2
 .end
@@ -769,9 +769,9 @@ ControlCodeFC::
     ld [wDialogueOffset2], a
     ld a, h
     ld [wDialogueOffset2+1], a
-    ld a, [$c53d]
-    set 7, a
-    ld [$c53d], a
+    ld a, [wDialogueDelayEnabled]
+    set DIALOGUE_DELAY_BIT, a
+    ld [wDialogueDelayEnabled], a
     
     ld b, 1<<DIALOGUE_STATE_4
     jp ControlCodeEnd
@@ -780,7 +780,7 @@ ControlCodeFD: ; <clear> - reset dialogue state
     call PrepareDialogueBox
     xor a
     ld [wDialogueDelay], a
-    ld [$c53d], a
+    ld [wDialogueDelayEnabled], a
     ld hl, wDialogueTilesPtr
     ld a, [hli]
     ld h, [hl]
