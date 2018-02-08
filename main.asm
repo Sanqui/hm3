@@ -1,8 +1,7 @@
 INCLUDE "constants.asm"
 
 INCLUDE "src/text.asm"
-INCLUDE "data/text_pointers.asm"
-INCLUDE "build/text.asm"
+INCLUDE "src/text_sections.asm"
 
 blankbank: MACRO
 SECTION "Blank bank \1", ROMX[$4000], BANK[\1]

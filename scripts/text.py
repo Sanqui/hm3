@@ -17,7 +17,7 @@ BREAK_CHARS = ("\\n", "<clear>",)
 END_CHARS = ("@", "<end>",  None)
 
 TABLES = [
- (gbaddr("4a:4089"), 41, "strings/names"),
+ (gbaddr("4a:4089"), 42, "strings/names"),
 ]
 NAMES_TABLE = gbaddr("4a:4089")
 names = []
@@ -50,7 +50,7 @@ METATABLES = [
  (gbaddr("18:400f"), 68,
   "dialogue/restaurant dialogue/seed_shop dialogue/book_shop \
   dialogue/mall dialogue/theater".split()),
- (gbaddr("50:5804"), 62,
+ (gbaddr("50:5804"), 63,
   ("dialogue/farmers_union",)),
  (gbaddr("42:401f"), 130,
   "dialogue/player_found dialogue/thanks dialogue/partner_love\
@@ -63,6 +63,11 @@ METATABLES = [
   dialogue/assorted3 dialogue/pak dialogue/snowboarding strings/buildings".split()),
  (gbaddr("17:400f"), 15,
   ("strings/locations_island", "strings/locations_mainland",)),
+ (gbaddr("50:4b7e"), 15+2+9+10+8,
+  (*(None,)*14, "strings/main_menu", "strings/partner_introductions",
+  "dialogue/wedding_boy", "dialogue/wedding_girl",
+  "dialogue/evaluation")
+ )
 ]
 
 def readbyte():  return struct.unpack("B",  rom.read(1))[0]
@@ -204,7 +209,8 @@ for sti, (tpointer, tpointernext) in enumerate(zip(tablekeys, tablekeys[1:]+[Non
     stringtablenextfirst = None
     if tpointernext:
         stringtablenext = tables[tpointernext]
-        stringtablenextfirst = stringtablenext[0]
+        if stringtablenext:
+            stringtablenextfirst = stringtablenext[0]
     for pti, (address, addressnext) in enumerate(zip(stringtable, stringtable[1:]+[stringtablenextfirst])):
         if address < 0: continue
         rom.seek(address)
@@ -268,6 +274,7 @@ def strings_to_csv():
                             r"\s*<fc>.@$",
                             r"\s*@$"
                         ]
+                        matched = False
                         for nltype in NEWLINE_TYPES:
                             match = re.findall(nltype, line)
                             if match:
@@ -276,7 +283,10 @@ def strings_to_csv():
                                     m = m[5:]
                                 newline_types.append(m)
                                 line = line[:-len(m)]
+                                matched = True
                                 break
+                        if not matched:
+                            newline_types.append("")
                         string += line+"\n"
                     string = string[:-1]
                     trash = stringtrash[address] if address in stringtrash else None
@@ -356,9 +366,11 @@ def print_strings_from_csvs():
     csvstrings = {}
     csvstringindexes = {}
     csvstringends = {}
+    csvfilestringaddresses = {}
     for filename in filenames:
         if not filename: continue
         with open("text/"+filename+".csv", "r") as f:
+            csvfilestringaddresses[filename] = []
             fcsv = csv.reader(f)
             next(fcsv)
             for row in fcsv:
@@ -410,6 +422,7 @@ def print_strings_from_csvs():
                 if address not in csvstringindexes:
                     csvstringindexes[address] = []
                 csvstringindexes[address].append((filename, csvi))
+                csvfilestringaddresses[filename].append(address)
     
     SANIT_CHECK = False
     if SANIT_CHECK:
@@ -425,81 +438,128 @@ def print_strings_from_csvs():
                     pass
                     print("; OK")
     
-    last_address = None
+    Path.mkdir(Path(f"build/text/"), parents=True, exist_ok=True)
+    open(f"build/text/dummy.asm", "w").write("; OK\n")
     
-    for address in sorted(csvstrings):
-        if address < -1: continue
-        indexes = csvstringindexes[address]
-        string = csvstrings[address]
-        #print(address, index)
-        if last_address != address:
-            if last_address:
-                print(f"; {gbswitch(last_address)}\n")
-            print("SECTION \"Text at {1:02x}:{0:04x}\", ROMX[${0:04x}], BANK[${1:02x}]".format(address%0x4000 + 0x4000, address//0x4000))
-        for tname, i in indexes:
-            #label = "String{}_{}".format(ih, il)
-            label = f"String{tolabel(tname)}_{i}"
-            print("{}::".format(label))
-        for line in string:
-            outline = ""
-            for character in line:
-                if character not in charmap_r or \
-                  charmap_r[character] < 0x100:
-                    outline += character
-                else:
-                    c = charmap_r[character]
-                    hi = c >> 8
-                    lo = c & 0xff
-                    outline += f'", ${hi:02x}, ${lo:02x}, "'
-            print(f'\tdb "{outline}"')
-        last_address = csvstringends[address]
-        #print(f"; {gbswitch(last_address)}")
-        print()
+    for metatable in sorted(METATABLES + TABLES, key=lambda t: t[0]):
+        metatable_address, count, subtable_names = metatable
+        bank = metatable_address//0x4000
+        pointer = metatable_address%0x4000+0x4000
+        
+        metatable_file = open(f"build/text/{bank:02x}_{pointer:04x}.asm", "w")
+        metatable_addresses = []
+        if type(subtable_names) == str:
+            # XXX hack: not a metatable, just a table :)
+            metatable_addresses += csvfilestringaddresses[subtable_names]
+        else:
+            for i, (table_address, table_name) in enumerate(metatables[metatable_address]):
+                if table_name:
+                    metatable_addresses += csvfilestringaddresses[table_name]
+    
+        last_address = None
+        
+        for address in sorted(set(metatable_addresses)):
+            if address < -1: continue
+            indexes = csvstringindexes[address]
+            string = csvstrings[address]
+            #print(address, index)
+            if last_address != address:
+                pass
+                #if last_address:
+                #    metatable_file.write(f"; {gbswitch(last_address)}\n\n")
+                #metatable_file.write("SECTION \"Text at {1:02x}:{0:04x}\", ROMX[${0:04x}], BANK[${1:02x}]\n".format(address%0x4000 + 0x4000, address//0x4000))
+            for tname, i in indexes:
+                #label = "String{}_{}".format(ih, il)
+                label = f"String{tolabel(tname)}_{i}"
+                metatable_file.write("{}::\n".format(label))
+            for line in string:
+                outline = ""
+                for character in line:
+                    if character not in charmap_r or \
+                      charmap_r[character] < 0x100:
+                        outline += character
+                    else:
+                        c = charmap_r[character]
+                        hi = c >> 8
+                        lo = c & 0xff
+                        outline += f'", ${hi:02x}, ${lo:02x}, "'
+                metatable_file.write(f'\tdb "{outline}"\n')
+            last_address = csvstringends[address]
+            #print(f"; {gbswitch(last_address)}")
+            metatable_file.write("\n")
 
-def print_pointer_table():
+def print_pointer_tables():
     for metatable in METATABLES:
         metatable_address, count, subtable_names = metatable
         bank = metatable_address//0x4000
         pointer = metatable_address%0x4000+0x4000
-        print("SECTION \"Text pointer metatable at {}\", ROMX[${:04x}], BANK[${:02x}]".format(gbswitch(metatable_address), metatable_address%0x4000 + 0x4000, bank))
-        if bank != 0x50:
-            print(f"Metatable{bank:02X}:: ; {gbswitch(metatable_address)}")
-        else:
-            print(f"Metatable{bank:02X}_{pointer:04X}:: ; {gbswitch(metatable_address)}")
+        #print("SECTION \"Text pointer metatable at {}\", ROMX[${:04x}], BANK[${:02x}]".format(gbswitch(metatable_address), metatable_address%0x4000 + 0x4000, bank))
+    
+        table_filename = f"build/text/{bank:02x}_{pointer:04x}_table.asm"
+        metatable_file = open(table_filename, "w")
+        
+        metatable_file.write(f"Metatable{bank:02X}_{pointer:04X}:: ; {gbswitch(metatable_address)}\n")
         for i, (subtable_name, subtable_address) in enumerate(zip(subtable_names, metatable_subtable_addresses[metatable_address])):
             subtable_address = subtable_address[0]
             if subtable_name:
-                print(f"    dw Table{tolabel(subtable_name)}\t; {gbswitch(subtable_address)}")
+                metatable_file.write(f"    dw Table{tolabel(subtable_name)}\t; {gbswitch(subtable_address)}\n")
             else:
-                print(f"    dw ${subtable_address%0x4000 + 0x4000:04x}")
+                metatable_file.write(f"    dw ${subtable_address%0x4000 + 0x4000:04x}\n")
         
-        print()
+        metatable_file.write("\n")
         last_table_name = None
         for i, (table_address, table_name) in enumerate(metatables[metatable_address]):
             if table_name and table_name != last_table_name:
-                print()
-                print(f"Table{tolabel(table_name)}:: ; {gbswitch(subtable_address)}")
+                metatable_file.write("\n")
+                metatable_file.write(f"Table{tolabel(table_name)}:: ; {gbswitch(subtable_address)}\n")
             for i, address in enumerate(tables[table_address]):
                 if table_name:
-                    print(f"    dw String{tolabel(table_name)}_{i}")
+                    metatable_file.write(f"    dw String{tolabel(table_name)}_{i}\n")
                 else:
                     continue
             last_table_name = table_name
-        print()
+
     
     for table in TABLES:
         address, count, name = table
         bank = address // 0x4000
         pointer = address % 0x4000 + 0x4000
-        print(f'SECTION "Text pointer table for {name}", ROMX[${pointer:04x}], BANK[${bank:02x}]')
-        print()
-        print(f"Table{tolabel(name)}:: ; {gbswitch(address)}")
+        table_filename = f"build/text/{bank:02x}_{pointer:04x}_table.asm"
+        table_file = open(table_filename, "w")
+        #print(f'SECTION "Text pointer table for {name}", ROMX[${pointer:04x}], BANK[${bank:02x}]')
+        table_file.write('\n')
+        table_file.write(f"Table{tolabel(name)}:: ; {gbswitch(address)}\n")
         for i, address in enumerate(tables[address]):
             if address > 0:
-                print(f"    dw String{tolabel(name)}_{i}")
+                table_file.write(f"    dw String{tolabel(name)}_{i}\n")
             else:
-                print(f"    dw ${-address:04x}")
+                table_file.write(f"    dw ${-address:04x}\n")
     
+        if name == "strings/names":
+            table_file.write('; dummy name (TRASH)\n')
+            table_file.write('    db "012@"\n')
+        #table_file.write('\n')
+        #table_file.write(f'INCLUDE "build/text/{bank:02x}_{pointer:04x}.asm"\n')
+        table_file.write('\n')
+
+def print_sections():
+    print()
+    print('INCLUDE "build/text/dummy.asm"')
+    print()
+    for metatable in sorted(METATABLES + TABLES, key=lambda t: t[0]):
+        metatable_address, count, subtable_names = metatable
+        bank = metatable_address//0x4000
+        pointer = metatable_address%0x4000+0x4000
+        meta = type(subtable_names) is not str
+        print("SECTION \"Text pointer {}table at {}\", ROMX[${:04x}], BANK[${:02x}]".format("meta" if meta else "",gbswitch(metatable_address), metatable_address%0x4000 + 0x4000, bank))
+        if meta:
+            print("; covers: {}".format(", ".join(str(n) for n in subtable_names)))
+        else:
+            print("; is {}".format(subtable_names))
+        print(f'    INCLUDE "build/text/{bank:02x}_{pointer:04x}_table.asm"')
+        print(f'    INCLUDE "build/text/{bank:02x}_{pointer:04x}.asm"')
+        print(f'TextSection{bank:02x}_{pointer:04x}_END')
+        print()
 
 if __name__ == "__main__":
     # comment/uncomment whichever you want
@@ -510,9 +570,11 @@ if __name__ == "__main__":
         strings_to_csv()
     elif argv[1] == "asm_from_csv":
         print_strings_from_csvs()
-    elif argv[1] == "pointer_table":
-        print("; Warning: This was a one-off and was later corrected by hand.")
-        print_pointer_table()
+    elif argv[1] == "pointer_tables":
+        #print("; Warning: This was a one-off and was later corrected by hand.")
+        print_pointer_tables()
+    elif argv[1] == "sections":
+        print_sections()
     else:
         print("?")
         exit(1)

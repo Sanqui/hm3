@@ -1,0 +1,63 @@
+i,address,end,name_i,newlines,name,string
+0,0x14126d,0x14132c,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Bigbee,"Ah, this is a
+test… 「Cough」.
+Thank you for
+waiting. We are
+going to start
+the wedding of
+<var>0 and <player>!
+Here they come!
+…Oh, they're
+already here…
+OK. Please say
+your vows…<arrow>0"
+1,0x14126d,0x14132c,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Bigbee,"Ah, this is a
+test… 「Cough」.
+Thank you for
+waiting. We are
+going to start
+the wedding of
+<var>0 and <player>!
+Here they come!
+…Oh, they're
+already here…
+OK. Please say
+your vows…<arrow>0"
+2,0x14132c,0x1413b9,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Bigbee,"Ah…, <var>0?
+Do you take
+<player> as your
+lawfully wedded
+wife and promise
+to love her as
+long as you both
+shall live?
+<name>1Yes, I do…
+<arrow>0"
+3,0x1413b9,0x141438,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Bigbee,"OK <player>.
+Do you take
+<var>0 as your
+lawfully wedded
+husband and
+promise to love
+him as long as
+you both shall
+live?
+<arrow>0"
+4,0x141438,0x14145c,9,"[""\\n"", ""<waita>@""]",Bigbee,"Well… You may
+kiss your bride.<arrow>0"
+5,0x14145c,0x141496,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"Congratulations!
+I'll be the next
+one to marry!
+<arrow>0"
+6,0x141496,0x1414b0,5,"[""\\n"", ""<waita>@""]",Billy,"Be happy,
+alright!?<arrow>0"
+7,0x1414b0,0x1414cd,11,"[""\\n"", ""<waita>@""]",Kate,"<player>! <var>0!
+Congratulations!<arrow>0"
+8,0x1414cd,0x141506,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"<var>G <var>O, <var>8
+We promised to
+love each other
+forever."
+9,0x141506,0x14153c,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Ha ha… I feel
+strange…
+<player>… I love
+you very much♥"
