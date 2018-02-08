@@ -1,0 +1,9 @@
+i,address,end,name_i,newlines,name,string
+0,0x1f156a,0x1f15d5,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"I thought you'd
+never find me
+here. Would you
+like to listen
+to the organ?
+ Yes          No<ask>"
+1,0x1f15d5,0x1f15e9,,"[""\\n"", ""@""]",,"   BGM…No
+   SE……No"

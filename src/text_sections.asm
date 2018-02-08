@@ -110,6 +110,12 @@ SECTION "Relocations 4", ROMX[$4001], BANK[$53]
     INCLUDE "build/text/4b_6c1f_table.asm"
     INCLUDE "build/text/4b_6c1f.asm"
 
+SECTION "Text pointer metatable at 07:4001", ROMX[$4001], BANK[$07]
+; covers: signs/farm, signs/garden, signs/barns, signs/backyard, signs/hot_spring, signs/outside
+    setup_start_dialogue_asm 07_400f
+    INCLUDE "build/text/07_400f_table.asm"
+    INCLUDE "build/text/07_400f.asm"
+TextSection07_400f_END
 
 SECTION "Text bank at 17:4001", ROMX[$4001], BANK[$17]
 ; covers: strings/locations_island, strings/locations_mainland
@@ -211,7 +217,16 @@ TextSection79_44a0_END
 
 ; rest of the bank is empty
 
-SECTION "Text pointer metatable at 7c:55e9", ROMX[$55e9], BANK[$7c]
+SECTION "Start/setup diloague for 7c:437a", ROMX[$4187], BANK[$7c]
+    setup_start_dialogue_asm 7c_437a
+
+SECTION "Text pointer metatable at 7c:437a", ROMX[$437a], BANK[$7c]
+; covers: dialogue/snowboard, dialogue/market, dialogue/tutorial, text/credits, dialogue/sound_test
+    ; the relevant code is at 7c:4187 (wth...)
+    INCLUDE "build/text/7c_437a_table.asm"
+    INCLUDE "build/text/7c_437a.asm"
+TextSection7c_437a_END
+
 ; covers: None, None, None, None, None, None, None, None, dialogue/partner_events, dialogue/missing
     setup_start_dialogue_asm 7c_55f7
     INCLUDE "build/text/7c_55f7_table.asm"

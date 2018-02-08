@@ -1,0 +1,18 @@
+i,address,end,name_i,newlines,name,string
+0,0x1c6da,0x1c6eb,,"[""<waita>@""]",,Up: Island Map
+1,0x1c6eb,0x1c75c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Ferry to the
+mainland on
+Monday and
+Thursday.
+Speak with Kirk
+by 6PM. No ferry
+on rainy or
+snowy days."
+2,0x1c75c,0x1c775,,"[""\\n"", ""<waita>@""]",,"Down:
+    Mainland Map"
+3,0x1c775,0x1c7be,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Morning Market
+Open on Tuesday
+and Saturday
+between 6AM to
+9AM!!
+"
