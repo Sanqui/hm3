@@ -41,6 +41,11 @@ lda: MACRO
     ld \1, a
     ENDM
 
+farcall: MACRO
+    ld hl, \1
+    ld a, BANK(\1)
+    call FarCall
+ENDM
 
 hack: MACRO
     ld a, (Hack\1Entry-HackPredefTable) / 2

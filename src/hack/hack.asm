@@ -135,6 +135,7 @@ HackPredefTable:
     hack_entry NameWriteTile
     hack_entry NameSetupVWF
     hack_entry NameEnd
+    hack_entry LoadMainMenuScreen
 
 HackNop:
     ret
@@ -280,6 +281,11 @@ HackNameEnd:
     call VWFInit
     ; o
     ld de, $9c01
+    ret
+
+HackLoadMainMenuScreen:
+    ; o
+    ld hl, $4187
     ret
 
 INCLUDE "src/hack/vwf.asm"

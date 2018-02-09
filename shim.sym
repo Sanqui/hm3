@@ -12,6 +12,7 @@
 00:0150 Start_
 
 00:0ab4 ClearMemory
+00:0abc Copy
 
 00:0979 ReadBCFar
 00:09a5 FarCall
@@ -70,9 +71,25 @@
 00:c53f wCurName
 00:c547 wTmpFormattedString
 
+00:c703 wMainMenuOption
+
 00:06bb GetTilePtr
 00:2e3b Decompress
 ; at a:hl to de
+
+78:78fe MainMenuPalettes
+78:7575 MainMenuGfxComp
+
+7b:4054 TilemapGetPointer
+7b:40f0 CopyTilemap
+7b:40f2 CopyTilemap.loop
+7b:4017 WriteTilemapByte
+7b:43b2 CopyWholeScreenTilemap
+7b:4395 LoadTilemapNum
+; in B
+7b:43c6 LoadTilemapNumToRAM ; in b
+7b:423c LoadDialogueBoxTilemap
+
 7f:445a LoadScreenAtDE ; at de
 ; might be doing more
 7f:4681 LdBCAtDE
@@ -82,4 +99,63 @@
 01:d400 wPlayerName
 01:d7d2 wTmpBank
 01:d7d6 wDialogueSectionX
+
+01:d965 wPalettes
+
 01:dcf0 wCGB
+
+6d:42d6 Tilemap0
+6d:46f0 Tilemap1
+6d:4759 Tilemap2
+6d:4812 Tilemap3
+6d:5628 Tilemap4
+6d:5c33 Tilemap5
+6d:6285 Tilemap6
+6d:4bcb Tilemap7
+6d:4fe2 Tilemap8
+6d:6bec Tilemap9
+6d:6d3f Tilemapa
+6d:6e14 Tilemapb
+6d:6f46 Tilemapc
+6d:7094 Tilemapd
+6d:7094 Tilemape
+6d:71b7 Tilemapf
+6c:4feb Tilemap10
+6c:4feb Tilemap11
+6c:5622 Tilemap12
+6c:5bd4 Tilemap13
+6c:5fe8 Tilemap14
+6c:64e3 Tilemap15
+6c:6894 Tilemap16
+6c:6c7c Tilemap17
+6c:6fc6 Tilemap18
+6c:7411 Tilemap19
+6c:7914 Tilemap1a
+6b:5080 Tilemap1b
+6b:5133 Tilemap1c
+6b:5268 Tilemap1d
+6b:52d9 Tilemap1e
+6b:6097 Tilemap1f
+6b:612c Tilemap20
+6b:6240 Tilemap21
+6b:74c3 Tilemap22
+6b:7564 Tilemap23
+6b:7619 Tilemap24
+6e:7289 Tilemap25
+6e:5c73 Tilemap26
+6e:5414 Tilemap27
+78:793e Tilemap28
+6f:4566 Tilemap29
+6f:4aef Tilemap2a
+74:5c14 Tilemap2b
+6a:4752 Tilemap2c
+6a:4670 Tilemap2d
+6f:527d Tilemap2e
+6e:758d Tilemap2f
+6e:7783 Tilemap30
+6e:781b Tilemap31
+6f:6bed Tilemap32
+6e:4445 Tilemap33
+00:0000 Tilemap34
+00:0000 Tilemap35
+
