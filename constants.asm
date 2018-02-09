@@ -33,3 +33,9 @@ ENDM
 pwb: MACRO
     dwb \1, BANK(\1)
 ENDM
+
+farcall: MACRO
+    ld hl, \1
+    ld a, BANK(\1)
+    call FarCall
+ENDM
