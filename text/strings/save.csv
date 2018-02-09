@@ -12,7 +12,7 @@ you want to use?","Auf welchem Speicherplatz soll gespeichert werden?"
  Yes          No<ask>","Spielstand überschreiben?
  Ja           Nein<ask>"
 5,0x1e7dc8,0x1e7de0,,"[""\\n"", ""<waita>@""]",,"Data has been
-saved!<arrow>2","Spielstand wurde gesichert!<arrow>2"
+saved!<arrow>2","Spielstand wurde gespeichert!<arrow>2"
 6,0x1e7de0,0x1e7df2,,"[""\\n"", ""@""]",,"<var>0
 <var>O in <var>G days.","<var>0
 <var>O in <var>G Tagen."

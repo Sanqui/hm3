@@ -1,35 +1,51 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x109b8a,0x109b9f,,"[""\\n"", ""<waita>@""]",,"Carp
+            <var>0","Karpfen
             <var>0"
 1,0x109b9f,0x109bb9,,"[""\\n"", ""<waita>@""]",,"King Carp
+            <var>0","Königskarpfen
             <var>0"
 2,0x109bb9,0x109bd3,,"[""\\n"", ""<waita>@""]",,"Snakehead
+            <var>0","Schlangenkopffisch
             <var>0"
 3,0x109bd3,0x109bee,,"[""\\n"", ""<waita>@""]",,"Black Bass
+            <var>0","Schwarzbarsch
             <var>0"
 4,0x109bee,0x109c07,,"[""\\n"", ""<waita>@""]",,"Bluegill
+            <var>0","Blauer Sonnenbarsch
             <var>0"
 5,0x109c07,0x109c23,,"[""\\n"", ""<waita>@""]",,"King Salmon
+            <var>0","Königslachs
             <var>0"
 6,0x109c23,0x109c3e,,"[""\\n"", ""<waita>@""]",,"Parrotfish
+            <var>0","Papageienfisch
             <var>0"
 7,0x109c3e,0x109c57,,"[""\\n"", ""<waita>@""]",,"Blowfish
+            <var>0","Kugelfisch
             <var>0"
 8,0x109c57,0x109c6e,,"[""\\n"", ""<waita>@""]",,"Dorado
+            <var>0","Schwertfisch
             <var>0"
 9,0x109c6e,0x109c87,,"[""\\n"", ""<waita>@""]",,"Sailfish
+            <var>0","Speerfisch
             <var>0"
 10,0x109c87,0x109ca2,,"[""\\n"", ""<waita>@""]",,"Coelacanth
+            <var>0","Quastenflosser
             <var>0"
 11,0x109ca2,0x109cbd,,"[""\\n"", ""<waita>@""]",,"Archerfish
+            <var>0","Schützenfisch
             <var>0"
 12,0x109cbd,0x109cda,,"[""\\n"", ""<waita>@""]",,"Horned Shark
+            <var>0","Stierkopfhai
             <var>0"
 13,0x109cda,0x109cf6,,"[""\\n"", ""<waita>@""]",,"Blue Maomao
+            <var>0","Blauer Maomao
             <var>0"
 14,0x109cf6,0x109d12,,"[""\\n"", ""<waita>@""]",,"Pink Maomao
+            <var>0","Pinker Maomao
             <var>0"
 15,0x109d12,0x109d2f,,"[""\\n"", ""<waita>@""]",,"King of Lake
+            <var>0","Seekönig
             <var>0"
 16,0x109d2f,0x109f34,16,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Cozy,"We have both
 salt and fresh
@@ -62,48 +78,53 @@ A Button in
 front of the
 tank. I'm
 counting on you!
-"
+","Wir haben hier Süß- sowie Salzwasserfische. Ansehen kostet nichts, aber zurzeit haben wir nur Karpfen und Königskarpfen... Ich würde die Auswahl im Aquarium so gern vergrößern...
+Ich weiß, das klingt jetzt komisch, weil wir uns noch gar nicht so richtig kennen, aber da ich hier leider nicht weg kann und auch sonst nicht viel Zeit habe, würde ich dich gerne fragen, ob du für mich angeln gehen magst?
+Verstau die gefangenen Fische einfach in deinem Rucksack und komm damit zu mir. Ich werde sie dann ins Aquarium tun. Wenn du dir die Fische ansehen willst, musst du dich nur vor das Aquarium stellen und den A-Knopf drücken.
+Ich verlass' mich auf dich!"
 17,0x109f34,0x109f58,16,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Cozy,"Hi <player>. Make
 yourself at
 home.
-"
+","Hi, <player>. Fühl dich wie zuhause!"
 18,0x109f58,0x109f88,16,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Cozy,"Thank you
 <player>! I will
 take good
-care of it."
+care of it.","Danke, <player>! Ich werde mich gut darum kümmern."
 19,0x109f88,0x109fa9,18,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Choco,"Hey <player>!!
 Long time no
 see.
-"
+","Hey, <player>!! Lange nicht gesehen."
 20,0x109fa9,0x109fdb,18,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Choco,"I love aquariums
 very much!! They
 are fun!
-"
+","Ich liebe Aquarien!! Die sind so schön anzusehen!"
 21,0x109fdb,0x10a00b,20,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Chet,"How have you
 been, <player>? How
 is your farm?
-"
+","Na, alles klar, <player>? Was macht die Farm?"
 22,0x10a00b,0x10a04d,20,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Chet,"This is the
 only place where
 you can see the
-fish swimming."
+fish swimming.","Nur hier kann man den Fischen beim Schwimmen zugucken."
 23,0x10a04d,0x10a07e,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fish that live
 on the farm and
 in the lake.
-"
+","Fische, die auf der Farm und am See beiheimatet sind."
 24,0x10a07e,0x10a0bd,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Fish that live
 around the pier
 and around the
-island town."
+island town.","Fische, die am Pier und Nahe der Inselstadt beheimatet sind."
 25,0x10a0bd,0x10a0db,,"[""\\n"", ""<waita>@""]",,"Fish that live
-in the ocean."
+in the ocean.","Fische, die im Ozean beheimatet sind."
 26,0x10a0db,0x10a104,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"You can see the
 mystical fish
 here.
-"
+","Hier kann der geheimnisvolle Fisch betrachtet werden."
 27,0x10a104,0x10a13f,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"View inside of
 the fish tank?
 
- Yes          No<ask>"
+ Yes          No<ask>","In das Aquarium hineinsehen?
+
+Yes          No<ask>"
 28,0x10a13f,0x10a157,,"[""\\n"", ""<waita>@""]",,"Is the fish
-tank full?"
+tank full?","Das Aquarium scheint voll zu sein."

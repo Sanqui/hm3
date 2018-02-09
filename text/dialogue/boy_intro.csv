@@ -10,8 +10,8 @@ and has lived
 there trying
 to find another
 goal in life.
-But, one day…","<noname>Dies ist <player>s Farm im Knospendorf...
-Einst lag das Land hier brach, doch mit viel Geduld und Hingabe hat <player> es geschafft, dieser Farm neues Leben einzuhauchen. Seitdem versucht <player> eine neue Aufgabe für sich im Leben zu finden.
+But, one day…","<noname>Das ist <player>s Farm im Knospendorf...
+Mit viel Geduld und Hingabe hat er der einst verlassenen Farm zu neuem Glanz verholfen. Obwohl <player> sich gut auf seiner Farm eingelebt hat, ist er schon auf der Suche nach einer neuen Aufgabe im Leben. 
 Und wie es der Zufall will..."
 1,0x1e6de6,0x1e6f31,25,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Heinz,"Hello <player>.
 Are you busy as
@@ -34,9 +34,9 @@ to help her! Can
 you do it?
  Yes          No<ask>","Hallo, <player>.
 Bist du gerade beschäftigt? Es gibt da etwas, das ich dich gerne fragen würde.
-Ein alter Freund von mir besaß, bis er vor kurzem unverhofft von uns ging, auf einer Insel eine Farm.
+Es geht um eine Farm. Sie liegt auf einer Insel und gehörte einem alten Freund von mir, der kürzlich verstarb.
 Nun hat sich seine Tochter der Farm angenommen, doch leider hat sie von Farmarbeit nicht die geringste Ahnung...
-Ich würde dich gerne bitten, ihr zu helfen! Glaubst du, du kannst das?
+Ich möchte dich bitten, ihr zu helfen! Glaubst du, du kannst das?
  Ja        Nein<ask>"
 2,0x1e6f31,0x1e6fda,25,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""\\n"", ""<waita>@""]",Heinz,"Good! Thank you
 <player>! Then
@@ -54,7 +54,8 @@ of it.
 3,0x1e6fda,0x1e7013,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""@""]",,"<noname>This is how
 <player>'s new
 Harvest Moon
-Adventure began…<fa>y","<noname> Und so begann für <player> ein neues Harvest Moon-Abenteuer...<fa>y"
+Adventure began…<fa>y","<noname> Und so begann für <player> ein neues
+Harvest Moon-Abenteuer...<fa>y"
 4,0x1e7013,0x1e707f,25,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Heinz,"You are the only
 one who knows
 how to revive a
@@ -124,4 +125,5 @@ that be OK?
 15,0x1e7368,0x1e73a1,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""@""]",,"<noname>This is how
 <player>'s new
 Harvest Moon
-Adventure began.<fa>y","<noname> Und so begann für <player> ein neues Harvest Moon-Abenteuer...<fa>y"
+Adventure began.<fa>y","<noname> Und so begann für <player> ein neues
+Harvest Moon-Abenteuer...<fa>y"

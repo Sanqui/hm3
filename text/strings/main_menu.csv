@@ -1,32 +1,37 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x140bfc,0x140c0e,,"[""\\n"", ""@""]",,"Start a new
-game."
+game.","Starte ein neues Spiel."
 1,0x140c0e,0x140c2a,,"[""\\n"", ""@""]",,"Continue from
-a saved game."
+a saved game.","Setze einen vorhandenen Spielstand fort."
 2,0x140c2a,0x140c4b,,"[""\\n"", ""@""]",,"Copy the data in
-the other file."
+the other file.","Kopiere Spielstand in anderen Speicherstand."
 3,0x140c4b,0x140c61,,"[""\\n"", ""@""]",,"Erase the saved
-data."
+data.","Lösche vorhandenen Spielstand."
 4,0x140c61,0x140c81,,"[""\\n"", ""@""]",,"Trade by using
-Game Link cable."
+Game Link cable.","Tausche Spielstände über Link-Kabel."
 4-TRASH,0x140c81,0x140c83,,,,"\n
+@","\n
 @"
-5,0x140c83,0x140c95,,"[""<waita>@""]",,No saved data!<arrow>1
-6,0x140c95,0x140ca7,,"[""<waita>@""]",,No saved data!<arrow>2
+5,0x140c83,0x140c95,,"[""<waita>@""]",,"No saved data!<arrow>1","Kein Spielstand vorhanden!<arrow>1"
+6,0x140c95,0x140ca7,,"[""<waita>@""]",,"No saved data!<arrow>2","Kein Spielstand vorhanden!<arrow>2"
 7,0x140ca7,0x140cc6,,"[""\\n"", ""@""]",,"Which file do
-you want to use?"
-8,0x140cc6,0x140cd7,,"[""@""]",,Copy which file?
+you want to use?","Welchen Spielstand fortsetzen?"
+8,0x140cc6,0x140cd7,,"[""@""]",,"Copy which file?","Welchen Spielstand kopieren?"
 9,0x140cd7,0x140cfc,,"[""\\n"", ""10GT000@""]",,"Overwrite!?
- Yes          No<ask>"
+ Yes          No<ask>","Spielstand überschreiben?
+ Ja        Nein<ask>"
 10,0x140cfc,0x140d0e,,"[""\\n"", ""@""]",,"Erase which
-file?"
+file?","Welchen Spielstand löschen?"
 11,0x140d0e,0x140d38,,"[""\\n"", ""10GT000@""]",,"Erase? Is it OK?
- Yes          No<ask>"
+ Yes          No<ask>","Wirklich löschen? Ganz sicher?
+ Ja        Nein<ask>"
 12,0x140d38,0x140d56,,"[""\\n"", ""<waita>@""]",,"Select the file
-for trading."
+for trading.","Wähle Spielstand zum Tauschen aus."
 13,0x140d56,0x140d9c,,"[""\\n"", """", ""\\n"", ""10GT000@""]",,"Trading will
 save the data<arrow>1<waita><clear>
 automatically.
- OK           No<ask>"
+ OK           No<ask>","Durch den Tausch wird der Spielstand<arrow>1<waita><clear>
+automatisch gespeichert.
+ OK         No<ask>"
 14,0x140d9c,0x140dba,,"[""\\n"", ""<waita>@""]",,"Select the file
-for trading."
+for trading.","Wähle Spielstand zum Tauschen aus."
