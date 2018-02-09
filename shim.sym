@@ -80,6 +80,9 @@
 78:78fe MainMenuPalettes
 78:7575 MainMenuGfxComp
 
+7a:4017 WriteTilemapByte7A
+7a:40f0 CopyTilemap7A
+
 7b:4054 TilemapGetPointer
 7b:40f0 CopyTilemap
 7b:40f2 CopyTilemap.loop
