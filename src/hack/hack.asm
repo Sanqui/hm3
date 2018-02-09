@@ -142,6 +142,7 @@ HackPredefTable:
     hack_entry NameSetupVWF
     hack_entry NameEnd
     hack_entry LoadMainMenuScreen
+    hack_entry LoadPlayerSelectionScreen
 
 HackNop:
     ret
@@ -294,6 +295,19 @@ HackLoadMainMenuScreen:
     call LoadMenuStrings
     ; o
     ld hl, $4187
+    ret
+
+HackLoadPlayerSelectionScreen:
+    ld a, $00
+    ld [REG_VBK], a
+    
+    ld hl, PlayerSelectionScreenStringDefinitions
+    call LoadMenuStrings
+    
+    ld a, $01
+    ld [REG_VBK], a
+    ; o
+    ld hl, $9800
     ret
 
 INCLUDE "src/hack/vwf.asm"

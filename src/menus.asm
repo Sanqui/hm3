@@ -39,7 +39,8 @@ LoadPlayerSelectionScreen:
     call CopyTilemap7A
     ld a, $01
     ld [REG_VBK], a
-    ld hl, $9800
+    ;ld hl, $9800
+    hack LoadPlayerSelectionScreen
     ld de, $5738
     ld bc, $1412
     call CopyTilemap7A

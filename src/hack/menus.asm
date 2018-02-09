@@ -104,3 +104,11 @@ MainMenuStringDefinitions:
     db 7, 10, 5,  -1, "Trade@"
     db -1
 
+PlayerSelectionScreenStringDefinitions:
+    db $d7
+    db  2,  1,  7, $00, "Are you@"
+    db  2,  3, 16,  -1, "a boy or a girl?@"
+    db  4, $b,  3,  -1, "Boy@"
+    db $d, $b,  4,  -1, "Girl@"
+    db -1
+
