@@ -90,8 +90,8 @@
 
 7a:4017 WriteTilemapByte7A
 7a:40f0 CopyTilemap7A
-7a:6f84 EnterNameTilemap
-7a:6fe8 EnterNameAttributemap
+;7a:6f84 EnterNameTilemap
+;7a:6fe8 EnterNameAttributemap
 
 7b:4054 TilemapGetPointer
 7b:40f0 CopyTilemap
