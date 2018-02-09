@@ -97,57 +97,57 @@ PrintMenuString:
 
 MainMenuStringDefinitions:
     db $ff
-    db 7,  2, 5, $00, "Start@"
-    db 7,  4, 4,  -1, "Load@"
-    db 7,  6, 4,  -1, "Copy@"
-    db 7,  8, 5,  -1, "Erase@"
-    db 7, 10, 5,  -1, "Trade@"
+    db 7,  2, 5, $00, "Neues Spiel@"
+    db 7,  4, 4,  -1, "Fortsetzen@"
+    db 7,  6, 4, $13, "Kopieren@"
+    db 7,  8, 5,  -1, "Löschen@"
+    db 7, 10, 5, $54, "Tauschen@"
     db -1
 
 PlayerSelectionScreenStringDefinitions:
     db $d7
-    db  2,  1,  7, $00, "Are you@"
-    db  2,  3, 16,  -1, "a boy or a girl?@"
-    db  4, $b,  3,  -1, "Boy@"
-    db $d, $b,  4,  -1, "Girl@"
+    db  2,  1,  7, $00, "Bist du ein Junge@"
+    db  2,  3, 16,  -1, "oder ein Mädchen?@"
+    db  4, $b,  3,  -1, "Junge@"
+    db $d, $b,  4,  -1, "Mädchen@"
     db -1
 
 NamingScreenStringDefinitions:
     db $d7
-    db  4,  1, 11, $00, "Enter name!@"
+    db  4,  1, 11, $00, "Wie heißt du?@"
     db  6,  3,  4,  -1, "Name…@"
-    db $10,$10, 3,  -1, "END@"
+    db $10,$10, 3,  -1, "Ende@"
     db -1
     
 ColorScreenStringDefinitions:
     db $d7
-    db   2,  1, 16, $00, "Decide the Color@"
-    db   2,  3, 15,  -1, "of your outfit!@"
-    db   2,  6,  7,  -1, "Clothes@"
-    db  $a,  6,  8,  -1, "Bandana@"
+    db   2,  1, 16, $00, "Wähle die Farbe@"
+    db   2,  3, 15,  -1, "deines Outfits!@"
+    db   2,  6,  7,  -1, "Kleidung@"
+    db  $a,  6,  8,  -1, "Halstuch@"
     db   2,  8,  8,  -1, "Standard@"
     db  $f,  8,  3,  -1, "Ok!@"
-    db   2, $b,  6,  -1, "Sample@"
-    db  $b, $b,  3,  -1, "Red@"
-    db  $b, $d,  5,  -1, "Green@"
-    db  $b, $f,  4,  -1, "Blue@"
+    db   2, $b,  6,  -1, "Vorschau@"
+    db  $b, $b,  3,  -1, "Rot@"
+    db  $b, $d,  5,  -1, "Grün@"
+    db  $b, $f,  4,  -1, "Blau@"
     db -1
 
 BirthdayScreenStringDefinitions:
     db $d7
-    db   2,  1, 12, $30, "When is your@"
-    db   2,  3,  9,  -1, "Birthday?@"
-    db   2,  7,  6,  -1, "Spring@"
-    db   2,  9,  6,  -1, "Summer@"
-    db   2, 11,  4,  -1, "Fall@"
+    db   2,  1, 12, $30, "Wann hast du@"
+    db   2,  3,  9,  -1, "Geburtstag?@"
+    db   2,  7,  6,  -1, "Frühling@"
+    db   2,  9,  6,  -1, "Sommer@"
+    db   2, 11,  4,  -1, "Herbst@"
     db   2, 13,  6,  -1, "Winter@"
-    db   3, 16,  4,  -1, "End!@"
+    db   3, 16,  4,  -1, "Ende@"
     db -1
 
 BloodTypeScreenStringDefinitions:
     db $d7
-    db   2,  1, 12, $00, "What is your@"
-    db   2,  3, 11,  -1, "blood type?@"
+    db   2,  1, 12, $00, "Welche Blutgruppe@"
+    db   2,  3, 11,  -1, "hast du?@"
     db   8,  7,  6,  -1, "A@"
     db   8, 10,  6,  -1, "B@"
     db   8, 13,  6,  -1, "O@"
@@ -156,16 +156,16 @@ BloodTypeScreenStringDefinitions:
 
 PetScreenStringDefinitions:
     db $d7
-    db   2,  1, 13, $00, "Choose a pet.@"
+    db   2,  1, 13, $00, "Wähle ein Haustier.@"
     db -1
 
 ConfirmationScreenStringDefinitions:
     db $d7
-    db   5,  6,  7, $00, "Gender…@"
+    db   5,  6,  7, $00, "Geschlecht…@"
     db   5,  8,  5,  -1, "Name…@"
     db   5, 10,  7,  -1, "Outfit…@"
-    db   5, 12,  6,  -1, "Birth…@"
-    db   5, 14, 11,  -1, "Blood Type…@"
+    db   5, 12,  6,  -1, "Geburtstag…@"
+    db   5, 14, 11,  -1, "Blutgruppe…@"
     db   4, 18,  5,  -1, "Name…@"
     db  $e, 18,  5,  -1, "Name…@"
     db -1
