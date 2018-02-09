@@ -62,6 +62,241 @@ LoadPlayerSelectionScreen:
     ld a, $00
     call $2da7
     jp $4379
+    
+SECTION "Color Customization Screen", ROMX[$45f5], BANK[$7a]
+
+SetupColorScreen:
+    xor a
+    ld [wMainMenuOption], a
+    ld [$c71d], a
+    call $4877
+    ld hl, $58a0
+    ld c, $7a
+    ld de, $9000
+    call $2e3b
+    ld hl, $9800
+    ld de, $5990
+    ld bc, $1412
+    call CopyTilemap7A
+    ld a, $01
+    ld [REG_VBK], a
+    ld hl, $9800
+    ld de, $5af8
+    ld bc, $1412
+    call CopyTilemap7A
+    xor a
+    ld [REG_VBK], a
+    call $484d
+    ld hl, $4187
+    ld a, $7e
+    call $09a5
+    call $47ac
+    call $47dc
+    call $43a0
+    ld a, $00
+    call $2da7
+    jp $4379
+
+SECTION "Birthday Screen", ROMX[$48ba], BANK[$7a]
+
+SetupBirthdayScreen:
+    ld a, [$c70e]
+    or a
+    ld bc, $0000
+    jr z, .jr_07a_48cb
+
+    ld a, [$d40a]
+    ld b, a
+    ld a, [$d40b]
+    ld c, a
+
+.jr_07a_48cb
+    ld a, b
+    ld [wMainMenuOption], a
+    ld a, c
+    ld [$c704], a
+    ld hl, $5c60
+    ld c, $7a
+    ld de, $9000
+    call $2e3b
+    ld hl, $9800
+    ld de, $5d75
+    ld bc, $1412
+    call CopyTilemap7A
+    ld a, $01
+    ld [REG_VBK], a
+    ld hl, $9800
+    ld de, $5edd
+    ld bc, $1412
+    call CopyTilemap7A
+    xor a
+    ld [REG_VBK], a
+    call $49ee
+    ld hl, $4187
+    ld a, $7e
+    call $09a5
+    call $4a0c
+    call $43a0
+    ld a, $00
+    call $2da7
+    jp $4379
+
+SECTION "Blood Type Screen", ROMX[$4a67], BANK[$7a]
+
+SetupBloodTypeScreen:
+    ld a, [$c70e]
+    or a
+    ld a, $00
+    jr z, .jr_07a_4a72
+    ld a, [$d409]
+.jr_07a_4a72
+    ld [wMainMenuOption], a
+    ld hl, $6045
+    ld c, $7a
+    ld de, $9000
+    call $2e3b
+    ld hl, $9800
+    ld de, $60f5
+    ld bc, $1412
+    call CopyTilemap7A
+    ld a, $01
+    ld [REG_VBK], a
+    ld hl, $9800
+    ld de, $625d
+    ld bc, $1412
+    call CopyTilemap7A
+    xor a
+    ld [REG_VBK], a
+    ld hl, $4187
+    ld a, $7e
+    call $09a5
+    call $4b0e
+    call $43a0
+    ld a, $00
+    call $2da7
+    jp $4379
+
+SECTION "Pet Screen", ROMX[$4b3d], BANK[$7a]
+
+SetupPetScreen:
+    ld a, [$c70e]
+    or a
+    jr nz, .jr_07a_4b46
+    xor a
+    jr .jr_07a_4b49
+.jr_07a_4b46
+    call $4c23
+.jr_07a_4b49
+    ld [wMainMenuOption], a
+    ld hl, $6a42
+    ld de, $d975
+    ld b, $30
+    call $0abc
+    ld hl, $63c5
+    ld c, $7a
+    ld de, $9000
+    call $2e3b
+    ld hl, $9800
+    ld de, $6772
+    ld bc, $1412
+    call CopyTilemap7A
+    ld a, $01
+    ld [REG_VBK], a
+    ld hl, $9800
+    ld de, $68da
+    ld bc, $1412
+    call CopyTilemap7A
+    xor a
+    ld [REG_VBK], a
+    ld hl, $4187
+    ld a, $7e
+    call $09a5
+    call $4c02
+    call $43a0
+    ld a, $00
+    call $2da7
+.jr_07a_4b94
+    jp $4379
+
+SECTION "Confirmation Screen", ROMX[$4d86], BANK[$7a]
+
+SetupConfirmationScreen:
+    ld [$c70f], a
+    call $43ab
+    ld hl, $6ae6
+    ld c, $7a
+    ld de, $9000
+    call $2e3b
+    ld hl, $9800
+    ld de, $6baa
+    ld bc, $1415
+    call CopyTilemap7A
+    ld a, $01
+    ld [REG_VBK], a
+    ld hl, $9800
+    ld de, $6d4e
+    ld bc, $1415
+    call CopyTilemap7A
+    xor a
+    ld [REG_VBK], a
+    ld a, [$d408]
+    or a
+    ld a, $16
+    ld b, $03
+    jr z, .jr_07a_4dc4
+
+    ld a, $19
+    ld b, $04
+
+.jr_07a_4dc4:
+    ld hl, $98cc
+    ld c, $01
+    call $4090
+    ld b, $00
+    ld c, $80
+    ld hl, $428f
+    ld a, $79
+    call $09a5
+    ld a, [$d40a]
+    ld b, a
+    ld c, $84
+    ld hl, $4255
+    ld a, $79
+    call $09a5
+    ld a, [$d40b]
+    inc a
+    ld b, a
+    ld c, $8a
+    ld hl, $43a5
+    ld a, $79
+    call $09a5
+    ld a, [$d409]
+    ld b, a
+    ld c, $8c
+    ld hl, $4302
+    ld a, $79
+    call $09a5
+    ld b, $01
+    ld c, $8e
+    ld hl, $428f
+    ld a, $79
+    call $09a5
+    ld b, $02
+    ld c, $92
+    ld hl, $428f
+    ld a, $79
+    call $09a5
+    ld hl, $4187
+    ld a, $7e
+    call $09a5
+    call $4f32
+    call $2489
+    ld a, $0f
+    ld [$c0a2], a
+    call $439c
+    ld a, $00
+    call $2da7
+    jp $4379
 
 SECTION "Naming screen", ROMX[$5022], BANK[$7a]
 SetupNamingScreen:
