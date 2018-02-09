@@ -145,6 +145,11 @@ HackPredefTable:
     hack_entry LoadPlayerSelectionScreen
     hack_entry SetupNamingScreen
     hack_entry SetupNamingScreen2
+    hack_entry SetupColorScreen
+    hack_entry SetupBirthdayScreen
+    hack_entry SetupBloodTypeScreen
+    hack_entry SetupPetScreen
+    hack_entry SetupConfirmationScreen
 
 HackNop:
     ret
@@ -325,6 +330,52 @@ HackSetupNamingScreen2:
     call LoadMenuStrings
     
     ld hl, $4187
+    ret
+
+HackSetupColorScreen:
+    ld hl, ColorScreenStringDefinitions
+    call LoadMenuStrings
+    ;o
+    ld hl, $4187
+    ret
+
+HackSetupBirthdayScreen:
+    ld hl, BirthdayScreenStringDefinitions
+    call LoadMenuStrings
+    ;o
+    ld hl, $4187
+    ret
+
+HackSetupBloodTypeScreen:
+    ld hl, BloodTypeScreenStringDefinitions
+    call LoadMenuStrings
+    ;o
+    ld hl, $4187
+    ret
+
+HackSetupPetScreen:
+    ld hl, PetScreenStringDefinitions
+    call LoadMenuStrings
+    ;o
+    ld hl, $4187
+    ret
+
+HackSetupConfirmationScreen:
+    ld hl, ConfirmationScreenStringDefinitions
+    call LoadMenuStrings
+    
+    ld a, [$d408] ; TODO wPlayerGender
+    and a
+    jr nz, .girl
+    ld hl, BoyStringDefinition
+    jr .gotgenderdef
+.girl
+    ld hl, GirlStringDefinition
+.gotgenderdef
+    call LoadMenuString
+    ;o
+    ld a, $0f
+    ld [$c0a2], a
     ret
 
 INCLUDE "src/hack/vwf.asm"
