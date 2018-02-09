@@ -89,7 +89,8 @@ SetupColorScreen:
     xor a
     ld [REG_VBK], a
     call $484d
-    ld hl, $4187
+    hack SetupColorScreen
+    ;ld hl, $4187
     ld a, $7e
     call $09a5
     call $47ac
@@ -134,7 +135,8 @@ SetupBirthdayScreen:
     xor a
     ld [REG_VBK], a
     call $49ee
-    ld hl, $4187
+    hack SetupBirthdayScreen
+    ;ld hl, $4187
     ld a, $7e
     call $09a5
     call $4a0c
@@ -169,7 +171,8 @@ SetupBloodTypeScreen:
     call CopyTilemap7A
     xor a
     ld [REG_VBK], a
-    ld hl, $4187
+    hack SetupBloodTypeScreen
+    ;ld hl, $4187
     ld a, $7e
     call $09a5
     call $4b0e
@@ -210,7 +213,8 @@ SetupPetScreen:
     call CopyTilemap7A
     xor a
     ld [REG_VBK], a
-    ld hl, $4187
+    hack SetupPetScreen
+    ;ld hl, $4187
     ld a, $7e
     call $09a5
     call $4c02
@@ -294,7 +298,8 @@ SetupConfirmationScreen:
     call $4f32
     call $2489
     ld a, $0f
-    ld [$c0a2], a
+    hack SetupConfirmationScreen
+    ;ld [$c0a2], a
     call $439c
     ld a, $00
     call $2da7
