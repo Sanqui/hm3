@@ -112,3 +112,10 @@ PlayerSelectionScreenStringDefinitions:
     db $d, $b,  4,  -1, "Girl@"
     db -1
 
+NamingScreenStringDefinitions:
+    db $d7
+    db  4,  1, 11, $00, "Enter name!@"
+    db  6,  3,  4,  -1, "Name…@"
+    db $10,$10, 3,  -1, "END@"
+    db -1
+
