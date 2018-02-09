@@ -37,6 +37,12 @@ wVWFBuildArea3:
 wVWFCopyArea:
     ds $40
 
+wMenuStringX: ds 1
+wMenuStringY: ds 1
+wMenuStringPad: ds 1
+wMenuTileNum: ds 1
+wMenuBlankTileNum: ds 1
+
 SECTION "Rst $10", ROM0[$0010]
     push af
     ld a, [$4000]
@@ -284,11 +290,14 @@ HackNameEnd:
     ret
 
 HackLoadMainMenuScreen:
+    ld hl, MainMenuStringDefinitions
+    call LoadMenuStrings
     ; o
     ld hl, $4187
     ret
 
 INCLUDE "src/hack/vwf.asm"
+INCLUDE "src/hack/menus.asm"
 
 
 
