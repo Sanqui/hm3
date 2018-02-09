@@ -49,6 +49,7 @@
 79:40a4 TileNumToPointer
 
 00:c0aa wSelectedLocation
+00:c0ad wFrameCounter
 
 00:c526 wStringID ; wrong?
 00:c527 wStringID2
@@ -73,6 +74,13 @@
 
 00:c703 wMainMenuOption
 
+00:c7b4 wNamingScreenCursor
+00:c7b5 wKeyboard
+00:c706 wNamingScreenX
+00:c707 wNamingScreenY
+00:c7b2 wNamingScreenDestination
+00:c7b3 wNamingScreenDestinationHi
+
 00:06bb GetTilePtr
 00:2e3b Decompress
 ; at a:hl to de
@@ -82,6 +90,8 @@
 
 7a:4017 WriteTilemapByte7A
 7a:40f0 CopyTilemap7A
+7a:6f84 EnterNameTilemap
+7a:6fe8 EnterNameAttributemap
 
 7b:4054 TilemapGetPointer
 7b:40f0 CopyTilemap
