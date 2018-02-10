@@ -37,8 +37,8 @@ PrintStringIDX:
     call $4419
     ret 
 
-PrintFormattedString:
-    ld hl, wTmpFormattedString
+PrintVarString:
+    ld hl, wVarString
     call PrintString
     ret
 

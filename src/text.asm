@@ -639,7 +639,7 @@ ControlCodeF7: ; <var>
     ld a, h
     ld [$c534], a
     pop af
-    ld hl, $c547
+    ld hl, wVarString
     add l
     ld l, a
     jr nc, .nc
