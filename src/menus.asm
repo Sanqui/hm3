@@ -103,7 +103,37 @@ WritePartnerGenderInVar:
     xor a
     ld [$c70e], a
     jp $4379
-    
+
+SECTION "Player Naming Screen", ROMX[$456e], BANK[$7a]
+
+SetupPlayerNamingScreen:
+    ld a, [$c70f]
+    or a
+    jr nz, .jr_07a_4587
+
+    ld hl, $c711
+    ld a, [hli]
+    ld [$d9a9], a
+    ld a, [hli]
+    ld [$d9aa], a
+    ld a, [hli]
+    ld [$d9b1], a
+    ld a, [hli]
+    ld [$d9b2], a
+
+.jr_07a_4587:
+    ld hl, wPlayerName
+    call $43d5
+    ld a, [$c70e]
+    ld [$c7b6], a
+    ld bc, wPlayerName
+    call SetupNamingScreen
+    call $43a0
+    ld a, $00
+    call $2da7
+    jp $4379
+
+
 SECTION "Color Customization Screen", ROMX[$45f5], BANK[$7a]
 
 SetupColorScreen:
@@ -235,7 +265,7 @@ SetupPetScreen:
     ld hl, $6a42
     ld de, $d975
     ld b, $30
-    call $0abc
+    call Copy
     ld hl, $63c5
     ld c, $7a
     ld de, $9000
@@ -263,6 +293,61 @@ SetupPetScreen:
 .jr_07a_4b94
     jp $4379
 
+SECTION "Pet Naming Screen", ROMX[$4c4f], BANK[$7a]
+
+SetupPetNamingScreen:
+    ld hl, wPetName
+    call $43d5
+    ld a, [$c70e]
+    ld [$c7b6], a
+    ld bc, wPetName
+    call SetupNamingScreen
+    call $43ab
+    call $4cb3
+    ld hl, $4187
+    ld a, $7d
+    call $09a5
+    call $43a0
+    ld a, $00
+    call $2da7
+    jp $4379
+
+SECTION "Partner Naming Screen", ROMX[$4cc8], BANK[$7a]
+
+SetupPartnerNamingScreen:
+    ld hl, wPartnerName
+    call $43d5
+    ld a, [$c70e]
+    or a
+    jr nz, .jr_07a_4ce8
+    ld a, [wPlayerGender]
+    or a
+    ld hl, DefaultGirlName
+    jr z, .girl
+    ld hl, DefaultBoyName
+.girl
+    ld b, $05
+    ld de, wPartnerName
+    call Copy
+.jr_07a_4ce8:
+    ld a, $01
+    ld [$c7b6], a
+    ld bc, wPartnerName
+    call SetupNamingScreen
+    call $4d4f
+    ld hl, $4187
+    ld a, $7d
+    call $09a5
+    call $43a0
+    ld a, $00
+    call $2da7
+    jp $4379
+
+DefaultBoyName:
+    db "Pete@"
+DefaultGirlName:
+    db "Sara@"
+
 SECTION "Confirmation Screen", ROMX[$4d86], BANK[$7a]
 
 SetupConfirmationScreen:
@@ -284,7 +369,7 @@ SetupConfirmationScreen:
     call CopyTilemap7A
     xor a
     ld [REG_VBK], a
-    ld a, [$d408]
+    ld a, [wPlayerGender]
     or a
     ld a, $16
     ld b, $03
