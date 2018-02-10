@@ -65,6 +65,41 @@ LoadPlayerSelectionScreen:
     call $2da7
     jp $4379
     
+
+SECTION "Player Selection Screen 2", ROMX[$44aa], BANK[$7a]
+    
+WritePartnerGenderInVar:
+    ld hl, wVarString
+    ld a, [wMainMenuOption]
+    or a
+    jr nz, .boy
+.girl
+    ld [hl], "G"
+    inc hl
+    ld [hl], "i"
+    inc hl
+    ld [hl], "r"
+    inc hl
+    ld [hl], "l"
+    jr .got_name
+.boy
+    ld [hl], "B"
+    inc hl
+    ld [hl], "o"
+    inc hl
+    ld [hl], "y"
+.got_name
+    inc hl
+    ld [hl], "@"
+    ld a, $0c
+    ld [wStringID], a
+    ld a, $02
+    ld [wStringID2], a
+    farcall SetupDialogue79_44a0
+    xor a
+    ld [$c70e], a
+    jp $4379
+    
 SECTION "Color Customization Screen", ROMX[$45f5], BANK[$7a]
 
 SetupColorScreen:

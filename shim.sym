@@ -70,7 +70,7 @@
 00:c53c wDialogueDelay
 00:c53d wDialogueDelayEnabled ; bit 7
 00:c53f wCurName
-00:c547 wTmpFormattedString
+00:c547 wVarString
 
 00:c703 wMainMenuOption
 
