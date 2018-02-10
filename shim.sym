@@ -110,6 +110,9 @@
 7f:467a LoadHLAtDE
 
 01:d400 wPlayerName
+01:d408 wPlayerGender
+01:d410 wPartnerName
+01:d417 wPetName
 01:d7d2 wTmpBank
 01:d7d6 wDialogueSectionX
 
