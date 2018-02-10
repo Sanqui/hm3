@@ -70,9 +70,12 @@ SECTION "Player Selection Screen 2", ROMX[$44aa], BANK[$7a]
     
 WritePartnerGenderInVar:
     ld hl, wVarString
-    ld a, [wMainMenuOption]
-    or a
-    jr nz, .boy
+    ;ld a, [wMainMenuOption]
+    ;or a
+    ;jr nz, .boy
+    hack WritePartnerGenderInVar
+    jr .written_name
+    nop
 .girl
     ld [hl], "G"
     inc hl
@@ -91,6 +94,7 @@ WritePartnerGenderInVar:
 .got_name
     inc hl
     ld [hl], "@"
+.written_name
     ld a, $0c
     ld [wStringID], a
     ld a, $02

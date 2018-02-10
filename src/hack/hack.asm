@@ -73,6 +73,16 @@ MyCopyData:
 	jr nz, .loop
 	ret
 
+MyCopyDataFF:
+; copy bytes from hl to de until ff
+.loop
+	ld a, [hli]
+	ld [de],a
+	inc de
+	inc a
+	jr nz, .loop
+	ret
+
 MyFillMemory:
 ; write a in hl b times
 .loop
@@ -150,6 +160,7 @@ HackPredefTable:
     hack_entry SetupBloodTypeScreen
     hack_entry SetupPetScreen
     hack_entry SetupConfirmationScreen
+    hack_entry WritePartnerGenderInVar
 
 HackNop:
     ret
@@ -377,6 +388,25 @@ HackSetupConfirmationScreen:
     ld a, $0f
     ld [$c0a2], a
     ret
+
+HackWritePartnerGenderInVar:
+    ld de, wVarString
+    ld a, [wMainMenuOption]
+    or a
+    jr nz, .boy
+.girl
+    ld hl, GirlDialogueString
+    call MyCopyDataFF
+    ret
+.boy
+    ld hl, BoyDialogueString
+    call MyCopyDataFF
+    ret
+
+BoyDialogueString:
+    db "Der Junge@"
+GirlDialogueString:
+    db "Das Mädchen@"
 
 INCLUDE "src/hack/vwf.asm"
 INCLUDE "src/hack/menus.asm"
