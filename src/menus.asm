@@ -17,7 +17,7 @@ endr
     ;call $4f40
     ld hl, $9c00
     ld de, StartMenuTilemap
-    ld bc, $0710
+    ld bc, $0810
 
 .rowloop
     push hl
@@ -73,14 +73,14 @@ endr
 
     xor a
     ld [REG_VBK], a
-    ld a, $6f
+    ld a, $6f-8
     ld [$ff00+$9c], a
     ;xor a
     ;ld [$ff00+$9b], a
     hack DrawStartMenu
     ret 
 
-StartMenuTilemap:
+StartMenuTilemapOld:
     db $d8, $d9, $d9, $d9, $d9, $d9, $da
     db $db, $d7, $bf, $ce, $ce, $cb, $df
     db $db, $d7, $d7, $d7, $d7, $d7, $df
@@ -98,6 +98,25 @@ StartMenuTilemap:
     db $db, $d7, $d7, $d7, $d7, $d7, $df
     db $dc, $dd, $dd, $dd, $dd, $dd, $de
 
+SECTION "Bank 1 Free", ROMX[$6020], BANK[$0b]
+
+StartMenuTilemap:
+    db $d8, $d9, $d9, $d9, $d9, $d9, $d9, $da
+    db $db, $d7, $b9, $ba, $bb, $bc, $bd, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $be, $bf, $c0, $c1, $d7, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $c2, $c3, $c4, $c5, $c6, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $c7, $c8, $c9, $d7, $d7, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $ca, $cb, $cc, $cd, $ce, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $cf, $d0, $d1, $d2, $d3, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $d7, $df
+    db $dc, $dd, $dd, $dd, $dd, $dd, $dd, $de
 
 SECTION "Load Main Menu Screen", ROMX[$5d17], BANK[$78]
 LoadMainMenuScreen:

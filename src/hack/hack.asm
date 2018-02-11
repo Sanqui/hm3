@@ -424,11 +424,24 @@ GirlDialogueString:
 HackDrawStartMenu:
     ld hl, StartMenuStringDefinitions
     call LoadMenuStrings
+    ld hl, MenuItemGfx
+    ld de, $8b90
+    ld b, $1b
+.tilecopyloop
+    push bc
+    call CopyTile
+    pop bc
+    dec b
+    jr nz, .tilecopyloop
+    
     
     ; o
     xor a
     ld [$ff00+$9b], a
     ret
+
+MenuItemGfx:
+    INCBIN "gfx/menu_items.2bpp"
 
 INCLUDE "src/hack/vwf.asm"
 INCLUDE "src/hack/menus.asm"
