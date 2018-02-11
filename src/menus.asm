@@ -18,6 +18,7 @@ endr
     ld hl, $9c00
     ld de, StartMenuTilemap
     ld bc, $0810
+    ld bc, START_MENU_DIMENSIONS
 
 .rowloop
     push hl
@@ -44,7 +45,7 @@ endr
     jr nz, .rowloop
 
     ld hl, $9c00
-    ld bc, $0712
+    ld bc, START_MENU_WIDTH << 8 | 18
     ld a, $01
     ld [REG_VBK], a
 
@@ -117,6 +118,115 @@ StartMenuTilemap:
     db $db, $d7, $cf, $d0, $d1, $d2, $d3, $df
     db $db, $d7, $d7, $d7, $d7, $d7, $d7, $df
     db $dc, $dd, $dd, $dd, $dd, $dd, $dd, $de
+
+SECTION "Work Menu Related Stuff", ROMX[$4254], BANK[$78]
+
+BackupMainMenuBeforeWork:
+    ld de, $9da0
+    ld hl, $9c10
+    ld bc, START_MENU_WIDTH<<8 | 19-START_MENU_HEIGHT
+    call $4114
+    ld hl, $4187
+    ld a, $79
+    call FarCall
+    ld a, [$d448]
+    bit 4, a
+    ld a, $07
+    jr z, .jr_078_428e
+    ld hl, $641b
+    ld a, $21
+    call FarCall
+    ld a, [$d95e]
+    ld b, a
+    ld a, [$d95b]
+    sub b
+    ld b, a
+    ld c, $10
+    ld hl, $4218
+    ld a, $79
+    call FarCall
+    ld a, $06
+.jr_078_428e
+    ld [wStringID2], a
+    ld a, $0d
+    ld [wStringID], a
+    ld hl, $419c
+    ld a, $79
+    call FarCall
+    ld hl, $c711
+    ld a, [$c7bc]
+    ld [hli], a
+    ld a, [$c7bd]
+    ld [hli], a
+    ld a, [$c7be]
+    ld [hli], a
+    ld a, [$c0a2]
+    ld [hli], a
+.waitvblank1
+    ld a, [REG_LY]
+    cp $8c
+    jr nz, .waitvblank1
+    di 
+.waitvblank2
+    ld a, [REG_LY]
+    cp $90
+    jr nz, .waitvblank2
+
+    ld a, $67
+    ld [$c0a2], a
+    ld a, $78
+    ld de, $55f7
+    call $065b
+    ld hl, $4282
+    ld a, $7b
+    call FarCall
+    ei 
+    jp $419d
+
+    call $24d6
+    ld a, [wDialogueState]
+    bit 0, a
+    ret nz
+
+    ld a, [$ff00+$8c]
+    and $03
+    ret z
+
+    ld a, $5b
+    call $0ee4
+    jp $419d
+
+RestoreMainMenuAfterWork:
+jr_078_42ed:
+    ld a, [REG_LY]
+    cp $8c
+    jr nz, jr_078_42ed
+    di 
+jr_078_42f4:
+    ld a, [REG_LY]
+    cp $90
+    jr nz, jr_078_42f4
+
+    ld hl, $c711
+    ld a, [hli]
+    ld [$c7bc], a
+    ld a, [hli]
+    ld [$c7bd], a
+    ld a, [hli]
+    ld [$c7be], a
+    ld a, [hli]
+    ld [$c0a2], a
+    ld de, $9c10
+    ld hl, $9da0
+    ld bc, START_MENU_WIDTH << 8 | 19-START_MENU_HEIGHT
+    call $4114
+    ei 
+    ld a, $01
+    jp $41a2
+
+    xor a
+    ld [$c700], a
+    ret 
 
 SECTION "Load Main Menu Screen", ROMX[$5d17], BANK[$78]
 LoadMainMenuScreen:
@@ -281,7 +391,7 @@ SetupColorScreen:
     hack SetupColorScreen
     ;ld hl, $4187
     ld a, $7e
-    call $09a5
+    call FarCall
     call $47ac
     call $47dc
     call $43a0
@@ -327,7 +437,7 @@ SetupBirthdayScreen:
     hack SetupBirthdayScreen
     ;ld hl, $4187
     ld a, $7e
-    call $09a5
+    call FarCall
     call $4a0c
     call $43a0
     ld a, $00
@@ -363,7 +473,7 @@ SetupBloodTypeScreen:
     hack SetupBloodTypeScreen
     ;ld hl, $4187
     ld a, $7e
-    call $09a5
+    call FarCall
     call $4b0e
     call $43a0
     ld a, $00
@@ -405,7 +515,7 @@ SetupPetScreen:
     hack SetupPetScreen
     ;ld hl, $4187
     ld a, $7e
-    call $09a5
+    call FarCall
     call $4c02
     call $43a0
     ld a, $00
@@ -426,7 +536,7 @@ SetupPetNamingScreen:
     call $4cb3
     ld hl, $4187
     ld a, $7d
-    call $09a5
+    call FarCall
     call $43a0
     ld a, $00
     call $2da7
@@ -457,7 +567,7 @@ SetupPartnerNamingScreen:
     call $4d4f
     ld hl, $4187
     ld a, $7d
-    call $09a5
+    call FarCall
     call $43a0
     ld a, $00
     call $2da7
@@ -506,39 +616,39 @@ SetupConfirmationScreen:
     ld c, $80
     ld hl, $428f
     ld a, $79
-    call $09a5
+    call FarCall
     ld a, [$d40a]
     ld b, a
     ld c, $84
     ld hl, $4255
     ld a, $79
-    call $09a5
+    call FarCall
     ld a, [$d40b]
     inc a
     ld b, a
     ld c, $8a
     ld hl, $43a5
     ld a, $79
-    call $09a5
+    call FarCall
     ld a, [$d409]
     ld b, a
     ld c, $8c
     ld hl, $4302
     ld a, $79
-    call $09a5
+    call FarCall
     ld b, $01
     ld c, $8e
     ld hl, $428f
     ld a, $79
-    call $09a5
+    call FarCall
     ld b, $02
     ld c, $92
     ld hl, $428f
     ld a, $79
-    call $09a5
+    call FarCall
     ld hl, $4187
     ld a, $7e
-    call $09a5
+    call FarCall
     call $4f32
     call $2489
     ld a, $0f
@@ -768,7 +878,7 @@ Jump_07a_5186:
 
     ld hl, $4187
     ld a, $7d
-    call $09a5
+    call FarCall
     ret 
 
 NamingScreenState1:
@@ -777,21 +887,21 @@ NamingScreenState1:
     call $4135
     ld hl, $4cb3
     ld a, $07
-    call $09a5
+    call FarCall
     ld a, $07
     ld [$ff00+$9c], a
     ld a, $60
     ld [$ff00+$9b], a
     ld hl, $4187
     ld a, $79
-    call $09a5
+    call FarCall
     ld a, $02
     ld [wStringID], a
     ld a, $14
     ld [wStringID2], a
     ld hl, $419c
     ld a, $79
-    call $09a5
+    call FarCall
     ld hl, $c7b7
     inc [hl]
     ret 
