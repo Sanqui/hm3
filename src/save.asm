@@ -229,10 +229,10 @@ LoadSavePlayerSection:
     ld a, $03
     ld [$4100], a
     ld a, $00
-    ld [rSVBK], a
+    ld [REG_SVBK], a
     call $0ac3
     xor a
-    ld [rSVBK], a
+    ld [REG_SVBK], a
     ld [$0100], a
     ld [$4100], a
     ld a, $01
