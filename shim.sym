@@ -13,6 +13,7 @@
 
 00:0ab4 ClearMemory
 00:0abc Copy
+00:0ac3 CopyLong
 
 00:0979 ReadBCFar
 00:09a5 FarCall
@@ -109,16 +110,24 @@
 7f:4674 LoadHLAAtDE
 7f:467a LoadHLAtDE
 
+01:d400 wPlayerDataStart
 01:d400 wPlayerName
 01:d408 wPlayerGender
 01:d410 wPartnerName
 01:d417 wPetName
+01:dbc6 wPlayerDataEnd
+
+01:dd54 wWhichSave
+
 01:d7d2 wTmpBank
 01:d7d6 wDialogueSectionX
 
 01:d965 wPalettes
 
 01:dcf0 wCGB
+
+03:a000 sSave1
+03:b000 sSave2
 
 6d:42d6 Tilemap0
 6d:46f0 Tilemap1
