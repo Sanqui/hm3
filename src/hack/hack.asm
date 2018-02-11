@@ -163,6 +163,7 @@ HackPredefTable:
     hack_entry SetupConfirmationScreen
     hack_entry WritePartnerGenderInVar
     hack_entry DrawStartMenu
+    hack_entry LoadCompressedGfxAtDE
 
 HackNop:
     ret
@@ -448,6 +449,86 @@ HackDrawStartMenu:
 
 MenuItemGfx:
     INCBIN "gfx/menu_items.2bpp"
+
+CopyTiles:
+.tilecopyloop
+    push bc
+    call CopyTile
+    pop bc
+    dec b
+    jr nz, .tilecopyloop
+    ret
+
+HackLoadCompressedGfxAtDE:
+    ld a, [H_TMP]
+    
+    push de
+    
+    push hl
+    push bc
+    ld b, a
+    ld e, l
+    ld d, h
+    ld hl, ReplacementCompressedGraphics
+.loop
+    ld a, [hli]
+    cp $ff
+    jr z, .not_found
+    cp b
+    jr nz, .not2
+    ld a, [hli]
+    cp e
+    jr nz, .not1
+    ld a, [hli]
+    cp d
+    jr nz, .not_found
+    lda e, [hli]
+    lda d, [hli]
+    ld b, [hl]
+    jr .load_replacement
+.not2
+    inc hl
+.not1
+    inc hl
+.not
+    inc hl
+    inc hl
+    inc hl
+    jr .loop
+    
+.not_found
+    ld a, b
+    pop bc
+    pop hl
+    ld d, b
+    ld e, c
+    ld c, a
+    call Decompress
+    
+jr .o
+
+.load_replacement
+    ld l, e
+    ld h, d
+    pop de
+    call CopyTiles
+    pop hl ; trash
+
+.o
+    pop de
+    xor a
+    ld [REG_VBK], a
+    ret
+
+ReplacementCompressedGraphics:
+    dbw BANK(PressStartGfxComp), PressStartGfxComp
+    dw PressStartGfxNew
+    db (PressStartGfxNewEnd-PressStartGfxNew) / 16
+    db -1
+
+PressStartGfxNew:
+    INCBIN "gfx/press_start.2bpp"
+PressStartGfxNewEnd
 
 INCLUDE "src/hack/vwf.asm"
 INCLUDE "src/hack/menus.asm"

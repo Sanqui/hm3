@@ -104,6 +104,8 @@
 7b:43c6 LoadTilemapNumToRAM ; in b
 7b:423c LoadDialogueBoxTilemap
 
+6e:555f PressStartGfxComp
+
 ;7f:445a LoadCompressedGfxAtDE
 7f:4681 LdBCAtDE
 7f:4674 LoadHLAAtDE
