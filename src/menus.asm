@@ -1,3 +1,97 @@
+SECTION "Start Menu", ROMX[$4e68], BANK[$0b]
+
+DrawStartMenu:
+    ld de, $8c30
+rept PLAYER_NAME_LENGTH_CODE
+    call ClearTile
+endr
+    ld hl, wPlayerName
+    ld de, $8c30
+    ld c, PLAYER_NAME_LENGTH
+    call $4f40
+    ld hl, $9c00
+    ld de, StartMenuTilemap
+    ld bc, $0710
+
+.rowloop
+    push hl
+    push bc
+
+.loop
+    call WaitVBlank
+    ld a, [de]
+    ld [hli], a
+    ei 
+    inc de
+    dec b
+    jr nz, .loop
+
+    pop bc
+    pop hl
+    ld a, $20
+    add l
+    ld l, a
+    jr nc, .nc1
+    inc h
+.nc1
+    dec c
+    jr nz, .rowloop
+
+    ld hl, $9c00
+    ld bc, $0712
+    ld a, $01
+    ld [REG_VBK], a
+
+.rowloopattr
+    push bc
+    push hl
+
+.loopattr
+    call WaitVBlank
+    ld a, $80
+    ld [hli], a
+    ei 
+    dec b
+    jr nz, .loopattr
+
+    pop hl
+    pop bc
+    ld a, $20
+    add l
+    ld l, a
+    jr nc, .nc
+    inc h
+.nc
+    dec c
+    jr nz, .rowloopattr
+
+    xor a
+    ld [REG_VBK], a
+    ld a, $6f
+    ld [$ff00+$9c], a
+    xor a
+    ld [$ff00+$9b], a
+    ret 
+
+StartMenuTilemap:
+    db $d8, $d9, $d9, $d9, $d9, $d9, $da
+    db $db, $d7, $bf, $ce, $ce, $cb, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $be, $c7, $c7, $c2, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $d1, $c1, $c8, $d7, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $c3, $c4, $c5, $c6, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $d0, $cd, $cc, $cb, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $c0, $ce, $cf, $ca, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $df
+    db $db, $d7, $bd, $c9, $cb, $c7, $df
+    db $db, $d7, $d7, $d7, $d7, $d7, $df
+    db $dc, $dd, $dd, $dd, $dd, $dd, $de
+
+
 SECTION "Load Main Menu Screen", ROMX[$5d17], BANK[$78]
 LoadMainMenuScreen:
     farcall LoadDialogueBoxTilemap
