@@ -188,7 +188,7 @@ SECTION "Text pointer metatable at 4b:4001", ROMX[$4001], BANK[$4b]
     ;INCLUDE "build/text/4b_400f.asm"
 TextSection4b_400f_END
 
-SECTION "Text pointer metatable at 4b:6c1f", ROMX[$6c1f], BANK[$4b]
+SECTION "Text pointer metatable at 4b:6c1f", ROMX[$6c11], BANK[$4b]
 ; covers: dialogue/naysaying
     setup_start_dialogue_relocate_asm 4b_6c1f
     ;INCLUDE "build/text/4b_6c1f_table.asm"
