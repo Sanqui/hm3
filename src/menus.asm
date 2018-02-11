@@ -3,12 +3,18 @@ SECTION "Start Menu", ROMX[$4e68], BANK[$0b]
 DrawStartMenu:
     ld de, $8c30
 rept PLAYER_NAME_LENGTH_CODE
-    call ClearTile
+    nop
+    nop
+    nop
+    ;call ClearTile
 endr
     ld hl, wPlayerName
     ld de, $8c30
     ld c, PLAYER_NAME_LENGTH
-    call $4f40
+    nop
+    nop
+    nop
+    ;call $4f40
     ld hl, $9c00
     ld de, StartMenuTilemap
     ld bc, $0710
@@ -69,8 +75,9 @@ endr
     ld [REG_VBK], a
     ld a, $6f
     ld [$ff00+$9c], a
-    xor a
-    ld [$ff00+$9b], a
+    ;xor a
+    ;ld [$ff00+$9b], a
+    hack DrawStartMenu
     ret 
 
 StartMenuTilemap:
