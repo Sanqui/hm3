@@ -295,9 +295,20 @@ HackNameWriteTile:
 HackNameEnd:
     call VWFFinish
     call VWFInit
+    ld hl, NameLeftTileGfx
+    ld de, $8b50
+    call CopyTile
+    ld hl, NameRightTileGfx
+    ld de, $8bc0
+    call CopyTile
     ; o
     ld de, $9c01
     ret
+
+NameLeftTileGfx:
+    INCBIN "gfx/nameleft.2bpp"
+NameRightTileGfx:
+    INCBIN "gfx/nameright.2bpp"
 
 HackLoadMainMenuScreen:
     ld hl, MainMenuStringDefinitions

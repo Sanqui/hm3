@@ -199,7 +199,7 @@ GirlStringDefinition:
 
 StartMenuStringDefinitions:
     db 1
-    db   2,  1,  4, $80, "Tool@"
+    db   2,  1,  4, $b5, "Tool@"
     db   2,  3,  4,  -1, "Seed@"
     db   2,  5,  3,  -1, "Bag@"
     db   2,  9,  4,  -1, "Animal@"
