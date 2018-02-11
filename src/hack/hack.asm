@@ -366,6 +366,9 @@ HackSetupColorScreen:
 HackSetupBirthdayScreen:
     ld hl, BirthdayScreenStringDefinitions
     call LoadMenuStrings
+    
+    ld hl, BirthdayScreenTilemapPatches
+    call WriteTilemapPatches
     ;o
     ld hl, $4187
     ret
@@ -397,7 +400,10 @@ HackSetupConfirmationScreen:
     ld hl, GirlStringDefinition
 .gotgenderdef
     call LoadMenuString
-    ;o
+    
+    ld hl, ConfirmationScreenTilemapPatches
+    call WriteTilemapPatches
+    
     ld a, $0f
     ld [$c0a2], a
     ret

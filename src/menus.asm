@@ -1578,7 +1578,7 @@ EnterNameTilemap:
     db $d8,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$da
     db $db,$d7,$d7,$d7,$00,$01,$02,$03,$04,$d7,$05,$06,$07,$03,$08,$d7,$d7,$d7,$d7,$df
     db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
-    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$09,$06,$07,$03,$0a,$ec,$ec,$ec,$ec,$d7,$df
+    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$ef,$ef,$ef,$ef,$ef,$ef,$ef,$ef,$ef,$d7,$df
     db $dc,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$de
 EnterNameAttributemap:
     db $00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00,$00

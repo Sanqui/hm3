@@ -10,6 +10,40 @@ WriteTilemapByteClone:
     ei
     ret
 
+WriteTilemapByteToDE:
+    push af
+    di
+.loop
+    ld a, [$ff41]
+    bit 1, a
+    jr nz, .loop
+    pop af
+    ld [de], a
+    ei
+    inc de
+    ret
+    
+WriteTilemapPatches:
+.loop
+    ld a, [hl]
+    and a
+    cp $ff
+    ret z
+    call WriteTilemapPatch
+    jr .loop
+
+WriteTilemapPatch:
+    ld a, [hli]
+    ld e, a
+    ld a, [hli]
+    ld d, a
+.loop
+    ld a, [hli]
+    cp -1
+    ret z
+    call WriteTilemapByteToDE
+    jr .loop
+
 LoadMenuStrings:
     lda [wMenuBlankTileNum], $d7
     lda [wMenuWhichTilemap], [hli]
@@ -135,7 +169,7 @@ PlayerSelectionScreenStringDefinitions:
 NamingScreenStringDefinitions:
     db 0
     db  4,  1, 11, $00, "Wie heißt du?@"
-    db  6,  3,  4,  -1, "Name…@"
+    db  6,  3,  4,  -1, "Name",$f5,"@"
     db $10,$10, 3,  -1, "Ende@"
     db -1
     
@@ -164,6 +198,11 @@ BirthdayScreenStringDefinitions:
     db   3, 16,  4,  -1, "Ende@"
     db -1
 
+BirthdayScreenTilemapPatches:
+    dw $986a
+    db $d7, $86, $87, $d7, $80, $81, $82, $83, $84, -1
+    db -1
+
 BloodTypeScreenStringDefinitions:
     db 0
     db   2,  1, 12, $00, "Welche Blutgruppe@"
@@ -181,20 +220,27 @@ PetScreenStringDefinitions:
 
 ConfirmationScreenStringDefinitions:
     db 0
-    db   5,  6,  7, $00, "Geschlecht…@"
-    db   5,  8,  5,  -1, "Name…@"
-    db   5, 10,  7,  -1, "Outfit…@"
-    db   5, 12,  6,  -1, "Geburtstag…@"
-    db   5, 14, 11,  -1, "Blutgruppe…@"
-    db   4, 18,  5,  -1, "Name…@"
-    db  $e, 18,  5,  -1, "Name…@"
+    db   5,  6,  8, $00, "Geschlecht",$f5,"@"
+    db   5,  8,  5,  -1, "Name",$f5,"@"
+    db   5, 10,  7,  -1, "Outfit",$f5,"@"
+    db   5, 12,  6,  -1, "Geburtstag",$f5,"@"
+    db   5, 14, 11,  -1, "Blutgruppe",$f5,"@"
+    db   4, 18,  5,  -1, "Name",$f5,"@"
+    db  $e, 18,  5,  -1, "Name",$f5,"@"
+    db -1
+
+ConfirmationScreenTilemapPatches:
+    dw $998c
+    db $8a, $8b, $84, $85, $86, $87, $88, -1
+    dw $99cd
+    db $8c, $8d, $d7, $d7, $d7, $d7, -1
     db -1
 
 BoyStringDefinition:
-    db  $c,  6,  3,  -1, "Boy@"
+    db  $d,  6,  3,  -1, "Junge@"
     db -1
 GirlStringDefinition:
-    db  $c,  6,  4,  -1, "Girl@"
+    db  $d,  6,  4,  -1, "Mädchen@"
     db -1
 
 StartMenuStringDefinitions:
