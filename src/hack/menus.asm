@@ -199,12 +199,12 @@ GirlStringDefinition:
 
 StartMenuStringDefinitions:
     db 1
-    db   2,  1,  4, $80, "Tool@"
-    db   2,  3,  4,  -1, "Seed@"
-    db   2,  5,  3,  -1, "Bag@"
-    db   2,  9,  4,  -1, "Animal@"
-    db   2, 11,  4,  -1, "Work@"
-    db   2, 13,  4,  -1, "File@"
+    db   2,  1,  4, $80, "Werkzeug@"
+    db   2,  3,  4,  -1, "Samen@"
+    db   2,  5,  3,  -1, "Rucksack@"
+    db   2,  9,  4,  -1, "Tiere@"
+    db   2, 11,  4,  -1, "Austräge@"
+    db   2, 13,  4,  -1, "Tagebuch@"
     db   2,  7,  4,  -1, -2
     dw wPlayerName
     db -1
