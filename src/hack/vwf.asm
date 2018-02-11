@@ -77,10 +77,16 @@ VWFCopyTiles:
     lda l, [wVWFTilesPtr]
     lda h, [wVWFTilesPtr+1]
     ld a, [wVWFCurTileNum]
-    ld b, $0
     ld c, a
+    cp $80
+    jr c, .nothigh
+    ld a, h
+    sub $10
+    ld h, a
+.nothigh
+    ld b, $0
     ld a, 16
-    call MyMultiply
+    call MyMultiply ; XXX needlessly slow
     
     push hl
     pop de

@@ -42,6 +42,7 @@ wMenuStringY: ds 1
 wMenuStringPad: ds 1
 wMenuTileNum: ds 1
 wMenuBlankTileNum: ds 1
+wMenuWhichTilemap: ds 1
 
 SECTION "Rst $10", ROM0[$0010]
     push af
@@ -161,6 +162,7 @@ HackPredefTable:
     hack_entry SetupPetScreen
     hack_entry SetupConfirmationScreen
     hack_entry WritePartnerGenderInVar
+    hack_entry DrawStartMenu
 
 HackNop:
     ret
@@ -407,6 +409,15 @@ BoyDialogueString:
     db "Der Junge@"
 GirlDialogueString:
     db "Das Mädchen@"
+
+HackDrawStartMenu:
+    ld hl, StartMenuStringDefinitions
+    call LoadMenuStrings
+    
+    ; o
+    xor a
+    ld [$ff00+$9b], a
+    ret
 
 INCLUDE "src/hack/vwf.asm"
 INCLUDE "src/hack/menus.asm"
