@@ -520,10 +520,13 @@ jr .o
     ld [REG_VBK], a
     ret
 
+comp_replacement_entry: MACRO
+    dbw BANK(\1), \1
+    dwb \2, (\2End - \2) / 16
+ENDM
+
 ReplacementCompressedGraphics:
-    dbw BANK(PressStartGfxComp), PressStartGfxComp
-    dw PressStartGfxNew
-    db (PressStartGfxNewEnd-PressStartGfxNew) / 16
+    comp_replacement_entry PressStartGfxComp, PressStartGfxNew
     db -1
 
 PressStartGfxNew:
