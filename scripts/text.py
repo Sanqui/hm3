@@ -492,9 +492,9 @@ def print_strings_from_csvs():
                                     else:
                                         splitby = " "
                                     questions = [q.strip() for q in line[:-5].strip().split(splitby) if q]
-                                    print(questions)
+                                    #print(questions)
                                     line = f"<sp8>{questions[0]}<question2><sp8>{questions[1]}"
-                                    newline = "<ask>10"+charmap[0x10]+charmap[0x19]+"0001"
+                                    newline = "<ask>10"+charmap[0x10]+charmap[0x19]+"000@"
                                 else:
                                     newline = newlines[-1]
                                 
