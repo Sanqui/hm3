@@ -240,6 +240,7 @@ EE=.
 EF= 
 F0=<f0>
 F1=<f1>
+F1=<question2>
 F2=<f2>
 F3=<f3>
 F4=<noname>
@@ -255,6 +256,7 @@ FD=<clear>
 FE=\n
 FF=@
 
+3F=<sp8>
 40=Á
 41=É
 42=Í

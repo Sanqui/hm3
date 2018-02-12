@@ -152,6 +152,7 @@ HackPredefTable:
     hack_entry SetupPetScreen
     hack_entry SetupConfirmationScreen
     hack_entry DrawStartMenu
+    hack_entry ControlCodeF1
 
 HackNop:
     ret
@@ -398,6 +399,14 @@ HackDrawStartMenu:
     ; o
     xor a
     ld [$ff00+$9b], a
+    ret
+
+HackControlCodeF1:
+    call VWFFinish
+    call VWFInit
+    lda [wVWFCurTileNum], $19
+    
+    ld b, $00
     ret
 
 INCLUDE "src/hack/vwf.asm"

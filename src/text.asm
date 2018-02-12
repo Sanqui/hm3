@@ -1,3 +1,8 @@
+SECTION "New Control Code F1", ROM0[$0061]
+ControlCodeF1:
+    hack ControlCodeF1
+    jp ControlCodeEnd
+
 SECTION "Dialogue handling", ROM0[$243b]
 
 SetupDialogue:: ; $243b
@@ -428,7 +433,7 @@ DialogueNextChar::
     jumptable
 ControlByteJumpTable::
     dw ControlCodeF0 ; $2707
-    dw ControlCodeF1 ; $2707
+    dw ControlCodeF1
     dw ControlCodeF2 ; $2707
     dw ControlCodeF3 ; $270c
     dw ControlCodeF4 ; $273c
@@ -445,7 +450,6 @@ ControlByteJumpTable::
     dw ControlCodeFF ; $2966
 
 ControlCodeF0:
-ControlCodeF1:
 ControlCodeF2:
     ld b, $00
     jp ControlCodeEnd

@@ -427,12 +427,26 @@ def print_strings_from_csvs():
                     csvi, address, end, name_i, newlines, name, string = row
                 else:
                     csvi, address, end, name_i, newlines, name, string, newstring = row
+                if newlines:
+                    newlines = json.loads(newlines)
+                else:
+                    newlines = []
                 if newstring != None and newstring != "":
                     new = True
                     origstring = string
                     string = newstring
                 elif FORCE_NEW:
-                    string = string.replace("\n", " ")
+                    newstring = ""
+                    if string.endswith("<ask>"):
+                        nl = newlines[-1]
+                        if nl == "@": nl = newlines[-2]
+                        axis = int(nl[6])
+                        hardlines = [-1, -2][axis]
+                        newstring = " ".join(string.split("\n")[0:-2])
+                        newstring += "\n".join(string.split("\n")[-2:])
+                        string = newstring
+                    else:
+                        string = string.replace("\n", " ")
                     new = True
                 #if i != "TRASH":
                 #    i = int(i)
@@ -443,14 +457,16 @@ def print_strings_from_csvs():
                     name_i = int(name_i)
                 else:
                     name_i = None
-                if newlines:
-                    newlines = json.loads(newlines)
-                else:
-                    newlines = []
                 string = dumb_smart_quotes(string)
                 csvstring = ""
                 if name_i is not None:
                     csvstring += "<name>" + charmap[name_i]
+                ask = False
+                if string.endswith("<ask>"):
+                    nl = newlines[-1]
+                    if nl == "@": nl = newlines[-2]
+                    axis = int(nl[6])
+                    ask = True
                 if newlines:
                     if not new:
                         for line, newline in zip(string.split("\n"), newlines):
@@ -458,16 +474,38 @@ def print_strings_from_csvs():
                     else:
                         string = calculate_newlines(string)
                         numlines = len(string.split("\n"))
+                        if ask:
+                            string = string.split('\n')
+                            if axis == 0 and numlines % 2 == 1:
+                                string.insert(-1, '')
+                                numlines += 1
+                            elif axis == 1 and numlines % 2 == 1:
+                                string.insert(-2, '')
+                                numlines += 1
+                            string = '\n'.join(string)
                         for linei, line in enumerate(string.split("\n")):
-                            csvstring += line.rstrip(" ")
                             if linei == numlines-1:
                                 #print("; last: ", newlines[-1])
-                                csvstring += newlines[-1] + "\n"
+                                if "<ask>" in line and axis == 0:
+                                    if "  " in line:
+                                        splitby = "  "
+                                    else:
+                                        splitby = " "
+                                    questions = [q.strip() for q in line[:-5].strip().split(splitby) if q]
+                                    print(questions)
+                                    line = f"<sp8>{questions[0]}<question2><sp8>{questions[1]}"
+                                    newline = "<ask>10"+charmap[0x10]+charmap[0x19]+"0001"
+                                else:
+                                    newline = newlines[-1]
+                                
                             else:
                                 if linei%2 == 1 and len(newlines) < 2:
+                                    newline = ""
                                     print(f"WARNING: {address:x} doesn't have newlines[1], but we need it")
                                 else:
-                                    csvstring += newlines[linei%2] + "\n"
+                                    newline = newlines[linei%2] + "\n"
+                            csvstring += line.rstrip(" ")
+                            csvstring += newline + "\n"
                 else:
                     csvstring = string+"\n"
                 csvstring = csvstring[:-1].split("\n")
