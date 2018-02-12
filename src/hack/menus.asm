@@ -47,10 +47,15 @@ WriteTilemapPatch:
 LoadMenuStrings:
     lda [wMenuBlankTileNum], $d7
     lda [wMenuWhichTilemap], [hli]
-LoadMenuString:
-    lda [wMenuStringX], [hli]
+.loop
+    ld a, [hl]
     cp $ff
     ret z
+    call LoadMenuString
+    jr .loop
+
+LoadMenuString:
+    lda [wMenuStringX], [hli]
     lda [wMenuStringY], [hli]
     lda [wMenuStringPad], [hli]
     ld a, [hli]
@@ -126,7 +131,7 @@ LoadMenuString:
     ld [wMenuTileNum], a
     
     pop hl
-    jr LoadMenuString
+    ret
     
 PrintMenuString:
     push hl
@@ -171,6 +176,10 @@ NamingScreenStringDefinitions:
     db  4,  1, 11, $00, "Wie heißt du?@"
     db  6,  3,  4,  -1, "Name",$f5,"@"
     db $10,$10, 3,  -1, "Ende@"
+    db -1
+
+NamingScreenPlayerStringDefinition:
+    db  4,  1, 11, $00, "Wie heißt du?@"
     db -1
     
 ColorScreenStringDefinitions:
@@ -237,11 +246,17 @@ ConfirmationScreenTilemapPatches:
     db -1
 
 BoyStringDefinition:
+<<<<<<< HEAD
     db  $d,  6,  3,  -1, "Junge@"
     db -1
 GirlStringDefinition:
     db  $d,  6,  4,  -1, "Mädchen@"
     db -1
+=======
+    db  $c,  6,  3,  -1, "Boy@"
+GirlStringDefinition:
+    db  $c,  6,  4,  -1, "Girl@"
+>>>>>>> 08a1e575fda7009561754f148cfcb0944da8313a
 
 StartMenuStringDefinitions:
     db 1
