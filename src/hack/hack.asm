@@ -355,6 +355,50 @@ HackSetupNamingScreen2:
     ld hl, NamingScreenStringDefinitions
     call LoadMenuStrings
     
+    lda e, [wNamingScreenDestination]
+    lda d, [wNamingScreenDestinationHi]
+    
+    ld a, e
+    cp wPlayerName & $ff
+    jr nz, .notplayername
+    ld a, d
+    cp wPlayerName >> 8
+    jr z, .playername
+.notplayername
+    cp wPartnerName & $ff
+    jr nz, .notpartnername
+    ld a, d
+    cp wPartnerName >> 8
+    jr z, .partnername
+.notpartnername
+    cp wPetName & $ff
+    jr nz, .notpetname
+    ld a, d
+    cp wPetName >> 8
+    jr z, .petname
+.notpetname
+    ld b, b
+    jr .done
+.playername
+    ld hl, NamingScreenPlayerStringDefinition
+    call LoadMenuString
+    jr .done
+.petname
+    ld hl, NamingScreenPetStringDefinition
+    call LoadMenuString
+    jr .done
+.partnername
+    ld a, [wPlayerGender]
+    and a
+    jr nz, .girl
+    ld hl, NamingScreenSheStringDefinition
+    call LoadMenuString
+    jr .done
+.girl
+    ld hl, NamingScreenHeStringDefinition
+    call LoadMenuString
+.done
+    
     ld hl, $4187
     ret
 
@@ -393,7 +437,7 @@ HackSetupConfirmationScreen:
     ld hl, ConfirmationScreenStringDefinitions
     call LoadMenuStrings
     
-    ld a, [$d408] ; TODO wPlayerGender
+    ld a, [wPlayerGender]
     and a
     jr nz, .girl
     ld hl, BoyStringDefinition

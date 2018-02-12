@@ -173,14 +173,18 @@ PlayerSelectionScreenStringDefinitions:
 
 NamingScreenStringDefinitions:
     db 0
-    db  4,  1, 11, $00, "Wie heißt du?@"
-    db  6,  3,  4,  -1, "Name",$f5,"@"
+    db  6,  3,  4,   0, "Name",$f5,"@"
     db $10,$10, 3,  -1, "Ende@"
     db -1
 
 NamingScreenPlayerStringDefinition:
-    db  4,  1, 11, $00, "Wie heißt du?@"
-    db -1
+    db  4,  1, 11,  -1, "Wie heißt du?@"
+NamingScreenPetStringDefinition:
+    db  4,  1, 11,  -1, "Wie heißt dein Haustier?@"
+NamingScreenHeStringDefinition:
+    db  4,  1, 11,  -1, "Wie heißt er?@"
+NamingScreenSheStringDefinition:
+    db  4,  1, 11,  -1, "Wie heißt sie?@"
     
 ColorScreenStringDefinitions:
     db 0
@@ -246,17 +250,9 @@ ConfirmationScreenTilemapPatches:
     db -1
 
 BoyStringDefinition:
-<<<<<<< HEAD
     db  $d,  6,  3,  -1, "Junge@"
-    db -1
 GirlStringDefinition:
     db  $d,  6,  4,  -1, "Mädchen@"
-    db -1
-=======
-    db  $c,  6,  3,  -1, "Boy@"
-GirlStringDefinition:
-    db  $c,  6,  4,  -1, "Girl@"
->>>>>>> 08a1e575fda7009561754f148cfcb0944da8313a
 
 StartMenuStringDefinitions:
     db 1
