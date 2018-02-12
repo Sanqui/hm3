@@ -164,6 +164,7 @@ HackPredefTable:
     hack_entry WritePartnerGenderInVar
     hack_entry DrawStartMenu
     hack_entry LoadCompressedGfxAtDE
+    hack_entry ControlCodeF1
 
 HackNop:
     ret
@@ -532,6 +533,14 @@ ReplacementCompressedGraphics:
 PressStartGfxNew:
     INCBIN "gfx/press_start.2bpp"
 PressStartGfxNewEnd
+
+HackControlCodeF1:
+    call VWFFinish
+    call VWFInit
+    lda [wVWFCurTileNum], $19
+    
+    ld b, $00
+    ret
 
 INCLUDE "src/hack/vwf.asm"
 INCLUDE "src/hack/menus.asm"

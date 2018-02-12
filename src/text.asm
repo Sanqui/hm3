@@ -1,3 +1,8 @@
+SECTION "New Control Code F1", ROM0[$0061]
+ControlCodeF1:
+    hack ControlCodeF1
+    jp ControlCodeEnd
+
 SECTION "Dialogue handling", ROM0[$243b]
 
 SetupDialogue:: ; $243b
@@ -305,7 +310,7 @@ jr_2601:
     ld a, [$c541]
     ld c, a
     call Call_2a3b
-    ld a, [wCurName]
+    ld a, [wControlCodeParams]
     and a
     jp z, DoDialogue
 
@@ -313,7 +318,7 @@ jr_2601:
     ld a, [$c542]
     ld c, a
     call Call_2a3b
-    ld a, [wCurName]
+    ld a, [wControlCodeParams]
     cp $01
     jp z, DoDialogue
 
@@ -321,7 +326,7 @@ jr_2601:
     ld a, [$c543]
     ld c, a
     call Call_2a3b
-    ld a, [wCurName]
+    ld a, [wControlCodeParams]
     cp $02
     jp z, DoDialogue
 
@@ -428,7 +433,7 @@ DialogueNextChar::
     jumptable
 ControlByteJumpTable::
     dw ControlCodeF0 ; $2707
-    dw ControlCodeF1 ; $2707
+    dw ControlCodeF1
     dw ControlCodeF2 ; $2707
     dw ControlCodeF3 ; $270c
     dw ControlCodeF4 ; $273c
@@ -445,7 +450,6 @@ ControlByteJumpTable::
     dw ControlCodeFF ; $2966
 
 ControlCodeF0:
-ControlCodeF1:
 ControlCodeF2:
     ld b, $00
     jp ControlCodeEnd
@@ -455,7 +459,7 @@ ControlCodeF3::
     ld a, [hli]
     ld h, [hl]
     ld l, a
-    ld de, $c53f
+    ld de, wControlCodeParams
     ld b, $04
 
 .loop
@@ -466,7 +470,7 @@ ControlCodeF3::
     jr nz, .loop
 
     ld a, [$c53b]
-    ld hl, $c53f
+    ld hl, wControlCodeParams
     add l
     ld l, a
     jr nc, .nc
@@ -510,20 +514,20 @@ ControlCodeF5: ; <ask> (yes/no)
     ld h, [hl]
     ld l, a
     ld a, [hli]
-    ld [$c53f], a
+    ld [wControlCodeNumAnswers], a
     ld a, [hli]
     ld [$c540], a
     ld [$c53b], a
     ld a, [hli]
-    ld [$c541], a
+    ld [wControlCodeAnswer1Tile], a
     ld a, [hli]
-    ld [$c542], a
+    ld [wControlCodeAnswer2Tile], a
     ld a, [hli]
-    ld [$c543], a
+    ld [wControlCodeAnswer3Tile], a
     ld a, [hli]
-    ld [$c544], a
+    ld [wControlCodeAnswer4Tile], a
     ld a, [hli]
-    ld [$c545], a
+    ld [wControlCodeAnswerAxis], a
     ld a, l
     ld [wDialogueOffset2], a
     ld a, h
@@ -550,7 +554,7 @@ endr
     ld a, h
     ld [wDialogueOffset2+1], a
     pop af
-    ld [$c53f], a
+    ld [wControlCodeName], a
     add a
     ld de, NameTable
     add e
@@ -1048,7 +1052,7 @@ jr_2a3c:
 
 
 Call_2a66:
-    ld a, [wCurName]
+    ld a, [wControlCodeParams]
     cp $02
     ret c
 
@@ -1093,7 +1097,7 @@ jr_2a95:
 
 
 Call_2aa8:
-    ld a, [wCurName]
+    ld a, [wControlCodeParams]
     cp $02
     ret c
 
@@ -1116,7 +1120,7 @@ jr_2ab8:
     jr jr_2a95
 
 Call_2ac6:
-    ld a, [wCurName]
+    ld a, [wControlCodeParams]
     and a
     ret z
 
@@ -1157,7 +1161,7 @@ jr_2af4:
 
 
 Call_2b07:
-    ld a, [wCurName]
+    ld a, [wControlCodeParams]
     and a
     ret z
 
