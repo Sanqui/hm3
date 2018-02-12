@@ -6,6 +6,7 @@ INCLUDE "src/strings.asm"
 INCLUDE "src/tilemap.asm"
 INCLUDE "src/menus.asm"
 INCLUDE "src/save.asm"
+INCLUDE "src/screens.asm"
 
 INCLUDE "src/hack/hack.asm"
 
