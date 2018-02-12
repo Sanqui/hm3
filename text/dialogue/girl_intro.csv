@@ -1,32 +1,32 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x1e5778,0x1e57c6,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"On one cold
 winter day, I
 was waiting for
 the bus so I
 could go home.
-"
+","An einem kalten Wintertag wartete ich auf den Bus, der mich nach Hause bringen würde."
 1,0x1e57c6,0x1e5827,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"Becuase of the
 heavy snow, the
 bus was late. As
 soon as the door
 opened, I jumped
-on it."
+on it.","Wegen des starken Schneefalls hatte der Bus Verspätung. Sobald sich seine Tür öffnete, sprang ich hinein."
 2,0x1e5827,0x1e5848,,"[""\\n"", ""<fc>\u3065@""]",,"The bus started
-moving slowly."
+moving slowly.","Der Bus fuhr langsam los."
 3,0x1e5848,0x1e58a3,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"It was getting
 dark and the
 bus headed deep
 into the
 mountains. After
-several stops…"
+several stops…","Es wurde dunkel und der Bus tief in die Berge hinein. Und nach einigen Haltestellen..."
 4,0x1e58a3,0x1e58c1,,"[""\\n"", ""<fc>\u3065@""]",,"An old man got
-off the bus."
+off the bus.","...Stieg ein alter Mann aus dem Bus."
 5,0x1e58c1,0x1e5903,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"However, after
 he got off the
 bus, it didn't
-start moving."
+start moving.","Doch obwohl der Mann längst ausgestiegen war, fuhr der Bus nicht weiter."
 6,0x1e5903,0x1e591d,,"[""\\n"", ""<fc>\u3065@""]",,"I asked the
-driver why."
+driver why.","Also fragte ich den Mann am Steuer..."
 7,0x1e591d,0x1e599d,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", "" \\n"", ""<fc>\u3065@""]",,"“Mr. Driver, why
 don't you take
 off?”
@@ -34,10 +34,11 @@ The driver said,
 “We are in the
 mountains and
 it's so dark
-around here…”"
+around here…”","""Hr. Busfahrer, wieso fahren wir nicht weiter?""
+Darauf antwortete der Busfahrer: ""Wir sind hier mitten in den Bergen und es ist zappenduster..."""
 8,0x1e599d,0x1e59f0,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",,"“I want to use
 the headlights
 to make sure the
 old man gets
 home safely.”
-"
+","""Mit dem Fernlicht leuchte ich dem alten Mann seinen Weg nachhause. Ich will, dass er heil dort ankommt."" "

@@ -1,12 +1,12 @@
 i,address,end,name_i,newlines,name,string,translation
 0,0x1e477c,0x1e4781,,"[""@""]",,Hand,Hand
 1,0x1e4781,0x1e4788,,"[""@""]",,Shovel,Schaufel
-2,0x1e4788,0x1e4795,,"[""@""]",,"Turnip Seeds",Tulpensamen
+2,0x1e4788,0x1e4795,,"[""@""]",,"Turnip Seeds",Rübensamen
 3,0x1e4795,0x1e47a2,,"[""@""]",,"Potato Seeds",Kartoffelsamen
 4,0x1e47a2,0x1e47b2,,"[""@""]",,"Asparagus Seeds",Spargelsamen
 5,0x1e47b2,0x1e47bd,,"[""@""]",,"Corn Seeds",Maissamen
 6,0x1e47bd,0x1e47ca,,"[""@""]",,"Tomato Seeds",Tomatensamen
-7,0x1e47ca,0x1e47d8,,"[""@""]",,"W.Melon Seeds",Melonensamen
+7,0x1e47ca,0x1e47d8,,"[""@""]",,"W.Melon Seeds",Wassermelonensamen
 8,0x1e47d8,0x1e47e7,,"[""@""]",,"S.Potato Seeds",Süßkartoffelsamen
 9,0x1e47e7,0x1e47f4,,"[""@""]",,"Peanut Seeds",Erdnusssamen
 10,0x1e47f4,0x1e4803,,"[""@""]",,"Eggplant Seeds",Auberginensamen
@@ -15,26 +15,26 @@ i,address,end,name_i,newlines,name,string,translation
 13,0x1e481a,0x1e4825,,"[""@""]",,Fertilizer,Dünger
 14,0x1e4825,0x1e482f,,"[""@""]",,Sprinkler,Sprinkler
 15,0x1e482f,0x1e483e,,"[""@""]",,"Stardust Seeds",Sternenstaubsamen
-16,0x1e483e,0x1e484e,,"[""@""]",,"Cherry F. Seeds",Kirschblütensamen
-17,0x1e484e,0x1e485e,,"[""@""]",,"Primerose Seeds",Mehlprimelsamen
+16,0x1e483e,0x1e484e,,"[""@""]",,"Cherry F. Seeds",Kirschblumensamen
+17,0x1e484e,0x1e485e,,"[""@""]",,"Primerose Seeds",Primelsamen
 18,0x1e485e,0x1e486e,,"[""@""]",,"Moonlight Seeds",Mondscheinsamen
-19,0x1e486e,0x1e487b,,"[""@""]",,"S.Star Seeds",Schweifsternsamen
+19,0x1e486e,0x1e487b,,"[""@""]",,"S.Star Seeds",Sternschnuppensamen
 20,0x1e487b,0x1e4887,,"[""@""]",,"Comet Seeds",Kometensamen
 21,0x1e4887,0x1e4897,,"[""@""]",,"Full Moon Seeds",Vollmondsamen
 22,0x1e4897,0x1e48a6,,"[""@""]",,"S. Dream Seeds",Wunschtraumsamen
 23,0x1e48a6,0x1e48b2,,"[""@""]",,"Grass Seeds",Grassamen
-24,0x1e48b2,0x1e48c1,,"[""@""]",,"Sheep Medicine",Schafsmedizin
+24,0x1e48b2,0x1e48c1,,"[""@""]",,"Sheep Medicine",Schafmedizin
 25,0x1e48c1,0x1e48ce,,"[""@""]",,"Chicken Med.",Hühnermedizin
 26,0x1e48ce,0x1e48db,,"[""@""]",,"Cow Medicine",Kuhmedizin
 27,0x1e48db,0x1e48ea,,"[""@""]",,"Horse Medicine",Pferdemedizin
 28,0x1e48ea,0x1e48f0,,"[""@""]",,Brush,Bürste
 29,0x1e48f0,0x1e48f8,,"[""@""]",,Shampoo,Shampoo
-30,0x1e48f8,0x1e4901,,"[""@""]",,Clippers,Schere
-31,0x1e4901,0x1e4908,,"[""@""]",,Milker,Melker
+30,0x1e48f8,0x1e4901,,"[""@""]",,Clippers,Schermaschine
+31,0x1e4901,0x1e4908,,"[""@""]",,Milker,Melkmaschine
 32,0x1e4908,0x1e490f,,"[""@""]",,Saddle,Sattel
 33,0x1e490f,0x1e4919,,"[""@""]",,Scarecrow,Vogelscheuche
-34,0x1e4919,0x1e4928,,"[""@""]",,"Miracle Gloves",Wunderhandschuhe
-35,0x1e4928,0x1e4933,,"[""@""]",,"Fodder Set","Packung Futter"
+34,0x1e4919,0x1e4928,,"[""@""]",,"Miracle Gloves",Wunderhandschuh
+35,0x1e4928,0x1e4933,,"[""@""]",,"Fodder Set",Futterset
 36,0x1e4933,0x1e493f,,"[""@""]",,"Fishing Rod",Angel
 37,0x1e493f,0x1e4947,,"[""@""]",,"??? Egg",???-Ei
 38,0x1e4947,0x1e4951,,"[""@""]",,Snowboard,Snowboard

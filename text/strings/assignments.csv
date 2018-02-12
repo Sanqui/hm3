@@ -2,13 +2,13 @@ i,address,end,name_i,newlines,name,string,translation
 0,0x10c57e,0x10c582,,"[""@""]",,3x3,3x3
 1,0x10c582,0x10c58a,,"[""@""]",,"U Shape",U-Form
 2,0x10c58a,0x10c592,,"[""@""]",,"2 Lines","2 Reihen"
-3,0x10c592,0x10c599,,"[""@""]",,Turnip,Tulpe
+3,0x10c592,0x10c599,,"[""@""]",,Turnip,Rübe
 4,0x10c599,0x10c5a0,,"[""@""]",,Potato,Kartoffel
 5,0x10c5a0,0x10c5aa,,"[""@""]",,Asparagus,Spargel
 6,0x10c5aa,0x10c5b0,,"[""@""]",,Wheat,Weizen
 7,0x10c5b0,0x10c5c0,,"[""@""]",,"Stardust Flower",Sternenstaubblume
-8,0x10c5c0,0x10c5ce,,"[""@""]",,"Cherry Flower",Kirschblütenblume
-9,0x10c5ce,0x10c5d7,,"[""@""]",,Primrose,Mehlprimel
+8,0x10c5c0,0x10c5ce,,"[""@""]",,"Cherry Flower",Kirschblume
+9,0x10c5ce,0x10c5d7,,"[""@""]",,Primrose,Primel
 10,0x10c5d7,0x10c5de,,"[""@""]",,Tomato,Tomate
 11,0x10c5de,0x10c5e3,,"[""@""]",,Corn,Mais
 12,0x10c5e3,0x10c5eb,,"[""@""]",,W.Melon,Wassermelone

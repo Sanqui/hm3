@@ -3,7 +3,7 @@ i,address,end,name_i,newlines,name,string,translation
 1,0x1e4ad8,0x1e4add,,"[""@""]",,Weed,Unkraut
 2,0x1e4add,0x1e4ae3,,"[""@""]",,Stone,Stein
 3,0x1e4ae3,0x1e4ae9,,"[""@""]",,Fence,Zaun
-4,0x1e4ae9,0x1e4af0,,"[""@""]",,Turnip,Tulpe
+4,0x1e4ae9,0x1e4af0,,"[""@""]",,Turnip,Rübe
 5,0x1e4af0,0x1e4af7,,"[""@""]",,Potato,Kartoffel
 6,0x1e4af7,0x1e4b01,,"[""@""]",,Asparagus,Spargel
 7,0x1e4b01,0x1e4b06,,"[""@""]",,Corn,Mais
@@ -17,7 +17,7 @@ i,address,end,name_i,newlines,name,string,translation
 15,0x1e4b43,0x1e4b51,,"[""@""]",,"Cherry Flower",Kirschblütenblume
 16,0x1e4b51,0x1e4b5b,,"[""@""]",,Primerose,Mehlprimel
 17,0x1e4b5b,0x1e4b6b,,"[""@""]",,"Moonlight Flwer",Mondscheinblume
-18,0x1e4b6b,0x1e4b7a,,"[""@""]",,"S. Star Flower",Schweifsternblume
+18,0x1e4b6b,0x1e4b7a,,"[""@""]",,"S. Star Flower",Sternschnuppenblume
 19,0x1e4b7a,0x1e4b87,,"[""@""]",,"Comet Flower",Kometenblume
 20,0x1e4b87,0x1e4b97,,"[""@""]",,"Full Moon Flwer",Vollmondblume
 21,0x1e4b97,0x1e4ba7,,"[""@""]",,"S. Dream Flower",Wunschtraumblume

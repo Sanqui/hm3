@@ -1,4 +1,4 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x10a157,0x10a22c,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"Hi <player>.
 You look happy.
 What? A meteor
@@ -12,11 +12,12 @@ I'll go with
 you. I will be
 at the cliff at
 11PM waiting for
-you."
+you.","Hi, <player>. Du siehst aber fröhlich aus!
+Was? Ein Meteoritenschauer?! ...Stimmt ja, das habe ich völlig vergessen! Wolltest du mich etwa fragen, ob ich ihn mir mit dir anschaue? Aber natürlich will ich das! Ich werde um 23:00 Uhr an der Klippe auf dich warten! "
 1,0x10a22c,0x10a267,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"Hey, I've been
 waiting for you!
 It is almost
-time."
+time.","Ich habe schon auf dich gewartet! Es müsste gleich anfangen."
 2,0x10a267,0x10a2cc,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"Hey <player>!!
 Wasn't it
 romantic? I was
@@ -24,11 +25,11 @@ speachless.
 Let's come here
 together next
 time too.
-"
+","Hey, <player>!! War das nicht romantisch? Also mir hat es glatt die Sprache verschlagen. Lass uns das irgendwann wiederholen!"
 3,0x10a2cc,0x10a30c,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kate,"<player>, you made
 it. This is the
 best spot. It's
-about time…"
+about time…","Hey, da bist du ja, <player>. Hier hat man den besten Blick aufs Feuerwerk. Es sollte gleich anfangen..."
 4,0x10a30c,0x10a396,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kate,"Don't you think
 fireworks are so
 romantic? Thank
@@ -36,7 +37,7 @@ you for watching
 them with me
 tonight. I hope
 we can do this
-next year too."
+next year too.","Ist so ein Feuerwerk nicht romantisch? Danke, dass du es dir heute Nacht mit mir angesehen hast. Ich würde mich freuen, wenn wir uns das Feuerwerk im nächsten Jahr wieder zusammen ansehen. "
 5,0x10a396,0x10a56d,12,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Marla,"Are you <player> by
 any chance? My
 name is Marla!
@@ -66,19 +67,24 @@ come and see me
 again. I will
 always be here.
 I hope to talk
-to you again."
+to you again.","Bist du zufällig <player>? Ich heiße Marla! Nett, dich kennenzulernen! Wie viele Jahre sind wohl vergangen, seit ich zuletzt in ein Gesicht geblickt habe? Ich glaubte heute, wie jeden Tag, allein zu sein.
+Du bist genau wie ich mir dich vorgestellt habe. So lieb, und so nett...
+Ich bin so glücklich...
+Oh, tut mir leid, das sind die Freundentränen...
+Hier, bitte, für dich!! Das ist eine Powerbeere. Sie gibt dir Kraft, wenn du sie isst.
+Statte mir doch mal wieder einen Besuch ab, wenn du Zeit hast. Ich werde hier sein und auf dich warten. Mach's gut, <player>!"
 6,0x10a56d,0x10a5c8,12,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Marla,"Thank you for
 coming here so
 early… I'm
 always alone, so
 I'm happy to see
-you."
+you.","Danke, dass du so früh hergekommen bist... Ich bin immer allein, deshalb freue ich mich so dich zu sehen."
 7,0x10a5c8,0x10a616,12,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Marla,"You have come a
 long way too see
 me… I am happy
 too be your
 friend.
-"
+","Du kamst jetzt schön öfter, um mich zu sehen... Ich bin so froh, mit dir befreundet zu sein."
 8,0x10a616,0x10a6a8,12,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Marla,"Have you ever
 heard that there
 is a devil in
@@ -87,7 +93,8 @@ night? I'm just
 kidding, but the
 ocean can be
 very dangerous
-at night."
+at night.","Wusstest du, dass im Meer nachts der Teufel lauert?
+War nur Spaß, sei aber trotzdem vorsichtig. Das Meer birgt Gefahren, besonders bei Nacht!"
 9,0x10a6a8,0x10a844,12,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Marla,"Ah, <player>…
 Hello! What? I
 look sad? No,
@@ -113,25 +120,36 @@ him again. I'll
 keep looking for
 him. I am not
 lonely, you see?
-I have you too."
+I have you too.","Ah, du bist's, <player>... Hallo!
+Was? Ich sehe traurig aus? Nein, mir geht's gut, danke... Hast du von der Geschichte des Sees gehört? ...
+... ... ... ... ...
+... ... ... ... ...
+Nun ist es also schon eine Legende...
+Ja, es stimmt. Ich hatte einst einen Freund, sein Name war Rocky. Er verschwand in einer stürmischen Nacht, als er zusammen mit Ricky um Angeln raus aufs Meer fuhr...
+Ich glaube fest daran, dass Rocky noch irgendwo da draussen ist, und dass ich ihn eines Tages wiedersehe. Ich werde jedenfalls nicht aufhören, nach ihm zu suchen.
+Und außerdem habe ich ja noch dich! Ich bin also nicht mehr allein."
 10,0x10a844,0x10a873,12,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Marla,"Well, do you
 know how Ricky
 is doing…?
-"
+","Hast du was von Ricky gehört? Ich wüsste gern, wie es ihm geht."
 11,0x10a873,0x10a8a8,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Go back to the
 village?
 
- Yes          No<ask>"
+ Yes          No<ask>","Zurück ins Dorf gehen?
+ Ja          Nein<ask>"
 12,0x10a8a8,0x10a8d8,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Go to the
 village?
 
- Yes          No<ask>"
+ Yes          No<ask>","Ins Dorf gehen?
+ Ja          Nein<ask>"
 13,0x10a8d8,0x10a90a,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Go out to the
 ocean?
 
- Yes          No<ask>"
+ Yes          No<ask>","Aufs Meer hinaus fahren?
+ Ja          Nein<ask>"
 14,0x10a90a,0x10a92f,,"[""\\n"", ""10GT000@""]",,"Go outside?
- Yes          No<ask>"
+ Yes          No<ask>","Raus gehen?
+ Ja          Nein<ask>"
 15,0x10a92f,0x10a9e2,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"I'll mainly take
 care of the
 animals, but in
@@ -143,7 +161,9 @@ work hard
 together to
 build a great
 farm, partner!
-"
+","Ich werde mich also hauptsächlich um die Tiere kümmern.
+Sag mir am Morgen einfach welche Aufgaben ich für den Tag übernehmen soll, und ich werde mich darum kümmern.
+Gut, dann mal ran an die Arbeit, Partner! Lass uns diese Farm zu neuem Leben erwecken!"
 16,0x10a92f,0x10a9e2,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"I'll mainly take
 care of the
 animals, but in
@@ -155,7 +175,9 @@ work hard
 together to
 build a great
 farm, partner!
-"
+","Ich werde mich also hauptsächlich um die Tiere kümmern.
+Sag mir am Morgen einfach welche Aufgaben ich für den Tag übernehmen soll, und ich werde mich darum kümmern.
+Gut, dann mal ran an die Arbeit, Partner! Lass uns diese Farm zu neuem Leben erwecken!"
 17,0x10a9e2,0x10aaf2,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",<partner>,"By the way
 <player>. Are you
 going to work on
@@ -173,13 +195,18 @@ to know how to
 give me
 instructions?
 
- Yes          No<ask>"
+ Yes          No<ask>","Ach ja, <player>, was ich dich noch fragen wollte... Hast du vor, auch auf dem Feld zu arbeiten? Ich halte es ja für das Beste, wenn du dich ganz den Tieren widmest.
+Sag mir am Morgen einfach welche Aufgaben ich für den Tag erledigen soll, und ich werde mich darum kümmern.
+Willst du wissen, wie du mir Anweisungen geben kannst?
+
+ Ja          Nein<ask>"
 18,0x10aaf2,0x10ab46,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"First, you'll
 see the map of
 the field, so
 choose a plot
 to work on.
-<arrow>0"
+<arrow>0","Zunächst wird dir eine Karte vom Feld angezeigt. Wähle nun eine Stelle, die bearbeitet werden soll.
+<arrow>0 "
 19,0x10ab46,0x10abdc,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",<partner>,"Then select the
 work: prepare
 the soil, till
@@ -188,10 +215,13 @@ the seed, water
 the crops and
 harvest. Choose
 one icon for
-each plot.<arrow>0"
+each plot.<arrow>0","Dann wähle die Art der Arbeit:
+Acker vorbereiten, Acker pflügen, Samen einpflanzen, Feldfrüchte bewässern und Ernten. Ordne jeder ausgewählten Stelle ein Symbol zu.
+"
 20,0x10abdc,0x10ac09,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Press the B
 Button to make
 changes.
+<arrow>0","Drücke den B-Knopf um Änderungen vorzunehmen.
 <arrow>0"
 21,0x10ac09,0x10ac84,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",<partner>,"When you're done
 selecting the
@@ -200,8 +230,9 @@ START.
 Do you want to
 listen to it
 again?
- Yes          No<ask>"
+ Yes          No<ask>","Wenn du fertig bist, drücke den START-Knopf. Willst du es nochmal hören?
+ Ja          Nein<ask>"
 22,0x10ac84,0x10acc0,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Let's try our
 best to make
 Harry's dream
-come true!"
+come true!","Geben wir unser bestes, um Harrys Traum wahr werden zu lassen!"
