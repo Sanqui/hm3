@@ -13,10 +13,15 @@ WriteTilemapByteClone:
 LoadMenuStrings:
     lda [wMenuBlankTileNum], $d7
     lda [wMenuWhichTilemap], [hli]
-LoadMenuString:
-    lda [wMenuStringX], [hli]
+.loop
+    ld a, [hl]
     cp $ff
     ret z
+    call LoadMenuString
+    jr .loop
+
+LoadMenuString:
+    lda [wMenuStringX], [hli]
     lda [wMenuStringY], [hli]
     lda [wMenuStringPad], [hli]
     ld a, [hli]
@@ -92,7 +97,7 @@ LoadMenuString:
     ld [wMenuTileNum], a
     
     pop hl
-    jr LoadMenuString
+    ret
     
 PrintMenuString:
     push hl
@@ -137,6 +142,10 @@ NamingScreenStringDefinitions:
     db  4,  1, 11, $00, "Enter name!@"
     db  6,  3,  4,  -1, "Name…@"
     db $10,$10, 3,  -1, "END@"
+    db -1
+
+NamingScreenPlayerStringDefinition:
+    db  4,  1, 11, $00, "Wie heißt du?@"
     db -1
     
 ColorScreenStringDefinitions:
@@ -192,10 +201,8 @@ ConfirmationScreenStringDefinitions:
 
 BoyStringDefinition:
     db  $c,  6,  3,  -1, "Boy@"
-    db -1
 GirlStringDefinition:
     db  $c,  6,  4,  -1, "Girl@"
-    db -1
 
 StartMenuStringDefinitions:
     db 1
