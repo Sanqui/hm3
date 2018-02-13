@@ -77,7 +77,9 @@ METATABLES = [
  ),
  (gbaddr("7c:437a"), 24+32+19+47+2,
   ("dialogue/snowboard", "dialogue/market", "dialogue/tutorial",
-   "strings/credits", "dialogue/sound_test"))
+   "strings/credits", "dialogue/sound_test")),
+ (gbaddr("01:52f9"), 5+48+64,
+  ("strings/test", "strings/debug", "strings/items_select", )),
 ]
 
 def readbyte():  return struct.unpack("B",  rom.read(1))[0]
@@ -237,7 +239,7 @@ for sti, (tpointer, tpointernext) in enumerate(zip(tablekeys, tablekeys[1:]+[Non
             stringindexes[address] = []
         stringindexes[address].append((tpointer, pti))
         trash_address = end_address
-        if addressnext and addressnext > 0 and 0 < addressnext-trash_address < 32:
+        if addressnext and addressnext > 0 and addressnext-trash_address > 0 and (0 < addressnext-trash_address < 32 or (address//0x4000 == 1 and addressnext//0x4000 == 1)):
             stringtrash[address] = readstring(addressnext-trash_address)
             stringends[trash_address] = rom.tell()
 

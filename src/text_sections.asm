@@ -33,6 +33,13 @@ StartDialogue\1:
     ret
 ENDM
 
+SECTION "Text pointer metatable at 01:52f9", ROMX[$52eb], BANK[$01]
+; covers: strings/test, strings/debug, strings/items_select
+    setup_start_dialogue_asm 01_52f9
+    INCLUDE "build/text/01_52f9_table.asm"
+    INCLUDE "build/text/01_52f9.asm"
+TextSection01_52f9_END
+
 SECTION "Text pointer metatable at 07:4001", ROMX[$4001], BANK[$07]
 ; covers: signs/farm, signs/garden, signs/barns, signs/backyard, signs/hot_spring, signs/outside
     setup_start_dialogue_asm 07_400f

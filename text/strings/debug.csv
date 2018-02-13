@@ -1,0 +1,92 @@
+i,address,end,name_i,newlines,name,string
+0,0x5476,0x5483,,"[""@""]",,ーDEBUG MODEー
+1,0x5483,0x5490,,"[""  @""]",,  TIME SET
+2,0x5490,0x549d,,"["" @""]",,PROGRAM JMP
+3,0x549d,0x54aa,,"[""@""]",,ITEMLEVELSET
+4,0x54aa,0x54b7,,"["" @""]",,  S TANESET
+5,0x54b7,0x54c4,,"["" @""]",,  H TANESET
+6,0x54c4,0x54d1,,"["" @""]",,  PLAYERSET
+7,0x54d1,0x54de,,"["" @""]",,  Kawa Test
+8,0x54de,0x54eb,,"[""@""]",,  DATA CLEAR
+9,0x54eb,0x54f8,,"["" @""]",,  DATA LOAD
+10,0x54f8,0x5505,,"["" @""]",,  SOUNDTEST
+11,0x5505,0x5512,,"[""  @""]",,   TUUSHIN
+12,0x5512,0x552f,,"[""\\n"", ""\\n"", ""\\n"", ""\\n"", ""@""]",,"Year
+Month
+Date
+Time
+Weather"
+13,0x5512,0x552f,,"[""\\n"", ""\\n"", ""\\n"", ""\\n"", ""@""]",,"Year
+Month
+Date
+Time
+Weather"
+14,0x5512,0x552f,,"[""\\n"", ""\\n"", ""\\n"", ""\\n"", ""@""]",,"Year
+Month
+Date
+Time
+Weather"
+15,0x5512,0x552f,,"[""\\n"", ""\\n"", ""\\n"", ""\\n"", ""@""]",,"Year
+Month
+Date
+Time
+Weather"
+16,0x552f,0x5536,,"[""@""]",,Spring
+17,0x5536,0x553d,,"[""@""]",,Summer
+18,0x553d,0x5542,,"[""@""]",,Fall
+19,0x5542,0x5549,,"[""@""]",,Winter
+20,0x5549,0x554c,,"[""@""]",,<var>0
+20-TRASH,0x554c,0x55ee,,,,Front Yard@Field@Sheep Pen@Chicken Coop@Cow Barn@Stable@Hot Spring@Grassland@Farmers' Union@Aquarium@Store@Home@Island Map@Theater@Mainland Port@Underwater Cave@
+21,0x55ee,0x5610,,"[""\\n"", ""\\n"", ""\\n"", ""\\n"", ""@""]",,"Sickle
+Hoe
+Ax
+Hammer
+Watering Can"
+22,0x5610,0x5650,,"[""\\n"", ""\\n"", ""\\n"", ""@""]",,"Turnip SeedsPotato Seeds
+Asparagus Seeds
+Rice Seeds
+Wheat Seeds"
+23,0x5650,0x568d,,"[""\\n"", ""\\n"", ""\\n"", ""\\n"", ""@""]",,"Corn Seeds
+Tomato Seeds
+W.Melon Seeds
+Rice Seeds
+Wheat Seeds"
+24,0x568d,0x56cf,,"[""\\n"", ""\\n"", ""\\n"", ""\\n"", ""@""]",,"S.Potato Seeds
+Peanut Seeds
+Eggplant Seeds
+Rice Seeds
+Wheat Seeds"
+25,0x56cf,0x56da,,"[""@""]",,Fertilizer
+26,0x56cf,0x56da,,"[""@""]",,Fertilizer
+27,0x56da,0x5708,,"[""\\n"", ""\\n"", ""\\n"", ""@""]",,"Stardust Flower
+Cherry Flower
+Primerose
+Grass"
+28,0x5708,0x573a,,"[""\\n"", ""\\n"", ""\\n"", ""@""]",,"Moonlight Flower
+S.Star Flower
+Comet Flower
+Grass"
+29,0x573a,0x5762,,"[""\\n"", ""\\n"", ""\\n"", ""@""]",,"Full Moon Flower
+S. Dream Flower
+
+Grass"
+30,0x5762,0x576d,,"[""\\n"", ""@""]",,"Gender
+Pet"
+31,0x576d,0x577b,,"[""\\n"", ""@""]",,"BGM No
+SE  No"
+32,0x577b,0x5785,,"[""@""]",,     Hand
+33,0x577b,0x5785,,"[""@""]",,     Hand
+34,0x577b,0x5785,,"[""@""]",,     Hand
+35,0x577b,0x5785,,"[""@""]",,     Hand
+36,0x577b,0x5785,,"[""@""]",,     Hand
+37,0x577b,0x5785,,"[""@""]",,     Hand
+38,0x577b,0x5785,,"[""@""]",,     Hand
+39,0x577b,0x5785,,"[""@""]",,     Hand
+40,0x577b,0x5785,,"[""@""]",,     Hand
+41,0x577b,0x5785,,"[""@""]",,     Hand
+42,0x577b,0x5785,,"[""@""]",,     Hand
+43,0x577b,0x5785,,"[""@""]",,     Hand
+44,0x577b,0x5785,,"[""@""]",,     Hand
+45,0x577b,0x5785,,"[""@""]",,     Hand
+46,0x577b,0x5785,,"[""@""]",,     Hand
+47,0x577b,0x5785,,"[""@""]",,     Hand
