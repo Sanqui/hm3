@@ -266,7 +266,7 @@ HUDAMPM: ; 4c8a
     db "AM"
     db "PM"
 
-HUDWriteString: ; 4c8e
+HUDWriteStringOld: ; 4c8e
 ; length in c
 .loop
     push hl
@@ -294,21 +294,31 @@ HUDWriteString: ; 4c8e
 SECTION "HUD data", ROMX[$4d78], BANK[$0b]
 
 HUDTilemap: ; 4d78
-    db $d8,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$da
-    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
-    db $db,$e0,$e1,$e2,$e3,$e4,$e5,$e6,$e7,$d7,$e8,$e9,$ea,$d7,$d2,$d3,$d7,$eb,$ec,$df
-    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$fc,$fd,$df
-    db $db,$d7,$ed,$ee,$ef,$f0,$f1,$f2,$f3,$f4,$f5,$f6,$f7,$f8,$f9,$fa,$fb,$fe,$ff,$df
-    db $dc,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$de
+    db $e0,$e1,$e2,$e3,$e4,$e5,$e6,$e7,$e7,$e8,$e9,$ea,$d7,$d2,$d3,$d7,$eb,$ec,$fc,$fd
+    db $d7,$d7,$ed,$ee,$ef,$f0,$f1,$f2,$f3,$f4,$f5,$f6,$f7,$f8,$f9,$fa,$fb,$d7,$fe,$ff
 
 HUDAttrmap: ; 4df0
     db $80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80
     db $80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80
-    db $80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80
-    db $80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80
-    db $80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80
-    db $80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80
-; 0b:4e68
 
 SECTION "HUD free space", ROMX[$601c], BANK[$0b]
-    ds $1000
+HUDWriteString: ; 4c8e
+; length in c
+    lda [wVWFCurTileNum], 0
+    lda [wVWFTilesPtr], e
+    lda [wVWFTilesPtr+1], d
+    push hl
+    hack HUDWriteStringInit
+    pop hl
+.loop
+    ld a, [hli]
+    ld [H_TMP], a
+    push bc
+    push hl
+    hack HUDWriteStringDrawChar
+    pop hl
+    pop bc
+    dec c
+    jr nz, .loop
+    hack HUDWriteStringEnd
+    ret 

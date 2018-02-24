@@ -153,6 +153,9 @@ HackPredefTable:
     hack_entry SetupConfirmationScreen
     hack_entry DrawStartMenu
     hack_entry ControlCodeF1
+    hack_entry HUDWriteStringInit
+    hack_entry HUDWriteStringDrawChar
+    hack_entry HUDWriteStringEnd
 
 HackNop:
     ret
@@ -408,6 +411,14 @@ HackControlCodeF1:
     
     ld b, $00
     ret
+
+HackHUDWriteStringInit:
+    jp VWFInit
+HackHUDWriteStringDrawChar:
+    ld a, [H_TMP]
+    jp VWFDrawChar
+HackHUDWriteStringEnd:
+    jp VWFFinish
 
 INCLUDE "src/hack/vwf.asm"
 INCLUDE "src/hack/menus.asm"
