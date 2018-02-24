@@ -7,8 +7,18 @@ INCLUDE "src/tilemap.asm"
 INCLUDE "src/menus.asm"
 INCLUDE "src/save.asm"
 INCLUDE "src/screens.asm"
+INCLUDE "src/hud.asm"
 
 INCLUDE "src/hack/hack.asm"
+
+SECTION "Map Load Hack", ROMX[$4dd2], BANK[$14]
+    ; this is some totally random piece of code
+    ; that every map initialization routine calls.
+    ; the map initialization routine has too many copies
+    ; to be reasonably pointcut, which is why I'm putting
+    ; this here.
+    hack UnkMapLoad
+    ; ld a, [$d4b6]
 
 blankbank: MACRO
 SECTION "Blank bank \1", ROMX[$4000], BANK[\1]

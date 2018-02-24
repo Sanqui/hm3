@@ -115,11 +115,17 @@ SECTION "Relocations 4", ROMX[$4001], BANK[$53]
 
 SECTION "Relocations 5", ROMX[$4001], BANK[$54]
 ; covers: None, None, None, None, None, None, None, None, None, None, None, None, None, None, strings/main_menu, strings/partner_introductions, dialogue/wedding_boy, dialogue/wedding_girl, dialogue/evaluation
-    setup_start_dialogue_asm 50_4b7e
+    setup_dialogue_relocated_asm 50_4b7e
     INCLUDE "build/text/50_4b7e_table.asm"
     INCLUDE "build/text/50_4b7e.asm"
 TextSection50_4b7e_END
+    setup_dialogue_relocated_asm 01_52f9
+    INCLUDE "build/text/01_52f9_table.asm"
+    INCLUDE "build/text/01_52f9.asm"
 
+SECTION "Text pointer metatable at 01:52f9", ROMX[$52eb], BANK[$01]
+; covers: strings/test, strings/debug, strings/items_select
+    setup_start_dialogue_relocate_asm 01_52f9
 
 SECTION "Text pointer metatable at 07:4001", ROMX[$4001], BANK[$07]
 ; covers: signs/farm, signs/garden, signs/barns, signs/backyard, signs/hot_spring, signs/outside
@@ -198,7 +204,7 @@ TextSection4b_6c1f_END
 ; data and code follows
 
 SECTION "Text pointer metatable at 50:4b70", ROMX[$4b70], BANK[$50]
-
+    setup_start_dialogue_relocate_asm 50_4b7e
 ; covers: dialogue/farmers_union
     setup_start_dialogue_asm 50_5804
     INCLUDE "build/text/50_5804_table.asm"

@@ -165,6 +165,10 @@ HackPredefTable:
     hack_entry DrawStartMenu
     hack_entry LoadCompressedGfxAtDE
     hack_entry ControlCodeF1
+    hack_entry HUDWriteStringInit
+    hack_entry HUDWriteStringDrawChar
+    hack_entry HUDWriteStringEnd
+    hack_entry UnkMapLoad
 
 HackNop:
     ret
@@ -584,6 +588,24 @@ HackControlCodeF1:
     lda [wVWFCurTileNum], $19
     
     ld b, $00
+    ret
+
+HackHUDWriteStringInit:
+    jp VWFInit
+HackHUDWriteStringDrawChar:
+    ld a, [H_TMP]
+    jp VWFDrawChar
+HackHUDWriteStringEnd:
+    jp VWFFinish
+
+HackUnkMapLoad:
+    ld a, [$ff9b]
+    cp $60
+    jr nz, .nothud
+    ld a, $90 - HUD_HEIGHT * $8
+    ld [$ff9b], a
+.nothud
+    ld a, [$d4b6]
     ret
 
 INCLUDE "src/hack/vwf.asm"
