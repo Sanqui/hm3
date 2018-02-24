@@ -302,7 +302,7 @@ HUDAttrmap: ; 4df0
     db $80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80
     db $80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80
 
-SECTION "HUD free space", ROMX[$601c], BANK[$0b]
+SECTION "HUD free space", ROMX[$6100], BANK[$0b]
 HUDWriteString: ; 4c8e
 ; length in c
     lda [wVWFCurTileNum], 0
