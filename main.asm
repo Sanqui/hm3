@@ -7,6 +7,7 @@ INCLUDE "src/tilemap.asm"
 INCLUDE "src/menus.asm"
 INCLUDE "src/save.asm"
 INCLUDE "src/screens.asm"
+INCLUDE "src/hud.asm"
 
 blankbank: MACRO
 SECTION "Blank bank \1", ROMX[$4000], BANK[\1]
