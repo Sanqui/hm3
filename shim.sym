@@ -19,7 +19,10 @@
 00:09a5 FarCall
 00:09c0 JpHL
 
+00:06f8 FormatNumber
+
 00:19fa ClearTile
+00:1a11 CopyTileFar
 00:1a29 CopyTile
 00:1a64 WaitVBlank
 
@@ -121,6 +124,12 @@
 01:d408 wPlayerGender
 01:d410 wPartnerName
 01:d417 wPetName
+
+01:d472 wSeason
+01:d474 wDay
+01:d475 wHour
+01:d559 wTool
+
 01:dbc6 wPlayerDataEnd
 
 01:dd54 wWhichSave

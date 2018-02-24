@@ -1,0 +1,15 @@
+i,address,end,name_i,newlines,name,string
+0,0x53e9,0x545e,,"[""\\n"", ""<arrow>0<waita><clear>"", """", ""\\n"", """", ""\\n"", """", ""\\n"", """", """"]",,"0123456789ABCDEF
+GHIJKLMNOPQRSTUV
+<var>0<waita><clear>
+<player>NAME
+         SET<waita><clear>
+<name>0NAME
+        PLAYER<waita><clear>
+<noname> YES     NO
+ CHECK   OK<ask>21<clear>
+<f3>1234"
+1,0x545e,0x5464,,"["" <waita>@""]",,YES
+2,0x5464,0x5469,,"["" <waita>@""]",,NO
+3,0x5469,0x5471,,"["" <waita>@""]",,CHECK
+4,0x5471,0x5476,,"["" <waita>@""]",,OK
