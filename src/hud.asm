@@ -1,7 +1,8 @@
 SECTION "HUD", ROMX[$4ab8], BANK[$0b]
 
 InitHUD:
-    ld hl, $9c00
+    call InitHUD_FixWY
+    ;ld hl, $9c00
     ld de, HUDTilemap
     ld bc, HUD_DIMENSIONS
     call $4d5f
@@ -322,3 +323,14 @@ HUDWriteString: ; 4c8e
     jr nz, .loop
     hack HUDWriteStringEnd
     ret 
+
+InitHUD_FixWY:
+    ld a, $90 - HUD_HEIGHT * $8
+    ld [$ff00+$9b], a
+    ld [REG_WY], a
+    ld a, $07
+    ld [$ff00+$9c], a
+    ld [REG_WX], a
+    
+    ld hl, $9c00
+    ret
