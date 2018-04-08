@@ -44,6 +44,8 @@ wMenuTileNum: ds 1
 wMenuBlankTileNum: ds 1
 wMenuWhichTilemap: ds 1
 
+wStringBuildArea: ds $20
+
 SECTION "Rst $10", ROM0[$0010]
     push af
     ld a, [$4000]

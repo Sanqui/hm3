@@ -25,7 +25,9 @@ InitHUD:
     ld a, h
     ld [wDialogueBoxHeight], a
     call PrepareDialogueBox
-    ld a, [wSeason]
+.redraw_datetime
+    jp HUDWriteFullDate
+    ;ld a, [wSeason]
     add a
     ld b, a
     add a
@@ -103,6 +105,7 @@ InitHUD:
     ld c, $02
     ld de, vtile $d2
     call HUDWriteString
+.redraw_tool
     ld hl, wStringID
     ld a, [hli]
     ld h, [hl]
@@ -148,7 +151,7 @@ InitHUD:
     ld [wStringID2], a
     ld a, $02
     ld [wStringID], a
-    ld hl, vtile $ed
+    ld hl, vtile $f0
     ld a, l
     ld [wDialogueTilesPtr], a
     ld a, h
@@ -295,8 +298,8 @@ HUDWriteStringOld: ; 4c8e
 SECTION "HUD data", ROMX[$4d78], BANK[$0b]
 
 HUDTilemap: ; 4d78
-    db $e0,$e1,$e2,$e3,$e4,$e5,$e6,$e7,$e7,$e8,$e9,$ea,$d7,$d2,$d3,$d7,$eb,$ec,$fc,$fd
-    db $d7,$d7,$ed,$ee,$ef,$f0,$f1,$f2,$f3,$f4,$f5,$f6,$f7,$f8,$f9,$fa,$fb,$d7,$fe,$ff
+    db $d7,$e0,$e1,$e2,$e3,$e4,$e5,$e6,$e7,$e8,$e9,$ea,$eb,$ec,$ed,$ee,$ef,$d7,$fc,$fd
+    db $d7,$d7,$d7,$d7,$d7,$d7,$f0,$f1,$f2,$f3,$f4,$f5,$f6,$f7,$f8,$f9,$fa,$fb,$fe,$ff
 
 HUDAttrmap: ; 4df0
     db $80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80,$80
@@ -334,3 +337,136 @@ InitHUD_FixWY:
     
     ld hl, $9c00
     ret
+
+HUDSeasonNamePtrs:
+    dw HUDSeason1Name
+    dw HUDSeason2Name
+    dw HUDSeason3Name
+    dw HUDSeason4Name
+    
+HUDSeasonNamesNew:
+HUDSeason1Name:
+    db "Frühling@"
+HUDSeason2Name:
+    db "Sommer@"
+HUDSeason3Name:
+    db "Herbst@"
+HUDSeason4Name:
+    db "Winter@"
+
+HUDTagText:
+    db $f2, " Tag @" ; ","
+
+HUDDayNamesNew:
+    db "Mo"
+    db "Di"
+    db "Mi"
+    db "Do"
+    db "Fr"
+    db "Sa"
+    db "So"
+
+HUDUhrText:
+    db "Uhr@"
+
+HUDWriteStringInline:
+.loop
+    ld a, [hli]
+    cp "@"
+    ret z
+    ld [H_TMP], a
+    push hl
+    hack HUDWriteStringDrawChar
+    pop hl
+    jr .loop
+
+HUDWriteCharNot0:
+    cp "0"
+    ret z
+    ld [H_TMP], a
+    hack HUDWriteStringDrawChar
+    ret
+
+HUDWriteChar:
+    ld [H_TMP], a
+    hack HUDWriteStringDrawChar
+    ret
+    
+HUDWriteFullDate:
+    ld de, vtile $e0
+    lda [wVWFCurTileNum], 0
+    lda [wVWFTilesPtr], e
+    lda [wVWFTilesPtr+1], d
+    hack HUDWriteStringInit
+    
+    ld a, [wSeason]
+    ld e, a
+    ld d, 0
+    ld hl, HUDSeasonNamePtrs
+    add hl, de
+    add hl, de
+    ld a, [hli]
+    ld h, [hl]
+    ld l, a
+    call HUDWriteStringInline
+    
+    ld hl, HUDTagText
+    call HUDWriteStringInline
+    
+    ld a, [$d473]
+    inc a
+    ld l, a
+    ld h, $00
+    call FormatNumber
+    
+    ld a, [$c509]
+    call HUDWriteCharNot0
+    ld a, [$c50a]
+    call HUDWriteChar
+    
+    ld a, " "
+    call HUDWriteChar
+    
+    ld a, [wDay]
+    ld e, a
+    ld d, 0
+    ld hl, HUDDayNamesNew
+    add hl, de
+    add hl, de
+    ld a, [hli]
+    push hl
+    call HUDWriteChar
+    pop hl
+    ld a, [hl]
+    call HUDWriteChar
+    
+    ld a, " "
+    call HUDWriteChar
+    
+    ld a, [wHour]
+    ld l, a
+    ld h, $00
+    call FormatNumber
+    
+    ld a, [$c509]
+    call HUDWriteChar
+    ld a, [$c50a]
+    call HUDWriteChar
+    
+    ld a, $f5 ; ":"
+    call HUDWriteChar
+    ld a, "0"
+    call HUDWriteChar
+    ld a, "0"
+    call HUDWriteChar
+    
+    
+    
+    
+    
+    hack HUDWriteStringEnd
+    jp InitHUD.redraw_tool
+
+
+
+

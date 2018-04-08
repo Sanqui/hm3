@@ -1778,7 +1778,10 @@ jr_2e0c:
 
 
 Call_2e19:
-    ld a, [$dcf0]
+    ld a, 9
+    rst $38
+    
+    ;ld a, [$dcf0]
     and a
     jr z, jr_2e31
 
