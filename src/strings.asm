@@ -35,7 +35,8 @@ PrintStringIDX:
     ld d, a
     ld e, [hl]
     call StringIDInDToPointer
-    call $4419
+    call PrintString
+    ;call $4419
     ret 
 
 PrintVarString:

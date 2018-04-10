@@ -216,3 +216,17 @@ StartMenuStringDefinitions:
     dw wPlayerName
     db -1
 
+StatusScreenStringDefinitions:
+    db 0
+    db  $d,  1,  4, $20, "Type@"
+    db   2,  8,  6,  -1, "Money…@"
+    db  $c,  8,  2,  -1, "G@"
+    db   2, $a, 12,  -1, "Equipment…@"
+    db   5, $e,  4,  -1, "Year@"
+    db   5,  1,  4,  -1, -2
+    dw wPlayerName
+    db -1
+
+MarriedOnStringDefinition:
+    db   5,  4, 11,  -1, " Married on@"
+

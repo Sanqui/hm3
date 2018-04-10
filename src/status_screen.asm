@@ -154,8 +154,11 @@ StatusScreenLoad:
     ld a, $7e
     call FarCall
     call Call_078_538b
-    ld a, $00
-    call $2da7
+    hack StatusScreenLoad
+    nop
+    nop
+    ;ld a, $00
+    ;call $2da7
     jp IncStatusScreenState
 
 StatusScreenKeep:
