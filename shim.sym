@@ -99,6 +99,10 @@
 78:78fe MainMenuPalettes
 78:7575 MainMenuGfxComp
 
+79:4311 PrintMoney
+7b:4187 LoadToolGfx
+7b:4199 LoadToolPal ; unsure
+
 7a:4017 WriteTilemapByte7A
 7a:40f0 CopyTilemap7A
 ;7a:6f84 EnterNameTilemap
@@ -114,19 +118,36 @@
 7b:43c6 LoadTilemapNumToRAM ; in b
 7b:423c LoadDialogueBoxTilemap
 
+7d:4187 DrawPlayerSpriteInCorner
+78:40f0 CopyTilemap78
+78:4473 IncStatusScreenState
+00:c702 wStatusScreenState
+
+69:4462 StatusScreenGfxCompr
+
+
 ;7f:445a LoadCompressedGfxAtDE
 7f:4681 LdBCAtDE
 7f:4674 LoadHLAAtDE
 7f:467a LoadHLAtDE
 
+
 01:d400 wPlayerDataStart
 01:d400 wPlayerName
 01:d408 wPlayerGender
+01:d409 wPlayerBloodType
+01:d40a wPlayerBirthdaySeason
+01:d40b wPlayerBirthdayDay
 01:d410 wPartnerName
 01:d417 wPetName
 
+01:db95 wMarriageSeason
+01:db96 wMarriageDay
+
+01:d471 wYear
 01:d472 wSeason
-01:d474 wDay
+01:d473 wDay
+01:d474 wWeekday
 01:d475 wHour
 01:d559 wTool
 

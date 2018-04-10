@@ -54,7 +54,7 @@ InitHUD:
     ld de, vtile $e6
     ld c, $02
     call HUDWriteString
-    ld a, [wDay]
+    ld a, [wWeekday]
     ld b, a
     add a
     add b

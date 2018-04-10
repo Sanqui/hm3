@@ -1,3 +1,68 @@
+SECTION "Print Variable Name", ROMX[$428f], BANK[$79]
+PrintVariableName:
+    ld a, b
+    ld hl, VariableNamePtrs
+    call GetPointer
+    ld b, NAME_LENGTH
+    call PrintString
+    ret
+
+VariableNamePtrs: ; 79:429c
+    dw wPlayerName
+    dw wPartnerName
+    dw wPetName
+    dw $d74e ; $03
+    dw $d753 ; $04
+    dw $d758 ; $05
+    dw $d75d ; $06
+    dw $d762 ; $07
+    dw $d767 ; $08
+    dw $d76c ; $09
+    dw $d771 ; $0a
+    dw Ord1String ; $0b
+    dw Ord2String ; $0c
+    dw Ord3String ; $0d
+    dw Ord4String ; $0e
+    dw Ord5String ; $0f
+    dw Ord6String ; $10
+    dw Ord7String ; $11
+    dw Ord8String ; $12
+    dw $d726 ; $13
+    dw $d72b ; $14
+    dw $d730 ; $15
+    dw $d735 ; $16
+    dw $d73a ; $17
+    dw $d73f ; $18
+    dw $d744 ; $19
+    dw $d749 ; $1a
+    dw $d776 ; $1b
+    dw $d77b ; $1c
+    dw $d780 ; $1d
+    dw $d785 ; $1e
+    dw $d78a ; $1f
+    dw $d78f ; $20
+    dw $d794 ; $21
+    dw $d799 ; $22
+    
+; unused?  TCRF
+    
+Ord1String:
+    db "1st@"
+Ord2String:
+    db "2nd@"
+Ord3String:
+    db "3rd@"
+Ord4String:
+    db "4th@"
+Ord5String:
+    db "5th@"
+Ord6String:
+    db "6th@"
+Ord7String:
+    db "7th@"
+Ord8String:
+    db "8th@"
+
 SECTION "Start Menu", ROMX[$4e68], BANK[$0b]
 
 DrawStartMenu:
