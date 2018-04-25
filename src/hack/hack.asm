@@ -171,6 +171,7 @@ HackPredefTable:
     hack_entry HUDWriteStringDrawChar
     hack_entry HUDWriteStringEnd
     hack_entry UnkMapLoad
+    hack_entry StatusScreenLoad
 
 HackNop:
     ret
@@ -608,6 +609,23 @@ HackUnkMapLoad:
     ld [$ff9b], a
 .nothud
     ld a, [$d4b6]
+    ret
+
+HackStatusScreenLoad:
+    ld hl, StatusScreenStringDefinitions
+    call LoadMenuStrings
+    
+    ld a, [$d453]
+    bit 2, a
+    jr z, .not_married
+.married
+    ld hl, MarriedOnStringDefinition
+    call LoadMenuString
+    
+.not_married
+    ;o
+    ld a, $00
+    call $2da7
     ret
 
 INCLUDE "src/hack/vwf.asm"
