@@ -262,15 +262,24 @@ StartMenuStringDefinitions:
 
 StatusScreenStringDefinitions:
     db 0
-    db  $d,  1,  4, $20, "Type@"
-    db   2,  8,  6,  -1, "Money…@"
+    db  $b,  1,  4, $20, "Blutgruppe@"
+    db   2,  8,  6,  -1, "Geld",$f5,"@"
     db  $c,  8,  2,  -1, "G@"
-    db   2, $a, 12,  -1, "Equipment…@"
-    db   5, $e,  4,  -1, "Year@"
+    db   2, $a, 12,  -1, "Werkzeug",$f5,"@"
+    db   2, $e,  7,  -1, "Jahr@"
     db   5,  1,  4,  -1, -2
     dw wPlayerName
     db -1
 
+StatusScreenTilemapPatches:
+    dw $9832
+    db $84, -1
+    dw $99c5
+    db $b0, $d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7, -1
+    dw $9a02
+    db $e0,$e1,$e2,$e3,$e4,$e5,$e6,$e7,$e8,$e9,$ea,$eb,$ec,$ed,$ee,$ef, -1
+    db -1
+
 MarriedOnStringDefinition:
-    db   5,  4, 11,  -1, " Married on@"
+    db   5,  4, 11,  -1, "Verheiratet:@"
 

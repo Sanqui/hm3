@@ -26,11 +26,12 @@ InitHUD:
     ld [wDialogueBoxHeight], a
     call PrepareDialogueBox
 .redraw_datetime
-    jp HUDWriteFullDate
+    call HUDWriteFullDate
+    jp InitHUD.redraw_tool
     ;ld a, [wSeason]
-    add a
-    ld b, a
-    add a
+    ;add a
+    ;ld b, a
+    ;add a
     add a
     sub b
     ld hl, HUDSeasonNames
@@ -465,7 +466,7 @@ HUDWriteFullDate:
     
     
     hack HUDWriteStringEnd
-    jp InitHUD.redraw_tool
+    ret
 
 
 

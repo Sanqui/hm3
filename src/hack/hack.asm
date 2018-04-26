@@ -623,9 +623,20 @@ HackStatusScreenLoad:
     call LoadMenuString
     
 .not_married
+    
+    ld hl, StatusScreenTilemapPatches
+    call WriteTilemapPatches
+    
+    ld a, [wHackOldBank]
+    push af
+    farcall HUDWriteFullDate
+    pop af
+    ld [wHackOldBank], a
+    
     ;o
     ld a, $00
     call $2da7
+    
     ret
 
 INCLUDE "src/hack/vwf.asm"
