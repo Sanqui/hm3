@@ -89,6 +89,7 @@
 00:c7b5 wKeyboard
 00:c706 wNamingScreenX
 00:c707 wNamingScreenY
+00:c707 wFileScreenY
 00:c7b2 wNamingScreenDestination
 00:c7b3 wNamingScreenDestinationHi
 

@@ -172,8 +172,8 @@ HackPredefTable:
     hack_entry HUDWriteStringEnd
     hack_entry UnkMapLoad
     hack_entry StatusScreenLoad
-    hack_entry NamingScreenWriteLine0
-    hack_entry NamingScreenWriteLine1
+    hack_entry FileScreenWriteLine0
+    hack_entry FileScreenWriteLine1
 
 HackNop:
     ret
@@ -641,12 +641,12 @@ HackStatusScreenLoad:
     
     ret
 
-HackNamingScreenWriteLine0:
+HackFileScreenWriteLine0:
     ld hl, FileScreen0StringDefinitions
     call LoadMenuStrings
     ret
 
-HackNamingScreenWriteLine1:
+HackFileScreenWriteLine1:
     ld hl, FileScreen1StringDefinitions
     call LoadMenuStrings
     ret

@@ -1,11 +1,11 @@
 
     ORG $78, $6149
 
-LoadNamingScreen:
+LoadFileScreen:
     ld a, $ff 
     ld [$ff9c], a 
     xor a 
-    ld [wNamingScreenY], a
+    ld [wFileScreenY], a
     ld hl, $4205
     ld a, $7b 
     call FarCall
@@ -40,7 +40,7 @@ LoadNamingScreen:
     ld hl, $4187
     ld a, $7e 
     call FarCall
-    call NamingScreenShowData
+    call FileScreenShowData
     ret 
 
 
@@ -63,7 +63,7 @@ Call_078_61b0:
 
 
 jr_078_61c5:
-    ld a, [wNamingScreenY]
+    ld a, [wFileScreenY]
     ld [wWhichSave], a
     ret 
 
@@ -80,7 +80,7 @@ jr_078_61d0:
     ld a, $01
 
 jr_078_61d2:
-    ld hl, wNamingScreenY
+    ld hl, wFileScreenY
     cp [hl]
     ret z
 
@@ -118,7 +118,7 @@ Call_078_61f5:
 
 
 Call_078_6209:
-    ld a, [wNamingScreenY]
+    ld a, [wFileScreenY]
     or a
     ld l, $20
     jr z, jr_078_6213
@@ -149,7 +149,7 @@ Call_078_622d:
     ret 
 
 
-NamingScreenShowData:
+FileScreenShowData:
     ld a, $0d
     ld [wStringID], a
     ld a, $01
@@ -160,7 +160,8 @@ NamingScreenShowData:
     inc c
     jr z, .no_file
     ld de, $9000
-    hack NamingScreenWriteLine0
+    hack FileScreenWriteLine0
+    ;call FileScreenWriteLine
     ; the rest of this loads the player picture
     ld hl, $1828
     call Call_078_62d3
@@ -185,7 +186,7 @@ NamingScreenShowData:
     jr z, .no_file2
 
     ld de, $9200
-    hack NamingScreenWriteLine1
+    hack FileScreenWriteLine1
     ld hl, $1858
     call Call_078_62e3
     call Call_078_61f5
@@ -204,7 +205,7 @@ NamingScreenShowData:
     farcall PrepareStringDialogueBox
     ret 
 
-NamingScreenWriteLine:
+FileScreenWriteLine:
 ; writes the line with the name and date and time
     ld hl, wDialogueTilesPtr
     ld a, e
@@ -214,7 +215,6 @@ NamingScreenWriteLine:
     ld a, $15
     ld [hli], a
     ld [hl], $01
-    ;hack NamingScreenWriteLine
     farcall StartDialogue79_44a0
     ret 
 
