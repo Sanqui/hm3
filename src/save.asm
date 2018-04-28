@@ -254,7 +254,7 @@ SaveWriteStrings:
     ld a, [hli]
     push hl
     inc a
-    ld de, wVarString+$c
+    ld de, wVarString+$d
     call WriteFormattedNumber
     pop hl
     ld a, [hli]
@@ -263,7 +263,7 @@ SaveWriteStrings:
     add a
     ld hl, $4277
     addhla
-    ld de, wVarString+$10
+    ld de, wVarString+$11
     call SaveWriteString
     pop hl
     ld a, [hl]
@@ -288,13 +288,13 @@ SaveWriteStrings:
     nop
 .under12
     push hl
-    ld de, wVarString+$14
+    ld de, wVarString+$15
     call WriteFormattedNumber
     pop hl
     push hl
     ld de, $ff8b
     add hl, de
-    ld de, wVarString+$1c
+    ld de, wVarString+$1d
     ld b, PLAYER_NAME_LENGTH
 .loop
     ld a, [hl]
@@ -327,7 +327,7 @@ SaveWriteStrings:
     inc hl
     inc hl
     inc hl
-    ld de, wVarString+$24
+    ld de, wVarString+$25
     ld a, [hli]
     ld [de], a
     inc de
@@ -381,7 +381,7 @@ LoadSaveDataSavePointers: ; 4257
     dw sSave1
     dw sSave2
 
-SaveWriteStringsSeasonPtrs:
+SaveWriteStringsSeasonPtrsOld:
     dw .spring
     dw .summer
     dw .fall
@@ -396,13 +396,13 @@ SaveWriteStringsSeasonPtrs:
     db "Win @"
 
 SaveWriteStringsDays:
-    db "Mon@"
-    db "Tue@"
-    db "Wed@"
-    db "Thu@"
-    db "Fri@"
-    db "Sat@"
-    db "Sun@"
+    db "Mo@@"
+    db "Di@@"
+    db "Mi@@"
+    db "Do@@"
+    db "Fr@@"
+    db "Sa@@"
+    db "So@@"
 
 
 SECTION "Load Save", ROMX[$4d0c], BANK[$41]
@@ -521,3 +521,19 @@ jr_041_5038:
     ld [$4100], a
     ret 
 
+SECTION "Save bank free space", ROMX[$6610], BANK[$41]
+
+
+SaveWriteStringsSeasonPtrs:
+    dw .spring
+    dw .summer
+    dw .fall
+    dw .winter
+.spring
+    db "Frühling@"
+.summer
+    db "Sommer@"
+.fall
+    db "Herbst@"
+.winter
+    db "Winter@"

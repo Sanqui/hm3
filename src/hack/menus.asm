@@ -306,7 +306,7 @@ MarriedOnStringDefinition:
 
 filescreenstringdefinitions: MACRO
     db 0
-    db   1,  1+(\1*6),  0, $00 + (\1 * $20), "Spielstand ", "1"+\1, "@"
+    db   1,  1+(\1*6),  0, $00 + (\1 * $28), "Spielstand ", "1"+\1, "@"
     db   5,  2+(\1*6),  0,  -1, "Jahr <var>"
     dw wVarString
     db "@"
@@ -315,19 +315,19 @@ filescreenstringdefinitions: MACRO
     db "<var>"
     dw wVarString+4
     db $f2, " Tag <var>"
-    dw wVarString+$c
+    dw wVarString+$d
     db "  <var>"
-    dw wVarString+$10
+    dw wVarString+$11
     db "@"
     
     db   5,  4+(\1*6),  0,  -1, ""
     db "<var>"
-    dw wVarString+$14
+    dw wVarString+$15
     db $f5,"00"
     db "@"
     
     db   1,  5+(\1*6),  0,  -1, "<var>"
-    dw wVarString+$1c
+    dw wVarString+$1d
     db "@"
     
     db -1
