@@ -51,3 +51,8 @@ farcall: MACRO
 ENDM
 
 vtile EQUS "$8800 + $800 ^ $10 * "
+
+; because I am particularly lazy
+ORG: MACRO
+    SECTION "Lazy Section \@", ROMX[\2], BANK[\1]
+ENDM
