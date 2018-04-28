@@ -262,22 +262,22 @@ StartMenuStringDefinitions:
 
 StatusScreenStringDefinitions:
     db 0
-    db  $b,  1,  4, $20, "Blutgruppe@"
-    db   2,  8,  6,  -1, "Geld",$f5,"@"
-    db  $c,  8,  2,  -1, "G@"
-    db   2, $a, 12,  -1, "Werkzeug",$f5,"@"
+    db   5,  2,  0, $20, "Blutgruppe@"
+    db   2,  8,  0,  -1, "Geld",$f5,"@"
+    db  $c,  8,  0,  -1, "G@"
+    db   5, $a,  0,  -1, "Werkzeug",$f5,"@"
     db   2, $e,  7,  -1, "Jahr@"
     db   5,  1,  4,  -1, -2
     dw wPlayerName
     db -1
 
 StatusScreenTilemapPatches:
-    dw $9832
-    db $84, -1
+    ;dw $9832
+    ;db $84, -1
     dw $99c5
     db $b0, $d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7, -1
-    dw $9a02
-    db $e0,$e1,$e2,$e3,$e4,$e5,$e6,$e7,$e8,$e9,$ea,$eb,$ec,$ed,$ee,$ef, -1
+    ;dw $9a02
+    ;db $e0,$e1,$e2,$e3,$e4,$e5,$e6,$e7,$e8,$e9,$ea,$eb,$ec,$ed,$ee,$ef, -1
     db -1
 
 MarriedOnStringDefinition:
