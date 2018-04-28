@@ -55,11 +55,7 @@ WriteSavePlayerSection:
     ld a, [wWhichSave]
     add a
     ld hl, SaveTargets
-    add l
-    ld l, a
-    jr nc, .nc
-    inc h
-.nc
+    addhla
     ld e, [hl]
     inc hl
     ld d, [hl]
@@ -141,11 +137,7 @@ WriteSavePlayerSection:
     ld a, [wWhichSave]
     add a
     ld hl, SaveTargets
-    add l
-    ld l, a
-    jr nc, .nc2
-    inc h
-.nc2
+    addhla
     ld e, [hl]
     inc hl
     ld d, [hl]
@@ -174,6 +166,226 @@ WriteSavePlayerSection:
 SaveTargets:
     dw sSave1
     dw sSave2
+
+ ORG $41, $4113
+
+LoadSaveData:
+    ld a, $0a
+    ld [$0100], a
+    ld a, $03
+    ld [$4100], a
+    ld a, [wWhichSave]
+    add a
+    ld de, $4257
+    add e
+    ld e, a
+    jr nc, .nc
+    inc d
+.nc
+    ld a, [de]
+    ld l, a
+    inc de
+    ld a, [de]
+    ld h, a
+    ld a, [hl]
+    cp $88
+    jr z, .save
+.no_save
+    xor a
+    ld [$0100], a
+    ld [$4100], a
+    ld c, $ff
+    ret 
+.save
+    xor a
+    ld [$0100], a
+    ld [$4100], a
+    push hl
+    call $504a
+    pop hl
+    ld a, $0a
+    ld [$0100], a
+    ld a, $03
+    ld [$4100], a
+    inc hl
+    ld a, [$c503]
+    ld b, a
+    ld a, [hl]
+    cp b
+    jp nz, .no_save
+    inc hl
+    ld a, [$c504]
+    ld b, a
+    ld a, [hl]
+    cp b
+    jp nz, .no_save
+    inc hl
+    ld a, [$c505]
+    ld b, a
+    ld a, [hl]
+    cp b
+    jp nz, .no_save
+    inc hl
+    call SaveWriteStrings
+    xor a
+    ld [$0100], a
+    ld [$4100], a
+    ld c, $00
+    ret 
+
+SaveWriteStrings:
+    ld de, $0071
+    add hl, de
+    ld a, [hli]
+    inc a
+    ld de, wVarString
+    push hl
+    call WriteFormattedNumber
+    pop hl
+    ld a, [hli]
+    push hl
+    add a
+    ld de, $425b
+    add e
+    ld e, a
+    jr nc, .nc
+    inc d
+.nc
+    ld a, [de]
+    ld l, a
+    inc de
+    ld a, [de]
+    ld h, a
+    ld de, wVarString+4
+    call SaveWriteString
+    pop hl
+    ld a, [hli]
+    push hl
+    inc a
+    ld de, wVarString+$c
+    call WriteFormattedNumber
+    pop hl
+    ld a, [hli]
+    push hl
+    add a
+    add a
+    ld hl, $4277
+    addhla
+    ld de, wVarString+$10
+    call SaveWriteString
+    pop hl
+    ld a, [hl]
+    cp 12
+    jr c, .am
+.pm
+    ld a, "P"
+    ld [$c55f], a
+    ld a, "@"
+    ld [$c560], a
+    jr .ampmwritten
+.am
+    ld a, "A"
+    ld [$c55f], a
+    ld a, "@"
+    ld [$c560], a
+.ampmwritten
+    ld a, [hl]
+    cp 12
+    jr c, .under12
+    sub 12
+.under12
+    push hl
+    ld de, wVarString+$14
+    call WriteFormattedNumber
+    pop hl
+    push hl
+    ld de, $ff8b
+    add hl, de
+    ld de, wVarString+$1c
+    ld b, PLAYER_NAME_LENGTH
+.loop
+    ld a, [hl]
+    cp "@"
+    jr z, .donecopying
+    ld [de], a
+    inc de
+    inc hl
+    dec b
+    jr nz, .loop
+.donecopying
+    ld a, b
+    and a
+    jr z, .donepadding
+.padloop
+    ld a, " "
+    ld [de], a
+    inc de
+    dec b
+    jr nz, .padloop
+.donepadding
+    ld a, $ff
+    ld [de], a
+    pop hl
+    ld de, $ff93
+    add hl, de
+    ld a, [hl]
+    ld [$c56a], a
+    inc hl
+    inc hl
+    inc hl
+    inc hl
+    ld de, wVarString+$24
+    ld a, [hli]
+    ld [de], a
+    inc de
+    ld a, [hli]
+    ld [de], a
+    inc de
+    ld a, [hli]
+    ld [de], a
+    inc de
+    ld a, [hl]
+    ld [de], a
+    ret 
+
+SaveWriteString:
+.loop
+    ld a, [hl]
+    cp "@"
+    jr z, .end
+    ld [de], a
+    inc de
+    inc hl
+    jr .loop
+.end
+    ld [de], a
+    ret 
+
+
+WriteFormattedNumber:
+    push de
+    ld l, a
+    ld h, $00
+    call FormatNumber
+    ld a, [$c509]
+    and a
+    jr nz, .nz
+    ld a, " "
+    ld [$c509], a
+.nz
+    pop de
+    ld a, [$c509]
+    ld [de], a
+    inc de
+    ld a, [$c50a]
+    ld [de], a
+    inc de
+    ld a, $ff
+    ld [de], a
+    ret 
+
+; 4257 ?
+
 
 SECTION "Load Save", ROMX[$4d0c], BANK[$41]
 

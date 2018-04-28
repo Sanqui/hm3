@@ -96,7 +96,6 @@
 00:2e3b Decompress
 ; at a:hl to de
 
-41:4113 LoadSaveData
 
 78:78fe MainMenuPalettes
 78:7575 MainMenuGfxComp

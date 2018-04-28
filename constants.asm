@@ -50,6 +50,14 @@ farcall: MACRO
     call FarCall
 ENDM
 
+addhla: MACRO
+    add l
+    ld l, a
+    jr nc, .nc\@
+    inc h
+.nc\@
+ENDM
+
 vtile EQUS "$8800 + $800 ^ $10 * "
 
 ; because I am particularly lazy
