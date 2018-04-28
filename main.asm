@@ -8,6 +8,7 @@ INCLUDE "src/menus.asm"
 INCLUDE "src/save.asm"
 INCLUDE "src/screens.asm"
 INCLUDE "src/status_screen.asm"
+INCLUDE "src/file_screen.asm"
 INCLUDE "src/hud.asm"
 
 INCLUDE "src/hack/hack.asm"
