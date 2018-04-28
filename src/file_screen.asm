@@ -214,7 +214,11 @@ NamingScreenWriteLine:
     ld a, $15
     ld [hli], a
     ld [hl], $01
-    farcall StartDialogue79_44a0
+    hack NamingScreenWriteLine
+rept 5
+    nop
+endr
+    ;farcall StartDialogue79_44a0
     ret 
 
 Call_078_62d3:

@@ -172,6 +172,7 @@ HackPredefTable:
     hack_entry HUDWriteStringEnd
     hack_entry UnkMapLoad
     hack_entry StatusScreenLoad
+    hack_entry NamingScreenWriteLine
 
 HackNop:
     ret
@@ -637,6 +638,9 @@ HackStatusScreenLoad:
     ld a, $00
     call $2da7
     
+    ret
+
+HackNamingScreenWriteLine:
     ret
 
 INCLUDE "src/hack/vwf.asm"

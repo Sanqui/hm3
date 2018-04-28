@@ -292,7 +292,8 @@ SaveWriteStrings:
     ld a, [hl]
     cp 12
     jr c, .under12
-    sub 12
+    nop
+    nop
 .under12
     push hl
     ld de, wVarString+$14
