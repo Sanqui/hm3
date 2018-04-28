@@ -144,6 +144,17 @@ PrintMenuString:
     ld a, [hli]
     cp "@"
     jr z, .done
+    cp "<var>"
+    jr nz, .notvar
+    ld a, [hli]
+    push hl
+    ld h, [hl]
+    ld l, a
+    call PrintMenuStringVar
+    pop hl
+    inc hl
+    jr .loop
+.notvar
     push hl
     call VWFDrawChar
     pop hl
@@ -153,6 +164,16 @@ PrintMenuString:
     call VWFFinish
     pop hl
     ret
+
+PrintMenuStringVar:
+.loop
+    ld a, [hli]
+    cp "@"
+    ret z
+    push hl
+    call VWFDrawChar
+    pop hl
+    jr .loop
 
 MainMenuStringDefinitions:
     db 0
@@ -281,5 +302,40 @@ StatusScreenTilemapPatches:
     db -1
 
 MarriedOnStringDefinition:
-    db   5,  4, 11,  -1, "Verheiratet:@"
+    db   5,  4, 11,  -1, "Verheiratet",$f5,"@"
+
+filescreenstringdefinitions: MACRO
+    db 0
+    db   1,  1+(\1*6),  0, $00 + (\1 * $20), "Spielstand ", "1"+\1, "@"
+    db   5,  2+(\1*6),  0,  -1, "Jahr <var>"
+    dw wVarString
+    db "@"
+    
+    db   5,  3+(\1*6),  0,  -1, ""
+    db "<var>"
+    dw wVarString+4
+    db $f2, " Tag <var>"
+    dw wVarString+$c
+    db "  <var>"
+    dw wVarString+$10
+    db "@"
+    
+    db   5,  4+(\1*6),  0,  -1, ""
+    db "<var>"
+    dw wVarString+$14
+    db $f5,"00"
+    db "@"
+    
+    db   1,  5+(\1*6),  0,  -1, "<var>"
+    dw wVarString+$1c
+    db "@"
+    
+    db -1
+ENDM
+
+FileScreen0StringDefinitions:
+    filescreenstringdefinitions 0
+
+FileScreen1StringDefinitions:
+    filescreenstringdefinitions 1
 

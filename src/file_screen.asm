@@ -160,7 +160,7 @@ NamingScreenShowData:
     inc c
     jr z, .no_file
     ld de, $9000
-    call NamingScreenWriteLine
+    hack NamingScreenWriteLine0
     ; the rest of this loads the player picture
     ld hl, $1828
     call Call_078_62d3
@@ -185,7 +185,7 @@ NamingScreenShowData:
     jr z, .no_file2
 
     ld de, $9200
-    call NamingScreenWriteLine
+    hack NamingScreenWriteLine1
     ld hl, $1858
     call Call_078_62e3
     call Call_078_61f5
@@ -214,11 +214,8 @@ NamingScreenWriteLine:
     ld a, $15
     ld [hli], a
     ld [hl], $01
-    hack NamingScreenWriteLine
-rept 5
-    nop
-endr
-    ;farcall StartDialogue79_44a0
+    ;hack NamingScreenWriteLine
+    farcall StartDialogue79_44a0
     ret 
 
 Call_078_62d3:
@@ -252,23 +249,27 @@ Call_078_62f4:
 
 Call_078_62fc:
     ld bc, $1404
-    jp CopyTilemap78
+    ; what in the absolute fuck
+    ret
+    nop
+    nop
+    ;jp CopyTilemap78
 
     ORG $78, $727d
 
 FileScreenTilemap:
     db $d8,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$da
-    db $db,$40,$41,$42,$43,$44,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
-    db $db,$d7,$d7,$d7,$04,$05,$d7,$46,$47,$48,$49,$d7,$06,$07,$08,$09,$d7,$0a,$0b,$df
     db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
-    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$0c,$0d,$0e,$d7,$0f,$10,$d7,$11,$12,$df
-    db $db,$00,$01,$02,$03,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
+    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
+    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
+    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
+    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
     db $4e,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$4f,$50
-    db $db,$40,$41,$42,$43,$45,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
-    db $db,$d7,$d7,$d7,$24,$25,$d7,$46,$47,$48,$49,$d7,$26,$27,$28,$29,$d7,$2a,$2b,$df
     db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
-    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$2c,$2d,$2e,$d7,$2f,$30,$d7,$31,$32,$df
-    db $db,$20,$21,$22,$23,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
+    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
+    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
+    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
+    db $db,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$d7,$df
     db $dc,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$dd,$de
     db $d8,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$d9,$da
     db $db,$d7,$e0,$e1,$e2,$e3,$e4,$e5,$e6,$e7,$e8,$e9,$ea,$eb,$ec,$ed,$ee,$ef,$d7,$df
