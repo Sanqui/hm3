@@ -176,12 +176,8 @@ LoadSaveData:
     ld [$4100], a
     ld a, [wWhichSave]
     add a
-    ld de, $4257
-    add e
-    ld e, a
-    jr nc, .nc
-    inc d
-.nc
+    ld de, LoadSaveDataSavePointers
+    adddea
     ld a, [de]
     ld l, a
     inc de
@@ -245,12 +241,8 @@ SaveWriteStrings:
     ld a, [hli]
     push hl
     add a
-    ld de, $425b
-    add e
-    ld e, a
-    jr nc, .nc
-    inc d
-.nc
+    ld de, SaveWriteStringsSeasonPtrs
+    adddea
     ld a, [de]
     ld l, a
     inc de
@@ -385,7 +377,32 @@ WriteFormattedNumber:
     ld [de], a
     ret 
 
-; 4257 ?
+LoadSaveDataSavePointers: ; 4257
+    dw sSave1
+    dw sSave2
+
+SaveWriteStringsSeasonPtrs:
+    dw .spring
+    dw .summer
+    dw .fall
+    dw .winter
+.spring
+    db "Spr @"
+.summer
+    db "Sum @"
+.fall
+    db "Fall@"
+.winter
+    db "Win @"
+
+SaveWriteStringsDays:
+    db "Mon@"
+    db "Tue@"
+    db "Wed@"
+    db "Thu@"
+    db "Fri@"
+    db "Sat@"
+    db "Sun@"
 
 
 SECTION "Load Save", ROMX[$4d0c], BANK[$41]

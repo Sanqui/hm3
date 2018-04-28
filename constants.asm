@@ -65,6 +65,14 @@ addhla: MACRO
 .nc\@
 ENDM
 
+adddea: MACRO
+    add e
+    ld e, a
+    jr nc, .nc\@
+    inc d
+.nc\@
+ENDM
+
 vtile EQUS "$8800 + $800 ^ $10 * "
 
 ; because I am particularly lazy
