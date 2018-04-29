@@ -485,6 +485,9 @@ def print_strings_from_csvs():
                                 string.insert(-2, '')
                                 numlines += 1
                             string = '\n'.join(string)
+                        if numlines > 1 and len(newlines) < 2:
+                            stderr.write(f"WARNING: {address:x} needs an extra newline.  Guessing \\n\n{string}\n")
+                            newlines.insert(0, "\\n")
                         for linei, line in enumerate(string.split("\n")):
                             if linei == numlines-1:
                                 #print("; last: ", newlines[-1])
@@ -501,11 +504,7 @@ def print_strings_from_csvs():
                                     newline = newlines[-1]
                                 
                             else:
-                                if linei%2 == 1 and len(newlines) < 2:
-                                    newline = ""
-                                    print(f"WARNING: {address:x} doesn't have newlines[1], but we need it")
-                                else:
-                                    newline = newlines[linei%2] + "\n"
+                                newline = newlines[linei%2] + "\n"
                             csvstring += line.rstrip(" ")
                             csvstring += newline + "\n"
                 else:
