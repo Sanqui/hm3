@@ -302,7 +302,7 @@ StatusScreenTilemapPatches:
     db -1
 
 MarriedOnStringDefinition:
-    db   5,  4, 11,  -1, "Verheiratet",$f5,"@"
+    db   5,  4, 11,  -1, "Hochzeitstag",$f5,"@"
 
 filescreenstringdefinitions: MACRO
     db 0
