@@ -194,7 +194,7 @@ PlayerSelectionScreenStringDefinitions:
 
 NamingScreenStringDefinitions:
     db 0
-    db  6,  3,  4,   0, "Name",$f5,"@"
+    db  18-NAME_LENGTH-4,  3,  4,   0, "Name",$f5,"@"
     db $10,$10, 3,  -1, "Ende@"
     db -1
 
@@ -261,6 +261,12 @@ ConfirmationScreenStringDefinitions:
     db   5, 14, 11,  -1, "Blutgruppe",$f5,"@"
     db   4, 18,  5,  -1, "Name",$f5,"@"
     db  $e, 18,  5,  -1, "Name",$f5,"@"
+    db   5, 19,  5,  -1, -2
+    dw wPartnerName
+    db   9,  8,  4,  -1, -2
+    dw wPlayerName
+    db  $f, 19,  5,  -1, -2
+    dw wPetName
     db -1
 
 ConfirmationScreenTilemapPatches:

@@ -137,13 +137,13 @@
 
 
 01:d400 wPlayerDataStart
-01:d400 wPlayerName
+01:d400 wPlayerNameOld
 01:d408 wPlayerGender
 01:d409 wPlayerBloodType
 01:d40a wPlayerBirthdaySeason
 01:d40b wPlayerBirthdayDay
-01:d410 wPartnerName
-01:d417 wPetName
+01:d410 wPartnerNameOld
+01:d417 wPetNameOld
 
 01:db95 wMarriageSeason
 01:db96 wMarriageDay

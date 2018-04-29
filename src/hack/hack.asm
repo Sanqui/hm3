@@ -1,5 +1,9 @@
 SECTION "Hack RAM", WRAM0[$c300]
 
+wPlayerName:    ds PLAYER_NAME_LENGTH + 1
+wPartnerName:   ds NAME_LENGTH + 1
+wPetName:       ds NAME_LENGTH + 1
+
 wHackOldBank: ds 1
 wTempH: ds 1
 wTempL: ds 1
@@ -43,8 +47,6 @@ wMenuStringPad: ds 1
 wMenuTileNum: ds 1
 wMenuBlankTileNum: ds 1
 wMenuWhichTilemap: ds 1
-
-wStringBuildArea: ds $20
 
 SECTION "Rst $10", ROM0[$0010]
     push af
