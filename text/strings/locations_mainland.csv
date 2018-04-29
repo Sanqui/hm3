@@ -2,7 +2,7 @@ i,address,end,name_i,newlines,name,string,translation
 0,0x5c089,0x5c098,,"[""\\n"", ""@""]",,"
 Mainland Port",Hafen
 1,0x5c098,0x5c0a9,,"[""\\n"", ""@""]",,"
-Farmers' Union",Farmerschaft
+Farmers' Union",Farmerverband
 2,0x5c0a9,0x5c0b8,,"[""\\n"", ""@""]",,"
 Shopping Mall",Kaufhaus
 3,0x5c0b8,0x5c0c1,,"[""\\n"", ""@""]",,"
@@ -10,5 +10,5 @@ Theater",Lichtspielhaus
 4,0x5c0c1,0x5c0cb,,"[""\\n"", ""@""]",,"
 Aquarium",Aquarium
 5,0x5c0cb,0x5c0e6,,"[""\\n"", ""@""]",,"All businesses
-are closed.","Alle Geschäfte haben geschlossen."
+are closed.","Geschäfte haben geschlossen."
 6,0x5c0e6,0x5c0f6,,"[""<waita>@""]",,"We're closed.","Wir haben geschlossen."

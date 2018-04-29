@@ -3,7 +3,7 @@ i,address,end,name_i,newlines,name,string,translation
             <var>0","Nutzholz
             <var>0"
 1,0x1c0ba,0x1c0d1,,"[""\\n"", ""<waita>@""]",,"Fodder
-            <var>0","Futter
+            <var>0","Futter im Silo
             <var>0"
 2,0x1c0d1,0x1c0e0,,"[""<waita>@""]",,"Right: Field","Rechts: Feld"
 3,0x1c0e0,0x1c0ec,,"[""<waita>@""]",,"Hot Spring","Heiße Quelle"

@@ -2,7 +2,7 @@ i,address,end,name_i,newlines,name,string,translation
 0,0x1e7d25,0x1e7d4e,,"[""\\n"", ""10GT000@""]",,"Throw this out?
  Yes          No<ask>","Spielstand löschen?
  Ja           Nein<ask>"
-1,0x1e7d4e,0x1e7d5e,,"[""@""]",,<var>S<var>0<var>4<var>C<var>G<var>K<var>OM,<var>S<var>0<var>4<var>C<var>G<var>K<var>OM
+1,0x1e7d4e,0x1e7d5e,,[],,<var>S<var>0<var>4<var>C<var>G<var>K<var>OM,"Jahr <var>0, <var>4, Tag <var>C  <var>G <var>K:00@"
 2,0x1e7d5e,0x1e7d7d,,"[""\\n"", ""@""]",,"Which file do
 you want to use?","Auf welchem Speicherplatz soll gespeichert werden?"
 3,0x1e7d7d,0x1e7da4,,"[""\\n"", ""10GT000@""]",,"Use this one?

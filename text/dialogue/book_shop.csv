@@ -9,7 +9,7 @@ fit it in your
 bookshelf.
 <var>0G.
  Yes          No<ask>","Dieses Buch trägt den Titel ""Geschichten von der Farm"".
-Darin wird erklärt, wie man das Feld in einem ""U""-Muster beackert.
+Darin wird erklärt, wie man das Feld in ""U""-Form beackert.
 Leider ist in deinem Bücherregal kein Platz dafür.
 <var>0G
  Ja        Nein<ask>"
@@ -25,7 +25,7 @@ shelf.
 <var>0G.
 
  Yes          No<ask>","Dieses Buch trägt den Titel ""Geschichten von der Farm 2"".
-Darin wird erklärt, wie man das Feld in einem 2-Reihen-Muster beackert.
+Darin wird erklärt, wie man das Feld in 2-Reihen-Form beackert.
 Leider ist in deinem Bücherregal kein Platz dafür.
 <var>0G
  Ja        Nein<ask>"
@@ -146,8 +146,8 @@ in your bookー
 shelf.
 <var>0G.
 
- Yes          No<ask>","Das ist der Kirsch-Cup-Bericht.
-Lies alles über die Pferde, die am Kirsch-Cup teilgenommen haben!
+ Yes          No<ask>","Das ist ein Bericht zum Kirschkern-Rennen.
+Lies alles über die Pferde, die am Kirschkern-Rennen teilgenommen haben!
 In deinem Bücherregal wäre Platz dafür.
 <var>0G
  Ja        Nein<ask>"
