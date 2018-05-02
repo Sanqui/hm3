@@ -165,6 +165,7 @@ HackPredefTable:
     hack_entry LoadPlayerSelectionScreen
     hack_entry SetupNamingScreen
     hack_entry SetupNamingScreen2
+    hack_entry SetupPartnerNamingScreen
     hack_entry SetupColorScreen
     hack_entry SetupBirthdayScreen
     hack_entry SetupBloodTypeScreen
@@ -246,8 +247,10 @@ HackPrepareStringDialogueBox: ; XXX unused
     
 HackPrintStringWriteTile:
     push hl
+    push bc
     ld a, [H_TMP]
     call VWFDrawChar
+    pop bc
     pop hl
     ret
 
@@ -361,6 +364,26 @@ HackLoadPlayerSelectionScreen:
     ; o
     ld hl, $9800
     ret
+
+HackSetupPartnerNamingScreen:
+    ld hl, wPartnerName
+    call HackSetupNamingScreen
+    
+    ld a, [wPlayerGender]
+    or a
+    ld hl, DefaultGirlName
+    jr z, .girl
+    ld hl, DefaultBoyName
+.girl
+    ld b, $05
+    ld de, wPartnerName
+    call Copy
+    ret
+
+DefaultBoyName:
+    db "Pete@"
+DefaultGirlName:
+    db "Sara@"
 
 HackSetupNamingScreen:
     ld a, $ff
@@ -721,6 +744,7 @@ HackLoadSaveData:
     popa
     
     ret
+
 
 INCLUDE "src/hack/vwf.asm"
 INCLUDE "src/hack/menus.asm"
