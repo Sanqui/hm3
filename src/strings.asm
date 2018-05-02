@@ -261,6 +261,21 @@ LoadPartnerNameToVarString:
     ld [wVarString + NAME_LENGTH], a
     ret
 
+ ORG $47, $47a3
 
-
+LoadPlayerNameToHL:
+    ld de, wPlayerName
+    ld c, PLAYER_NAME_LENGTH
+.loop
+    ld a, [de]
+    cp a, $ff
+    jr z, .end
+    ld [hli], a
+    inc de
+    dec c
+    jr nz, .loop
+.end
+    ld a, $ff
+    ld [hl], a
+    ret
 
