@@ -3,10 +3,11 @@
 00:0038 AddHL_A
 
 00:0040 VBlankInt
-00:04a0 VBlank
+
 00:0048 LCDInt
 00:0058 SerialInt
 
+00:081e CopyShadowRegisters
 
 00:0100 Start
 00:0150 Start_
