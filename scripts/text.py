@@ -10,6 +10,9 @@ from pathlib import Path
 from gbaddr import gbaddr, gbswitch
 
 
+LABELS = {0xd400: "wPlayerName",
+    0xd410: "wPartnerName"}
+
 def tolabel(string):
     return string.replace("/", " ").replace("_", " ").title().replace(" ", "")
 
@@ -373,9 +376,11 @@ def print_strings_from_csvs():
                         code += c
                     code =code.rstrip(">")
                     if code == "player":
-                        l += 4*8
+                        l += 8*6
+                    elif code == "partner":
+                        l += 8*6
                     elif code == "var":
-                        l += 4*8
+                        l += 4*6
                     else:
                         l += 0
             return l
@@ -637,7 +642,10 @@ def print_pointer_tables():
             if address > 0:
                 table_file.write(f"    dw String{tolabel(name)}_{i}\n")
             else:
-                table_file.write(f"    dw ${-address:04x}\n")
+                if -address in LABELS:
+                    table_file.write(f"    dw {LABELS[-address]}\n")
+                else:
+                    table_file.write(f"    dw ${-address:04x}\n")
     
         if name == "strings/names":
             table_file.write('; dummy name (TRASH)\n')
