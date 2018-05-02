@@ -266,7 +266,16 @@ jr_079_4499:
 
 ; metatable follows
 
- 
+ ORG $7b, $42a1
+
+LoadPartnerNameToVarString:
+    ld hl, wPartnerName
+    ld de, wVarString
+    ld b, NAME_LENGTH
+    call Copy
+    ld a, $ff
+    ld [wVarString + NAME_LENGTH], a
+    ret
 
 
 
