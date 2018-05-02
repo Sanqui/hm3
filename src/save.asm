@@ -125,8 +125,9 @@ WriteSavePlayerSection:
     xor a
     ld [REG_SVBK], a
     call CopyLong
-    xor a
-    ld [REG_SVBK], a
+    hack WriteSavePlayerSection
+    ;xor a
+    ;ld [REG_SVBK], a
     ld [$0100], a
     ld [$4100], a
     call $504a
@@ -295,7 +296,7 @@ SaveWriteStrings:
     ld de, $ff8b
     add hl, de
     ld de, wVarString+$1d
-    ld b, PLAYER_NAME_LENGTH
+    ld b, 4 ; originally PLAYER_NAME_LENGTH
 .loop
     ld a, [hl]
     cp "@"
@@ -327,7 +328,8 @@ SaveWriteStrings:
     inc hl
     inc hl
     inc hl
-    ld de, wVarString+$25
+    ; palette
+    ld de, wVarString+$24
     ld a, [hli]
     ld [de], a
     inc de
@@ -336,9 +338,11 @@ SaveWriteStrings:
     inc de
     ld a, [hli]
     ld [de], a
-    inc de
-    ld a, [hl]
-    ld [de], a
+    
+    hack LoadSaveData
+    ;inc de
+    ;ld a, [hl]
+    ;ld [de], a
     ret 
 
 SaveWriteString:
@@ -452,7 +456,7 @@ LoadSavePlayerSection:
     inc de
     ld a, [de]
     ld h, a
-    ld de, wPlayerName
+    ld de, wPlayerDataStart
     ld bc, $07c6
     ld a, $0a
     ld [$0100], a
@@ -461,8 +465,9 @@ LoadSavePlayerSection:
     ld a, $00
     ld [REG_SVBK], a
     call $0ac3
-    xor a
-    ld [REG_SVBK], a
+    hack LoadSavePlayerSection
+    ;xor a
+    ;ld [REG_SVBK], a
     ld [$0100], a
     ld [$4100], a
     ld a, $01

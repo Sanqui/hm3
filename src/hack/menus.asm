@@ -274,6 +274,10 @@ ConfirmationScreenTilemapPatches:
     db $8a, $8b, $84, $85, $86, $87, $88, -1
     dw $99cd
     db $8c, $8d, $d7, $d7, $d7, $d7, -1
+    dw $9a69
+    db $df, $db, $d7, $d7, $d7, -1
+    dw $9a73
+    db $df, -1
     db -1
 
 BoyStringDefinition:
@@ -333,7 +337,7 @@ filescreenstringdefinitions: MACRO
     db "@"
     
     db   1,  5+(\1*6),  0,  -1, "<var>"
-    dw wVarString+$1d
+    dw wTmpSaveName
     db "@"
     
     db -1

@@ -4,7 +4,7 @@ INCLUDE "build/charmap.asm"
 H_TMP EQU $FFFE
 
 CHARACTER_NAME_LENGTH   EQU 6
-NAME_LENGTH             EQU 10
+NAME_LENGTH             EQU 8
 PLAYER_NAME_LENGTH      EQU NAME_LENGTH
 PLAYER_NAME_LENGTH_CODE EQU 4
 
@@ -71,6 +71,20 @@ adddea: MACRO
     jr nc, .nc\@
     inc d
 .nc\@
+ENDM
+
+pusha: MACRO
+    push af
+    push bc
+    push de
+    push hl
+ENDM
+
+popa: MACRO
+    pop hl
+    pop de
+    pop bc
+    pop af
 ENDM
 
 vtile EQUS "$8800 + $800 ^ $10 * "

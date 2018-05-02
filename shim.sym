@@ -169,6 +169,9 @@
 03:a000 sSave1
 03:b000 sSave2
 
+03:a7ca sSave1HackExtra
+03:b7ca sSave2HackExtra
+
 6d:42d6 Tilemap0
 6d:46f0 Tilemap1
 6d:4759 Tilemap2

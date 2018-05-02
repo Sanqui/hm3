@@ -1,8 +1,11 @@
 SECTION "Hack RAM", WRAM0[$c300]
 
+wHackExtra:
 wPlayerName:    ds PLAYER_NAME_LENGTH + 1
 wPartnerName:   ds NAME_LENGTH + 1
 wPetName:       ds NAME_LENGTH + 1
+
+wHackExtra_END
 
 wHackOldBank: ds 1
 wTempH: ds 1
@@ -47,6 +50,8 @@ wMenuStringPad: ds 1
 wMenuTileNum: ds 1
 wMenuBlankTileNum: ds 1
 wMenuWhichTilemap: ds 1
+
+wTmpSaveName: ds NAME_LENGTH + 1
 
 SECTION "Rst $10", ROM0[$0010]
     push af
@@ -176,6 +181,9 @@ HackPredefTable:
     hack_entry StatusScreenLoad
     hack_entry FileScreenWriteLine0
     hack_entry FileScreenWriteLine1
+    hack_entry WriteSavePlayerSection
+    hack_entry LoadSaveData
+    hack_entry LoadSavePlayerSection
 
 HackNop:
     ret
@@ -497,6 +505,9 @@ HackDrawStartMenu:
     dec b
     jr nz, .tilecopyloop
     
+    ld de, $9ce7
+    ld a, $df
+    call WriteTilemapByteToDE
     
     ; o
     xor a
@@ -651,6 +662,64 @@ HackFileScreenWriteLine0:
 HackFileScreenWriteLine1:
     ld hl, FileScreen1StringDefinitions
     call LoadMenuStrings
+    ret
+
+GetSaveExtraHL:
+    ld a, [wWhichSave]
+    and a
+    ld hl, sSave1HackExtra
+    ret z
+    ld hl, sSave2HackExtra
+    ret
+
+HackWriteSavePlayerSection:
+    pusha
+    ld a, [wWhichSave]
+    and a
+    ld de, sSave1HackExtra
+    jr z, .save1
+    ld de, sSave2HackExtra
+.save1
+    ld hl, wHackExtra
+    ld bc, wHackExtra_END-wHackExtra
+    
+    call CopyLong
+    
+    popa
+    ; o
+    xor a
+    ld [REG_SVBK], a
+    ret
+
+HackLoadSavePlayerSection:
+    pusha
+    call GetSaveExtraHL
+    ld de, wHackExtra
+    ld bc, wHackExtra_END-wHackExtra
+    
+    call CopyLong
+    
+    popa
+    ; o
+    xor a
+    ld [REG_SVBK], a
+    ret
+
+HackLoadSaveData:
+    ; o
+    inc de
+    ld a, [hl]
+    ld [de], a
+    
+    pusha
+    
+    call GetSaveExtraHL
+    ld de, wTmpSaveName
+    ld bc, PLAYER_NAME_LENGTH+1
+    call MyCopyData
+   
+    popa
+    
     ret
 
 INCLUDE "src/hack/vwf.asm"
