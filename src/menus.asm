@@ -190,8 +190,8 @@ StartMenuDoJoypad:
     call JumptableOnJoypad
     dw StartMenuA       ; A
     dw StartMenuExit    ; B
-    dw StartMenuExit    ; SELECT
-    dw StartMenuNop     ; START
+    dw StartMenuNop     ; SELECT
+    dw StartMenuExit    ; START
     dw StartMenuNop     ; RIGHT
     dw StartMenuNop     ; LEFT
     dw StartMenuUp      ; UP
