@@ -129,6 +129,14 @@
 7d:4187 DrawPlayerSpriteInCorner
 78:40f0 CopyTilemap78
 78:4473 IncStatusScreenState
+78:40D8 JumptableOnJoypad
+
+78:41c7 StartMenuA
+78:41d7 StartMenuExit
+78:4209 StartMenuNop
+78:41e0 StartMenuUp
+78:41eb StartMenuDown
+
 00:c702 wStatusScreenState
 
 69:4462 StatusScreenGfxCompr
