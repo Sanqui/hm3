@@ -98,6 +98,9 @@
 00:2e3b Decompress
 ; at a:hl to de
 
+02:4001 DoOverworld
+02:42db OverworldHandleSelect
+02:42b3 OverworldHandleStart
 
 78:78fe MainMenuPalettes
 78:7575 MainMenuGfxComp
@@ -153,6 +156,8 @@
 01:d474 wWeekday
 01:d475 wHour
 01:d559 wTool
+
+01:d4b3 wOverworldAction
 
 01:dbc6 wPlayerDataEnd
 

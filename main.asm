@@ -11,6 +11,7 @@ INCLUDE "src/screens.asm"
 INCLUDE "src/status_screen.asm"
 INCLUDE "src/file_screen.asm"
 INCLUDE "src/hud.asm"
+INCLUDE "src/overworld.asm"
 
 blankbank: MACRO
 SECTION "Blank bank \1", ROMX[$4000], BANK[\1]

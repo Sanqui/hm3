@@ -1,6 +1,15 @@
 INCLUDE "constants/registers.asm"
 INCLUDE "build/charmap.asm"
 
+A_ EQU $0
+B_ EQU $1
+SELECT EQU $2
+START EQU $3
+RIGHT EQU $4
+LEFT EQU $5
+UP EQU $6
+DOWN EQU $7
+
 CHARACTER_NAME_LENGTH   EQU 6
 NAME_LENGTH             EQU 4
 PLAYER_NAME_LENGTH      EQU NAME_LENGTH
