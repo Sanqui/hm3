@@ -2,6 +2,7 @@ INCLUDE "constants.asm"
 
 INCLUDE "src/text.asm"
 INCLUDE "src/text_sections.asm"
+INCLUDE "src/vblank.asm"
 INCLUDE "src/strings.asm"
 INCLUDE "src/tilemap.asm"
 INCLUDE "src/menus.asm"
@@ -10,6 +11,7 @@ INCLUDE "src/screens.asm"
 INCLUDE "src/status_screen.asm"
 INCLUDE "src/file_screen.asm"
 INCLUDE "src/hud.asm"
+INCLUDE "src/overworld.asm"
 
 INCLUDE "src/hack/hack.asm"
 
