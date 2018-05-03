@@ -156,6 +156,20 @@ StartMenuTilemap:
     db $db, $d7, $d7, $d7, $d7, $d7, $df
     db $dc, $dd, $dd, $dd, $dd, $dd, $de
 
+ ORG $78, $41b2
+
+StartMenuDoJoypad:
+    call JumptableOnJoypad
+    dw StartMenuA       ; A
+    dw StartMenuExit    ; B
+    dw StartMenuExit    ; SELECT
+    dw StartMenuNop     ; START
+    dw StartMenuNop     ; RIGHT
+    dw StartMenuNop     ; LEFT
+    dw StartMenuUp      ; UP
+    dw StartMenuDown    ; DOWN
+    dw StartMenuNop     ; none?
+    
 
 SECTION "Work Menu Related Stuff", ROMX[$4254], BANK[$78]
 
