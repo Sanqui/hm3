@@ -12,7 +12,7 @@ Game Link cable."
 4-TRASH,0x140c81,0x140c83,,,,"\n
 @"
 5,0x140c83,0x140c95,,"[""<waita>@""]",,No saved data!<arrow>1
-6,0x140c95,0x140ca7,,"[""<waita>@""]",,No saved data!<arrow>2
+6,0x140c95,0x140ca7,,"[""<arrow>2<waita>@""]",,No saved data!
 7,0x140ca7,0x140cc6,,"[""\\n"", ""@""]",,"Which file do
 you want to use?"
 8,0x140cc6,0x140cd7,,"[""@""]",,Copy which file?

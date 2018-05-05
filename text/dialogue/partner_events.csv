@@ -117,8 +117,8 @@ anywhere <player>!
 electricity
 back? Thanks
 <player>…"
-17,0x1f1d65,0x1f1d84,1,"[""\\n"", ""<waita>@""]",<partner>,"Wa…Wait <player>.
-Where are you?<arrow>0"
+17,0x1f1d65,0x1f1d84,1,"[""\\n"", ""<arrow>0<waita>@""]",<partner>,"Wa…Wait <player>.
+Where are you?"
 18,0x1f1d84,0x1f1de9,1,"[""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"… … … …
 Oh, the
 electricity is

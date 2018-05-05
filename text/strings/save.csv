@@ -8,8 +8,8 @@ you want to use?"
  Yes          No<ask>"
 4,0x1e7da4,0x1e7dc8,,"[""\\n"", ""10GT000@""]",,"Overwrite?
  Yes          No<ask>"
-5,0x1e7dc8,0x1e7de0,,"[""\\n"", ""<waita>@""]",,"Data has been
-saved!<arrow>2"
+5,0x1e7dc8,0x1e7de0,,"[""\\n"", ""<arrow>2<waita>@""]",,"Data has been
+saved!"
 6,0x1e7de0,0x1e7df2,,"[""\\n"", ""@""]",,"<var>0
 <var>O in <var>G days."
 7,0x1e7df2,0x1e7e09,,"[""\\n"", ""@""]",,"No partーtime

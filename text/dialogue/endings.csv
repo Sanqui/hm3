@@ -1,9 +1,9 @@
 i,address,end,name_i,newlines,name,string
-0,0x1e73a1,0x1e73d8,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"It's been a few
+0,0x1e73a1,0x1e73d8,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<player>,"It's been a few
 months since we
 got married.
-<arrow>0"
-1,0x1e73d8,0x1e746b,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Hey <player>…
+"
+1,0x1e73d8,0x1e746b,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"Hey <player>…
 Happiness must
 be what we have
 now. Kind of
@@ -12,7 +12,7 @@ Sweet feelings.
 It's very light
 and heavenly.
 I feel so good.
-<arrow>0"
+"
 2,0x1e746b,0x1e750c,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"We don't know
 what my Dad
 really dreamed
@@ -61,7 +61,7 @@ I want to keep
 working on your
 farm!
  Yes          No<ask>"
-5,0x1e7755,0x1e77fe,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"… … … …
+5,0x1e7755,0x1e77fe,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"… … … …
 It was close…
 …Uh, I had a
 lot of fun
@@ -72,7 +72,7 @@ I'm sorry. It's
 too bad
 that we have to
 sell this farm.
-<arrow>0"
+"
 6,0x1e77fe,0x1e7889,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Soon after that,
 <player> left the
 island. <player>
@@ -83,7 +83,7 @@ lived there
 quietly…
 Harvest Moon 3
 The End"
-7,0x1e7889,0x1e7924,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"… … … …
+7,0x1e7889,0x1e7924,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"… … … …
 It was close…
 …Uh, I had a
 good time
@@ -94,7 +94,7 @@ It's too bad
 you have to sell
 this farm,
 right…?
-<arrow>0"
+"
 8,0x1e7924,0x1e79a6,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Soon after that,
 <player> left the
 island. <player>
@@ -122,38 +122,38 @@ you♥"
 I'm talking
 about! Good
 work!"
-13,0x1e7a89,0x1e7a9f,,"[""\\n"", ""<waita>@""]",,"A few years
-later…<arrow>0"
-14,0x1e7a9f,0x1e7afe,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"<player>? What can
+13,0x1e7a89,0x1e7a9f,,"[""\\n"", ""<arrow>0<waita>@""]",,"A few years
+later…"
+14,0x1e7a9f,0x1e7afe,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"<player>? What can
 I do today?
 … … … …
 … … … …
 What? Really?
 I am going to
 work hard!!
-<arrow>0"
-15,0x1e7afe,0x1e7b56,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"… … Wow,
+"
+15,0x1e7afe,0x1e7b56,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"… … Wow,
 the baby moved.
 Hee hee. We have
 to work hard for
 the baby…Daddy♥
-<arrow>0"
+"
 16,0x1e7b56,0x1e7b99,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"<player> lived with
 <var>0 happily
 ever after.
 
 Harvest Moon 3
 The End"
-17,0x1e7b99,0x1e7bcd,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"That was great
+17,0x1e7b99,0x1e7bcd,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"That was great
 <player>. OK, it's
 time to work…
-<arrow>0"
-18,0x1e7bcd,0x1e7c2c,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"What's wrong?
+"
+18,0x1e7bcd,0x1e7c2c,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"What's wrong?
 … … … …
 The baby moved?
 Wow! Now I have
 to work harder
-for the baby!<arrow>0"
+for the baby!"
 19,0x1e7c2c,0x1e7c6f,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"<player> lived with
 <var>0 happily
 ever after.
