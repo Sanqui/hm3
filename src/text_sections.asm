@@ -67,6 +67,16 @@ TextSection18_400f_END
 
 ; code follows
 
+SECTION "Text pointer metatable at 20:4001", ROMX[$4001], BANK[$20]
+; covers: dialogue/animals
+    setup_start_dialogue_asm 20_400f
+    INCLUDE "build/text/20_400f_table.asm"
+    INCLUDE "build/text/20_400f.asm"
+TextSection20_400f_END
+
+; code follows
+
+
 SECTION "Text pointer metatable at 2e:4001", ROMX[$4001], BANK[$2e]
 ; covers: dialogue/town, dialogue/town2, dialogue/billy, dialogue/town3
     setup_start_dialogue_asm 2e_400f

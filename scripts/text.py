@@ -80,6 +80,8 @@ METATABLES = [
    "strings/credits", "dialogue/sound_test")),
  (gbaddr("01:52f9"), 5+48+64,
   ("strings/test", "strings/debug", "strings/items_select", )),
+ (gbaddr("20:400f"), 81,
+  ("dialogue/animals",)),
 ]
 
 def readbyte():  return struct.unpack("B",  rom.read(1))[0]
