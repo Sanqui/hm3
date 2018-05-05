@@ -28,8 +28,8 @@ storage."
  Yes          No<ask>"
 9,0x10c472,0x10c493,1,"[""\\n"", ""<waita>@""]",<partner>,"Decide my work
 with this map."
-10,0x10c493,0x10c4b4,1,"[""\\n"", ""<waita>@""]",<partner>,"How do you want
-me to till?<arrow>0"
+10,0x10c493,0x10c4b4,1,"[""\\n"", ""<arrow>0<waita>@""]",<partner>,"How do you want
+me to till?"
 11,0x10c4b4,0x10c4d5,1,"[""\\n"", ""<waita>@""]",<partner>,"Choose the seeds
 to sow here."
 12,0x10c4d5,0x10c4ec,1,"[""\\n"", ""<waita>@""]",<partner>,"OK! Leave it

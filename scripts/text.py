@@ -310,6 +310,8 @@ def strings_to_csv():
                     for line in strings[address]:
                         NEWLINE_TYPES = [
                             r"\s*\\n$",
+                            r"\s*<arrow>0<waita>@$",
+                            r"\s*<arrow>2<waita>@$",
                             r"\s*<arrow>0<waita><clear>$",
                             r"\s*<arrow>2<waita><clear>$",
                             r"\s*<fc><f0><clear>$",
