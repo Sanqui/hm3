@@ -279,3 +279,95 @@ LoadPlayerNameToHL:
     ld [hl], a
     ret
 
+SECTION "copy names", ROM0[$221c]
+    
+copyname: MACRO
+    ld b, NAME_LENGTH
+.loop\@
+    ld a, [hl]
+    cp $ff
+    jr z, .done\@
+    ld [de], a
+    inc de
+    inc hl
+    dec b
+    jr nz, .loop\@
+.done\@
+    ld a, $ff
+    ld [de], a
+ENDM
+
+copyname2: MACRO
+    ld b, NAME_LENGTH
+.loop\@
+    ld a, [hli]
+    cp $ff
+    jr z, .done\@
+    ld [de], a
+    inc de
+    dec b
+    jr nz, .loop\@
+.done\@
+    ld a, $ff
+    ld [de], a
+ENDM
+
+CopyPetName:
+    ld hl, wPetName
+    copyname
+    ret 
+
+CopyPartnerName
+    ld hl, wPartnerName
+    copyname
+    ret 
+
+ ORG $21, $4f71
+
+ChooseDrawerDialogue:
+    ld a, [wPlayerGender]
+    and a
+    jr nz, .girl
+.boy
+    ld a, $07
+    jr .gotstring
+
+.girl
+    ld a, $08
+.gotstring
+    ld [wStringID2], a
+    ld hl, wPartnerName
+    ld de, wVarString
+    copyname
+    ret 
+
+ ORG $2e, $773f
+CityFirstDialogue:
+    ld a, [wPlayerGender]
+    add a
+    ld de, .table
+    add e
+    ld e, a
+    jr nc, .nc
+    inc d
+.nc
+    ld a, [de]
+    ld l, a
+    inc de
+    ld a, [de]
+    ld h, a
+    ld a, c
+    add l
+    ld l, a
+    jr nc, .nc2
+    inc h
+.nc2
+    push hl
+    ld hl, wPartnerName
+    ld de, wVarString
+    copyname2
+    pop hl
+    ld a, [hl]
+    ret
+
+.table
