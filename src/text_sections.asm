@@ -123,6 +123,10 @@ TextSection50_4b7e_END
     INCLUDE "build/text/01_52f9_table.asm"
     INCLUDE "build/text/01_52f9.asm"
 
+    setup_dialogue_relocated_asm 20_400f
+    INCLUDE "build/text/20_400f_table.asm"
+    INCLUDE "build/text/20_400f.asm"
+
 SECTION "Text pointer metatable at 01:52f9", ROMX[$52eb], BANK[$01]
 ; covers: strings/test, strings/debug, strings/items_select
     setup_start_dialogue_relocate_asm 01_52f9
@@ -154,9 +158,9 @@ TextSection18_400f_END
 
 SECTION "Text pointer metatable at 20:4001", ROMX[$4001], BANK[$20]
 ; covers: dialogue/animals
-    setup_start_dialogue_asm 20_400f
-    INCLUDE "build/text/20_400f_table.asm"
-    INCLUDE "build/text/20_400f.asm"
+    setup_start_dialogue_relocate_asm 20_400f
+    ;INCLUDE "build/text/20_400f_table.asm"
+    ;INCLUDE "build/text/20_400f.asm"
 TextSection20_400f_END
 
 ; code follows
