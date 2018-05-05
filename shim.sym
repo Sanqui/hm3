@@ -135,6 +135,12 @@
 78:41e0 StartMenuUp
 78:41eb StartMenuDown
 
+00:0f80 DoSound
+00:2415 PlaySFX
+
+3b:4816 DropPet
+3b:484f DropPet.SFXTable
+
 00:c702 wStatusScreenState
 
 69:4462 StatusScreenGfxCompr
@@ -164,6 +170,9 @@
 01:d474 wWeekday
 01:d475 wHour
 01:d559 wTool
+
+01:d623 wTimesPetDropped
+01:d416 wPetSpecies
 
 01:d4b3 wOverworldAction
 
