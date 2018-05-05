@@ -438,6 +438,16 @@ def print_strings_from_csvs():
                     newlines = json.loads(newlines)
                 else:
                     newlines = []
+                
+                verbose = False
+                if "ferry is going" in string.replace("\n", " "):
+                    verbose = False
+                
+                if verbose:
+                    print("\n=================")
+                    print(string)
+                    print("=================\n")
+                
                 if newstring != None and newstring != "":
                     new = True
                     origstring = string
@@ -449,7 +459,7 @@ def print_strings_from_csvs():
                         if nl == "@": nl = newlines[-2]
                         axis = int(nl[6])
                         hardlines = [-1, -2][axis]
-                        newstring = " ".join(string.split("\n")[0:-2])
+                        newstring = " ".join(string.split("\n")[0:-2])+" "
                         newstring += "\n".join(string.split("\n")[-2:])
                         string = newstring
                     else:
