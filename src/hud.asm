@@ -428,7 +428,7 @@ HUDWriteFullDate:
     ld a, " "
     call HUDWriteChar
     
-    ld a, [wDay]
+    ld a, [wWeekday]
     ld e, a
     ld d, 0
     ld hl, HUDDayNamesNew
