@@ -13,7 +13,7 @@ INCLUDE "src/file_screen.asm"
 INCLUDE "src/hud.asm"
 INCLUDE "src/overworld.asm"
 
-blankbank: MACRO
+MACRO blankbank
 SECTION "Blank bank \1", ROMX[$4000], BANK[\1]
     db \1 ; BANK(@) doesn't work atm
     ds $3fff
