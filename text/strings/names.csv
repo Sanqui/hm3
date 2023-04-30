@@ -7,13 +7,13 @@ i,address,end,name_i,newlines,name,string,translation
 5,0x1280e7,0x1280ed,,"[""@""]",,Billy,Billy
 6,0x1280ed,0x1280f1,,"[""@""]",,Joe,Joe
 7,0x1280f1,0x1280f7,,"[""@""]",,Chloe,Chloe
-8,0x1280f7,0x1280fc,,"[""@""]",,Elza,Elza
+8,0x1280f7,0x1280fc,,"[""@""]",,Elza,Elsa
 9,0x1280fc,0x128103,,"[""@""]",,Bigbee,Bigbee
 10,0x128103,0x128108,,"[""@""]",,Kirk,Kirk
-11,0x128108,0x12810d,,"[""@""]",,Kate,Kate
+11,0x128108,0x12810d,,"[""@""]",,Kate,Karine
 12,0x12810d,0x128113,,"[""@""]",,Marla,Marla
 13,0x128113,0x128119,,"[""@""]",,Lukia,Lukia
-14,0x128119,0x12811e,,"[""@""]",,Lyla,Lyla
+14,0x128119,0x12811e,,"[""@""]",,Lyla,Leyla
 15,0x12811e,0x128124,,"[""@""]",,Lucus,Lucas
 16,0x128124,0x128129,,"[""@""]",,Cozy,Cozy
 17,0x128129,0x12812f,,"[""@""]",,Rosie,Rosie
@@ -34,9 +34,9 @@ i,address,end,name_i,newlines,name,string,translation
 32,0x12817a,0x128181,,"[""@""]",,Mr.One,"Hr. Eins"
 33,0x128181,0x128186,,"[""@""]",,Polo,Polo
 34,0x128186,0x12818b,,"[""@""]",,Meow,Miau
-35,0x12818b,0x128192,,"[""@""]",,Kojima,Kojima
-36,0x128192,0x128198,,"[""@""]",,Otose,Otose
-37,0x128198,0x12819f,,"[""@""]",,"2 guys","2 Typen"
+35,0x12818b,0x128192,,"[""@""]",,Kojima,Ernst
+36,0x128192,0x128198,,"[""@""]",,Otose,Bertold
+37,0x128198,0x12819f,,"[""@""]",,"2 guys","Ernst & Bertold"
 38,0x12819f,0x1281a3,,"[""@""]",,Gen,Gen
 39,0x1281a3,0x1281a8,,"[""@""]",,Isha,Isha
 40,0x1281a8,0x1281ae,,"[""@""]",,Nancy,Nancy

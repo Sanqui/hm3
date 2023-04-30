@@ -1,4 +1,4 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation,
 0,0x140dba,0x140ebb,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Hello!
 … Are you the
 guy who will
@@ -16,7 +16,24 @@ tomorrow.
 OK. Shall we go
 to the island?
 There is a
-ferry."
+ferry.","Hello!
+… Are you the
+guy who will
+help me on the
+farm? My name
+is
+<partner>. Nice
+to meet you♥
+It's too late to
+start working by
+the time we get
+to the island,
+so let's start
+tomorrow.
+OK. Shall we go
+to the island?
+There is a
+ferry.","I changed the <var>0 to <partner>, please keep it like that --Sanqui"
 1,0x140ebb,0x140fc9,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Hello. Are you
 the girl Mr.
 Heinz was
@@ -34,4 +51,21 @@ So we will start
 the work
 tomorrow. Let's
 head to the
-island."
+island.","Hello. Are you
+the girl Mr.
+Heinz was
+talking about?
+I'm <partner>. I
+think you've
+heard about me
+from Mr. Heinz.
+By the time we
+get to the
+island,it'll be
+too late to
+start working.
+So we will start
+the work
+tomorrow. Let's
+head to the
+island.",

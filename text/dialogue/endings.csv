@@ -1,8 +1,8 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x1e73a1,0x1e73d8,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<player>,"It's been a few
 months since we
 got married.
-"
+","Es ist nun einige Monate her, dass wir geheiratet haben."
 1,0x1e73d8,0x1e746b,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"Hey <player>…
 Happiness must
 be what we have
@@ -12,7 +12,7 @@ Sweet feelings.
 It's very light
 and heavenly.
 I feel so good.
-"
+","Hey, <player>... Spürst du auch diese wohlige Wärme? Es ist, als wäre ich im siebten Himmel. So muss sich wahres Glück anfühlen..."
 2,0x1e746b,0x1e750c,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"We don't know
 what my Dad
 really dreamed
@@ -22,7 +22,9 @@ dreams. Our own
 Harvest Moon has
 just begun…
 <noname>Harvest Moon 3
-The End"
+The End","Wir wissen nicht, was sich mein Vater erträumt hat, aber das ist in Ordnung. Wir haben unsere eigenen Träume. Unsere eigene Farm-Geschichte hat gerade erst begonnen...
+<noname> Harvest Moon 3
+- Ende -"
 3,0x1e750c,0x1e7623,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",<partner>,"Yes! <player>!
 We have made my
 Dad's dream come
@@ -40,7 +42,9 @@ Thanks <player> ♥
 to stay here
 with me forever.
 Please?
- Yes          No<ask>"
+ Yes          No<ask>","Wir haben es geschafft, <player>! Wir haben den Traum meines Vaters wahr werden lassen!! Ich hätte nicht gedacht, dass ich ihn so schnell verwirklich kann... Das hab ich allein dir zu verdanken, <player>. Ohne dich hätte ich es nicht geschaft. Danke, <player>. ♥ ... ... ... ... <player>? Ich will, dass du für immer bei mir bleibst.
+Tust du das?
+ Ja          Nein<ask>"
 4,0x1e7623,0x1e7755,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",<partner>,"Cool! <player>!!
 You did it!! I
 thougt it was
@@ -60,7 +64,9 @@ forever…?
 I want to keep
 working on your
 farm!
- Yes          No<ask>"
+ Yes          No<ask>","Du hast es geschafft, <player>!! Anfänglich dachte ich, du wärst der Aufgabe nicht gewachsen... Aber du hast es tatsächlich vollbracht, und das in erstaunlich kurzer Zeit! Und das alles, weil du an dich gegalubt hast. Beeindruckend!
+...<player>? Kann ich... für immer bei dir bleiben? Ich möchte weiterhin auf deiner Farm arbeiten!
+ Ja         Nein<ask>"
 5,0x1e7755,0x1e77fe,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"… … … …
 It was close…
 …Uh, I had a
@@ -72,7 +78,10 @@ I'm sorry. It's
 too bad
 that we have to
 sell this farm.
-"
+","... ... ... ...
+Fast hätten wir es geschaft...
+...Die Arbeit mit dir hat mir sehr viel Spaß gemacht.
+Es ist alles meine Schuld... Tut mir leid. Ein Jammer, dass wir die Farm verkaufen müssen."
 6,0x1e77fe,0x1e7889,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Soon after that,
 <player> left the
 island. <player>
@@ -82,7 +91,9 @@ Bud Village and
 lived there
 quietly…
 Harvest Moon 3
-The End"
+The End","Kurz darauf verließ <player> die Insel und setzte sich auf seiner Farm im Knospendorf zur Ruhe...
+Harvest Moon 3
+- Ende -"
 7,0x1e7889,0x1e7924,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"… … … …
 It was close…
 …Uh, I had a
@@ -94,7 +105,10 @@ It's too bad
 you have to sell
 this farm,
 right…?
-"
+","... ... ... ...
+Fast hätten wir es geschaft...
+...Die Arbeit mit dir hat mir viel Freude bereitet, <player>.
+Das ist meine Schuld. Tut mir leid, dass du die Farm meinetwegen verkaufen musst..."
 8,0x1e7924,0x1e79a6,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Soon after that,
 <player> left the
 island. <player>
@@ -104,26 +118,32 @@ returned to
 his life there.
 
 Harvest Moon 3
-The End"
+The End","Kurz darauf verließ <player> die Insel und kehrte in sein altes Leben auf seiner Farm im Knospendorf zurück...
+Harvest Moon 3
+- Ende -"
 9,0x1e79a6,0x1e79e7,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",<partner>,"Yeah! I'm so
 happy…
 Thank you <player>.
 I love you,
-Darling♥"
+Darling♥","Ja! Ich bin so glücklich...
+Danke, <player>.
+Ich liebe dich, Schatz. ♥"
 10,0x1e79e7,0x1e7a19,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Yes! I'm very
 happy…
 Thanks <player>.
-I love you!"
+I love you!","Ja! Ich bin überglücklich...
+Danke, <player>.
+Ich liebe dich!"
 11,0x1e7a19,0x1e7a51,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Cool! This is
 what I'm talking
 about! Thank
-you♥"
+you♥","Cool! Genau das meine ich! Danke. ♥"
 12,0x1e7a51,0x1e7a89,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Hey, that's what
 I'm talking
 about! Good
-work!"
+work!","Hey, genau das meine ich! Gute Arbeit!"
 13,0x1e7a89,0x1e7a9f,,"[""\\n"", ""<arrow>0<waita>@""]",,"A few years
-later…"
+later…","Ein paar Jahre später..."
 14,0x1e7a9f,0x1e7afe,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"<player>? What can
 I do today?
 … … … …
@@ -131,32 +151,43 @@ I do today?
 What? Really?
 I am going to
 work hard!!
-"
+","<player>? Was gibt es heute für mich zu tun?
+... ... ... ...
+... ... ... ...
+Was, wirklich? Gut, ich werde mein Bestes geben!!"
 15,0x1e7afe,0x1e7b56,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"… … Wow,
 the baby moved.
 Hee hee. We have
 to work hard for
 the baby…Daddy♥
-"
+","... ... Wow, das Baby hat sich bewegt. Hihihi. Wir müssen uns für das Baby ins Zeug legen... Papi. ♥"
 16,0x1e7b56,0x1e7b99,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"<player> lived with
 <var>0 happily
 ever after.
 
 Harvest Moon 3
-The End"
+The End","Und so lebten <player> und <var>0 glücklich miteinander bis ans Ende ihrer Tage.
+
+Harvest Moon 3
+- Ende -"
 17,0x1e7b99,0x1e7bcd,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"That was great
 <player>. OK, it's
 time to work…
-"
+","Das war großartig, <player>. Gut, machen wir uns an die Arbeit..."
 18,0x1e7bcd,0x1e7c2c,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",<partner>,"What's wrong?
 … … … …
 The baby moved?
 Wow! Now I have
 to work harder
-for the baby!"
+for the baby!","Was ist los?
+... ... ... ...
+Das Baby hat sich bewegt? Wow! Jetzt muss ich noch härter arbeiten!"
 19,0x1e7c2c,0x1e7c6f,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"<player> lived with
 <var>0 happily
 ever after.
 
 Harvest Moon 3
-The End"
+The End","Und so lebten <player> und <var>0 glücklich miteinander bis ans Ende ihrer Tage.
+
+Harvest Moon 3
+- Ende -"

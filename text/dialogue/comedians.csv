@@ -1,6 +1,7 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x1e677c,0x1e679b,,"[""\\n"", ""<fc>\u3065@""]",,"Comedians
-“Your Own Fault”"
+“Your Own Fault”","Komiker in
+""Selbst Schuld!"""
 1,0x1e679b,0x1e699e,35,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",Kojima,"Hey, how are YOU
 doing?
 <name>bHow are YOU
@@ -38,13 +39,24 @@ Then I would
 just knock on
 the door and
 run!
-"
+","Hey, hey! Wie geht's uns heute?
+<name>bSeid ihr alle gut drauf?
+<name>aAber sag, wie geht's DIR denn?
+<name>ZOch, ich kann nicht genug klagen! Hab' mal wieder zu viel gearbeitet. Hach, was wäre ich doch gern wieder ein Kind...
+
+<name>aDa sagst du was! Als ich klein war, habe ich den ganzen Tag lag nur gespielt und Streiche ausgeheckt. Das war vielleicht ein Spaß!
+
+<name>ZDas Beste waren die Klingelstreiche.
+<name>aJa, der Klassiker: Man klingelt bei jemandem, und noch bevor aufgemacht wird, rennt man davon!
+
+<name>ZIch hab mich dabei immer verkleidet. So wussten sie nicht, dass ich es war."
 2,0x1e699e,0x1e6a03,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",Otose,"Was it really
 necessary?
 <name>ZThen someone
 would come out
 and say, “Who is
-it? Oh, Kojima.”"
+it? Oh, Kojima.”","Du Frechdachs, du!
+<name>ZAllerdings war ich das einzige Kind im Dorf, deswegen wussten sie es dann irgendwann doch."
 3,0x1e6a03,0x1e6af9,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", "" <fc>\u3065@""]",Otose,"Then why did you
 disguise
 yourself!?
@@ -61,7 +73,12 @@ too. And someone
 who sat on the
 push pins would
 say, “Ouch, I'm
-not a poster!”"
+not a poster!”","Warum hast du dich dann überhaupt verkleidet?!
+
+<name>ZÖhm, gute Frage...
+<name>aIst ja auch egal! War es bei euch in der Schule auch angesagt, die Stühle anderer mit Reißzwecken zu versehen?
+
+<name>ZNa klar. Da hab ich fleißig mitgemischt! Einmal sagte dann jemand: ""Hey, ich bin doch kein Plakat!""."
 4,0x1e6af9,0x1e6c6a,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",Otose,"What kind of kid
 would respond so
 nicely to that!?
@@ -87,7 +104,13 @@ other day, and
 one guy still
 had a paper I
 put on his back.
-"
+","Klar, das würde ich auch sagen, wenn mich etwas in den Allerwertesten piekst!
+
+<name>ZOder was ist hiermit: Jemandem einen Zettel an den Rück kleben, auf dem ""Ich bin doof"" steht.
+
+<name>aKenn ich, ja. Man grüßt jemanden freundlich, klopft ihm auf den Rücken und bringt so insgeheim den Zettel an.
+
+<name>ZAls ich letztens beim Klassentreffen war, hatte eines meiner Opfer immer noch den Zettel am Rücken."
 5,0x1e6c6a,0x1e6d07,36,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", "" <fc>\u3065<clear>"", ""\\n"", ""<fc>\u3065@""]",Otose,"You liar! Who
 wouldn't notice
 it for 5 years?
@@ -99,9 +122,14 @@ clothes on.
 <name>aYou are such a
 liar! I can't
 handle it any
-more!"
-6,0x1e6d07,0x1e6d20,37,"[""\\n"", ""<fc>\u3065@""]",2 guys,"Thank you very
-much."
-7,0x1e6d20,0x1e6d2e,36,"[""<fc>\u3065@""]",Otose,You too!?
+more!","Du Lügenbold! Als ob er das über Jahre hinweg nicht bemerken würde?!
+
+<name>ZHabe ich schon erwähnt, dass er in Klamotten duscht?
+
+<name>aMünchhausen lässt grüßen! Ich hab genug gehört..."
+6,0x1e6d07,0x1e6d20,37,"[""\\n"", ""<fc>\u3065@""]","2 guys","Thank you very
+much.","Vielen Dank. Danke schön!"
+7,0x1e6d20,0x1e6d2e,36,"[""<fc>\u3065@""]",Otose,"You too!?","Huch, was ist das denn?"
 8,0x1e6d2e,0x1e6d40,,"[""\\n"", ""@""]",,"
-         The END"
+         The END","
+           ENDE"

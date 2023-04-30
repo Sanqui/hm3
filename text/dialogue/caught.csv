@@ -1,5 +1,6 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x10c659,0x10c668,,"[""\\n"", ""<waita>@""]",,"Caught a
-<var>0!!"
+<var>0!!","<var>0 gefangen!!"
 1,0x10c668,0x10c688,,"[""\\n"", ""<waita>@""]",,"No space in my
-bag. Let it go!"
+bag. Let it go!","Kein Platz mehr.
+Lass ihn vom Haken!"

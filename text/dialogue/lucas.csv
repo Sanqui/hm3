@@ -1,4 +1,4 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x12d64e,0x12d81b,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"Hey <player>…
 Isn't that a
 glacier? Cool!
@@ -26,24 +26,27 @@ Do you want to
 convert the
 storage into a
 refrigerator?
- Yes          No<ask>"
+ Yes          No<ask>","Hey, <player>... Hast du da etwa eine Eisscholle? Wow! Das ist das erste mal, dass ich eine zu Gesicht bekomme! Oh! Die kannst du benutzen, um die Versandkiste in einen Kühlschrank zu verwandeln! So bleibt das Gemüse länger haltbar. Hast du einen Mülleimer zu Hause? Denn wenn nicht, könnte das ein Problem darstellen. Bleibt das Gemüse frisch, hast du kein faules Gemüse um Dünger daraus zu machen. Also, willst du die Versandkiste in einen Kühlschrank umbauen?
+ Ja          Nein<ask>"
 1,0x12d81b,0x12d86d,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lucus,"Alright! I'll
 work on it right
 away. I'll show
 you how talented
 I am!
-"
+","Alles klar, ich mach mich sofort an die Arbeit. Du wirst Augen machen!"
 2,0x12d86d,0x12d898,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lucus,"OK… Ask me
 if you change
 your mind.
-"
+","Na gut... Gib Bescheid, wenn du es dir anders überlegt hast."
 3,0x12d898,0x12d8f2,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Lucus,"Do you want to
 convert the
 storage into a
 refrigerator?
 
- Yes          No<ask>"
+ Yes          No<ask>","Willst du aus der Versandkiste einen Kühlschrank machen?
+
+ Ja          Nein<ask>"
 4,0x12d8f2,0x12d921,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Fine job. You
 must work for
 your child.
-"
+","Gute Arbeit. Nun arbeite weiter hart, damit dein Kind es gut hat!"

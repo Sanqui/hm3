@@ -165,8 +165,7 @@ wheat seeds. We
 are open 9AM to
 6PM, Monday
 through
-Saturday.","Bei der Farmerschaft hast du die große Auswahl.
-Hier kannst du Tiere kaufen und auch wieder verkaufen, du kannst mit deinen Tieren an Wettbewerben teilnehmen, Reis- und Weizensamen kaufen, und noch vieles mehr. Wir haben von Montag bis Samstag, von 09:00 bis 18:00 Uhr geöffnet."
+Saturday.","Willkommen beim Farmerverband! Hier kannst du Tiere kaufen und verkaufen, an Tier-Wettbewerben teilnehmen und Reis- sowie Weizensamen kaufen. Wir haben von Montag bis Samstag von 9 Uhr bis 18 Uhr geöffnet."
 32,0x141fa1,0x14200f,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Sprinkler that
 waters 9x9 at
 6AM if you set
@@ -174,7 +173,7 @@ it up at the
 shore.
 It's <var>0G.
 
- Yes          No<ask>","Sprinkler der jeden Morgen um 06:00 Uhr ein 9x9-großes Feld bewässert. Muss nah am Wasser aufgestellt werden.
+ Yes          No<ask>","Sprinkler, der jeden Morgen um 6 Uhr ein 9x9-großes Feld bewässert. Muss nah am Wasser aufgestellt werden.
 Das macht <var>0G.
  Ja          Nein<ask>"
 33,0x14200f,0x142022,,"[""\\n"", ""@""]",,"How many?
@@ -183,11 +182,12 @@ Das macht <var>0G.
 34,0x142022,0x14203e,,"[""\\n"", ""<waita>@""]",,"You can't carry
 them all.","Das kannst du nicht alles tragen."
 35,0x14203e,0x142063,,"[""\\n"", ""10GT000@""]",,"Want a job?
- Yes          No<ask>",
+ Yes          No<ask>","Suchst du Aufträge?
+ Ja          Nein<ask>"
 36,0x142063,0x14208b,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"These are all
 the jobs you
 can do.
-",
+","Das sind alle Aufträge, die du annehmen kannst."
 37,0x14208b,0x1420e9,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Ship <var>W
 <var>0
 within <var>G days.
@@ -195,13 +195,21 @@ The job pays
 <var>OG.
 Take the job?
 
- Yes          No<ask>",
+ Yes          No<ask>","Verschicke <var>W <var>0
+innerhalb von <var>G Tagen.
+Der Auftrag wird mit
+<var>OG vergütet.
+Auftrag annehmen?
+
+ Ja          Nein<ask>"
 38,0x1420e9,0x142104,,"[""\\n"", ""<waita>@""]",,"Please make the
-due date.",
+due date.","Bitte halte die Abgabefrist ein."
 39,0x142104,0x142140,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Listen to the
 job description?
 
- Yes          No<ask>",
+ Yes          No<ask>","Die Auftragsbeschreibung anhören?
+
+ Ja          Nein<ask>"
 40,0x142140,0x14221e,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"There are
 different partー
 time jobs
@@ -215,8 +223,8 @@ perfectly, you
 will build a
 reputation as a
 farmer. Call to
-cancel the job.",
-41,0x14221e,0x14222e,,"[""<waita>@""]",,"We're closed.",
+cancel the job.","Hier kommen jeden Tag neue Aufträge rein. Du kannst einen Auftrag nach dem anderen annehmen, und jedes Mal, wenn du einen Auftrag perfekt erledigst, verbessert sich dein Ruf als Farmer. Rufe an, wenn du den Auftrag abbrechen möchtest."
+41,0x14221e,0x14222e,,"[""<waita>@""]",,"We're closed.","Wir haben geschlossen."
 42,0x14222e,0x142305,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Register your
 cows to get
 rankings. The
@@ -230,9 +238,11 @@ good farm owner.
 ….Maybe…
 Enter a cow?
 
- Yes          No<ask>",
+ Yes          No<ask>","Schreibe deine Kühe ein, um Bewertungen zu erhalten. Je höher die Zuneigung, desto höher die Bewertung, und je höher die Bewertung, desto besser dein Ruf als Farmer!
+Eine Kuh einschreiben?
+ Ja          Nein<ask>"
 43,0x142305,0x14231d,,"[""\\n"", ""<waita>@""]",,"Choose a cow to
-enter.",
+enter.","Wähle eine Kuh zum Einschreiben."
 44,0x14231d,0x1423ed,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Enter your
 horse in the
 horse racing
@@ -246,9 +256,11 @@ better chance
 of winning.
 
 Enter a horse?
- Yes          No<ask>",
+ Yes          No<ask>","Trage dein Pferd für ein Pferderennen ein. Du wirst dein Pferd nicht zurückkriegen, aber je höher die Zuneigung, desto höher die Wahrscheinlichkeit auf einen Sieg.
+Ein Pferd einschreiben?
+ Ja          Nein<ask>"
 45,0x1423ed,0x142407,,"[""\\n"", ""<waita>@""]",,"Choose a horse
-to enter.",
+to enter.","Wähle ein Pferd zum Einschreiben."
 46,0x142407,0x14248b,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"The result was
 not good. Your
 cow was ranked
@@ -258,20 +270,21 @@ of my business,
 but do your
 animals like
 you?
-",
+","Das Ergebnis war leider alles andere als gut. Deine Kuh schnitt in der Bewertung am schlechtesten ab...
+Nicht, dass es mich etwas angeht, aber mögen deine Tiere dich?"
 47,0x14248b,0x1424f5,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"Your cow wasn't
 the lowest…,
 but the result
 wasn't very
 good. You must
 treat your cows
-well.",
+well.","Deine Kuh schnitt nicht am schlechtesten ab, aber eine gute Bewertung sieht anders aus. Du solltest dich um deine Kühe etwas besser kümmern."
 48,0x1424f5,0x142549,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Best 30…Um, no.
 Your cow was in
 the Worst 30.
 Take good care
 of your cows.
-",
+","Deine Kuh hat es unter die 30 Besten geschafft! Äh, nein, Moment... unter die 30 Schlechtesten. Kümmer dich immer gut um deine Kühe."
 49,0x142549,0x1425bc,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"It's 900th in
 the nation…which
 is lower than
@@ -279,22 +292,22 @@ the average…What
 can you expect
 from this
 affection rate?
-",
+","Deine Kuh belegte landesweit den 900. Platz... Das entspricht leider dem unteren Durchschnitt. Bei der Zuneigung, die deine Kuh für dich empfindet, war aber auch nicht mehr zu erwarten..."
 50,0x1425bc,0x142607,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"It ranked 750th
 in the nation.
 It's an average
 cow…just
 ordinary.
-",
+","Deine Kuh belegte landesweit den 750. Patz. Leider nur durchschnittlich... Eine gewöhnliche Kuh. Nicht mehr, nicht weniger."
 51,0x142607,0x142653,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",,"It ranked 500th
 in the nation. A
 little better
 than the average
-cow.",
+cow.","Deine Kuh belegte landesweit den 500. Platz. Damit ist sie ein bisschen besser als der Durchschnitt."
 52,0x142653,0x142683,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Pretty good.
 450th in the
 nation…
-Fine job.",
+Fine job.","Nicht schlecht, deine Kuh hat landesweit den 450. Platz belegt. Gute Arbeit."
 53,0x142683,0x1426e7,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Very good. your
 cow is in the
 Top 100.
@@ -302,31 +315,32 @@ You may be able
 to get a better
 result next
 time.
-",
+","Sehr gut, deine Kuh hat es unter die Top 100 geschafft. Vielleicht erreichst du nächstes Mal eine noch bessere Platzierung."
 54,0x1426e7,0x142745,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wow! Your cow is
 in the Top 30!
 You are one of
 the ten best
 farm owners in
-the nation!",
+the nation!","Wow! Deine Kuh hat es unter die Top 30 geschafft! Damit zählst du zu einem der zehn besten Farm-Besitzern im Land!"
 55,0x142745,0x1427a6,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Congratulations!
 Your cow is in
 the Top 10!!
 Every farmer
 will recognize
-this ideal cow!!",
+this ideal cow!!","Glückwunsch! Deine Kuh hat es unter die Top 10 geschafft!! Die Beziehung zwischen dir und deiner Kuh wird vielen Farmern als Vorbild dienen!!"
 56,0x1427a6,0x1427bc,,"[""\\n"", ""<waita>@""]",,"No cows
-can be sold.",
+can be sold.","Es gibt keine Kühe, die verkauft werden könnten."
 57,0x1427bc,0x1427d6,,"[""\\n"", ""<waita>@""]",,"No chickens
-can be sold.",
+can be sold.","Es gibt keine Hühner, die verkauft werden könnten."
 58,0x1427d6,0x1427ed,,"[""\\n"", ""<waita>@""]",,"No sheep
-can be sold.",
+can be sold.","Es gibt keine Schafe, die verkauft werden könnten."
 59,0x1427ed,0x142805,,"[""\\n"", ""<waita>@""]",,"No horses
-can be sold.",
+can be sold.","Es gibt keine Pferde, die verkauft werden könnten."
 60,0x142805,0x142834,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Cancel
 selection?
 
- Yes          No<ask>",
+ Yes          No<ask>","Auswahl abbrechen?
+ Ja          Nein<ask>"
 61,0x142834,0x14284e,,"[""\\n"", ""<waita>@""]",,"The cow has not
-matured.",
-62,0x14284e,0x14286a,,"[""\\n"",""<waita>@""]",,"The horse has not matured.",
+matured.","Die Kuh ist noch nicht ausgewachsen."
+62,0x14284e,0x14286a,,"[""\\n"",""<waita>@""]",,"The horse has not matured.","Das Pferd ist noch nicht ausgewachsen."

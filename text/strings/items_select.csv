@@ -26,9 +26,9 @@ i,address,end,name_i,newlines,name,string,translation
 24,0x58ba,0x58c7,,"[""@""]",,"S.Star Seeds",Sternschnuppensamen
 25,0x58c7,0x58d4,,"[""@""]",,"Comet Seeds",Kometensamen
 26,0x58d4,0x58e4,,"[""@""]",,"Full Moon Seeds",Vollmondsamen
-27,0x58e4,0x58f2,,"[""@""]",,"S.Dream Seeds",Wunschtraumsamen
+27,0x58e4,0x58f2,,"[""@""]",,"S.Dream Seeds",Träumsüßsamen
 28,0x58f2,0x58ff,,"[""@""]",,"Grass Seeds",Grassamen
-29,0x58ff,0x590f,,"[""@""]",,"Sheep Medicine",Schafmedizin
+29,0x58ff,0x590f,,"[""@""]",,"Sheep Medicine",Schafsmedizin
 30,0x590f,0x591c,,"[""@""]",,"Chicken Med.",Hühnermedizin
 31,0x591c,0x592a,,"[""@""]",,"Cow Medicine",Kuhmedizin
 32,0x592a,0x5939,,"[""@""]",,"Horse Medicine",Pferdemedizin

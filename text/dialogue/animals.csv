@@ -1,152 +1,152 @@
-i,address,end,name_i,newlines,name,string
-0,0x800b3,0x800bb,,"[""<arrow>0<waita>@""]",,MOO♪
-1,0x800bb,0x800c3,,"[""<arrow>0<waita>@""]",,Moo…
-2,0x800c3,0x800c8,,"[""<arrow>0<waita>@""]",,…
-3,0x800c8,0x800d0,,"[""<arrow>0<waita>@""]",,MOO♥
-4,0x800d0,0x800d8,,"[""<arrow>0<waita>@""]",,Moo…
-5,0x800d8,0x800e1,,"[""<arrow>0<waita>@""]",,…moo…
-6,0x800e1,0x800ed,,"[""<arrow>0<waita>@""]",,Moo moo♥
+i,address,end,name_i,newlines,name,string,translation
+0,0x800b3,0x800bb,,"[""<arrow>0<waita>@""]",,MOO♪,MUH♪
+1,0x800bb,0x800c3,,"[""<arrow>0<waita>@""]",,Moo…,Muh...
+2,0x800c3,0x800c8,,"[""<arrow>0<waita>@""]",,…,...
+3,0x800c8,0x800d0,,"[""<arrow>0<waita>@""]",,MOO♥,MUH♪
+4,0x800d0,0x800d8,,"[""<arrow>0<waita>@""]",,Moo…,Muh...
+5,0x800d8,0x800e1,,"[""<arrow>0<waita>@""]",,…moo…,...
+6,0x800e1,0x800ed,,"[""<arrow>0<waita>@""]",,"Moo moo♥",Muuuh♥
 7,0x800ed,0x80104,,"[""\\n"", ""<arrow>0<waita>@""]",,"Cockーaーdoodleー
-doo♪"
-8,0x80104,0x8010f,,"[""<arrow>0<waita>@""]",,Cluck..
-8-TRASH,0x8010f,0x80110,,,,.
-9,0x80110,0x80119,,"[""<arrow>0<waita>@""]",,…Clu…
-10,0x80119,0x80129,,"[""<arrow>0<waita>@""]",,Brawk brawk♥
-11,0x80129,0x80133,,"[""<arrow>0<waita>@""]",,Cluck…
-12,0x80133,0x8013c,,"[""<arrow>0<waita>@""]",,…Clu…
-13,0x8013c,0x8014a,,"[""<arrow>0<waita>@""]",,Baaa baaa♪
-14,0x8014a,0x80151,,"[""<arrow>0<waita>@""]",,Ba…
-15,0x80151,0x80159,,"[""<arrow>0<waita>@""]",,…ba…
-16,0x80159,0x80167,,"[""<arrow>0<waita>@""]",,Baaa baaa♥
-17,0x80167,0x8016e,,"[""<arrow>0<waita>@""]",,Ba…
-18,0x8016e,0x80176,,"[""<arrow>0<waita>@""]",,…ba…
-19,0x80176,0x80186,,"[""<arrow>0<waita>@""]",,Baaa Baaaaa♥
-20,0x80186,0x80190,,"[""<arrow>0<waita>@""]",,NAAAY♪
-21,0x80190,0x80198,,"[""<arrow>0<waita>@""]",,Nay…
-22,0x80198,0x801a1,,"[""<arrow>0<waita>@""]",,…nay…
-23,0x801a1,0x801ab,,"[""<arrow>0<waita>@""]",,NAAAY♥
-24,0x801ab,0x801b3,,"[""<arrow>0<waita>@""]",,Nay…
-25,0x801b3,0x801bc,,"[""<arrow>0<waita>@""]",,…nay…
-26,0x801bc,0x801c7,,"[""<arrow>0<waita>@""]",,NAAA〜Y♥
+doo♪",Kikerikiii♪
+8,0x80104,0x8010f,,"[""<arrow>0<waita>@""]",,Cluck..,Gack...
+8-TRASH,0x8010f,0x80110,,,,.,.
+9,0x80110,0x80119,,"[""<arrow>0<waita>@""]",,…Clu…,...Ga...
+10,0x80119,0x80129,,"[""<arrow>0<waita>@""]",,"Brawk brawk♥","Gock gock♥"
+11,0x80129,0x80133,,"[""<arrow>0<waita>@""]",,Cluck…,Gack...
+12,0x80133,0x8013c,,"[""<arrow>0<waita>@""]",,…Clu…,...Ga...
+13,0x8013c,0x8014a,,"[""<arrow>0<waita>@""]",,"Baaa baaa♪",
+14,0x8014a,0x80151,,"[""<arrow>0<waita>@""]",,Ba…,
+15,0x80151,0x80159,,"[""<arrow>0<waita>@""]",,…ba…,
+16,0x80159,0x80167,,"[""<arrow>0<waita>@""]",,"Baaa baaa♥",
+17,0x80167,0x8016e,,"[""<arrow>0<waita>@""]",,Ba…,
+18,0x8016e,0x80176,,"[""<arrow>0<waita>@""]",,…ba…,
+19,0x80176,0x80186,,"[""<arrow>0<waita>@""]",,"Baaa Baaaaa♥",
+20,0x80186,0x80190,,"[""<arrow>0<waita>@""]",,NAAAY♪,
+21,0x80190,0x80198,,"[""<arrow>0<waita>@""]",,Nay…,
+22,0x80198,0x801a1,,"[""<arrow>0<waita>@""]",,…nay…,
+23,0x801a1,0x801ab,,"[""<arrow>0<waita>@""]",,NAAAY♥,
+24,0x801ab,0x801b3,,"[""<arrow>0<waita>@""]",,Nay…,
+25,0x801b3,0x801bc,,"[""<arrow>0<waita>@""]",,…nay…,
+26,0x801bc,0x801c7,,"[""<arrow>0<waita>@""]",,NAAA〜Y♥,
 27,0x801c7,0x801e9,,"[""\\n"", ""<arrow>0<waita>@""]",,"Hey, thanks♪
-I'm very happy."
+I'm very happy.",
 28,0x801e9,0x80207,,"[""\\n"", ""<arrow>0<waita>@""]",,"What? Just leave
-me alone."
+me alone.",
 29,0x80207,0x80233,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"…I can't…
 breathe… I
 need medicine…
-"
+",
 30,0x80233,0x80252,,"[""\\n"", ""<arrow>0<waita>@""]",,"Hello there♥
-I'm so happy!"
+I'm so happy!",
 31,0x80252,0x80275,,"[""\\n"", ""<arrow>0<waita>@""]",,"Oh, it's you…
-Leave me alone."
+Leave me alone.",
 32,0x80275,0x8028e,,"[""\\n"", ""<arrow>0<waita>@""]",,"Huff..Owww…
-Medicine…"
+Medicine…",
 33,0x8028e,0x802e0,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"I think I'm
 having a baby in
 <var>0 days. Take
 good care of my
 baby, too♥
-"
+",
 34,0x802e0,0x80305,,"[""\\n"", ""<arrow>0<waita>@""]",,"Hey, Thanks! I'm
-in good shape♪"
+in good shape♪",
 35,0x80305,0x8031b,,"[""\\n"", ""<arrow>0<waita>@""]",,"Huh? You…
-Go away."
+Go away.",
 36,0x8031b,0x80335,,"[""\\n"", ""<arrow>0<waita>@""]",,"Ow..Ouchie..
-Medicine…"
+Medicine…",
 37,0x80335,0x80359,,"[""\\n"", ""<arrow>0<waita>@""]",,"Hello dear! I'm
-so happy today♥"
+so happy today♥",
 38,0x80359,0x80375,,"[""\\n"", ""<arrow>0<waita>@""]",,"What?! What do
-you want?"
+you want?",
 39,0x80375,0x8038c,,"[""\\n"", ""<arrow>0<waita>@""]",,"Huff…ooo…
-Medicine…"
+Medicine…",
 40,0x8038c,0x803ae,,"[""\\n"", ""<arrow>0<waita>@""]",,"Hi! Thanks♥ You
-take care too."
+take care too.",
 41,0x803ae,0x803d1,,"[""\\n"", ""<arrow>0<waita>@""]",,"Can't you just
-leave me alone?"
+leave me alone?",
 42,0x803d1,0x803ec,,"[""\\n"", ""<arrow>0<waita>@""]",,"…I feel icky…
-Medicine…"
+Medicine…",
 43,0x803ec,0x80410,,"[""\\n"", ""<arrow>0<waita>@""]",,"Hello. Thank you
-very much dear♥"
+very much dear♥",
 44,0x80410,0x80429,,"[""\\n"", ""<arrow>0<waita>@""]",,"No… Don't come
-here!"
+here!",
 45,0x80429,0x8044c,,"[""\\n"", ""<arrow>0<waita>@""]",,"Oooo…I'm burning
-up. Medicine…"
+up. Medicine…",
 46,0x8044c,0x80487,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"<var>0 more days.
 Please take
 good care of the
-baby too♥"
+baby too♥",
 47,0x80487,0x804a9,,"[""\\n"", ""<arrow>0<waita>@""]",,"What's up? I'm
-feeling good♪"
-48,0x804a9,0x804bc,,"[""<arrow>0<waita>@""]",,"Oh, it's you…"
+feeling good♪",
+48,0x804a9,0x804bc,,"[""<arrow>0<waita>@""]",,"Oh, it's you…",
 49,0x804bc,0x804d8,,"[""\\n"", ""<arrow>0<waita>@""]",,"I can't move…
-Medicine…"
+Medicine…",
 50,0x804d8,0x804fa,,"[""\\n"", ""<arrow>0<waita>@""]",,"I am so happy♥
-Because of you!"
-51,0x804fa,0x80507,,"[""<arrow>0<waita>@""]",,…Go away…
+Because of you!",
+51,0x804fa,0x80507,,"[""<arrow>0<waita>@""]",,"…Go away…",
 52,0x80507,0x8051a,,"[""\\n"", ""<arrow>0<waita>@""]",,"No…I…
-Medicine…"
+Medicine…",
 53,0x8051a,0x80548,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"<var>0 more days!
 My baby will be
 so cute♥
-"
+",
 54,0x80548,0x80564,,"[""\\n"", ""<arrow>0<waita><clear>"", ""<arrow>0<waita>@""]",,"Hi
 <var>0.
-You look good."
+You look good.",
 55,0x80564,0x8057b,,"[""\\n"", ""<waita>@""]",,"Are you unhappy,
-<var>0?"
+<var>0?",
 56,0x8057b,0x80593,,"[""\\n"", ""<waita>@""]",,"<var>0 is
-sick! Medicine!!"
+sick! Medicine!!",
 57,0x80593,0x805ae,,"[""\\n"", ""<waita>@""]",,"A few more days.
-Good <var>0!"
+Good <var>0!",
 58,0x805ae,0x805d0,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"OK
 <var>0.
 You are happy
-today."
+today.",
 59,0x805d0,0x805e8,,"[""\\n"", ""<waita>@""]",,"Are you unhappy,
-<var>0…?"
+<var>0…?",
 60,0x805e8,0x805ff,,"[""\\n"", ""<waita>@""]",,"<var>0 is
-sick! Medicine!"
+sick! Medicine!",
 61,0x805ff,0x80621,,"[""\\n"", ""<waita>@""]",,"A few more days.
-Good girl, <var>0."
+Good girl, <var>0.",
 62,0x80621,0x80646,,"[""\\n"", ""10GT000@""]",,"Go outside?
- Yes          No<ask>"
+ Yes          No<ask>",
 63,0x80646,0x8066a,,"[""\\n"", ""10GT000@""]",,"Go inside?
- Yes          No<ask>"
+ Yes          No<ask>",
 64,0x8066a,0x80680,,"[""\\n"", ""<waita>@""]",,"The pasture is
-full…"
+full…",
 65,0x80680,0x806b5,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"!!! This is a
 feather from my…
 Oh No!
-Wild dogs!"
-66,0x806b5,0x806c4,,"[""<arrow>0<waita>@""]",,Peep♥ Peep♪
+Wild dogs!",
+66,0x806b5,0x806c4,,"[""<arrow>0<waita>@""]",,"Peep♥ Peep♪",
 67,0x806c4,0x806f8,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"Clu, cluck♥
 I'm mimicking
 Mommy and Daddy.
-"
+",
 68,0x806f8,0x8071e,,"[""\\n"", ""10GT000@""]",,"Want a baby?
- Yes          No<ask>"
+ Yes          No<ask>",
 69,0x8071e,0x80744,,"[""\\n"", ""10GT000@""]",,"Want a baby?
- Yes          No<ask>"
+ Yes          No<ask>",
 70,0x80744,0x8075c,,"[""\\n"", ""<waita>@""]",,"The baby area
-is full…"
+is full…",
 71,0x8075c,0x80770,,"[""\\n"", ""<waita>@""]",,"Where is a
-female?"
+female?",
 72,0x80770,0x80782,,"[""\\n"", ""<waita>@""]",,"Where is a
-male?"
+male?",
 73,0x80782,0x8079a,,"[""\\n"", ""<waita>@""]",,"No space for the
-baby!"
+baby!",
 74,0x8079a,0x807b0,,"[""\\n"", ""<waita>@""]",,"Have a healthy
-baby…"
+baby…",
 75,0x807b0,0x807d8,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Wait until the
 first baby is
 born.
-"
+",
 76,0x807d8,0x807f1,,"[""\\n"", ""<waita>@""]",,"It's too cold
-outside."
-77,0x807f1,0x807fb,,"[""<arrow>0<waita>@""]",,…peep?
-78,0x807fb,0x80805,,"[""<arrow>0<waita>@""]",,…peep…
+outside.",
+77,0x807f1,0x807fb,,"[""<arrow>0<waita>@""]",,…peep?,
+78,0x807fb,0x80805,,"[""<arrow>0<waita>@""]",,…peep…,
 79,0x80805,0x8081b,,"[""\\n"", ""<arrow>0<waita>@""]",,"I don't like
-you!"
+you!",
 80,0x8081b,0x80831,,"[""\\n"", ""<arrow>0<waita>@""]",,"Help… help.
-Mommy…"
+Mommy…",

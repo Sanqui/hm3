@@ -1,8 +1,10 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,
 0,0x1e4de5,0x1e4e23,,"[""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""@""]",,"<noname>Deep inside of
 the ocean… We
 are born and
-grow up there.<fc><f0>"
+grow up there.<fc><f0>","<noname>Tief unten im Meer...
+Dort wurden wir geboren
+und dort leben wir.<fc><f0>"
 1,0x1e4e23,0x1e4ebe,,"[""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc>\u3065@""]",,"<noname>I'm a Blue
 Maomao. My name
 is Blue because
@@ -12,7 +14,16 @@ good friend, she
 is very shy. Her
 name is Pink
 because her body
-is pink."
+is pink.","<noname>Ich bin eine blaue Maomao.
+Man nennt mich Blau,
+da mein Körper eine
+blaue Farbe hat.
+Ich habe eine gute
+Freundin, aber sie ist
+ein wenig schüchtern.
+Sie hört auf den Namen
+Rosa, weil sie rosafarben
+ist."
 2,0x1e4ebe,0x1e4f37,29,"[""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""@""]",Blue,"Hey Pink.
 I found some
 good seaweed.
@@ -21,7 +32,13 @@ together.
 <name>UWow! Thanks!
 
 <name>TYou can have
-this one, Pink.<fc><f0>"
+this one, Pink.<fc><f0>","Hey, Rosa! Ich habe leckeres
+Seetang aufgetrieben. Lass
+es uns gemeinsam essen.
+<name>UWow! Danke!
+
+<name>TDu kannst das hier haben,
+Rosa.<fc><f0>"
 3,0x1e4f37,0x1e513a,,"[""<fc>\u3065<clear>"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", "" <fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc>\u3065@""]",,"<noname>…Chomp, chomp.
 Mmmm… Good!
 <name>TPink? Why do you
@@ -59,7 +76,36 @@ go there. Let's
 go!
 
 <name>UOK! Let's go.
-"
+","<noname>…Schmatz, Schmatz.
+Mmmmh… Lecker!
+<name>TRosa? Was glaubst du,
+wieso unsere Körper unterschied-
+liche Farben haben, wo wir doch
+immer dasselbe essen?
+
+<name>UDas weiß ich leider nicht...
+<name>TIch habe mal gehört, dass
+sich die Farbe ändert,
+wenn wir uns der Sonne
+aussetzen.
+Wie wär's, wenn wir es
+einfach mal ausprobieren
+und die Anderen damit
+überraschen?
+<name>UGute Idee!
+Ich will grün sein!
+
+<name>TNicht weit von hier
+gibt es einen Fleck,
+an dem die Sonne
+besonders stark scheint.
+Angeblich ist es dort
+gefährlich, aber immerhin
+könnten wir uns dort
+sonnen! Komm, lass uns
+gehen!  
+
+<name>UOkay, bin dabei!"
 4,0x1e513a,0x1e51a3,,"[""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc>\u3065@""]",,"<noname>On the way to
 the shallows.
 <name>UWe've come
@@ -67,7 +113,7 @@ pretty far. Are
 we there yet?
 
 <name>TWe are almost
-there."
+there.",
 5,0x1e51a3,0x1e5209,,"[""\\n"", ""<fc><f0><clear>"", ""\\n"", "" <fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""@""]",,"<noname>A shark sneaks
 up to them.
 <name>UHey Blue!
@@ -75,9 +121,9 @@ Something is
 coming toward
 us!
 <name>T…I know…
-Ignore it.<fc><f0>"
+Ignore it.<fc><f0>",
 6,0x1e5209,0x1e522e,31,"[""\\n"", ""<fc>\u30e9@""]",Brown,"Hey kids! There
-is a shark! Run!"
+is a shark! Run!",
 7,0x1e522e,0x1e528f,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9@""]",,"<noname>Blue and Pink
 are swimming as
 fast as they
@@ -85,7 +131,7 @@ can, but the
 shark is
 catching up to
 them.
-"
+",
 8,0x1e528f,0x1e52fc,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u3065<clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc>\u30e9@""]",,"<noname>Brown approaches
 the shark to try
 and rescue
@@ -93,7 +139,7 @@ them… Oh No!
 The shark
 turned around
 and caught
-Brown!"
+Brown!",
 9,0x1e52fc,0x1e5361,,"[""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""<fc><f0><clear>"", ""\\n"", ""@""]",,"<noname>Blue and Pink
 are swimming
 away crying…
@@ -101,7 +147,7 @@ They hear the
 sound of the
 shark swallowing
 Brown…
-<fc><f0>"
+<fc><f0>",
 10,0x1e5361,0x1e5412,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9@""]",,"<noname>Blue and Pink
 had a life
 threatening
@@ -113,7 +159,7 @@ can't really
 tell if blue is
 pale because he
 is blue to begin
-with…"
+with…",
 11,0x1e5412,0x1e56d7,30,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", "" \\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""@""]",Pink,"…Blue? What
 happened to
 Uncle Brown? Did
@@ -165,16 +211,16 @@ worth the pain.
 <name>UOh, OK! I'm
 scared, but I'll
 try!
-<fc><f0>"
+<fc><f0>",
 12,0x1e56d7,0x1e5718,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""@""]",,"<noname>Blue and Pink
 were caught by
 a farmer on the
-little island.<fc><f0>"
+little island.<fc><f0>",
 13,0x1e5718,0x1e573f,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""@""]",,"<noname>They safely
 got to the
 aquarium.
-<fc><f0>"
+<fc><f0>",
 14,0x1e573f,0x1e5778,,"[""\\n"", ""<fc>\u30e9<clear>"", ""\\n"", ""<fc>\u3065@""]",,"<noname>Now they've
 become very
 popular in the
-aquarium.<fc><f0>"
+aquarium.<fc><f0>",

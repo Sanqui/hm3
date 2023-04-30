@@ -26,6 +26,17 @@ def dumb_smart_quotes(string):
         even = not even
     return string
 
+def fixup_string(string:str) -> str:
+    '''
+        Fix some common mistakes in the string to be less of a bother.
+    '''
+    string = string.strip()
+    string = string.replace("<var0>", "<var>0")
+    string = string.replace("<var1>", "<var>1")
+    string = string.replace("<var2>", "<var>2")
+    string = string.replace("<var3>", "<var>3")
+    return string
+
 BREAK_CHARS = ("\\n", "<clear>",)
 END_CHARS = ("@", "<end>",  None)
 
@@ -482,6 +493,7 @@ def print_strings_from_csvs():
                 else:
                     name_i = None
                 string = dumb_smart_quotes(string)
+                string = fixup_string(string)
                 csvstring = ""
                 if name_i is not None:
                     csvstring += "<name>" + charmap[name_i]

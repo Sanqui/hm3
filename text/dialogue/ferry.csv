@@ -1,4 +1,4 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x1098d0,0x1099b0,6,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Joe,"Hey, you must be
 a newcomer. I'm
 Joe. Nice to
@@ -12,7 +12,7 @@ You can sell
 your products
 there. Let me
 know if you want
-to join us."
+to join us.","Du musst neu hier sein. Ich bin Joe. Schön, dich kennenzulernen! Zwischen 6 und 9 Uhr morgens findet hier der Morgenmarkt statt. Dort kannst du allerlei Erzeugnisse verkaufen! Gib Bescheid, falls du mal daran teilhaben möchtest. "
 1,0x1099b0,0x109a25,6,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Joe,"Hey <player>!!
 What are you
 doing here so
@@ -20,25 +20,29 @@ early? Do you
 want to join the
 morning fair?
 
- Yes          No<ask>"
+ Yes          No<ask>","Hey, <player>! Du gehörst wohl auch zu den Frühaufstehern. Willst du zum Morgenmarkt?
+ Ja          Nein<ask>"
 2,0x109a25,0x109a48,6,"[""\\n"", ""<waita>@""]",Joe,"The morning fair
-is over today."
+is over today.","Der Morgenmarkt ist für heute vorbei."
 3,0x109a48,0x109a73,6,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Joe,"There is no
 morning fair
 today, <player>.
-"
+","Heute gibt es keinen Morgenmarkt, <player>."
 4,0x109a73,0x109ad2,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Kirk,"Hello <player>.
 The ferry is
 going to the
 island. Do you
 want to go?
- Yes          No<ask>"
+ Yes          No<ask>","Moin, <player>. Die Fähre setzt gleich zur Insel über. Willst du einsteigen?
+ Ja          Nein<ask>"
 5,0x109ad2,0x109b28,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Kirk,"Going somewhere?
 The last ferry
 is at 6 PM…
 Get on?
 
- Yes          No<ask>"
+ Yes          No<ask>","Willst du noch wohin? Die letzte Fähre geht um 18:00 Uhr...
+Einsteigen?
+ Ja          Nein<ask>"
 6,0x109b28,0x109b8a,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kirk,"<player> it's too
 late to leave
 the port…,
@@ -46,4 +50,4 @@ but I'll make
 an exception
 for you this
 time!
-"
+","Eigentlich ist es zu spät, um auszulaufen... Aber für dich, <player>, mach ich eine Ausnahme!"

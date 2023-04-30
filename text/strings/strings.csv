@@ -18,7 +18,8 @@ i,address,end,name_i,newlines,name,string,translation
 16,0x1e4a90,0x1e4a93,,"[""@""]",,AB,AB
 17,0x1e4a93,0x1e4a94,,"[""@""]",,,
 18,0x1e4a94,0x1e4a96,,"[""@""]",,<noname>,<noname>
-19,0x1e4a96,0x1e4ab7,,"[""@""]",,"Quit watching?   Yes          No","Quit watching?   Yes          No"
+19,0x1e4a96,0x1e4ab7,,"[""\\n"", ""@""]",,"Quit watching?   Yes          No","Fernseher ausschalten?
+   Ja          Nein"
 20,0x1e4ab7,0x1e4ad2,,"[""\\n"", ""<waita>@""]",,"You can't use
 that name.","Diesen Namen kannst du nicht benutzen."
 21,0x1e4ad2,0x1e4ad7,,"[""@""]",,EXIT,EXIT

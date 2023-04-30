@@ -314,36 +314,36 @@ place to see!"
 book?
 
  Yes          No<ask>"
-30,0x12d4a2,0x12d4c6,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"Cherry Cup
+30,0x12d4a2,0x12d4c6,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Cherry Cup
 Derby Race
 
-5th…<var>4"
-31,0x12d4c6,0x12d4d7,,"[""\\n"", ""<arrow>0<waita>@""]",,"4th…<var>4
-3rd…<var>G"
-32,0x12d4d7,0x12d4e8,,"[""\\n"", ""<arrow>0<waita>@""]",,"2nd…<var>4
-1st…<var>G"
-33,0x12d4e8,0x12d50c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"Cherry Cup
+5th…<var>4<arrow>0"
+31,0x12d4c6,0x12d4d7,,"[""\\n"", ""<waita>@""]",,"4th…<var>4
+3rd…<var>G<arrow>0"
+32,0x12d4d7,0x12d4e8,,"[""\\n"", ""<waita>@""]",,"2nd…<var>4
+1st…<var>G<arrow>0"
+33,0x12d4e8,0x12d50c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Cherry Cup
 Filly Race
 5th…<var>4
-"
-34,0x12d50c,0x12d51d,,"[""\\n"", ""<arrow>0<waita>@""]",,"4th…<var>4
-3rd…<var>G"
+<arrow>0"
+34,0x12d50c,0x12d51d,,"[""\\n"", ""<waita>@""]",,"4th…<var>4
+3rd…<var>G<arrow>0"
 35,0x12d51d,0x12d52c,,"[""\\n"", ""<waita>@""]",,"2nd…<var>4
 1st…<var>G"
-36,0x12d52c,0x12d553,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"Gallop Stakes
+36,0x12d52c,0x12d553,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Gallop Stakes
 Derby Race
 5th…<var>4
-"
-37,0x12d553,0x12d564,,"[""\\n"", ""<arrow>0<waita>@""]",,"4th…<var>4
-3rd…<var>G"
-38,0x12d564,0x12d575,,"[""\\n"", ""<arrow>0<waita>@""]",,"2nd…<var>4
-1st…<var>G"
-39,0x12d575,0x12d59c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"Gallop Stakes
+<arrow>0"
+37,0x12d553,0x12d564,,"[""\\n"", ""<waita>@""]",,"4th…<var>4
+3rd…<var>G<arrow>0"
+38,0x12d564,0x12d575,,"[""\\n"", ""<waita>@""]",,"2nd…<var>4
+1st…<var>G<arrow>0"
+39,0x12d575,0x12d59c,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Gallop Stakes
 Filly Race
 5th…<var>4
-"
-40,0x12d59c,0x12d5ad,,"[""\\n"", ""<arrow>0<waita>@""]",,"4th…<var>4
-3rd…<var>G"
+<arrow>0"
+40,0x12d59c,0x12d5ad,,"[""\\n"", ""<waita>@""]",,"4th…<var>4
+3rd…<var>G<arrow>0"
 41,0x12d5ad,0x12d5bc,,"[""\\n"", ""<waita>@""]",,"2nd…<var>4
 1st…<var>G"
 42,0x12d5bc,0x12d5c7,,"[""@""]",,Sp Diamond

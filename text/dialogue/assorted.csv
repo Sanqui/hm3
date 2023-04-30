@@ -13,11 +13,11 @@ you. I will be
 at the cliff at
 11PM waiting for
 you.","Hi, <player>. Du siehst aber fröhlich aus!
-Was? Ein Meteoritenschauer?! ...Stimmt ja, das habe ich völlig vergessen! Wolltest du mich etwa fragen, ob ich ihn mir mit dir anschaue? Aber natürlich will ich das! Ich werde um 23:00 Uhr an der Klippe auf dich warten! "
+Was? Ein Meteoritenschauer?! ...Stimmt ja, das habe ich völlig vergessen! Sag bloß, du möchtest ihn dir mit mir ansehen? Und ob ich das will! Ich werde um 23:00 Uhr an der Klippe auf dich warten! "
 1,0x10a22c,0x10a267,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"Hey, I've been
 waiting for you!
 It is almost
-time.","Ich habe schon auf dich gewartet! Es müsste gleich anfangen."
+time.","Ich habe schon auf dich gewartet! Es müsste gleich soweit sein."
 2,0x10a267,0x10a2cc,8,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elza,"Hey <player>!!
 Wasn't it
 romantic? I was
@@ -67,24 +67,24 @@ come and see me
 again. I will
 always be here.
 I hope to talk
-to you again.","Bist du zufällig <player>? Ich heiße Marla! Nett, dich kennenzulernen! Wie viele Jahre sind wohl vergangen, seit ich zuletzt in ein Gesicht geblickt habe? Ich glaubte heute, wie jeden Tag, allein zu sein.
-Du bist genau wie ich mir dich vorgestellt habe. So lieb, und so nett...
+to you again.","Bist du zufällig <player>? Ich heiße Marla! Schön, dich kennenzulernen! Wie viele Jahre sind wohl vergangen, seit ich zuletzt in ein Gesicht geblickt habe? Ich glaubte schon, einen weiteren Tag in purer Einsamkeit verbringen zu müssen.
+Du bist genau, wie ich mir dich vorgestellt habe. So lieb, und so nett...
 Ich bin so glücklich...
 Oh, tut mir leid, das sind die Freundentränen...
-Hier, bitte, für dich!! Das ist eine Powerbeere. Sie gibt dir Kraft, wenn du sie isst.
-Statte mir doch mal wieder einen Besuch ab, wenn du Zeit hast. Ich werde hier sein und auf dich warten. Mach's gut, <player>!"
+Bitte nimm diese Powerbeere als Geschenk. Isst du sie, wird sie dir Kraft spenden.
+Statte mir doch mal wieder einen Besuch ab, wenn du Zeit hast. Ich werde hier auf dich warten. Mach's gut, <player>!"
 6,0x10a56d,0x10a5c8,12,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Marla,"Thank you for
 coming here so
 early… I'm
 always alone, so
 I'm happy to see
-you.","Danke, dass du so früh hergekommen bist... Ich bin immer allein, deshalb freue ich mich so dich zu sehen."
+you.","Danke, dass du so früh hergekommen bist... Ich bin immer allein, deshalb freue ich mich so, dich zu sehen."
 7,0x10a5c8,0x10a616,12,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Marla,"You have come a
 long way too see
 me… I am happy
 too be your
 friend.
-","Du kamst jetzt schön öfter, um mich zu sehen... Ich bin so froh, mit dir befreundet zu sein."
+","Du hast einen langen Weg auf dich genommen, um mich zu sehen... Ich bin so froh, mit dir befreundet zu sein."
 8,0x10a616,0x10a6a8,12,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Marla,"Have you ever
 heard that there
 is a devil in
@@ -93,8 +93,8 @@ night? I'm just
 kidding, but the
 ocean can be
 very dangerous
-at night.","Wusstest du, dass im Meer nachts der Teufel lauert?
-War nur Spaß, sei aber trotzdem vorsichtig. Das Meer birgt Gefahren, besonders bei Nacht!"
+at night.","Wusstest du, dass der Teufel nachts im Meer lauert?
+Ich mache nur Spaß! Sei aber trotzdem auf der Hut. Das Meer birgt viele Gefahren, besonders bei Nacht!"
 9,0x10a6a8,0x10a844,12,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Marla,"Ah, <player>…
 Hello! What? I
 look sad? No,
@@ -125,8 +125,8 @@ Was? Ich sehe traurig aus? Nein, mir geht's gut, danke... Hast du von der Geschi
 ... ... ... ... ...
 ... ... ... ... ...
 Nun ist es also schon eine Legende...
-Ja, es stimmt. Ich hatte einst einen Freund, sein Name war Rocky. Er verschwand in einer stürmischen Nacht, als er zusammen mit Ricky um Angeln raus aufs Meer fuhr...
-Ich glaube fest daran, dass Rocky noch irgendwo da draussen ist, und dass ich ihn eines Tages wiedersehe. Ich werde jedenfalls nicht aufhören, nach ihm zu suchen.
+Ja, es stimmt. Rocky war meine große Liebe. Er verschwand in einer stürmischen Nacht, als er zusammen mit Ricky zum Angeln raus aufs Meer fuhr...
+Ich glaube fest daran, dass Rocky noch irgendwo da draußen ist, und dass ich ihn eines Tages wiedersehe. Ich werde jedenfalls nicht aufhören, nach ihm zu suchen.
 Und außerdem habe ich ja noch dich! Ich bin also nicht mehr allein."
 10,0x10a844,0x10a873,12,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Marla,"Well, do you
 know how Ricky
@@ -145,7 +145,7 @@ village?
 13,0x10a8d8,0x10a90a,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",,"Go out to the
 ocean?
 
- Yes          No<ask>","Aufs Meer hinaus fahren?
+ Yes          No<ask>","Aufs Meer hinausfahren?
  Ja          Nein<ask>"
 14,0x10a90a,0x10a92f,,"[""\\n"", ""10GT000@""]",,"Go outside?
  Yes          No<ask>","Raus gehen?
@@ -162,7 +162,7 @@ together to
 build a great
 farm, partner!
 ","Ich werde mich also hauptsächlich um die Tiere kümmern.
-Sag mir am Morgen einfach welche Aufgaben ich für den Tag übernehmen soll, und ich werde mich darum kümmern.
+Gib mir am Morgen einfach Bescheid, welche Aufgaben ich für den Tag übernehmen soll, und ich werde mich darum kümmern.
 Gut, dann mal ran an die Arbeit, Partner! Lass uns diese Farm zu neuem Leben erwecken!"
 16,0x10a92f,0x10a9e2,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", "" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"I'll mainly take
 care of the
@@ -176,7 +176,7 @@ together to
 build a great
 farm, partner!
 ","Ich werde mich also hauptsächlich um die Tiere kümmern.
-Sag mir am Morgen einfach welche Aufgaben ich für den Tag übernehmen soll, und ich werde mich darum kümmern.
+Gib mir am Morgen einfach Bescheid, welche Aufgaben ich für den Tag übernehmen soll, und ich werde mich darum kümmern.
 Gut, dann mal ran an die Arbeit, Partner! Lass uns diese Farm zu neuem Leben erwecken!"
 17,0x10a9e2,0x10aaf2,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",<partner>,"By the way
 <player>. Are you
@@ -196,7 +196,7 @@ give me
 instructions?
 
  Yes          No<ask>","Ach ja, <player>, was ich dich noch fragen wollte... Hast du vor, auch auf dem Feld zu arbeiten? Ich halte es ja für das Beste, wenn du dich ganz den Tieren widmest.
-Sag mir am Morgen einfach welche Aufgaben ich für den Tag erledigen soll, und ich werde mich darum kümmern.
+Gib mir am Morgen einfach Bescheid, welche Aufgaben ich für den Tag erledigen soll, und ich werde mich darum kümmern.
 Willst du wissen, wie du mir Anweisungen geben kannst?
 
  Ja          Nein<ask>"
@@ -216,8 +216,7 @@ the crops and
 harvest. Choose
 one icon for
 each plot.<arrow>0","Dann wähle die Art der Arbeit:
-Acker vorbereiten, Acker pflügen, Samen einpflanzen, Feldfrüchte bewässern und Ernten. Ordne jeder ausgewählten Stelle ein Symbol zu.
-"
+Acker vorbereiten, Acker pflügen, Saatgut pflanzen, Feldfrüchte bewässern und Ernten. Ordne jeder ausgewählten Stelle ein Symbol zu.<arrow>0"
 20,0x10abdc,0x10ac09,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Press the B
 Button to make
 changes.
@@ -230,7 +229,8 @@ START.
 Do you want to
 listen to it
 again?
- Yes          No<ask>","Wenn du fertig bist, drücke den START-Knopf. Willst du es nochmal hören?
+ Yes          No<ask>","Wenn du fertig bist, drücke den START-Knopf.
+Soll ich es noch einmal wiederholen?
  Ja          Nein<ask>"
 22,0x10ac84,0x10acc0,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Let's try our
 best to make

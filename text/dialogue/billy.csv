@@ -1,4 +1,4 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0xb90ea,0xb91a8,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",Billy,"Hey, <player>.
 How is the farm?
 Did you like the
@@ -10,7 +10,9 @@ I have a gift
 for you. Do you
 want it?
 <noname><name>0 Thanks!
- What is it?<ask>"
+ What is it?<ask>","Hey, <player>. Was macht die Farm? Angelst du auch fleißig?
+Ach, bestimmt hast du mit der Farm alle Hände voll zu tun. Oh, bevor ich's vergesse: Ich habe ein Geschenk für dich. Willst du's haben?
+<noname><name>0 Wie lieb! Was ist es denn?<ask>"
 1,0xb91a8,0xb9253,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Billy,"It's from me and
 Elza. I'll bring
 a boat next to
@@ -20,7 +22,7 @@ it, and I think
 it will be very
 useful for you.
 Take good care
-of it."
+of it.","Elsa und ich möchten dir unser Boot vermachen. Wir haben keine Verwendung mehr dafür und glauben, dass es dir von Nutzen sein könnte. Ich bringe es zum Leuchtturm. Pass mir gut darauf auf!"
 2,0xb9253,0xb9384,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"Ha ha ha…
 Don't be
 surprised! It's
@@ -39,7 +41,7 @@ we fixed it up
 for you! Take
 good care of it,
 OK? It's all
-yours!"
+yours!","Hahaha... Halt dich fest: Elsa und ich möchten dir unser Boot vermachen. Keine Sorge, ich bringe es für dich zum Leuchtturm. So kannst du angeln oder aufs Festland übersetzen, wann immer du willst. Das Boot ist schon etwas älter, aber wir haben es für dich auf Vordermann gebracht! Pass gut darauf auf, hörst du? Es gehört jetzt dir!"
 3,0xb9384,0xb9407,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",Billy,"Hey, <player>!
 Can you do me a
 favor? I'm
@@ -49,22 +51,29 @@ broke.
 Can I borrow
 yours?
 <noname><name>0 Sure.
- No.<ask>"
+ No.<ask>","Hey, <player>! Kann ich dich um einen Gefallen bitten? Ich repariere gerade ein Schiff, aber mein Hammer ist kaputt gegangen. Dürfte ich mir deinen ausleihen?
+<noname><name>0 Sicher doch.
+ Nein.<ask>"
 4,0xb9407,0xb942a,5,"[""\\n"", ""10GT000@""]",Billy,"Please?
- OK           No<ask>"
+ OK           No<ask>","Bitte?
+ Na gut.           Nö.<ask>"
 5,0xb942a,0xb944f,5,"[""\\n"", ""10GT000@""]",Billy,"…Please?!
- OK           No<ask>"
+ OK           No<ask>","…Bitte?!
+ Na gut.           Nö!<ask>"
 6,0xb944f,0xb947c,5,"[""\\n"", ""10GR000@""]",Billy,"Please, please?!
- OK         Nope<ask>"
+ OK         Nope<ask>","Bitte, bitte?!
+ Na gut.        Nein...<ask>"
 7,0xb947c,0xb94a9,5,"[""\\n"", ""10GR000@""]",Billy,"I'm begging you!
- OK         Nope<ask>"
+ OK         Nope<ask>","Ich flehe dich an!
+ Na gut.         Nein!<ask>"
 8,0xb94a9,0xb94d5,5,"[""\\n"", ""10GS000@""]",Billy,"Pleeeeeeeeeease?
- OK          NO!<ask>"
+ OK          NO!<ask>","Biiiiiitteeeeee?
+ NA GUT!      NEIN!!<ask>"
 9,0xb94d5,0xb94f4,5,"[""\\n"", ""<waita>@""]",Billy,"Oh, thanks!
-I owe you one."
+I owe you one.","Die Firma dankt! Hast was gut bei mir."
 10,0xb94f4,0xb9524,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"I need your
 hammer a little
-while longer."
+while longer.","Tschuldige, dein Hammer wird gerade noch gebraucht."
 11,0xb9524,0xb9635,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Billy,"Hey, <player>.
 I'm done fixing
 the ship. Thanks
@@ -80,7 +89,7 @@ fish bites. You
 might catch some
 junk too. Well,
 thanks again for
-your hammer!"
+your hammer!","Hey, <player>. Ich habe das Schiff mithilfe deines Hammers reparieren können. Hier, im Gegenzug gebe ich dir meine Angel. Du weißt nicht, wie man angelt? Drücke den A-Knopf um die Angel auszuwerfen. Drücke ihn erneut, sobald ein Fisch anbeißt. Hin und wieder zieht man aber auch Müll an Land... Na ja, ich muss dann weitermachen. Danke noch mal für den Hammer! "
 12,0xb9635,0xb9785,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"…<player>. You
 must love your
 hammer so much.
@@ -101,10 +110,10 @@ hope you'll love
 the fishing rod
 as much as you
 love your
-hammer."
+hammer.","Du schon wieder, <player>... Dein Hammer muss dir echt viel bedeuten. Na gut, ich finde es ja schön, dass du so an deinem Hammer hängst. Hier, du kannst meine Angel haben! Du weißt nicht, wie man angelt? Drücke den A-Knopf um die Angel auszuwerfen. Drücke ihn erneut, sobald ein Fisch anbeißt. Hin und wieder zieht man aber auch Müll an Land... Ich hoffe, du schließt die Angel genauso in dein Herz wie deinen Hammer!"
 13,0xb9785,0xb97b4,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"I love fishing.
 You can catch
-100 a day."
+100 a day.","Ich liebe es, zu angeln! Wusstest du, dass man am Tag bis zu 100 Fische an Land ziehen kann?"
 14,0xb97b4,0xb9842,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elder,"Oh, <player>.
 How are you?
 I'll tell you
@@ -114,7 +123,7 @@ Go to the lake
 in the forest by
 noon. Something
 might happen
-there…"
+there…","Ich grüße dich, <player>. Wie schön, dich zu sehen. Soll ich dir etwas verraten? Wenn du zur Abendämmerung den See im Wald aufsuchst, wirst du möglicherweise Zeuge eines kleinen Spektakels..."
 15,0xb9842,0xb9a51,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"Did you go to
 the lake in the
 forest? A long
@@ -147,28 +156,28 @@ the day every
 fall…
 They must be
 happy together
-in heaven…"
+in heaven…","Warst du am See im Wald? Nun gut, dann will ich dir die Geschichte erzählen. Einst lebte hier ein Seefahrer namens Rocky. Es heißt, er soll ein erstklassiger Kapitän gewesen sein. Eines Tages überraschte ihn jedoch ein Sturm, dem er nicht trotzen konnte, und so ging er zusammen mit seinem Schiff unter. Seine Geliebte, Marla, folgte ihm kurz darauf... Doch dann, zehn Jahre später, kehrte Rocky wie durch ein Wunder plötzlich auf die Insel zurück und erfuhr, was mit Marla geschehen war. In seiner Verzweiflung gab er sich dem See anheim... Seitdem färbt sich der See an diesem Tag im Herbst rot... Sicherlich sind sie im Himmel glücklich vereint... "
 16,0xb9a51,0xb9aa1,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Elder,"What? Your cat
 is missing? That
 is not good. I
 will keep my
-eyes open."
+eyes open.","Wie bitte? Du suchst deine Katze? Herrje! Ich werde meine Augen offen halten. "
 17,0xb9aa1,0xb9ae6,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"What? Your pet
 is missing? I
 don't know
 anything about
-it…"
+it…","Was? Du suchst dein Haustier? Habe leider nichts bekommen..."
 18,0xb9ae6,0xb9b42,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kirk,"What? You can't
 find your pet?
 I wish there was
 something I
 could do to help
-you."
+you.","Du kannst dein Haustier nicht finden? Beim Klabautermann! Ich wünschte, ich könnte dir irgendwie helfen..."
 19,0xb9b42,0xb9b8e,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"Hi, <player>!
 What's wrong?
 Your pet is
 gone!? Oh, no!
-I'll help you!"
+I'll help you!","Hallöchen, <player>! Ist irgendetwas vorgefallen? Du siehst so betrübt aus... Was?! Dein Haustier ist verschwunden?? Oh weh! Ich werde dir helfen!"
 20,0xb9b8e,0xb9d34,4,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Elder,"Oh, I remember
 now! I think it
 was last night.
@@ -194,7 +203,7 @@ don't mean to
 doubt them, but
 there is no one
 else on this
-island…"
+island…","Oh, da fällt mir etwas ein! Letzte Nacht konnte ich keinen Schlaf finden, also bin ich vor die Tür, um frische Luft zu schnappen. Als ich gerade einen durch das Dorf spazieren wollte, sah ich jemanden eine Katze im Arm halten. Das muss so zwischen Mitternacht und 02:00 Uhr gewesen sein. Billy und Elsa waren in dieser Nacht angeln. Wenn das also weder du, noch <var>0 waren, bleiben eigentlich nur Bigbee, Kirk oder Karine. Ich verdächtige sie ja nur ungern, aber es lebt ja sonst niemand auf dieser Insel..."
 21,0xb9d34,0xb9de0,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"What was I doing
 last night? I
 was picking
@@ -205,7 +214,7 @@ night. Why are
 you asking me
 this? Do you
 think I took
-your pet!?"
+your pet!?","Was ich letzte Nacht getan habe? Ich habe Wildbeeren für meine Gäste gesammelt. Das war auf jeden Fall nach Mitternacht. Wieso fragst du? Glaubst du etwa, ich habe dir dein Haustier stibitzt?!"
 22,0xb9de0,0xb9e92,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kirk,"Hi, how are you
 doing? Did you
 find your pet?
@@ -216,7 +225,7 @@ at the stars
 between 11PM and
 1AM here. Why do
 you want to
-know?"
+know?","Moin! Hast du dein Haustier finden können? Wie? Was ich letzte Nacht getan habe? Ich habe hier zwischen 23:00 Uhr und 01:00 Uhr die Sterne betrachtet. Weshalb fragst du?"
 23,0xb9e92,0xb9f3f,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"Hello, <player>.
 I was looking
 for you! What
@@ -227,7 +236,7 @@ What was I doing
 last night? Ah,
 last night…
 Mmm… I forgot!
-Sorry!"
+Sorry!","Hallöchen, <player>. Ich habe nach dir gesucht! Wie sieht deine Katze aus? Ich finde sie für dich! Was ich letzte Nacht getan habe? Mal überlegen... Hmm... Habe ich vergessen, tut mir leid!"
 24,0xb9f3f,0xba04f,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",<partner>,"How is it going,
 <player>? What's up?
 Ah, huh…
@@ -244,7 +253,7 @@ people, but once
 you know the
 most suspicious
 person, tell me
-by midnight."
+by midnight.","Wie geht es dir, <player>? Hm, verstehe... der Älteste verdächtigt also einen der dreien. Ich mache mir nur Sorgen um <var>0, <player>. Ich möchte niemanden beschuldigen, aber falls du jemanden im Verdacht hast, erzähl mir bitte bis Mitternacht davon."
 25,0xba04f,0xba11d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Hey, <player>.
 What's up?
 …Mmmm…
@@ -258,15 +267,19 @@ you know who
 might be the
 most suspicious,
 let me know by
-midnight."
+midnight.","Hey, <player>. Ist alles in Ordnung? ...Hmmm... Der Älteste findet also, dass die drei verdächtig sind. Gut, hör zu, <player>: Unterhalte dich mit ihnen und wenn du einen von ihnen besonders im Verdacht hast, lass es mich bis Mitternacht wissen."
 26,0xba11d,0xba16d,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""3008GO0@""]",<partner>,"You know who did
 it? Choose one.
 <noname><name>0 Bigbee  Kirk
- Kate    Not yet<ask>"
+ Kate    Not yet<ask>","Du weißt, wer es getan hat? Erzähl!
+<noname><name>0 Bigbee  Kirk
+ Karine    Noch nicht<ask>"
 27,0xba16d,0xba1bd,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""3008GO0@""]",<partner>,"You know who did
 it? Choose one.
 <noname><name>0 Bigbee  Kirk
- Kate    Not yet<ask>"
+ Kate    Not yet<ask>","Du weißt, wer es getan hat? Erzähl!
+<noname><name>0 Bigbee  Kirk
+ Karine    Noch nicht<ask>"
 28,0xba1bd,0xba23c,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Ah, huh. Then,
 can you go to
 see <var>0 and
@@ -274,7 +287,7 @@ kind of talk
 about it? I know
 it's not easy,
 but I'm counting
-on you."
+on you.","Verstehe... Kannst du dann zu <var>0 gehen und darüber reden? Ich weiß, das ist nicht einfach. Ich zähle auf dich!"
 29,0xba23c,0xba2b7,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Alright… Then,
 can you go to
 see <var>0 and
@@ -282,7 +295,7 @@ kind of talk
 about it? It's
 not easy, but I
 know you can do
-it, <player>."
+it, <player>.","Alles klar... Kannst du dann zu <var>0 gehen und darüber reden? Ist nicht einfach, aber ich weiß, du machst das schon, <player>."
 30,0xba2b7,0xba36f,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"Why are you
 accusing me? I
 was acting
@@ -293,7 +306,7 @@ berries? What
 are you talking
 about? I didn't
 even know your
-pet was a cat!!"
+pet was a cat!!","Wieso beschuldigst du mich? Ich soll mich komisch verhalten und anstatt der Wildbeeren deine Katze getragen haben? Wovon redest du da?! Ich wusste nicht einmal, dass dein Haustier eine Katze ist!!"
 31,0xba36f,0xba447,9,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Bigbee,"What was I doing
 here last night?
 I was picking
@@ -306,13 +319,13 @@ asking me this?
 You lost your
 pet? Are you
 accusing me of
-taking your pet?"
+taking your pet?","Was ich hier letzte Nacht getrieben habe? Ich habe Wildbeeren für meine Gäste gepflückt. Das muss so gegen Mitternacht gewesen sein. Wieso fragst du mich das? Du hast dein Haustier verloren? Beschuldigst du mich etwa, dein Haustier entführt zu haben?"
 32,0xba447,0xba4ad,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kirk,"I took your cat?
 You are wrong
 about that. I
 didn't even know
 your pet was a
-cat until now."
+cat until now.","Ich soll deine Katze entführt haben? So ein Schnack! Min Jung... bis eben wusste ich nicht einmal, dass dein Haustier eine Katze ist."
 33,0xba4ad,0xba578,10,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kirk,"Hi. How are you
 doing? Did you
 find your pet?
@@ -324,7 +337,7 @@ from the cliff.
 I was there
 between 11PM and
 1AM. Why are you
-asking me this?"
+asking me this?","Moin! Hast du dein Haustier finden können? Wie? Was ich letzte Nacht getan habe? Ich habe mir von der Klippe aus die Sterne angesehen. War wohl so zwischen 23:00 Uhr und 01:00 Uhr. Weshalb fragst du?"
 34,0xba578,0xba6ec,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"What's up, <player>?
 Did you find
 your cat? What?
@@ -347,7 +360,7 @@ cute that I
 couldn't help
 it… I will
 bring your cat
-back. I promise!"
+back. I promise!","Hallöchen, <player>! Hast du deine Katze gefunden? Was? Ich soll deine Katze genommen haben? Wieso sagst du so etwas?! ... ... ... ... Na gut, ich gebe es zu. Aber wie hast du es herausgefunden? Ich dachte, niemand wüsste darüber Bescheid... Wie? Ich war die einzige, die wusste, dass dein Haustier eine Katze war? Eieiei, da hab ich mich wohl verraten. Es tut mir fürchterlich leid. Deine Katze war so süß, ich konnte einfach nicht anders... Ich werde sie dir zurückbringen, versprochen!"
 35,0xba6ec,0xba797,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Kate,"Hi, <player>.
 I was looking
 for you! What
@@ -358,7 +371,7 @@ for it. What?
 What was I doing
 last night? Ah,
 mmm… I don't
-remember."
+remember.","Hallöchen, <player>. Ich habe nach dir gesucht! Wie sieht deine Katze aus? Ich helfe dir bei der Suche! Wie? Was ich letzte Nacht getan habe? Ah, hmm... Ich erinnere mich, ehrlich gesagt, nicht."
 36,0xba797,0xba832,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",Billy,"Hey, <player>!
 What good
 timing. I want
@@ -368,19 +381,20 @@ can you spare
 me <var>0 logs?
 You don't have
 to, but…
- Yes          No<ask>"
+ Yes          No<ask>","Hey, <player>! Du kommst gerade richtig. Ich würde gern den Leuchtturm reparieren! Könntest du für dieses Vorhaben <var>0 Holzklötze entbehren? Fühl dich aber nicht gezwungen...
+ Ja          Nein<ask>"
 37,0xba832,0xba897,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"Really? Then,
 can you bring
 me <var>0 logs
 within a week?
 Thanks, <player>.
 I'm counting on
-you!"
+you!","Wirklich? Kannst du mir dann <var>0 Holzklötze innerhalb von einer Woche liefern? Danke, <player>. Ich zähle auf dich!"
 38,0xba897,0xba8e8,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"Oh, never mind.
 Sorry for asking
 such a thing all
 of a sudden.
-See ya."
+See ya.","Oh, kein Problem. Entschuldige, dass ich dich so überrumpelt habe. Man sieht sich."
 39,0xba8e8,0xba976,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Billy,"Hey! Thanks,
 <player>! Thanks for
 keeping your
@@ -389,13 +403,13 @@ lighthouse will
 be in good
 shape. I will
 never forget
-your kindness."
+your kindness.","Hey, vielen Dank, <player>! Auf dich ist wirklich Verlass! Jetzt kann ich den Leuchtturm wieder in Schuss bringen. Das vergesse ich dir nie!"
 40,0xba976,0xba9cc,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Billy,"Oh, <player>.
 Did you bring
 the logs? I
 guess we need
 some more. I'll
-be waiting!"
+be waiting!","Oh, <player>! Hast du die Holzklötze dabei? Hm, ich glaube, wir benötigen ein paar mehr. Kein Sorge, ich werde warten!"
 41,0xba9cc,0xbaa48,5,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Billy,"One week has
 already passed.
 I was expecting
@@ -403,4 +417,4 @@ too much from
 you… I got
 logs from Elder
 and fixed the
-lighthouse."
+lighthouse.","Die Woche ist bereits rum. Ich habe wohl zu viel von dir verlangt... Der Älteste war zum Glück so freundlich und hat mir mit den Holzklötzen ausgeholfen, sodass ich den Leuchtturm doch noch reparieren konnte."

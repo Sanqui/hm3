@@ -1,31 +1,33 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x10c191,0x10c1b5,,"[""\\n"", ""10GT000@""]",,"Go to bed?
- Yes          No<ask>"
+ Yes          No<ask>","Zu Bett gehen?
+ Ja          Nein<ask>"
 1,0x10c1b5,0x10c1d9,,"[""\\n"", ""10GT000@""]",,"Go to bed?
- Yes          No<ask>"
+ Yes          No<ask>","Zu Bett gehen?
+ Ja          Nein<ask>"
 2,0x10c1d9,0x10c1fe,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Yeah <player>!
 A baby animal
 was born!
-"
+","Sieh doch, <player>! Wir haben Nachwuchs bekommen!"
 3,0x10c1fe,0x10c223,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Yeah <player>!
 A baby animal
 was born!
-"
+","Sieh doch, <player>! Wir haben Nachwuchs bekommen!"
 4,0x10c223,0x10c248,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Yeah <player>!
 A baby animal
 was born!
-"
+","Sieh doch, <player>! Wir haben Nachwuchs bekommen!"
 5,0x10c248,0x10c25f,,"[""\\n"", ""<waita>@""]",,"Give the baby
-a name!"
+a name!","Gib dem Kleinen einen Namen!"
 6,0x10c25f,0x10c290,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We need to work
 harder now…
 But I'm happy!
-"
+","Jetzt müssen wir noch härter arbeiten... Ich freue mich trotzdem!"
 7,0x10c290,0x10c2ab,,"[""\\n"", ""<waita>@""]",,"Oh no <player>!
-Our animal died!"
+Our animal died!","Oh nein, <player>! Unser Tier ist gestorben!"
 8,0x10c2ab,0x10c2eb,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Sorry… It's
 awful. We'll
 never make
 the same
 mistake…
-"
+","Es tut mir so leid... Das ist furchtbar. So etwas darf uns nie wieder passieren..."

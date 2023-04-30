@@ -37,10 +37,10 @@ i,address,end,name_i,newlines,name,string,translation
 35,0x1f141b,0x1f142b,,"[""@""]",,"<f0>  Seiichi Kizu","<f0>  Seiichi Kizu"
 36,0x1f142b,0x1f143b,,"[""@""]",,"<f0>  Masaaki Ohki","<f0>  Masaaki Ohki"
 37,0x1f143b,0x1f145b,,"[""@""]",,"Hiro Maekawa      Natsume Inc.","Hiro Maekawa      Natsume Inc."
-38,0x1f145b,0x1f147c,,"[""@""]",,"US Product              Manager",Hacking
-39,0x1f147c,0x1f149b,,"[""@""]",,"Graham Markay    Natsume Inc.",Sanqui
-40,0x1f149b,0x1f14bb,,"[""@""]",,"Localization           Manager","Deutsche Übersetzung"
-41,0x1f14bb,0x1f14dc,,"[""@""]",,"Sachiko Yamauchi    Natsume Inc.",Shokupanda
+38,0x1f145b,0x1f147c,,"[""@""]",,"US Product              Manager","Deutsche Übersetzung"
+39,0x1f147c,0x1f149b,,"[""@""]",,"Graham Markay    Natsume Inc.",Shokupanda
+40,0x1f149b,0x1f14bb,,"[""@""]",,"Localization           Manager",ROM-Hacking
+41,0x1f14bb,0x1f14dc,,"[""@""]",,"Sachiko Yamauchi    Natsume Inc.",Sanqui
 42,0x1f14dc,0x1f14ea,,"[""@""]",,"<f2>   Publisher","<f2>   Publisher"
 43,0x1f14ea,0x1f150c,,"[""@""]",,"ⓒ2001               Natsume Inc.","ⓒ2001 Natsume Inc."
 44,0x1f150c,0x1f152d,,"[""@""]",,"All rights        reserved.","All rights reserved."

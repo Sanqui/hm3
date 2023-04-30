@@ -6,10 +6,9 @@ care of animals.","Ist gut im Umgang mit Tieren."
 2,0x1e7ca3,0x1e7cde,,"[""\\n"", ""<arrow>2<waita><clear>"", ""\\n"", ""<waita>@""]",,"<var>0 will be
 your partner and
 help you with
-the farming.","<var>0 wird dir unter
-die Arme greifen und dir bei der Farmarbeit behilflich sein."
+the farming.","<var>0 wird dir unter die Arme greifen und dir bei der Farmarbeit behilflich sein."
 3,0x1e7cde,0x1e7d06,,"[""\\n"", ""10GT000@""]",,"Everything OK?
  Yes          No<ask>","Stimmt alles?
  Ja        Nein<ask>"
 4,0x1e7d06,0x1e7d25,,"[""\\n"", ""@""]",,"Select and press
-the A Button.","Wähle aus und bestätige mit dem A-Knopf."
+the A Button.","Triff eine Wahl und bestätige mit dem A-Knopf."

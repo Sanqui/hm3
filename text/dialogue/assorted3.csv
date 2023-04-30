@@ -10,7 +10,7 @@ got lots of
 useful tools
 here. Take a
 look around
-<player>!!","Hey, du bist neu hier, oder? Ich bin Lucus, angenehm! ... Aha, du arbeitest also auf der Farm. Das trifft sich gut! Wie du siehst, verkaufe ich Werkzeuge. Sieh dich doch einfach mal um!"
+<player>!!","Hey, du bist neu hier, oder? Ich bin Lucas. Angenehm! ... Aha, du arbeitest also auf der Farm. Das trifft sich gut! Wie du siehst, verkaufe ich Werkzeuge. Sieh dich doch einfach mal um!"
 1,0x12dc1b,0x12dc47,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lucus,"Hey <player>!!
 What can I do
 for you today?
@@ -29,13 +29,13 @@ I'm Lukia. I've
 got different
 seeds for every
 season, so come
-often.",
+often.","Hey, ein neues Gesicht! Freut mich, dich kennenzulernen. Wie ich hörte, betreibst du eine Farm. Ich bin übrigens Lukia. Ich verkaufe hier Saatgut, passend zur Jahreszeit. Schau also ruhig öfter mal rein!"
 5,0x12dd2e,0x12dd4a,13,"[""\\n"", ""<waita>@""]",Lukia,"Welcome.
-Take your time.",
+Take your time.","Willkommen! Sieh dich in Ruhe um."
 6,0x12dd4a,0x12dd65,13,"[""\\n"", ""<waita>@""]",Lukia,"Flower lovers
-are good.",
+are good.","Wer Blumen mag, ist mir auf Anhieb sympathisch."
 7,0x12dd65,0x12dd87,13,"[""\\n"", ""<waita>@""]",Lukia,"Lavender makes
-me feel better.",
+me feel better.","Beim Duft von Lavendel geht's mir gleich viel besser."
 8,0x12dd87,0x12ddfc,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lyla,"Hello. I'm Lyla.
 You must be
 <player>. Do you
@@ -43,14 +43,14 @@ live on the
 farm? We have a
 lot of useful
 books.
-Check them out.",
-9,0x12ddfc,0x12de08,14,"[""<waita>@""]",Lyla,Welcome.,
+Check them out.","Hallo, ich bin Leyla. Du lebst auf der Farm, oder? Dann musst du <player> sein! Wir haben hier eine Vielzahl an nützlichen Büchern, die du jederzeit durchstöbern kannst."
+9,0x12ddfc,0x12de08,14,"[""<waita>@""]",Lyla,Welcome.,Willkommen.
 10,0x12de08,0x12de41,14,"["" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lyla,"<player>? Why don't
 you take your
 time and read
-a book?",
+a book?","Hey, <player>. Wieso gönnst du dir nicht eine Pause und liest ein Buch?"
 11,0x12de41,0x12de61,14,"[""\\n"", ""<waita>@""]",Lyla,"Reading books
-calms me down.",
+calms me down.","Ich entspanne am Besten, wenn ich ein Buch lese."
 12,0x12de61,0x12df20,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Chloe,"Hello. My name
 is Cloe. You
 must be <player>.
@@ -62,155 +62,163 @@ you get hungry,
 please come and
 eat here. My
 food is very
-energizing!!",
+energizing!!","Hallo! Ich bin Chloe. Du musst <player> sein. Mein Sohn Billy hat mir von dir erzählt. Wie lebt es sich so auf der Farm? Wenn du mal Hunger hast, dann komm zu mir! Mein Essen gibt dir wieder Kraft!"
 13,0x12df20,0x12df47,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Chloe,"Welcome <player>.
 What would you
 like?
-",
+","Willkommen, <player>.
+Was darf es sein?"
 14,0x12df47,0x12df67,7,"[""\\n"", ""<waita>@""]",Chloe,"I love white
-cats very much.",
+cats very much.","Ich liebe weiße Katzen!"
 15,0x12df67,0x12df91,7,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Chloe,"His name is
 Bubba. Isn't
 he cute?
-",
+","Sein Name ist Bubba.
+Ist er nicht süß?"
 16,0x12df91,0x12dfb8,19,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Daisy,"Long time no
 see!! How are
 you?
-",
+","Lange nicht gesehen!
+Wie geht's dir?"
 17,0x12dfb8,0x12dfd3,19,"[""\\n"", ""<waita>@""]",Daisy,"They have good
-flowers.",
+flowers.","Die haben gute Blumen im Angebot."
 18,0x12dfd3,0x12e02b,19,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Daisy,"I came here all
 the way from
 Flower Bud
 Village to buy
 some beautiful
-flowers.",
+flowers.","Ich bin den weiten Weg vom Knospendorf hierhergekommen, um ein paar schöne Blumen zu kaufen."
 19,0x12e02b,0x12e049,19,"[""\\n"", ""<waita>@""]",Daisy,"I love looking
-at flowers.",
+at flowers.","Ich liebe es, mir Blumen anzusehen."
 20,0x12e049,0x12e081,19,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Daisy,"You'll come back
 to Flower Bud
 Village, right?
-",
+","Du kommst doch irgendwann zurück ins Knospendorf, oder?"
 21,0x12e081,0x12e0a2,19,"[""\\n"", ""<waita>@""]",Daisy,"Just wanted to
-talk to Lukia…",
+talk to Lukia…","Ich wollte einfach mit Lukia reden..."
 22,0x12e0a2,0x12e0de,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Oh, you are the
 guy from…
 Mmm… No, I
-don't remember.",
+don't remember.","Oh, du bist doch... Hmm... Nein, doch nicht."
 23,0x12e0de,0x12e0fd,,"[""\\n"", ""<waita>@""]",,"What should I
-have for lunch?",
+have for lunch?","Was soll ich bloß zu Mittag essen?"
 24,0x12e0fd,0x12e127,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I'm too old to
 remember
 everything.
-",
+","Ich bin zu alt, um mich an alles erinnern zu können."
 25,0x12e127,0x12e14b,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"What should I
 have for
 dinner?
-",
+","Was soll ich bloß zu Abend essen?"
 26,0x12e14b,0x12e17e,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Are you the
 farm owner in
 Flower Bud
-Village…?",
+Village…?","Bist du der Farmer aus dem Knospendorf...?"
 27,0x12e17e,0x12e1aa,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"I can't do
 anything when
 I'm hungry.
-",
+","Wenn ich hungrig bin, kriege ich nichts auf die Reihe."
 28,0x12e1aa,0x12e1c9,24,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Mary,"Ah…<player>.
 Long time no
 see…
-",
+","Ah... <player>. Lange nicht gesehen..."
 29,0x12e1c9,0x12e1ed,24,"[""\\n"", ""<waita>@""]",Mary,"I'm looking for
-a lot of books.",
+a lot of books.","Zurzeit suche ich nach einigen Büchern."
 30,0x12e1ed,0x12e20e,24,"[""\\n"", ""<waita>@""]",Mary,"You seem to be
-busy everyday.",
+busy everyday.","Du scheinst mir immer ziemlich beschäftigt."
 31,0x12e20e,0x12e257,24,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Mary,"I want to buy
 a knitting
 book and knit
 a sweater or
 something.
-",
+","Ich hätte gerne ein Buch übers Stricken, damit ich einen Pullover oder so was stricken kann."
 32,0x12e257,0x12e280,24,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Mary,"Ah…come
 visit my
 library
-sometime.",
+sometime.","Schau doch mal in meiner Bibliothek vorbei..."
 33,0x12e280,0x12e2bb,24,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Mary,"‘Mysteries of
 the Island'…
 My library can
-use one.",
+use one.","""Geheimnisse einer Insel""... Das macht sich bestimmt gut in meiner Bibliothek! "
 34,0x12e2bb,0x12e2dd,38,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Gen,"Hey <player>.
 How have you
 been?!
-",
+","Hey, <player>. Na, alles klar soweit?"
 35,0x12e2dd,0x12e302,38,"[""\\n"", ""<waita>@""]",Gen,"I'm looking for
-some good tools.",
+some good tools.","Ich bin auf der Suche nach guten Werkzeugen."
 36,0x12e302,0x12e33f,38,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Gen,"Let me know if
 you want me to
 build something
-for you.",
+for you.","Lass es mich wissen, falls ich dir mal etwas bauen soll."
 37,0x12e33f,0x12e361,38,"[""\\n"", ""<waita>@""]",Gen,"There is some
-good stuff here.",
+good stuff here.","Hier gibt's ein paar gute Sachen."
 38,0x12e361,0x12e394,38,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Gen,"My dream is to
 build a big
 place like this!
-",
+","Irgendwann bau' ich auch so was großes! Das ist mein Traum! "
 39,0x12e394,0x12e3b8,38,"[""\\n"", ""<waita>@""]",Gen,"I'm tired. I'm
-going home now.",
+going home now.","Ich bin müde. Zeit, nach Hause zu gehen."
 40,0x12e3b8,0x12e3d5,20,"[""\\n"", ""<waita>@""]",Chet,"Is this for me?
-Thanks <player>.",
+Thanks <player>.","Was, für mich?
+Danke, <player>."
 41,0x12e3d5,0x12e3f5,20,"[""\\n"", ""<waita>@""]",Chet,"Thank you. It's
-wonderful!!",
+wonderful!!","Vielen Dank! Ich freue mich sehr darüber!!"
 42,0x12e3d5,0x12e3f5,20,"[""\\n"", ""<waita>@""]",Chet,"Thank you. It's
-wonderful!!",
+wonderful!!","Vielen Dank! Ich freue mich sehr darüber!!"
 43,0x12e3f5,0x12e40c,20,"[""\\n"", ""<waita>@""]",Chet,"I don't like
-this.",
+this.","Das mag ich nicht."
 44,0x12e40c,0x12e42c,18,"[""\\n"", ""<waita>@""]",Choco,"Yeah! Thanks!
-I'm so happy!",
+I'm so happy!","Juhu, danke! Ach, was freu' ich mich!"
 45,0x12e42c,0x12e44b,18,"[""\\n"", ""<waita>@""]",Choco,"Is this for me?
-Yeah! Yeah!",
+Yeah! Yeah!","Ist das für mich?
+Juhu! Juhu!"
 46,0x12e42c,0x12e44b,18,"[""\\n"", ""<waita>@""]",Choco,"Is this for me?
-Yeah! Yeah!",
+Yeah! Yeah!","Ist das für mich?
+Juhu! Juhu!"
 47,0x12e44b,0x12e47f,18,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Choco,"I don't want it.
 I'll throw it
 away later!
-",
+","Damit kann ich nichts anfangen. Ich werd's später wegschmeißen!"
 48,0x12e47f,0x12e498,19,"[""\\n"", ""<waita>@""]",Daisy,"For me?
-You're cool!",
+You're cool!","Für mich? Wie cool von dir!"
 49,0x12e498,0x12e4bb,19,"[""\\n"", ""<waita>@""]",Daisy,"A present for
-me? I'm excited!",
+me? I'm excited!","Ein Geschenk? Für mich? Du versüßt mir den Tag!"
 50,0x12e498,0x12e4bb,19,"[""\\n"", ""<waita>@""]",Daisy,"A present for
-me? I'm excited!",
+me? I'm excited!","Ein Geschenk? Für mich? Du versüßt mir den Tag!"
 51,0x12e4bb,0x12e4dd,19,"[""\\n"", ""<waita>@""]",Daisy,"Are you trying
-to make me mad?",
+to make me mad?","Willst du mich etwa wütend machen?"
 52,0x12e4dd,0x12e4f5,,"[""\\n"", ""<waita>@""]",,"For me? Is it
-edible…?",
+edible…?","Für mich? Kann man das essen...?"
 53,0x12e4f5,0x12e510,,"[""\\n"", ""<waita>@""]",,"A present!? Is
-it edible?",
+it edible?","Ein Geschenk?! Kann man das essen?"
 54,0x12e4f5,0x12e510,,"[""\\n"", ""<waita>@""]",,"A present!? Is
-it edible?",
+it edible?","Ein Geschenk?! Kann man das essen?"
 55,0x12e510,0x12e52e,,"[""\\n"", ""<waita>@""]",,"I don't think
-it's edible…",
+it's edible…","Ich glaube nicht, dass man das essen kann..."
 56,0x12e52e,0x12e54a,24,"[""\\n"", ""<waita>@""]",Mary,"Are you sure?
-Thank you…",
+Thank you…","Bist du sicher? Danke..."
 57,0x12e54a,0x12e569,24,"[""\\n"", ""<waita>@""]",Mary,"Is it really
-OK? Thank you.",
+OK? Thank you.","Ist das wirklich OK?
+Ich danke dir."
 58,0x12e54a,0x12e569,24,"[""\\n"", ""<waita>@""]",Mary,"Is it really
-OK? Thank you.",
+OK? Thank you.","Ist das wirklich OK?
+Ich danke dir."
 59,0x12e569,0x12e582,24,"[""\\n"", ""<waita>@""]",Mary,"What…? You
-are mean…!",
+are mean…!","Was...? Du bist fies...!"
 60,0x12e582,0x12e59a,38,"[""\\n"", ""<waita>@""]",Gen,"Oh, cool.
-Thanks <player>!",
+Thanks <player>!","Oh, cool. Danke, <player>!"
 61,0x12e59a,0x12e5b9,38,"[""\\n"", ""<waita>@""]",Gen,"What? For me?
-Thanks buddy!",
+Thanks buddy!","Was? Für mich? Danke, Kumpel!"
 62,0x12e59a,0x12e5b9,38,"[""\\n"", ""<waita>@""]",Gen,"What? For me?
-Thanks buddy!",
+Thanks buddy!","Was? Für mich? Danke, Kumpel!"
 63,0x12e5b9,0x12e5db,38,"[""\\n"", ""<waita>@""]",Gen,"I don't like
-jokes like this.",
-64,0x12e5db,0x12e5ec,2,"[""<waita>@""]",<2>,"Daーda! Paーpa!",
+jokes like this.","Ha-ha, sehr witzig. Lass stecken."
+64,0x12e5db,0x12e5ec,2,"[""<waita>@""]",<2>,"Daーda! Paーpa!","Da-da! Pa-pa!"
 65,0x12e5ec,0x12e608,2,"[""\\n"", ""<waita>@""]",<2>,"Daddy, have a
-good day!",
-66,0x12e608,0x12e61c,2,"[""<waita>@""]",<2>,"Thank you Daddy!",
-67,0x12e61c,0x12e62d,3,"[""<waita>@""]",<3>,"Gaーga… Daーda…",
+good day!","Ich wünsch dir einen schönen Tag, Papa!"
+66,0x12e608,0x12e61c,2,"[""<waita>@""]",<2>,"Thank you Daddy!","Vielen Dank, Papa!"
+67,0x12e61c,0x12e62d,3,"[""<waita>@""]",<3>,"Gaーga… Daーda…","Ga-ga… Da-da…"
 68,0x12e62d,0x12e647,3,"[""\\n"", ""<waita>@""]",<3>,"Have a nice
-day Daddy!",
+day Daddy!","Komm' gut durch den Tag, Papa!"
 69,0x12e647,0x12e65c,3,"[""\\n"", ""<waita>@""]",<3>,"Yeah!
-Thanks Dad!",
+Thanks Dad!","Juhu! Danke, Papa!"

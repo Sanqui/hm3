@@ -1,66 +1,71 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x1f08a2,0x1f08b3,20,"[""\\n"", ""<waita>@""]",Chet,"Give me a
-<var>0."
+<var>0.","Gib mir eine(n) <var0>."
 1,0x1f08b3,0x1f08c7,20,"[""\\n"", ""<waita>@""]",Chet,"Thanks.
-See you."
+See you.","Danke.
+Bis dann!"
 2,0x1f08c7,0x1f08da,20,"[""\\n"", ""<waita>@""]",Chet,"No? OK.
-See ya."
+See ya.","Nein? Na gut.
+Bis dann!"
 3,0x1f08da,0x1f08ef,40,"[""\\n"", ""<waita>@""]",Nancy,"Do you have a
-<var>0?"
+<var>0?","Hast du eine(n) <var>0?"
 4,0x1f08ef,0x1f090c,40,"[""\\n"", ""<waita>@""]",Nancy,"Thank you.
-See you later."
+See you later.","Danke. Dann bis bald!"
 5,0x1f090c,0x1f092c,40,"[""\\n"", ""<waita>@""]",Nancy,"Sold out? OK.
-See you later."
+See you later.","Ausverkauft? Schade. Dann bis bald!"
 6,0x1f092c,0x1f0940,24,"[""\\n"", ""<waita>@""]",Mary,"Can I have a
-<var>0?"
+<var>0?","Kann ich eine(n) <var>0 haben?"
 7,0x1f0940,0x1f0958,24,"[""\\n"", ""<waita>@""]",Mary,"Thank you very
-much!"
-8,0x1f0958,0x1f0967,24,"[""<waita>@""]",Mary,Really… OK.
+much!","Vielen Dank auch!"
+8,0x1f0958,0x1f0967,24,"[""<waita>@""]",Mary,"Really… OK.","Wirklich? Na gut."
 9,0x1f0967,0x1f097c,39,"[""\\n"", ""<waita>@""]",Isha,"Do you have a
-<var>0?"
+<var>0?","Hast du eine(n) <var>0?"
 10,0x1f097c,0x1f0998,39,"[""\\n"", ""<waita>@""]",Isha,"Thanks. Have a
-good day."
+good day.","Danke. Einen schönen Tag, wünsche ich!"
 11,0x1f0998,0x1f09b4,39,"[""\\n"", ""<waita>@""]",Isha,"They're sold
-out? Darn."
+out? Darn.","Ausverkauft? Ein Jammer."
 12,0x1f09b4,0x1f09ca,38,"[""\\n"", ""<waita>@""]",Gen,"Have you got a
-<var>0?"
+<var>0?","Hast du eine(n) <var>0?
+"
 13,0x1f09ca,0x1f09e6,38,"[""\\n"", ""<waita>@""]",Gen,"Thanks. Catch
-you later."
+you later.","Danke. Man sieht sich."
 14,0x1f09e6,0x1f0a08,38,"[""\\n"", ""<waita>@""]",Gen,"What? I got up
-early for this!"
+early for this!","Was? Dabei bin ich extra früh aufgestanden!"
 15,0x1f0a08,0x1f0a1d,19,"[""\\n"", ""<waita>@""]",Daisy,"Do you have a
-<var>0?"
+<var>0?","Hast du eine(n) <var>0?"
 16,0x1f0a1d,0x1f0a3d,19,"[""\\n"", ""<waita>@""]",Daisy,"Thanks! Thank
-you very much."
+you very much.","Danke! Vielen, lieben Dank!"
 17,0x1f0a3d,0x1f0a55,19,"[""\\n"", ""<waita>@""]",Daisy,"No? Maybe next
-time."
+time.","Nein? Vielleicht nächstes mal."
 18,0x1f0a55,0x1f0a6a,18,"[""\\n"", ""<waita>@""]",Choco,"<name>IDo you sell
+<var>0?","<name>IVerkaufst du eine(n)
 <var>0?"
 19,0x1f0a6a,0x1f0a82,18,"[""\\n"", ""<waita>@""]",Choco,"Yeah! Thanks!
-Yahoo!"
+Yahoo!","Juhu, danke! Hurra!"
 20,0x1f0a82,0x1f0a93,18,"[""\\n"", ""<waita>@""]",Choco,"No? Mmm…
-Bye…"
+Bye…","Nein? Mh... Tschüss, dann..."
 21,0x1f0a93,0x1f0aa8,17,"[""\\n"", ""<waita>@""]",Rosie,"Do you have a
-<var>0?"
+<var>0?","Hast du eine(n) <var>0?"
 22,0x1f0aa8,0x1f0ac0,17,"[""\\n"", ""<waita>@""]",Rosie,"Thank you very
-much."
+much.","Vielen, lieben Dank!"
 23,0x1f0ac0,0x1f0ade,17,"[""\\n"", ""<waita>@""]",Rosie,"Too bad. I'll
-come again."
+come again.","Schade. Ich komme ein andermal wieder."
 24,0x1f0ade,0x1f0aee,23,"[""\\n"", ""<waita>@""]",Bill,"I want a
-<var>0."
+<var>0.","Ich hätte gern eine(n) <var>0."
 25,0x1f0aee,0x1f0b09,23,"[""\\n"", ""<waita>@""]",Bill,"<name>NThanks. This
-is cool."
+is cool.","<name>NDanke. Tolle Sache!"
 26,0x1f0b09,0x1f0b24,23,"[""\\n"", ""<waita>@""]",Bill,"You don't have
-it? Oh."
+it? Oh.","Hast du gar nicht? Oh."
 27,0x1f0b24,0x1f0b3b,21,"[""\\n"", ""<waita>@""]",Cain,"I came to buy a
-<var>0."
+<var>0.","Ich suche eine(n) <var>0."
 28,0x1f0b3b,0x1f0b53,21,"[""\\n"", ""<waita>@""]",Cain,"Thank you very
-much."
+much.","Vielen, lieben Dank!"
 29,0x1f0b53,0x1f0b73,21,"[""\\n"", ""<waita>@""]",Cain,"Hmm… It wasn't
-meant to be…"
+meant to be…","Hm... Soll wohl nicht sein..."
 30,0x1f0b73,0x1f0ba5,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"It's 9AM. The
 market is done
 for the day.
-"
+","Es ist 09:00 Uhr. Der Markt ist für heute vorbei."
 31,0x1f0ba5,0x1f0bc7,,"[""\\n"", ""@""]",,"…………………………………………
+…………………………………………","…………………………………………
 …………………………………………"

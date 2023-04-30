@@ -1,4 +1,4 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x14153c,0x1415e2,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"Good morning
 <player>. Do you
 remember what
@@ -10,15 +10,21 @@ today. I want
 us to talk
 about how we've
 done…
-"
+","Guten Morgen, <player>.
+Weißt du, was heute für ein Tag ist? Vor genau drei Jahren haben wir zusammen angefangen, auf der Farm zu arbeiten. Sehen wir uns doch mal an, wie wir uns gemacht haben..."
 1,0x1415e2,0x1415fb,,"[""\\n"", ""<arrow>0<waita>@""]",,"We shipped…
-<var>0 crops."
+<var>0 crops.","Wir haben...
+<var>0 Erntegüter verschickt."
 2,0x1415fb,0x14163d,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"We have
 <var>0 cows,
 <var>8 chickens,
 <var>G sheep and
 <var>O horses.
-"
+","Wir besitzen
+<var>0 Kühe,
+<var>8 Hühner,
+<var>G Schafe und
+<var>O Pferde."
 3,0x14163d,0x141698,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"<player>'s
 reputation as a
 farmer<var>0.
@@ -26,7 +32,9 @@ My evaluation of
 you is <var>8.
 So, … … …
 … … … …
-"
+","Das Ansehen von <player> als Farmer beträgt <var>0. Mein Eindruck von dir ist eine <var>8.
+Das bedeutet...
+... ... ... ..."
 4,0x141698,0x141740,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"Good morning,
 <player>. Do you
 remember what
@@ -38,15 +46,21 @@ today. I want
 us to talk
 about how we've
 done…
-"
+","Guten Morgen, <player>.
+Weißt du, was heute für ein Tag ist? Vor genau drei Jahren haben wir zusammen angefangen, auf der Farm zu arbeiten. Sehen wir uns doch mal an, wie wir uns gemacht haben..."
 5,0x141740,0x141759,,"[""\\n"", ""<arrow>0<waita>@""]",,"We shipped…
-<var>0 crops."
+<var>0 crops.","Wir haben...
+<var>0 Erntegüter verschickt."
 6,0x141759,0x14179b,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"We have
 <var>0 cows,
 <var>8 chickens,
 <var>G sheep and
 <var>O horses.
-"
+","Wir besitzen
+<var>0 Kühe,
+<var>8 Hühner,
+<var>G Schafe und
+<var>O Pferde."
 7,0x14179b,0x1417f6,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita>@""]",,"<player>'s
 reputation as a
 farmer<var>0.
@@ -54,4 +68,6 @@ My evaluation of
 you is <var>8.
 So, … … …
 … … … …
-"
+","Das Ansehen von <player> als Farmer beträgt <var>0. Mein Eindruck von dir ist eine <var>8.
+Das bedeutet...
+... ... ... ..."

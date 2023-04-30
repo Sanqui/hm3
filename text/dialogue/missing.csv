@@ -1,24 +1,30 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x1f2792,0x1f27cc,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"Oh! <var>0 came
 back!! Where
 have you been?
-Are you OK?"
+Are you OK?","Oh! <var>0 ist wieder
+da!! Wo warst du
+bloß? Geht es dir
+gut?"
 1,0x1f27cc,0x1f2806,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"Oh! <var>0 came
 back!! Where
 have you been?
-Are you OK?"
+Are you OK?","Oh! <var>0 ist wieder
+da!! Wo warst du
+bloß? Geht es dir
+gut?"
 2,0x1f2806,0x1f2850,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"Oh!! <var>0 came
 back! Kate
 brought it back
 here… She must
 love <var>0.
-"
+",
 3,0x1f2850,0x1f289a,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"Oh!! <var>0 came
 back! Kate
 brought it back
 here… She must
 love <var>0.
-"
+",
 4,0x1f289a,0x1f293f,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Huh? Where is
 <var>0? ……
 Oh, no! <var>0 is
@@ -30,7 +36,7 @@ worried. Let me
 know as soon as
 you find out
 something!!
-"
+",
 5,0x1f293f,0x1f29e4,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Huh? Where is
 <var>0? ……
 Oh, no! <var>0 is
@@ -42,15 +48,15 @@ worried. Let me
 know as soon as
 you find out
 something!!
-"
+",
 6,0x1f29e4,0x1f2a00,0,"[""\\n"", ""<waita>@""]",<player>,"Wow! It's noon
-already!"
+already!",
 7,0x1f2a00,0x1f2a5f,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Today is Friday
 the 13th. It
 was such a bad
 day…, but
 tomorrow will
-be a better one!"
+be a better one!",
 8,0x1f2a5f,0x1f2b2e,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Good morning
 <player>. I found
 some strange
@@ -64,7 +70,7 @@ island.  The
 villagers said
 you can use
 them however you
-want. Here!"
+want. Here!",
 9,0x1f2b2e,0x1f2bfd,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Good morning
 <player>. I found
 some strange
@@ -78,17 +84,17 @@ island.  The
 villagers said
 you can use
 them however you
-want. Here!"
+want. Here!",
 10,0x1f2bfd,0x1f2c38,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Did you have
 fun? I'd like
 to go someー
-where,too!!"
+where,too!!",
 11,0x1f2c38,0x1f2c8b,1,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<partner>,"Do you feel that
 you missed out
 on something? I
 can see it in
 your face.
-"
+",
 12,0x1f2c8b,0x1f2d58,11,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Kate,"Dear <player>.
 There will be
 fireworks
@@ -102,4 +108,4 @@ have some fun.
 I'll be waiting
 for you at the
 cliff!
-"
+",

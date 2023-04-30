@@ -1,55 +1,64 @@
-i,address,end,name_i,newlines,name,string
+i,address,end,name_i,newlines,name,string,translation
 0,0x10c688,0x10c6a6,,"[""\\n"", ""<waita>@""]",,"<var>0Year <var>4<var>C
+       <var>G <var>O <var>KM","<var>0Jahr <var>4<var>C
        <var>G <var>O <var>KM"
 1,0x10c6a6,0x10c6e9,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"I can call the
 Farmers' Union
 to arrange a
-shipment at 6PM."
+shipment at 6PM.","Ich kann den Farmerverband beauftragen, die Versandwaren um 18:00 Uhr abzuholen."
 2,0x10c6e9,0x10c72d,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"I can call the
  Farmers' Union
 to arrange a
-shipment at 6PM."
+shipment at 6PM.","Ich kann den Farmerverband beauftragen, die Versandwaren um 18:00 Uhr abzuholen."
 3,0x10c72d,0x10c766,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""10GT000@""]",<player>,"Call the
 Farmers' Union?
 
- Yes          No<ask>"
+ Yes          No<ask>","Farmerverband anrufen?
+
+ Ja          Nein<ask>"
 4,0x10c766,0x10c7a7,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"What is that in
 the fireplace?
 1000G secret
-savings! Yeah!"
+savings! Yeah!","Was seh ich denn da im Kamin? 1000G Erspartes! Was für ein Glück!"
 5,0x10c7a7,0x10c7c8,0,"[""\\n"", ""<waita>@""]",<player>,"In the soot…?
-Nothing. Ha ha."
+Nothing. Ha ha.","Der Kamin ist voller Ruß. Da seh ich schwarz, haha."
 6,0x10c7c8,0x10c7e9,0,"[""\\n"", ""<waita>@""]",<player>,"Be careful when
-you use fire!"
+you use fire!","Beim Hantieren mit Feuer ist Vorsicht geboten!"
 7,0x10c7e9,0x10c81f,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"A secret savings
 in the drawer?
 Of course not.
-"
+","Ob sich in der Schublade ein paar Ersparnisse verstecken? Natürlich nicht, wäre auch zu schön gewesen."
 8,0x10c81f,0x10c853,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"<var>0's secret
 savings might be
 in here… Nope.
-"
+","Hier könnte <var> ein paar Ersparnisse versteckt haben... oder auch nicht."
 9,0x10c853,0x10c895,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"A machine that
 makes fertilizer
 from vegetables
-and fruits."
+and fruits.","Eine Maschine, die Obst und Gemüse zu Dünger verarbeitet."
 10,0x10c895,0x10c8eb,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""100G001@""]",,"<noname>Hello this is
 Farmers' Union.
 How may I help
 you?
  Shipment
- P/T Job<ask>"
+ P/T Job<ask>","Hallo, Sie sind mit dem Farmerverband verbunden. Wie kann ich Ihnen behilflich sein?
+ Versand
+ Auftrag<ask>"
 11,0x10c8eb,0x10c948,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We'll pick them
 up right away
 and deposit the
 money at 6PM.
 Thank you for
-your call."
+your call.","Wir holen die Ware sofort ab und überweisen Ihnen das Geld um 18:00 Uhr. Vielen Dank für Ihren Anruf."
 12,0x10c948,0x10c968,,"[""\\n"", ""<waita>@""]",,"There is no work
-at this time."
+at this time.","Zur Zeit gibt es keine Aufträge."
 13,0x10c968,0x10c98b,,"[""\\n"", ""10GP000@""]",,"P/T job…
- Done     Cancel<ask>"
+ Done     Cancel<ask>","Auftrag…
+ Erledigt     Abbr.<ask>"
 14,0x10c98b,0x10c9a2,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We ordered
+
+<var>O
+<var>0.","Bestellt:
 
 <var>O
 <var>0."
@@ -60,26 +69,27 @@ added by the
 client…
 <var>0G will be
 deposited into
-your account."
+your account.","Sie haben Ihren Auftrag erledigt. Der Auftraggeber hinterlässt Ihnen ein Trinkgeld! Ihrem Konto werden <var>0G gutgeschrieben."
 16,0x10ca1a,0x10ca5d,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"You need <var>0
 more to complete
 your work. Thank
-you for calling."
+you for calling.","Sie brauchen <var>0 weitere um den Auftrag zu erfüllen. Danke für Ihren Anruf!"
 17,0x10ca5d,0x10ca86,,"[""\\n"", ""10GT000@""]",,"Cancel the job?
- Yes          No<ask>"
+ Yes          No<ask>","Auftrag abbrechen?
+ Ja          Nein<ask>"
 18,0x10ca86,0x10caa2,,"[""\\n"", ""<waita>@""]",,"The job has been
-canceled."
+canceled.","Der Auftrag wurde abgebrochen."
 19,0x10caa2,0x10cad2,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"We're looking
 forward to your
 call again.
-"
+","Wir freuen uns auf Ihren nächsten Anruf."
 20,0x10cad2,0x10cb25,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"No shipment was
 made this time.
 We're looking
 forward to your
 call again.
-"
+","Es wurden keine Versandwaren gefunden. Wir freuen uns auf Ihren nächsten Anruf."
 21,0x10cb25,0x10cb61,,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",,"Currently we are
 closed. Please
 try calling back
-later."
+later.","Wir haben zurzeit geschlossen. Bitte rufen Sie zu einem späteren Zeitpunkt noch einmal an."

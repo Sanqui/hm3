@@ -19,11 +19,11 @@ appreciate it if
 you could bring
 it today.","Danke! Es wäre toll, wenn du ihn mir heute noch vorbeibringen könntest."
 3,0x1429b9,0x1429d9,15,"[""\\n"", ""<waita>@""]",Lucus,"It's alright.
-You're busy…","Schon okay, bist schließlich beschäftigt..."
+You're busy…","Schon okay, du bist schließlich beschäftigt..."
 4,0x1429d9,0x142a16,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lucus,"Oh, Thanks. Here
 is 300G. Now I
 can finish the
-chest.","Hey, danke! Hier, 300G. Nun kann ich die Kiste fertigstellen."
+chest.","Hey, danke! Hier, die 300G sind für dich. Nun kann ich endlich die Kiste fertigstellen."
 5,0x142a16,0x142a57,15,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lucus,"Did you bring
 the log? Please
 bring it as soon
@@ -78,7 +78,7 @@ Thank you!","Wow! Das ist also der Seekönig!! Er ist wirklich was besonderes! D
 11,0x142d4b,0x142d8f,16,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Cozy,"…Never mind.
 It was stupid of
 me to expect the
-fish from you.","...Ach, vergiss es. Von dir zu verlangen, diesen Fisch zu fangen, war blöd von mir."
+fish from you.","...Ach, vergiss es. Es war dumm von mir, zu glauben, dass du mir diesen Fisch besorgen könntest."
 12,0x142d8f,0x142dbd,16,"[""\\n"", ""<arrow>0<waita><clear>"", ""<waita>@""]",Cozy,"Thank you.
 I will take
 good care of it.","Danke. Ich werde mich gut darum kümmern."
@@ -93,11 +93,11 @@ Moon Flower
 extract is good
 for her. Do you
 know where I can
-find the flower?","Hi, <player>. Kann ich dich was fragen? Meine Mama ist krank und der Arzt hat ihr Vollmondblumen verschrieben. Weißt du zufällig wo ich diese Blume finde?"
+find the flower?","Hi, <player>. Kann ich dich was fragen? Meine Mama ist krank und der Arzt hat ihr Vollmondblumen verschrieben. Weißt du zufällig, wo ich diese Blume finde?"
 14,0x142e7d,0x142eb6,13,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lukia,"Do you know
 where I can
 find the Full
-Moon Flower?","Weißt du zufällig wo ich die Vollmondblume finde?"
+Moon Flower?","Weißt du zufällig, wo ich die Vollmondblume finde?"
 15,0x142eb6,0x142f22,13,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lukia,"Is that really
 the Full Moon
 Flower!? You've
@@ -148,13 +148,13 @@ scarf for him…
 Can you spare me
 some yarn?
 
- Yes          No<ask>","Vor ein paar Tagen bin ich mit Freunden rüber auf die Insel. Wir haben mit den Tieren gespielt und waren viel wandern. Hach, wie schön das war! Bei dem ganzen Spaß haben wir die Zeit vergessen und die Fähre nach Hause verpasst. Aber zum Glück war da Billy, der Fischer. Er hat uns schließlich aus der Patsche geholfen! Und seitdem kann ich nicht mehr aufhören, an sein süßes Lächeln zu denken.
-... Ich glaube, es war Liebe auf den ersten Blick. Im Winter wehen die Küstenwinde wieder besonders stark, deshalb würde ich ihm gerne einen Schal stricken...
+ Yes          No<ask>","Vor ein paar Tagen bin ich mit Freunden rüber auf die Insel. Dort haben wir mit den Tieren gespielt und waren in der Natur wandern. Hach, wie schön das war! Bei dem ganzen Spaß haben wir die Zeit vergessen und die Fähre nach Hause verpasst. Aber zum Glück war da Billy, der Fischer. Er hat uns schließlich aus der Patsche geholfen! Und seitdem kann ich nicht mehr aufhören, an sein süßes Lächeln zu denken.
+...Ich glaube, es war Liebe auf den ersten Blick. Im Winter wehen die Küstenwinde besonders stark, deshalb würde ich ihm gerne einen Schal stricken...
 Hättest du etwas Garn für mich übrig?
 
  Ja          Nein<ask>"
 19,0x143186,0x1431a9,14,"[""\\n"", ""<waita>@""]",Lyla,"…OK. You're not
-very friendly…","... Na gut. Schade, ich dachte du wärst hilfsbereiter..."
+very friendly…","...Na gut. Schade, ich dachte du wärst hilfsbereiter..."
 20,0x1431a9,0x143207,14,"[""\\n"", "" <arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lyla,"I'm not in a
 hurry or
 anything, but
@@ -173,7 +173,7 @@ is very hard for
 me, but I'll try
 my best for
 Billy.
-","Einen Schal zu stricken ist nicht gerade leicht, aber für Billy werde ich mir natürlich besonders viel Mühe geben."
+","Einen Schal zu stricken ist nicht gerade leicht, aber für Billy werde ich mir besonders viel Mühe geben."
 24,0x1432b3,0x1432ec,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lyla,"It's getting
 cold. I have to
 finish up the
@@ -194,7 +194,7 @@ it to him on
 work.
 Wish me luck.
 ","Endlich ist der Schal fertig! Ich habe den Garn komplett aufgebraucht, er sollte also schön warm halten.
-Aber wenn ich mir vorstelle, wie ich Billy den Schal gebe, dann macht mich das ganz nervös... naja, muss ich durch. Soll ja nicht umsonst gewesen sein! Ich überreiche ihm den Schal am 25., nach der Arbeit. Wünsch mir Glück!"
+Aber wenn ich mir vorstelle, wie ich Billy den Schal gebe, kriege ich das Herzflattern... naja, da muss ich durch. Soll ja nicht umsonst gewesen sein! Ich überreiche ihm den Schal am 25., nach der Arbeit. Wünsch mir Glück!"
 26,0x1433e3,0x143403,14,"[""\\n"", ""<waita>@""]",Lyla,"Thank you, <player>.
 Wish me luck.","Danke, <player>. Wünsch mir Glück!"
 27,0x143403,0x14355e,14,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lyla,"Ah <player>. Thank
@@ -218,8 +218,8 @@ I told him. I
 appreciate what
 you've done for
 me <player>. Thank
-you very much.","Ah, <player>! Danke nochmal für alles. Ich bin wie geplant am 25. zu Billy um ihm den Schal zu geben. Er erinnerte sich noch an mich und der Schal gefiel ihm sehr.
-... Ich habe ihm dann gesagt, was ich für ihn fühle, aber... er sagte, er liebt bereits eine andere...
+you very much.","Ah, <player>! Danke nochmal für alles. Ich bin wie geplant am 25. zu Billy um ihm den Schal zu geben. Er erinnerte sich noch an mich und hat sich sehr über den Schal gefreut.
+...Ich habe ihm dann meine Gefühle gestanden, woraufhin er erwiderte, dass sein Herz bereits einer anderen gehört...
 Aber jetzt, da ich es ihm gesagt habe, fühle ich mich viel besser. Danke nochmal für deine Hilfe, <player>. Wirklich, vielen Dank."
 28,0x14355e,0x1435b2,14,"["" \\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",Lyla,"My wish didn't
 come true, but
@@ -262,7 +262,7 @@ appreciate what
 you've done for
 me! Come to see
 me and the fish
-any time!","Ja, ist das denn die Möglichkeit...? Ich... ich habe sie alle! Ich habe alle Fischarten in meinem Aquarium! Gut gemacht, <player>! Das Aquarium wird besser sein, denn je! Und das habe ich allein dir zu verdanken, <player>! Oh, das ist für dich. Diese Frucht nennt sich Power-Beere. Die hat mir mal irgendwer angedreht, aber ich kann damit nichts anfangen. Ich würde dir ja gerne mehr bieten, aber das ist alles, was ich habe. Nochmal vielen Dank für deine Hilfe! Komm mich und die Fische jederzeit besuchen!"
+any time!","Ja, ist das denn die Möglichkeit...? Ich... ich habe sie alle! Ich habe alle Fischarten in meinem Aquarium! Gut gemacht, <player>! Das Aquarium wird besser sein, denn je! Und das habe ich allein dir zu verdanken, <player>! Oh, das ist für dich. Diese Frucht nennt sich Powerbeere. Die hat mir mal irgendwer angedreht, aber ich kann damit nichts anfangen. Ich würde dir ja gerne mehr bieten, aber das ist alles, was ich habe. Nochmal vielen Dank für deine Hilfe! Komm mich und die Fische jederzeit besuchen!"
 32,0x143800,0x143856,0,"[""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<arrow>0<waita><clear>"", ""\\n"", ""<waita>@""]",<player>,"<var>0 might
 have a baby
 today… I will
@@ -328,5 +328,5 @@ We are going to
 have a wonderful
 future together,
 Daddy!
-","Und so wächst unsere Familie um ein weiteres Mitglied.
-... Ich bin so glücklich. Du wirst bestimmt einen ganz wunderbaren Vater abgeben!"
+","Nun sind wir also zu dritt.
+...Ich bin ja so glücklich. Du wirst bestimmt einen ganz wunderbaren Papa abgeben!"

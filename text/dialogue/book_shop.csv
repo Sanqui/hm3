@@ -99,7 +99,7 @@ shelf.
 <var>0G.
 
  Yes          No<ask>","Dieses Buch trägt den Titel ""Stricken leicht gemacht"".
-Darin wird erklärt, wie du auch ohne Pullimaschine einen Pullover stricken kannst.
+Darin wird erklärt, wie du auch ohne Pulli-Macher einen Pullover stricken kannst.
 Leider ist in deinem Bücherregal kein Platz dafür.
 <var>0G
  Ja        Nein<ask>"
@@ -146,8 +146,8 @@ in your bookー
 shelf.
 <var>0G.
 
- Yes          No<ask>","Das ist ein Bericht zum Kirschkern-Rennen.
-Lies alles über die Pferde, die am Kirschkern-Rennen teilgenommen haben!
+ Yes          No<ask>","Eine Broschüre zum Kirsch-Pokal.
+Alles, was du über Pferderennen wissen musst.
 In deinem Bücherregal wäre Platz dafür.
 <var>0G
  Ja        Nein<ask>"
@@ -162,8 +162,8 @@ in your bookー
 shelf.
 <var>0G.
 
- Yes          No<ask>","Das ist der Galopp-Pokal-Bericht.
-Lies alles über die Pferde, die am Galopp-Pokal teilgenommen haben!
+ Yes          No<ask>","Eine Broschüre zur Galopp-Wette.
+Alles, was du über Pferderennen wissen musst.
 In deinem Bücherregal wäre Platz dafür.
 <var>0G
  Ja        Nein<ask>"
@@ -179,7 +179,7 @@ shelf.
 <var>0G.
 
  Yes          No<ask>","Dieses Buch trägt den Titel ""Wie man sich einen König angelt!"".
-Darin steht alles wissenswerte über das Fischen.
+Darin steht alles Wissenswerte über das Fischen.
 In deinem Bücherregal wäre Platz dafür.
 <var>0G
  Ja        Nein<ask>"
@@ -195,12 +195,12 @@ in your bookー
 shelf.
 <var>0G.
  Yes          No<ask>","Dieses Buch trägt den Titel ""Geheimnisse einer Insel"".
-Endlich wurden all die Geheimnisse der Insel gelüftet!
+Endlich wurden alle Geheimnisse der Insel gelüftet!
 In deinem Bücherregal wäre Platz dafür.
 <var>0G
  Ja        Nein<ask>"
 13,0x60f55,0x60f6c,14,"[""\\n"", ""<waita>@""]",Lyla,"You don't want
-it?","Willst du es doch nicht?"
+it?","Hast du es dir anders überlegt?"
 14,0x60f6c,0x60f81,14,"[""\\n"", ""<waita>@""]",Lyla,"Not enough
 money.","Dein Geld reicht leider nicht aus."
 15,0x60f81,0x60f96,14,"[""\\n"", ""<waita>@""]",Lyla,"Thank you.
