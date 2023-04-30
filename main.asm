@@ -24,7 +24,7 @@ SECTION "Map Load Hack", ROMX[$4dd2], BANK[$14]
     hack UnkMapLoad
     ; ld a, [$d4b6]
 
-blankbank: MACRO
+MACRO blankbank
 SECTION "Blank bank \1", ROMX[$4000], BANK[\1]
     db \1 ; BANK(@) doesn't work atm
     ds $3fff

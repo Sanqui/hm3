@@ -5,6 +5,10 @@ for line in open(argv[1]):
     line = line.strip()
     if line and " " in line:
         address, symbol = line.split()
+        if '.' in symbol:
+            # modern rgbds doesn't support local labels in main scope --
+            # workaround for now
+            symbol = symbol.replace('.', '__')
         bank, pointer = address.split(":")
         bank = int(bank, 16)
         pointer = int(pointer, 16)

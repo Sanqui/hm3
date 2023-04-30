@@ -297,7 +297,7 @@ LoadPlayerNameToHL:
 
 SECTION "copy names", ROM0[$221c]
     
-copyname: MACRO
+MACRO copyname
     ld b, NAME_LENGTH
 .loop\@
     ld a, [hl]
@@ -313,7 +313,7 @@ copyname: MACRO
     ld [de], a
 ENDM
 
-copyname2: MACRO
+MACRO copyname2
     ld b, NAME_LENGTH
 .loop\@
     ld a, [hli]
@@ -333,7 +333,7 @@ CopyPetName:
     copyname
     ret 
 
-CopyPartnerName
+CopyPartnerName:
     ld hl, wPartnerName
     copyname
     ret 

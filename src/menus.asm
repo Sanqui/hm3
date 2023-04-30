@@ -1482,7 +1482,7 @@ KeyboardTableTargets:
     db $ff, $7a, $ff, $08
     db $77, $ff, $ff, $09
 
-PackNamingScreenXY ; 54a8
+PackNamingScreenXY: ; 54a8
     ld a, [wNamingScreenY]
     ld b, a
     ld a, [wNamingScreenX]

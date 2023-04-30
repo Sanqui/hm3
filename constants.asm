@@ -37,36 +37,36 @@ DIALOGUE_STATE_ONCE   EQU 7
 DIALOGUE_DELAY_BIT    EQU 7
 DIALOGUE_DELAY_FRAMES EQU 0
 
-jumptable: MACRO
+MACRO jumptable
     rst $0
 ENDM
 
-dwb: MACRO
+MACRO dwb
     dw \1
     db \2
 ENDM
 
-dbw: MACRO
+MACRO dbw
     db \1
     dw \2
 ENDM
 
-pwb: MACRO
+MACRO pwb
     dwb \1, BANK(\1)
 ENDM
 
-lda: MACRO
+MACRO lda
     ld a, \2
     ld \1, a
     ENDM
 
-farcall: MACRO
+MACRO farcall
     ld hl, \1
     ld a, BANK(\1)
     call FarCall
 ENDM
 
-addhla: MACRO
+MACRO addhla
     add l
     ld l, a
     jr nc, .nc\@
@@ -74,7 +74,7 @@ addhla: MACRO
 .nc\@
 ENDM
 
-adddea: MACRO
+MACRO adddea
     add e
     ld e, a
     jr nc, .nc\@
@@ -99,7 +99,7 @@ ENDM
 vtile EQUS "$8800 + $800 ^ $10 * "
 
 ; because I am particularly lazy
-ORG: MACRO
+MACRO ORG
     SECTION "Lazy Section \@", ROMX[\2], BANK[\1]
 ENDM
 
