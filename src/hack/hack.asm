@@ -5,7 +5,7 @@ wPlayerName:    ds PLAYER_NAME_LENGTH + 1
 wPartnerName:   ds NAME_LENGTH + 1
 wPetName:       ds NAME_LENGTH + 1
 
-wHackExtra_END
+wHackExtra_END:
 
 wHackOldBank: ds 1
 wTempH: ds 1
@@ -141,7 +141,7 @@ HackPredef:
     ld l, a
     ret ; jumps to hl
 
-hack_entry: MACRO
+MACRO hack_entry
 Hack\1Entry:
     dw Hack\1
 ENDM
@@ -610,7 +610,7 @@ jr .o
     ld [REG_VBK], a
     ret
 
-comp_replacement_entry: MACRO
+MACRO comp_replacement_entry
     dbw BANK(\1), \1
     dwb \2, (\2End - \2) / 16
 ENDM
@@ -621,7 +621,8 @@ ReplacementCompressedGraphics:
 
 PressStartGfxNew:
     INCBIN "gfx/press_start.2bpp"
-PressStartGfxNewEnd
+
+PressStartGfxNewEnd:
 
 HackControlCodeF1:
     call VWFFinish

@@ -314,7 +314,7 @@ StatusScreenTilemapPatches:
 MarriedOnStringDefinition:
     db   5,  4, 11,  -1, "Hochzeitstag",$f5,"@"
 
-filescreenstringdefinitions: MACRO
+MACRO filescreenstringdefinitions
     db 0
     db   1,  1+(\1*6),  0, $00 + (\1 * $28), "Spielstand ", "1"+\1, "@"
     db   5,  2+(\1*6),  0,  -1, "Jahr <var>"

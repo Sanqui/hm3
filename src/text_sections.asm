@@ -33,7 +33,7 @@ StartDialogue\1:
     ret
 ENDM
 
-setup_start_dialogue_relocate_asm: MACRO
+MACRO setup_start_dialogue_relocate_asm
 ; this needs to preserve addresses
 SetupDialogue\1:
     ld de, Metatable\1
@@ -51,7 +51,7 @@ SetupDialogueRelocate\1:
     jp FarCall
 ENDM
 
-setup_start_dialogue_overflow_relocate_asm: MACRO
+MACRO setup_start_dialogue_overflow_relocate_asm
 ; this needs to preserve addresses
 SetupDialogue\1:
     ld a, [wStringID]
@@ -77,7 +77,7 @@ SetupDialogueRelocate\1:
     jp FarCall
 ENDM
 
-setup_dialogue_relocated_asm: MACRO
+MACRO setup_dialogue_relocated_asm
 SetupDialogue\1Relocated:
     ld de, Metatable\1
     call SetupDialogue
@@ -118,7 +118,7 @@ SECTION "Relocations 5", ROMX[$4001], BANK[$54]
     setup_dialogue_relocated_asm 50_4b7e
     INCLUDE "build/text/50_4b7e_table.asm"
     INCLUDE "build/text/50_4b7e.asm"
-TextSection50_4b7e_END
+TextSection50_4b7e_END:
     setup_dialogue_relocated_asm 01_52f9
     INCLUDE "build/text/01_52f9_table.asm"
     INCLUDE "build/text/01_52f9.asm"

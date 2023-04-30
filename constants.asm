@@ -82,14 +82,14 @@ MACRO adddea
 .nc\@
 ENDM
 
-pusha: MACRO
+MACRO pusha
     push af
     push bc
     push de
     push hl
 ENDM
 
-popa: MACRO
+MACRO popa
     pop hl
     pop de
     pop bc
@@ -104,7 +104,7 @@ MACRO ORG
 ENDM
 
 
-hack: MACRO
+MACRO hack
     ld a, (Hack\1Entry-HackPredefTable) / 2
     rst $10
 ENDM

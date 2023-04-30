@@ -434,6 +434,9 @@ def print_strings_from_csvs():
             for row in fcsv:
                 newstring = None
                 new = False
+                if len(row) > 8:
+                    # Extra columns are probably comments, ignore
+                    row = row[:8]
                 if len(row) == 7:
                     csvi, address, end, name_i, newlines, name, string = row
                 else:
@@ -684,7 +687,7 @@ def print_sections():
             print("; is {}".format(subtable_names))
         print(f'    INCLUDE "build/text/{bank:02x}_{pointer:04x}_table.asm"')
         print(f'    INCLUDE "build/text/{bank:02x}_{pointer:04x}.asm"')
-        print(f'TextSection{bank:02x}_{pointer:04x}_END')
+        print(f'TextSection{bank:02x}_{pointer:04x}_END:')
         print()
 
 if __name__ == "__main__":
